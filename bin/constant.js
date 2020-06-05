@@ -1,0 +1,6 @@
+module.exports.COLORS = 'colors'
+module.exports.DIR_PATH = 'dirPath'
+module.exports.GENERATE = 'generate'
+module.exports.UNIT = 'unit'
+module.exports.EXT_NAME = 'extName'
+module.exports.GLOB_REG = 'globReg'

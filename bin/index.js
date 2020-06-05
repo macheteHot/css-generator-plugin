@@ -1,0 +1,56 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const program = require('commander')
+const path = require('path')
+const description =
+  `An application to generate Style Sheets file
+the default config file is gcss.json or gcss.js`
+program
+  .version('1.0.0', '-v, --version')
+  .description(description)
+  .option('-c, --config-file [fileName]', 'set config file')
+  .parse(process.argv)
+let configObj = {}
+
+const run = require('./main')
+
+function getFilePath (str) {
+  return path.resolve(process.cwd(), str)
+}
+
+if (!program.configFile) {
+  if (fs.existsSync(getFilePath('gcss.json'))) {
+    configObj = JSON.parse(fs.readFileSync(getFilePath('gcss.json')))
+    run(configObj)
+  } else
+  if (fs.existsSync(getFilePath('gcss.js'))) {
+    configObj = require(getFilePath('gcss.js'))
+    run(configObj)
+  } else {
+    program.help()
+    process.exit()
+  }
+}
+
+if (program.configFile) {
+  if (!fs.existsSync(getFilePath(program.configFile))) { // 配置文件不存在
+    console.error('')
+    console.error('error file path!')
+    console.error('')
+    process.exit()
+  }
+
+  const extname = path.extname(program.configFile)
+
+  if (extname === 'json') {
+    configObj = JSON.parse(fs.readFileSync(getFilePath(program.configFile)))
+  } else if (extname === 'js') {
+    configObj = require(getFilePath('program.configFile'))
+  } else {
+    console.error('')
+    console.error('only accpect js or json file!')
+    console.error('')
+    process.exit()
+  }
+}

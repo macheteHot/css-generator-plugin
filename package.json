@@ -1,0 +1,37 @@
+{
+  "name": "gcss-cli",
+  "version": "0.1.0",
+  "license": "MIT",
+  "bin": {
+    "gcss": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macheteHot/gcss-cli.git"
+  },
+  "author": "machete <rtpppp163@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/macheteHot/gcss-cli/issues"
+  },
+  "homepage": "https://github.com/macheteHot/gcss-cli#readme",
+  "keywords": [
+    "css",
+    "generate",
+    "vue",
+    "webpack-plugin"
+  ],
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {
+    "chokidar": "^3.4.0",
+    "commander": "^5.1.0",
+    "glob": "^7.1.6",
+    "shelljs": "^0.8.4"
+  }
+}
