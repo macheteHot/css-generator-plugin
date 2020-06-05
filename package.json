@@ -1,5 +1,5 @@
 {
-  "name": "gcss-cli",
+  "name": "@gss/gcss-cli",
   "version": "0.1.0",
   "license": "MIT",
   "bin": {
