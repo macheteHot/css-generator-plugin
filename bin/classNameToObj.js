@@ -185,7 +185,7 @@ function getKeyValue (str) {
   }
 }
 
-function getWordBreak(){
+function getWordBreak (str) {
   const reg = /^word-break-(.*)$/
   const [name, value] = str.match(reg)
   return {

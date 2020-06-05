@@ -13,7 +13,8 @@ const {
   getFw,
   getFs,
   getDisplay,
-  getColor
+  getColor,
+  getWordBreak
 } = require('./classNameToObj')
 const { clearPreArray } = require('./preRender')
 
