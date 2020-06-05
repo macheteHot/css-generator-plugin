@@ -7,7 +7,7 @@ const chokidar = require('chokidar')
 const glob = require('glob')
 const shelljs = require('shelljs')
 const { getConfig, setConfig } = require('./config')
-const { EXT_NAME, GENERATE,DIR_PATH } = require('./constant')
+const { EXT_NAME, GENERATE, DIR_PATH } = require('./constant')
 
 function getAllVueFileClassStr () {
   const files = glob.sync(path.join(process.cwd(), `./${getConfig('dirPath')}/**/*.${getConfig(EXT_NAME)}`))
@@ -26,22 +26,22 @@ function wirteToFile () {
 function main (options) {
   setColors(options.colors)
   setConfig(options)
-  console.time('初始化耗时');
+  console.time('初始化耗时')
   filterClassNames(getAllVueFileClassStr())
   wirteToFile()
   console.log('=============初始化完成=============')
-  console.timeEnd()
+  console.timeEnd('初始化耗时')
   console.log('\n\n')
   const watcher = chokidar.watch(path.resolve(getConfig(DIR_PATH)), {
     ignored: new RegExp(`^.*\\.(?:(?!(${getConfig(EXT_NAME)})).)+$`),
     persistent: true
   })
   watcher.on('change', () => {
-    console.time('热更新耗时');
+    console.time('热更新耗时')
     filterClassNames(getAllVueFileClassStr())
     wirteToFile()
     console.log('=============热更新完成=============')
-    console.timeEnd()
+    console.timeEnd('热更新耗时')
     console.log('\n\n')
   })
 }
