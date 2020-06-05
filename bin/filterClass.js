@@ -55,7 +55,7 @@ function filterClass (classStr) {
           pushPreObj(getKeyValue(v))
           break
         case 'word-break': // 文字折叠
-          pushPreObj(getKeyValue(v))
+          pushPreObj(getWordBreak(v))
           break
         case 'orientation': // 绝对定位
           pushPreObj(getOrientation(v))

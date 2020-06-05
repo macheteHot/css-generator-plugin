@@ -184,6 +184,20 @@ function getKeyValue (str) {
     }
   }
 }
+
+function getWordBreak(){
+  const reg = /^word-break-(.*)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    order: 100,
+    value,
+    render () {
+      return `.${this.name}{word-break:${this.value};}`
+    }
+  }
+}
+
 module.exports = {
   getWorH,
   getMorP,
@@ -193,5 +207,6 @@ module.exports = {
   getFw,
   getFs,
   getDisplay,
-  getColor
+  getColor,
+  getWordBreak
 }

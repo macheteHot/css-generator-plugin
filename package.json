@@ -1,6 +1,6 @@
 {
-  "name": "@gss/gcss-cli",
-  "version": "0.1.0",
+  "name": "@gcss/gcss-cli",
+  "version": "0.1.1",
   "license": "MIT",
   "bin": {
     "gcss": "./bin/index.js"
