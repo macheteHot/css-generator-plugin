@@ -26,12 +26,18 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.0.1",
+    "mockjs": "^1.1.0"
   },
   "dependencies": {
     "chokidar": "^3.4.0",
     "commander": "^5.1.0",
     "glob": "^7.1.6",
     "shelljs": "^0.8.4"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch -- __tests__/server/.*.test.js"
   }
 }

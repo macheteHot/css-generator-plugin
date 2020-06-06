@@ -1,5 +1,4 @@
 const { filterClassNames } = require('./filterClass')
-const { setColors } = require('./colorUtils')
 const { renderCss } = require('./preRender')
 const fs = require('fs')
 const path = require('path')
@@ -24,7 +23,6 @@ function wirteToFile () {
 }
 
 function main (options) {
-  setColors(options.colors)
   setConfig(options)
   console.time('初始化耗时')
   filterClassNames(getAllVueFileClassStr())

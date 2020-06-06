@@ -59,6 +59,10 @@ function getRegList () {
     regExp: new RegExp(
         `^(color|c|text|bg|background|border-color)-((hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-([1-9]\\d|100))?$`
     )
+  },
+  {
+    className: 'letter-spacing',
+    regExp: /^letter-spacing-(m-)?\d+(rem|em|vw|vh|p|px|rpx)?$/
   }
   ]
 }

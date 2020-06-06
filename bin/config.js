@@ -1,22 +1,27 @@
-const { EXT_NAME, GLOB_REG } = require('./constant')
+const { EXT_NAME, GLOB_REG, COLORS, UNIT } = require('./constant')
 let programConfig = {}
-function getConfig (str) {
-  const runType = {
-    vue: {
-      extName: 'vue',
-      reg: /((?<=class=")[\s\S]+?(?="))|((?<=class={)[\s\S]+?(?=}))/g
-    },
-    'mini-program': {
-      extName: 'axml',
-      reg: ''
-    }
+const runType = {
+  vue: {
+    extName: 'vue',
+    reg: /((?<=class=")[\s\S]+?(?="))|((?<=class={)[\s\S]+?(?=}))/g
+  },
+  'mini-program': {
+    extName: 'axml',
+    reg: ''
   }
+}
+function getConfig (str) {
   switch (str) {
+    // 此处配置默认值
     case EXT_NAME:
       return runType[programConfig.type].extName
     case GLOB_REG:
       return runType[programConfig.type].reg
-    default: // dirPath generate unit
+    case COLORS: // 默认空对象
+      return programConfig[COLORS] !== undefined ? programConfig[COLORS] : {}
+    case UNIT: // 默认px
+      return programConfig[UNIT] !== undefined ? programConfig[UNIT] : 'px'
+    default: // dirPath generate  等项目配置
       return programConfig[str]
   }
 }

@@ -14,7 +14,8 @@ const {
   getFs,
   getDisplay,
   getColor,
-  getWordBreak
+  getWordBreak,
+  getLetterSpacing
 } = require('./classNameToObj')
 const { clearPreArray } = require('./preRender')
 
@@ -72,11 +73,16 @@ function filterClass (classStr) {
           break
         case 'color':
           pushPreObj(getColor(v))
+          break
+        case 'letter-spacing':
+          pushPreObj(getLetterSpacing(v))
+          break
       }
     }
   })
 }
 
 module.exports = {
-  filterClassNames
+  filterClassNames,
+  filterClass
 }

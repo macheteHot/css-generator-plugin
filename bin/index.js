@@ -45,8 +45,10 @@ if (program.configFile) {
 
   if (extname === 'json') {
     configObj = JSON.parse(fs.readFileSync(getFilePath(program.configFile)))
+    run(configObj)
   } else if (extname === 'js') {
-    configObj = require(getFilePath('program.configFile'))
+    configObj = require(getFilePath(program.configFile))
+    run(configObj)
   } else {
     console.error('')
     console.error('only accpect js or json file!')

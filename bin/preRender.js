@@ -1,9 +1,6 @@
+const { UNIT } = require('./constant')
+const { getConfig } = require('./config')
 let preArry = []
-let defaultUnit = 'px'
-
-function setDefaultUnit (unit) {
-  defaultUnit = unit
-}
 
 function pushPreObj (obj) {
   return preArry.push(obj)
@@ -18,7 +15,7 @@ function clearPreArray () {
 }
 
 function convertUnit (str) {
-  if (!str) return defaultUnit
+  if (!str) return getConfig(UNIT)
   if (str === 'p') return '%'
   return str
 }
@@ -28,8 +25,8 @@ function renderCss () {
     .sort((a, b) => a.order - b.order)
     .reduce((t, c) => {
       // 如果有单位 进行单位转换
-      if (Object.prototype.hasOwnProperty.call(c, 'unit')) {
-        c.unit = convertUnit(c.unit)
+      if (Object.prototype.hasOwnProperty.call(c, UNIT)) {
+        c[UNIT] = convertUnit(c[UNIT])
       }
       return t + c.render() + '\n'
     }, '')
@@ -40,5 +37,5 @@ module.exports = {
   renderCss,
   getPreArray,
   clearPreArray,
-  setDefaultUnit
+  convertUnit
 }

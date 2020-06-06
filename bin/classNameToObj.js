@@ -1,5 +1,4 @@
 const { textToRgbText, getColorsKey } = require('./colorUtils')
-
 const directionMap = new Map()
 directionMap.set(undefined, { dirStr: [''], order: 10 }) // 全部
 directionMap.set('', { dirStr: [''], order: 20 }) // 全部
@@ -15,18 +14,36 @@ directionMap.set('t', { dirStr: ['top'], order: 23 })
 directionMap.set('r', { dirStr: ['right'], order: 24 })
 directionMap.set('b', { dirStr: ['bottom'], order: 25 })
 directionMap.set('l', { dirStr: ['left'], order: 26 })
+// 通过存在-mi- 判断是否是负数
+function isMinus (str) {
+  return str.includes('-m-')
+}
+
+function getKeyValue (str) {
+  // 最后一个-分割
+  const reg = /^(.+)-(.+)$/
+  const [name, key, value] = str.match(reg)
+  return {
+    name,
+    key,
+    order: 100,
+    value,
+    render () {
+      return `.${this.name}{${this.key}:${this.value};}`
+    }
+  }
+}
 
 function getWorH (str) {
   const reg = /^(w|h)-(\d+)(.*)$/
   const [name, type, num, unit] = str.match(reg)
   return {
     name,
-    type: type === 'w' ? 'height' : 'width',
+    type: type === 'w' ? 'width' : 'height',
     order: type === 'w' ? 4 : 5, // w is 4 h is 5
     num,
-    // 隐式转换 两个等于
-    // eslint-disable-next-line eqeqeq
-    unit: num == 0 ? '' : unit, // unit 渲染的时候添加
+    // 不可用~~ 防止数值过大
+    unit: parseInt(num) === 0 ? '' : unit, // unit 渲染的时候添加
     render () {
       return `.${this.name}{${this.type}:${this.num}${this.unit};}`
     }
@@ -76,8 +93,8 @@ function getOrientation (str) {
     name,
     type: dirStr,
     order,
-    num: name.includes('-m-') ? `-${num}` : num,
-    unit: unit,
+    num: `${isMinus(name) ? '-' : ''}${num}`,
+    unit: parseInt(num) === 0 ? '' : unit, // unit 渲染的时候添加
     render () {
       return `.${this.name}{${this.type}:${this.num}${this.unit};}`
     }
@@ -170,21 +187,6 @@ function getColor (str) {
   return obj
 }
 
-function getKeyValue (str) {
-  // 最后一个-分割
-  const reg = /^(.+)-(.+)$/
-  const [name, key, value] = str.match(reg)
-  return {
-    name,
-    key,
-    order: 100,
-    value,
-    render () {
-      return `.${this.name}{${this.key}:${this.value};}`
-    }
-  }
-}
-
 function getWordBreak (str) {
   const reg = /^word-break-(.*)$/
   const [name, value] = str.match(reg)
@@ -194,6 +196,20 @@ function getWordBreak (str) {
     value,
     render () {
       return `.${this.name}{word-break:${this.value};}`
+    }
+  }
+}
+
+function getLetterSpacing (str) {
+  const reg = /^letter-spacing-(?:m-)?(\d+)(rem|em|vw|vh|p|px|rpx)?$/
+  const [name, num, unit] = str.match(reg)
+  return {
+    name,
+    num: `${isMinus(name) ? '-' : ''}${num}`,
+    order: 110,
+    unit: parseInt(num) === 0 ? '' : unit, // unit 渲染的时候添加
+    render () {
+      return `.${this.name}{letter-spacing:${this.num}${this.unit};}`
     }
   }
 }
@@ -208,5 +224,6 @@ module.exports = {
   getFs,
   getDisplay,
   getColor,
-  getWordBreak
+  getWordBreak,
+  getLetterSpacing
 }

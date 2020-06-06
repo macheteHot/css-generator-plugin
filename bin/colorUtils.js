@@ -1,17 +1,12 @@
-const baseColors = {
+const { getConfig } = require('./config')
+const { COLORS } = require('./constant')
+const colorStore = {
   red: '#f00',
   white: '#fff',
   black: '#000',
   blue: '#00f',
-  transparent: 'transparent'
-}
-let colorStore = {}
-
-function setColors (colorsConfig) {
-  colorStore = {
-    ...baseColors,
-    ...colorsConfig
-  }
+  transparent: 'transparent',
+  ...getConfig(COLORS)
 }
 
 function getColors () {
@@ -50,7 +45,6 @@ function textToRgbText (str) {
 }
 
 module.exports = {
-  setColors,
   getColors,
   getColorsKey,
   textToRgbText
