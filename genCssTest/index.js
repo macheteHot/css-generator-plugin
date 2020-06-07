@@ -1,7 +1,7 @@
 const { mock } = require('mockjs')
 const fs = require('fs')
 const path = require('path')
-const { getRegList } = require('../bin/createReg')
+const { getRegList } = require('../src/createReg')
 const { getCss } = require('./utils')
 const regObjList = getRegList()
 regObjList.forEach(obj => {
