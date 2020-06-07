@@ -12,3 +12,4 @@ regObjList.forEach(obj => {
     fs.writeFileSync(path.resolve(__dirname, `./css/${obj.className}.css`), `/* ${str} */\n${cssStr}\n`, { flag: 'a' })
   }
 })
+console.log('please check file in css folder ')
