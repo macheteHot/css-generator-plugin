@@ -41,7 +41,7 @@ function filterClassNames (sourceStr) {
   if (classNameList) {
     classNameList.forEach(hasClassNameStr => {
       // 替换规则中不会出现的字符 替换成空格 防止拼接导致合法
-      const className = hasClassNameStr.replace(/[^a-zA-Z0-9_-\s]/g, ' ')
+      const className = hasClassNameStr.replace(/[^a-zA-Z0-9_-]/g, ' ')
       className.split(' ').forEach(filterClass)
     })
   }
