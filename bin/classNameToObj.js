@@ -338,28 +338,29 @@ function getFlexBasis (str) {
   }
   return obj
 }
+// border 类型 符合
 function getBorder (str) {
   const reg = /^(?:border|border-width|border-w)-(?:([trblxy])-)?(0|[1-9]\d*)(rem|em|vw|vh|px|rpx)?$/
   // "border-w-x-20rem", "x", "20", "rem",
   const [name, direction, num, unit] = str.match(reg)
-  const { dirStr, order } = directionMap.get(direction)
+  const { dirStr } = directionMap.get(direction)
   const obj = {
     name,
     dirStr, // 循环方向
-    order,
+    order: 200,
     num,
     unit
   }
   if (dirStr[0] === '') { // 没有方向 四个方向都有
     obj.render = function () {
-      return `.${this.name} {\n\n  border-width: ${this.num}${this.unit};\n  border-style: solid;\n  border-color: black;\n}`
+      return `.${this.name}{border-width:${this.num}${this.unit};border-style:solid;border-color:black;}`
     }
   } else {
     obj.render = function () {
       const cssStr = this.dirStr.reduce((t, c) => {
-        return t + `border${c ? `-${c}` : ''}-width:${this.num}${this.unit};\n  `
-      }, `.${this.name} {\n\n  border-width: 0;\n  `)
-      return `${cssStr}border-style:solid;\n  border-color: black;\n}`
+        return t + `border${c ? `-${c}` : ''}-width:${this.num}${this.unit};`
+      }, `.${this.name}{border-width: 0;`)
+      return `${cssStr} border-style: solid;border-color:black;}`
     }
   }
   return obj
