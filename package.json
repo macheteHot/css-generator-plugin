@@ -3,8 +3,9 @@
   "version": "0.4.0",
   "license": "MIT",
   "bin": {
-    "gcss": "./bin/index.js"
+    "gcss": "./bin/gcss"
   },
+  "main": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/macheteHot/gcss-cli.git"

@@ -1,5 +1,5 @@
-const { renderCss, clearPreArray } = require('../bin/preRender')
-const { filterClass } = require('../bin/filterClass')
+const { renderCss, clearPreArray } = require('../src/preRender')
+const { filterClass } = require('../src/filterClass')
 
 function getCss (str) {
   clearPreArray() // 先清空
