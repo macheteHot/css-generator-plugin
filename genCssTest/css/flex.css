@@ -1,200 +1,200 @@
-/* flex-flex-end-flex-start */
-.flex-flex-end-flex-start{display:flex;justify-content:flex-end;align-items:flex-start;}
+/* flex-flex-start-flex-end */
+.flex-flex-start-flex-end{display:flex;justify-content:flex-start;align-items:flex-end;}
 /* flex-auto-flex-start */
 .flex-auto-flex-start{display:flex;justify-content:auto;align-items:flex-start;}
-/* flex-flex-end-flex-end */
-.flex-flex-end-flex-end{display:flex;justify-content:flex-end;align-items:flex-end;}
-/* flex-space-around-auto */
-.flex-space-around-auto{display:flex;justify-content:space-around;align-items:auto;}
-/* flex-flex-start-flex-start */
-.flex-flex-start-flex-start{display:flex;justify-content:flex-start;align-items:flex-start;}
-/* flex-auto-stretch */
-.flex-auto-stretch{display:flex;justify-content:auto;align-items:stretch;}
+/* flex-auto-flex-start */
+
 /* flex-auto-auto */
 .flex-auto-auto{display:flex;justify-content:auto;align-items:auto;}
-/* flex-flex-start-auto */
-.flex-flex-start-auto{display:flex;justify-content:flex-start;align-items:auto;}
+/* flex-auto-flex-start */
+
+/* flex-auto-center */
+.flex-auto-center{display:flex;justify-content:auto;align-items:center;}
+/* flex-flex-start-flex-start */
+.flex-flex-start-flex-start{display:flex;justify-content:flex-start;align-items:flex-start;}
 /* flex-auto-auto */
 
 /* flex-auto-flex-start */
 
-/* flex-flex-end-stretch */
-.flex-flex-end-stretch{display:flex;justify-content:flex-end;align-items:stretch;}
+/* flex-auto-auto */
+
+/* flex-center-flex-start */
+.flex-center-flex-start{display:flex;justify-content:center;align-items:flex-start;}
+/* flex-auto-auto */
+
 /* flex-auto-flex-end */
 .flex-auto-flex-end{display:flex;justify-content:auto;align-items:flex-end;}
+/* flex-flex-start-auto */
+.flex-flex-start-auto{display:flex;justify-content:flex-start;align-items:auto;}
+/* flex-flex-start-center */
+.flex-flex-start-center{display:flex;justify-content:flex-start;align-items:center;}
 /* flex-flex-start-flex-start */
 
-/* flex-flex-end-flex-start */
+/* flex-flex-start-flex-end */
 
-/* flex-auto-stretch */
+/* flex-auto-flex-start */
+
+/* flex-auto-flex-end */
+
+/* flex-flex-start-flex-end */
+
+/* flex-auto-flex-start */
 
 /* flex-flex-end-auto */
 .flex-flex-end-auto{display:flex;justify-content:flex-end;align-items:auto;}
-/* flex-auto-flex-end */
+/* flex-auto-auto */
 
-/* flex-center-flex-end */
-.flex-center-flex-end{display:flex;justify-content:center;align-items:flex-end;}
-/* flex-flex-start-auto */
+/* flex-auto-stretch */
+.flex-auto-stretch{display:flex;justify-content:auto;align-items:stretch;}
+/* flex-auto-flex-start */
 
-/* flex-flex-end-auto */
+/* flex-auto-flex-start */
 
 /* flex-flex-start-flex-start */
 
 /* flex-auto-auto */
 
+/* flex-flex-start-flex-start */
+
+/* flex-auto-flex-start */
+
+/* flex-auto-auto */
+
+/* flex-flex-start-auto */
+
+/* flex-auto-auto */
+
+/* flex-flex-start-auto */
+
+/* flex-auto-flex-start */
+
+/* flex-auto-auto */
+
+/* flex-auto-flex-start */
+
+/* flex-flex-end-auto */
+
 /* flex-auto-auto */
 
 /* flex-auto-flex-end */
 
+/* flex-auto-auto */
+
 /* flex-flex-end-auto */
+
+/* flex-flex-start-center */
+
+/* flex-auto-flex-start */
+
+/* flex-auto-flex-end */
+
+/* flex-auto-auto */
 
 /* flex-flex-start-auto */
 
 /* flex-auto-flex-start */
+
+/* flex-auto-auto */
+
+/* flex-flex-start-auto */
+
+/* flex-flex-end-stretch */
+.flex-flex-end-stretch{display:flex;justify-content:flex-end;align-items:stretch;}
+/* flex-center-flex-start */
+
+/* flex-auto-flex-start */
+
+/* flex-auto-auto */
+
+/* flex-auto-flex-start */
+
+/* flex-flex-end-flex-start */
+.flex-flex-end-flex-start{display:flex;justify-content:flex-end;align-items:flex-start;}
+/* flex-auto-center */
+
+/* flex-auto-auto */
 
 /* flex-center-auto */
 .flex-center-auto{display:flex;justify-content:center;align-items:auto;}
-/* flex-auto-stretch */
-
-/* flex-auto-auto */
-
-/* flex-auto-auto */
-
-/* flex-flex-start-stretch */
-.flex-flex-start-stretch{display:flex;justify-content:flex-start;align-items:stretch;}
+/* flex-space-between-auto */
+.flex-space-between-auto{display:flex;justify-content:space-between;align-items:auto;}
 /* flex-flex-start-auto */
 
 /* flex-flex-end-flex-start */
 
 /* flex-auto-flex-start */
-
-/* flex-flex-start-auto */
-
-/* flex-flex-end-flex-start */
-
-/* flex-center-auto */
-
-/* flex-auto-flex-start */
-
-/* flex-flex-start-flex-end */
-.flex-flex-start-flex-end{display:flex;justify-content:flex-start;align-items:flex-end;}
-/* flex-flex-start-auto */
 
 /* flex-flex-start-flex-end */
 
 /* flex-space-around-flex-start */
 .flex-space-around-flex-start{display:flex;justify-content:space-around;align-items:flex-start;}
-/* flex-auto-flex-end */
+/* flex-flex-end-auto */
+
+/* flex-flex-start-flex-start */
+
+/* flex-flex-end-auto */
+
+/* flex-flex-start-flex-end */
+
+/* flex-auto-auto */
+
+/* flex-flex-start-center */
+
+/* flex-auto-auto */
 
 /* flex-auto-flex-end */
-
-/* flex-auto-flex-start */
 
 /* flex-auto-auto */
 
 /* flex-auto-flex-start */
+
+/* flex-center-auto */
+
+/* flex-flex-end-auto */
+
+/* flex-auto-auto */
+
+/* flex-center-auto */
+
+/* flex-center-flex-end */
+.flex-center-flex-end{display:flex;justify-content:center;align-items:flex-end;}
+/* flex-auto-auto */
+
+/* flex-auto-auto */
+
+/* flex-auto-flex-start */
+
+/* flex-auto-flex-start */
+
+/* flex-auto-center */
+
+/* flex-auto-auto */
+
+/* flex-auto-flex-start */
+
+/* flex-space-between-auto */
 
 /* flex-space-around-auto */
-
-/* flex-auto-center */
-.flex-auto-center{display:flex;justify-content:auto;align-items:center;}
-/* flex-auto-stretch */
-
-/* flex-center-flex-start */
-.flex-center-flex-start{display:flex;justify-content:center;align-items:flex-start;}
-/* flex-flex-start-flex-start */
-
-/* flex-auto-auto */
-
-/* flex-flex-start-flex-start */
-
-/* flex-auto-auto */
-
-/* flex-flex-start-flex-end */
+.flex-space-around-auto{display:flex;justify-content:space-around;align-items:auto;}
+/* flex-space-between-auto */
 
 /* flex-flex-end-auto */
 
-/* flex-auto-center */
-
-/* flex-flex-start-flex-start */
-
 /* flex-auto-auto */
-
-/* flex-auto-flex-end */
-
-/* flex-auto-center */
-
-/* flex-auto-auto */
-
-/* flex-flex-start-auto */
-
-/* flex-auto-flex-start */
-
-/* flex-auto-auto */
-
-/* flex-auto-auto */
-
-/* flex-auto-auto */
-
-/* flex-auto-flex-end */
-
-/* flex-auto-flex-start */
-
-/* flex-auto-auto */
-
-/* flex-center-auto */
-
-/* flex-auto-auto */
-
-/* flex-auto-auto */
-
-/* flex-auto-stretch */
-
-/* flex-center-auto */
-
-/* flex-flex-start-auto */
-
-/* flex-flex-end-flex-end */
-
-/* flex-auto-flex-start */
-
-/* flex-flex-end-auto */
-
-/* flex-auto-flex-start */
 
 /* flex-flex-start-flex-end */
 
-/* flex-flex-start-auto */
-
 /* flex-auto-auto */
-
-/* flex-flex-start-flex-start */
-
-/* flex-auto-auto */
-
-/* flex-auto-flex-end */
-
-/* flex-auto-flex-start */
-
-/* flex-auto-flex-start */
-
-/* flex-flex-start-auto */
-
-/* flex-flex-end-flex-end */
-
-/* flex-flex-start-flex-end */
-
-/* flex-flex-start-stretch */
 
 /* flex-flex-start-flex-start */
 
 /* flex-flex-end-flex-start */
 
-/* flex-auto-flex-start */
+/* flex-flex-start-flex-start */
 
-/* flex-flex-end-flex-start */
+/* flex-flex-start-auto */
 
-/* flex-auto-flex-end */
+/* flex-flex-start-center */
 
-/* flex-center-auto */
+/* flex-auto-auto */
 

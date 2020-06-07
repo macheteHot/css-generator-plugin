@@ -1,65 +1,55 @@
-/* display-none */
-.display-none{display:none;}
-/* display-inline */
-.display-inline{display:inline;}
-/* d-none */
-.d-none{display:none;}
-/* display-inline */
-
 /* d-inline */
 .d-inline{display:inline;}
-/* d-inline */
-
+/* d-none */
+.d-none{display:none;}
 /* d-none */
 
+/* display-block */
+.display-block{display:block;}
 /* display-none */
-
-/* d-inline */
-
-/* display-none */
-
+.display-none{display:none;}
 /* display-none */
 
 /* display-none */
 
 /* display-block */
-.display-block{display:block;}
-/* display-inline */
 
-/* d-inline */
-
-/* display-inline */
-
-/* d-none */
-
-/* d-none */
-
-/* d-inline */
-
-/* display-inline-block */
-.display-inline-block{display:inline-block;}
 /* display-none */
 
-/* d-inline */
-
-/* d-none */
-
 /* d-none */
 
 /* display-inline */
+.display-inline{display:inline;}
+/* display-none */
+
+/* d-flex */
+.d-flex{display:flex;}
+/* display-none */
 
 /* d-none */
 
-/* d-block */
-.d-block{display:block;}
+/* display-block */
+
+/* display-none */
+
+/* d-none */
+
+/* display-block */
+
+/* display-inline */
+
+/* display-inline */
+
 /* display-block */
 
 /* display-none */
 
 /* display-flex */
 .display-flex{display:flex;}
-/* display-block */
+/* display-none */
 
+/* display-inline-block */
+.display-inline-block{display:inline-block;}
 /* display-none */
 
 /* display-none */
@@ -70,117 +60,15 @@
 
 /* d-none */
 
-/* d-inline-block */
-.d-inline-block{display:inline-block;}
 /* display-none */
-
-/* display-inline */
-
-/* d-block */
-
-/* d-flex */
-.d-flex{display:flex;}
-/* d-none */
-
-/* d-none */
-
-/* d-flex */
 
 /* display-flex */
 
-/* display-block */
-
-/* d-flex */
-
-/* d-inline-block */
-
-/* display-none */
-
-/* d-block */
-
-/* d-inline-block */
-
-/* display-flex */
-
-/* display-block */
-
-/* display-none */
-
-/* display-none */
-
-/* display-none */
-
-/* d-none */
-
-/* display-block */
-
-/* display-none */
-
-/* display-none */
-
-/* display-none */
-
-/* display-none */
-
-/* d-none */
-
-/* d-none */
-
-/* display-inline */
-
-/* d-inline-block */
-
-/* display-inline */
-
-/* d-flex */
-
-/* d-none */
-
-/* display-block */
-
-/* d-none */
-
-/* d-none */
-
-/* d-block */
-
-/* display-none */
-
-/* display-none */
-
-/* d-flex */
-
-/* d-flex */
-
-/* display-none */
-
-/* display-none */
+/* d-inline */
 
 /* d-none */
 
 /* display-none */
-
-/* display-inline */
-
-/* d-none */
-
-/* d-none */
-
-/* d-none */
-
-/* display-inline */
-
-/* display-flex */
-
-/* d-none */
-
-/* display-block */
-
-/* d-none */
-
-/* d-none */
-
-/* display-inline */
 
 /* display-inline */
 
@@ -188,13 +76,125 @@
 
 /* d-none */
 
+/* display-flex */
+
+/* display-block */
+
+/* display-none */
+
+/* d-inline */
+
+/* display-flex */
+
+/* d-none */
+
+/* display-inline-block */
+
+/* d-none */
+
+/* display-none */
+
+/* d-none */
+
+/* display-block */
+
+/* display-block */
+
+/* d-inline-block */
+.d-inline-block{display:inline-block;}
+/* display-inline */
+
+/* display-flex */
+
 /* display-inline */
 
 /* d-none */
 
+/* display-block */
+
+/* display-none */
+
+/* display-inline */
+
+/* display-inline */
+
+/* display-block */
+
+/* d-flex */
+
 /* d-block */
+.d-block{display:block;}
+/* d-inline */
+
+/* d-none */
+
+/* d-none */
+
+/* d-none */
+
+/* d-flex */
+
+/* d-none */
+
+/* d-none */
+
+/* d-inline */
+
+/* d-inline */
+
+/* display-flex */
+
+/* display-flex */
+
+/* display-none */
 
 /* d-inline-block */
 
+/* display-none */
+
+/* d-none */
+
+/* d-none */
+
+/* display-none */
+
+/* display-inline */
+
+/* display-flex */
+
+/* display-none */
+
 /* display-block */
+
+/* display-none */
+
+/* d-inline */
+
+/* d-block */
+
+/* display-inline-block */
+
+/* display-inline */
+
+/* d-none */
+
+/* d-none */
+
+/* display-none */
+
+/* display-block */
+
+/* display-none */
+
+/* d-none */
+
+/* display-none */
+
+/* d-none */
+
+/* display-flex */
+
+/* d-block */
+
+/* display-none */
 

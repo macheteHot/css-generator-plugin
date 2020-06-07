@@ -1,160 +1,40 @@
-/* cursor-auto */
-.cursor-auto{cursor:auto;}
-/* cursor-none */
-.cursor-none{cursor:none;}
-/* cursor-auto */
-
-/* cursor-context-menu */
-.cursor-context-menu{cursor:context-menu;}
 /* cursor-default */
 .cursor-default{cursor:default;}
+/* cursor-default */
+
+/* cursor-help */
+.cursor-help{cursor:help;}
 /* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-none */
-
+.cursor-auto{cursor:auto;}
 /* cursor-auto */
 
 /* cursor-default */
 
 /* cursor-none */
-
-/* cursor-none */
-
-/* cursor-auto */
-
+.cursor-none{cursor:none;}
 /* cursor-default */
-
-/* cursor-default */
-
-/* cursor-none */
-
-/* cursor-context-menu */
-
-/* cursor-none */
-
-/* cursor-none */
-
-/* cursor-progress */
-.cursor-progress{cursor:progress;}
-/* cursor-pointer */
-.cursor-pointer{cursor:pointer;}
-/* cursor-default */
-
-/* cursor-progress */
-
-/* cursor-default */
-
-/* cursor-pointer */
-
-/* cursor-none */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-default */
-
-/* cursor-context-menu */
-
-/* cursor-auto */
-
-/* cursor-default */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-context-menu */
-
-/* cursor-auto */
-
-/* cursor-none */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-default */
-
-/* cursor-progress */
-
-/* cursor-default */
-
-/* cursor-none */
-
-/* cursor-auto */
-
-/* cursor-none */
-
-/* cursor-default */
-
-/* cursor-auto */
-
-/* cursor-none */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-pointer */
-
-/* cursor-auto */
-
-/* cursor-context-menu */
-
-/* cursor-auto */
-
-/* cursor-default */
-
-/* cursor-context-menu */
-
-/* cursor-none */
 
 /* cursor-auto */
 
 /* cursor-help */
-.cursor-help{cursor:help;}
-/* cursor-default */
-
-/* cursor-auto */
 
 /* cursor-default */
 
-/* cursor-auto */
-
+/* cursor-context-menu */
+.cursor-context-menu{cursor:context-menu;}
 /* cursor-auto */
 
 /* cursor-auto */
 
-/* cursor-default */
+/* cursor-auto */
 
-/* cursor-default */
+/* cursor-auto */
 
 /* cursor-none */
 
 /* cursor-auto */
 
-/* cursor-auto */
-
-/* cursor-auto */
-
 /* cursor-default */
-
-/* cursor-default */
-
-/* cursor-default */
-
-/* cursor-auto */
 
 /* cursor-auto */
 
@@ -165,6 +45,8 @@
 /* cursor-default */
 
 /* cursor-auto */
+
+/* cursor-context-menu */
 
 /* cursor-auto */
 
@@ -175,6 +57,76 @@
 /* cursor-none */
 
 /* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-pointer */
+.cursor-pointer{cursor:pointer;}
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-help */
+
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-none */
+
+/* cursor-default */
+
+/* cursor-help */
+
+/* cursor-default */
+
+/* cursor-auto */
 
 /* cursor-auto */
 
@@ -188,7 +140,15 @@
 
 /* cursor-context-menu */
 
-/* cursor-none */
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-default */
 
 /* cursor-context-menu */
 
@@ -197,4 +157,44 @@
 /* cursor-auto */
 
 /* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-context-menu */
+
+/* cursor-context-menu */
+
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-default */
 
