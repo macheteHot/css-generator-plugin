@@ -5,9 +5,9 @@ const runType = {
     extName: 'vue',
     reg: /((?<=class=")[\s\S]+?(?="))|((?<=class={)[\s\S]+?(?=}))/g
   },
-  'mini-program': {
+  'd-mini-program': {
     extName: 'axml',
-    reg: ''
+    reg: /(?<=class=")[\s\S]+?(?=")/g
   }
 }
 function getConfig (str) {

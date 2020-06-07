@@ -9,7 +9,7 @@ const { getConfig, setConfig } = require('./config')
 const { EXT_NAME, GENERATE, DIR_PATH } = require('./constant')
 
 function getAllVueFileClassStr () {
-  const files = glob.sync(path.join(process.cwd(), `./${getConfig('dirPath')}/**/*.${getConfig(EXT_NAME)}`))
+  const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.${getConfig(EXT_NAME)}`))
   return files.reduce((t, c) => t + fs.readFileSync(path.resolve(c), 'utf8'), '')
 }
 
