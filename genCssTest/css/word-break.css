@@ -1,77 +1,83 @@
-/* word-break-break-all */
-.word-break-break-all{word-break:break-all;}
-/* word-break-break-all */
-
 /* word-break-normal */
 .word-break-normal{word-break:normal;}
 /* word-break-normal */
 
+/* word-break-normal */
+
+/* word-break-inherit */
+.word-break-inherit{word-break:inherit;}
+/* word-break-keep-all */
+.word-break-keep-all{word-break:keep-all;}
+/* word-break-keep-all */
+
+/* word-break-break-all */
+.word-break-break-all{word-break:break-all;}
+/* word-break-normal */
+
+/* word-break-break-all */
+
+/* word-break-normal */
+
+/* word-break-normal */
+
+/* word-break-inherit */
+
+/* word-break-normal */
+
 /* word-break-break-all */
 
 /* word-break-break-all */
 
-/* word-break-normal */
+/* word-break-break-all */
 
 /* word-break-normal */
 
 /* word-break-normal */
 
-/* word-break-normal */
-
-/* word-break-normal */
+/* word-break-break-all */
 
 /* word-break-break-word */
 .word-break-break-word{word-break:break-word;}
+/* word-break-normal */
+
+/* word-break-normal */
+
+/* word-break-keep-all */
+
+/* word-break-keep-all */
+
+/* word-break-normal */
+
+/* word-break-break-word */
+
+/* word-break-normal */
+
+/* word-break-keep-all */
+
+/* word-break-normal */
+
+/* word-break-normal */
+
 /* word-break-break-word */
 
 /* word-break-break-all */
 
 /* word-break-break-all */
 
-/* word-break-break-all */
+/* word-break-keep-all */
 
 /* word-break-normal */
-
-/* word-break-break-all */
-
-/* word-break-normal */
-
-/* word-break-normal */
-
-/* word-break-break-all */
 
 /* word-break-initial */
 .word-break-initial{word-break:initial;}
 /* word-break-normal */
 
-/* word-break-break-all */
-
 /* word-break-normal */
 
-/* word-break-normal */
-
-/* word-break-break-all */
-
-/* word-break-keep-all */
-.word-break-keep-all{word-break:keep-all;}
-/* word-break-keep-all */
-
-/* word-break-normal */
-
-/* word-break-normal */
-
-/* word-break-normal */
-
-/* word-break-keep-all */
+/* word-break-inherit */
 
 /* word-break-break-all */
 
-/* word-break-normal */
-
-/* word-break-keep-all */
-
-/* word-break-keep-all */
-
 /* word-break-keep-all */
 
 /* word-break-normal */
@@ -79,28 +85,6 @@
 /* word-break-normal */
 
 /* word-break-keep-all */
-
-/* word-break-normal */
-
-/* word-break-normal */
-
-/* word-break-break-all */
-
-/* word-break-normal */
-
-/* word-break-normal */
-
-/* word-break-break-all */
-
-/* word-break-normal */
-
-/* word-break-unset */
-.word-break-unset{word-break:unset;}
-/* word-break-normal */
-
-/* word-break-normal */
-
-/* word-break-normal */
 
 /* word-break-normal */
 
@@ -108,18 +92,24 @@
 
 /* word-break-break-word */
 
-/* word-break-keep-all */
-
-/* word-break-break-all */
-
-/* word-break-normal */
-
 /* word-break-normal */
 
 /* word-break-break-all */
 
 /* word-break-keep-all */
 
+/* word-break-break-all */
+
+/* word-break-keep-all */
+
+/* word-break-normal */
+
+/* word-break-inherit */
+
+/* word-break-break-word */
+
+/* word-break-break-all */
+
 /* word-break-normal */
 
 /* word-break-break-all */
@@ -128,9 +118,19 @@
 
 /* word-break-break-all */
 
-/* word-break-break-all */
+/* word-break-keep-all */
+
+/* word-break-normal */
+
+/* word-break-keep-all */
+
+/* word-break-keep-all */
+
+/* word-break-normal */
 
 /* word-break-break-all */
+
+/* word-break-break-word */
 
 /* word-break-keep-all */
 
@@ -142,25 +142,39 @@
 
 /* word-break-normal */
 
-/* word-break-normal */
-
-/* word-break-normal */
+/* word-break-keep-all */
 
 /* word-break-keep-all */
 
-/* word-break-normal */
+/* word-break-break-all */
 
 /* word-break-normal */
-
-/* word-break-normal */
-
-/* word-break-keep-all */
 
 /* word-break-normal */
 
 /* word-break-break-all */
 
 /* word-break-keep-all */
+
+/* word-break-break-all */
+
+/* word-break-break-all */
+
+/* word-break-break-all */
+
+/* word-break-break-all */
+
+/* word-break-normal */
+
+/* word-break-normal */
+
+/* word-break-normal */
+
+/* word-break-break-all */
+
+/* word-break-break-all */
+
+/* word-break-break-all */
 
 /* word-break-break-word */
 
@@ -168,33 +182,19 @@
 
 /* word-break-normal */
 
-/* word-break-keep-all */
+/* word-break-normal */
 
 /* word-break-normal */
+
+/* word-break-normal */
+
+/* word-break-keep-all */
 
 /* word-break-normal */
 
 /* word-break-break-all */
 
-/* word-break-normal */
+/* word-break-keep-all */
 
 /* word-break-break-all */
-
-/* word-break-normal */
-
-/* word-break-normal */
-
-/* word-break-keep-all */
-
-/* word-break-initial */
-
-/* word-break-normal */
-
-/* word-break-keep-all */
-
-/* word-break-keep-all */
-
-/* word-break-normal */
-
-/* word-break-normal */
 
