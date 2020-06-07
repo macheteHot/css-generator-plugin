@@ -8,7 +8,7 @@ describe('测试letter-spacing', () => {
       if (num >= 0) {
         expect(getCss(`letter-spacing-${num}`)).toBe(`.letter-spacing-${num}{letter-spacing:${num}px;}`)
       } else {
-        expect(getCss(`letter-spacing-m${num}`)).toBe(`.letter-spacing-m-${num}{letter-spacing:${num}px;}`)
+        expect(getCss(`letter-spacing-m${num}`)).toBe(`.letter-spacing-m${num}{letter-spacing:${num}px;}`)
       }
     })
   }

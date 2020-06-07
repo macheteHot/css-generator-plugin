@@ -3,16 +3,16 @@ const { getColorsKey } = require('./colorUtils')
 function getRegList () {
   return [{
     className: 'widthOrHeight',
-    regExp: /^(w|h)-(\d+)(rem|em|vw|vh|p|px|rpx)?$/
+    regExp: /^[wh]-([1-9]\d*)+(rem|em|vw|vh|p|px|rpx)?$/
   },
   {
     className: 'marginOrPadding',
-    regExp: /^(m|p)(-|-t-|-r-|-b-|-l-|-x-|-y-)(m-)?\d+(rem|em|vw|vh|p|px|rpx)?$/
+    regExp: /^[mp]-(([trblxy])-)?(m-)?([1-9]\d*)+(rem|em|vw|vh|p|px|rpx)?$/
   },
   {
     // flex-1 flex-9999
     className: 'flexNum',
-    regExp: /^flex-(null|auto|\d+)$/
+    regExp: /^flex-(null|auto|([1-9]\d*)+)$/
   },
   {
     // flex-just-ali
@@ -27,7 +27,7 @@ function getRegList () {
   {
     // 绝对定位 方向 t-20vh top:20vh -m负数
     className: 'orientation',
-    regExp: /^[trbl]-(m-)?\d+(rem|em|vw|vh|p|px|rpx)?$/
+    regExp: /^[trbl]-(m-)?([1-9]\d*)+(rem|em|vw|vh|p|px|rpx)?$/
   },
   {
     // 鼠标样式方式枚举
@@ -47,7 +47,7 @@ function getRegList () {
   {
     // 字体粗细
     className: 'font-size',
-    regExp: /^(font-size|fs)-\d+(rem|em|vw|vh|p|px|rpx)?$/
+    regExp: /^(font-size|fs)-([1-9]\d*)+(rem|em|vw|vh|p|px|rpx)?$/
   },
   {
     className: 'display',
@@ -62,7 +62,7 @@ function getRegList () {
   },
   {
     className: 'letter-spacing',
-    regExp: /^letter-spacing-(m-)?\d+(rem|em|vw|vh|p|px|rpx)?$/
+    regExp: /^letter-spacing-(m-)?([1-9]\d*)+(rem|em|vw|vh|p|px|rpx)?$/
   }
   ]
 }

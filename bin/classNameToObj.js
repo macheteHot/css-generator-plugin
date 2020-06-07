@@ -1,19 +1,13 @@
 const { textToRgbText, getColorsKey } = require('./colorUtils')
 const directionMap = new Map()
 directionMap.set(undefined, { dirStr: [''], order: 10 }) // 全部
-directionMap.set('', { dirStr: [''], order: 20 }) // 全部
-directionMap.set('x-', { dirStr: ['-left', '-right'], order: 11 })
-directionMap.set('y-', { dirStr: ['-top', '-bottom'], order: 12 })
-directionMap.set('x', { dirStr: ['left', 'right'], order: 21 })
-directionMap.set('y', { dirStr: ['top', 'bottom'], order: 22 })
-directionMap.set('t-', { dirStr: ['-top'], order: 13 })
-directionMap.set('r-', { dirStr: ['-right'], order: 14 })
-directionMap.set('b-', { dirStr: ['-bottom'], order: 15 })
-directionMap.set('l-', { dirStr: ['-left'], order: 16 })
-directionMap.set('t', { dirStr: ['top'], order: 23 })
-directionMap.set('r', { dirStr: ['right'], order: 24 })
-directionMap.set('b', { dirStr: ['bottom'], order: 25 })
-directionMap.set('l', { dirStr: ['left'], order: 26 })
+directionMap.set('', { dirStr: [''], order: 10 }) // 全部
+directionMap.set('x', { dirStr: ['left', 'right'], order: 11 })
+directionMap.set('y', { dirStr: ['top', 'bottom'], order: 12 })
+directionMap.set('t', { dirStr: ['top'], order: 13 })
+directionMap.set('r', { dirStr: ['right'], order: 14 })
+directionMap.set('b', { dirStr: ['bottom'], order: 15 })
+directionMap.set('l', { dirStr: ['left'], order: 16 })
 // 通过存在-mi- 判断是否是负数
 function isMinus (str) {
   return str.includes('-m-')
@@ -51,7 +45,7 @@ function getWorH (str) {
 }
 // 获取margin 或者 padding
 function getMorP (str) {
-  const reg = /^(m|p)-(t-|r-|b-|l-|x-|y-|)?m?(-?\d+)(\w{0,3})$/
+  const reg = /^(m|p)-(?:([trblxy])-)?(?:m-)?(\d+)(\w{0,3})$/
   const [name, type, direction, num, unit] = str.match(reg)
   const { dirStr, order } = directionMap.get(direction)
   return {
@@ -59,13 +53,13 @@ function getMorP (str) {
     type: type === 'm' ? 'margin' : 'padding',
     direction: dirStr,
     order,
-    num,
+    num: `${isMinus(name) ? '-' : ''}${num}`,
     // 隐式转换 两个等于!!!!!!
     // eslint-disable-next-line eqeqeq
-    unit: num == 0 ? '' : unit,
+    unit,
     render () {
       const cssText = this.direction.reduce((t, c) =>
-        `${t}${this.type}${c}:${this.num}${this.unit};`, '')
+        `${t}${this.type}${c ? `-${c}` : ''}:${this.num}${this.unit};`, '')
       return `.${this.name}{${cssText}}`
     }
   }
