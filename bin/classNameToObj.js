@@ -309,14 +309,6 @@ function getLineHeight (str) {
   return obj
 }
 
-function getCircle () {
-  return {
-    render () {
-      return '.circle{border-radius:50%;}'
-    }
-  }
-}
-
 function getFlexBasis (str) {
   const reg = /^flex-basis-((?:(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?)|initial|inherit|auto)$/
   const [name, value, num, unit] = str.match(reg)
@@ -377,6 +369,32 @@ function getBorderRadius (str) {
   }
 }
 
+function getTextAlignLast (str) {
+  const reg = /^(?:.+)-(.+)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    order: Infinity,
+    render () {
+      return `.${name}{text-align-last:${value};}`
+    }
+  }
+}
+
+function getTextDecoration (str) {
+  const reg = /^(?:.+)-(.+)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    order: Infinity,
+    render () {
+      return `.${name}{text-decoration:${value};}`
+    }
+  }
+}
+
 module.exports = {
   getWorH,
   getSquare,
@@ -388,6 +406,8 @@ module.exports = {
   getFs,
   getFw,
   getTextAlign,
+  getTextAlignLast,
+  getTextDecoration,
   getDisplay,
   getColor,
   getWordBreak,
@@ -395,7 +415,6 @@ module.exports = {
   getMinOrMaxHeightOrWidth,
   getZindex,
   getLineHeight,
-  getCircle,
   getFlexBasis,
   getBorder,
   getBorderRadius

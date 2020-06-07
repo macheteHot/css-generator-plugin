@@ -94,7 +94,8 @@ function getRegList () {
     },
     {
       className: 'circle',
-      regExp: /^circle$/
+      regExp: /^circle$/,
+      static: '.circle{border-radius:50%}'
     },
     {
       className: 'flexShrinkAndGrow',
@@ -112,6 +113,32 @@ function getRegList () {
     {
       className: 'border-radius',
       regExp: /^(border-radius|br)-(0|[1-9]\d*)(rem|em|vw|vh|px|rpx|p)?$/
+    },
+    {
+      className: 'border-style',
+      regExp: /^border-style-(none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit)$/
+    },
+    {
+      className: 'text-align-last',
+      regExp: /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/
+    },
+    {
+      className: 'text-decoration',
+      regExp: /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/
+    },
+    {
+      className: 'text-ellipsis',
+      regExp: /^text-ellipsis$/,
+      static: '.text-ellipsis{display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}'
+    },
+    {
+      className: 'user-select',
+      regExp: /^user-select-(none|auto|text|all|contain|element)$/
+    },
+    { // 单独提出来 很常用
+      className: 'select-none',
+      regExp: /^select-none$/,
+      static: '.select-none{user-select:none}'
     }
   ]
 }

@@ -20,9 +20,10 @@ const {
   getColor,
   getWordBreak,
   getTextAlign,
+  getTextAlignLast,
+  getTextDecoration,
   getLetterSpacing,
   getZindex,
-  getCircle,
   getFlexBasis,
   getBorder,
   getBorderRadius
@@ -47,6 +48,10 @@ function filterClass (classStr) {
     if (rule.regExp.test(classStr) && !cssSet.has(classStr)) { // 经过正则匹配 并且 list 中不存在
       cssSet.add(classStr)
       const v = classStr
+      if (rule.static !== undefined) {
+        pushPreObj({ render: () => rule.static })
+        return null
+      }
       switch (rule.className) {
         case 'widthOrHeight':
           pushPreObj(getWorH(v))
@@ -68,15 +73,6 @@ function filterClass (classStr) {
           break
         case 'flex':
           pushPreObj(getFlex(v))
-          break
-        case 'flexNum':
-          pushPreObj(getKeyValue(v))
-          break
-        case 'position': // 定位方式
-          pushPreObj(getKeyValue(v))
-          break
-        case 'cursor': // 鼠标样式
-          pushPreObj(getKeyValue(v))
           break
         case 'word-break': // 文字折叠
           pushPreObj(getWordBreak(v))
@@ -102,15 +98,6 @@ function filterClass (classStr) {
         case 'zIndex':
           pushPreObj(getZindex(v))
           break
-        case 'overflow':
-          pushPreObj(getKeyValueLast(v))
-          break
-        case 'circle':
-          pushPreObj(getCircle(v))
-          break
-        case 'flexShrinkAndGrow':
-          pushPreObj(getKeyValueLast(v))
-          break
         case 'flex-basis':
           pushPreObj(getFlexBasis(v))
           break
@@ -119,6 +106,23 @@ function filterClass (classStr) {
           break
         case 'border-radius':
           pushPreObj(getBorderRadius(v))
+          break
+        case 'text-align-last':
+          pushPreObj(getTextAlignLast(v))
+          break
+        case 'text-decoration':
+          pushPreObj(getTextDecoration(v))
+          break
+        case 'flexNum': // flex 数值
+        case 'position': // 定位方式
+        case 'cursor': // 鼠标样式
+          pushPreObj(getKeyValue(v))
+          break
+        case 'border-style':
+        case 'overflow':
+        case 'flexShrinkAndGrow':
+        case 'user-select':
+          pushPreObj(getKeyValueLast(v))
           break
       }
     }
