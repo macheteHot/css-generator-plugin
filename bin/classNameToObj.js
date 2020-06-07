@@ -366,6 +366,17 @@ function getBorder (str) {
   return obj
 }
 
+function getBorderRadius (str) {
+  const reg = /^(?:border-radius|br)-(0|[1-9]\d*)(rem|em|vw|vh|px|rpx|p)?$/
+  const [name, unm, unit] = str.match(reg)
+  return {
+    name,
+    unm,
+    unit,
+    render () { return `.${this.name}{border-radius:${this.unm}${this.unit}}` }
+  }
+}
+
 module.exports = {
   getWorH,
   getSquare,
@@ -386,5 +397,6 @@ module.exports = {
   getLineHeight,
   getCircle,
   getFlexBasis,
-  getBorder
+  getBorder,
+  getBorderRadius
 }

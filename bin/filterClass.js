@@ -24,7 +24,8 @@ const {
   getZindex,
   getCircle,
   getFlexBasis,
-  getBorder
+  getBorder,
+  getBorderRadius
 } = require('./classNameToObj')
 const { clearPreArray } = require('./preRender')
 
@@ -115,6 +116,9 @@ function filterClass (classStr) {
           break
         case 'border':
           pushPreObj(getBorder(v))
+          break
+        case 'border-radius':
+          pushPreObj(getBorderRadius(v))
           break
       }
     }

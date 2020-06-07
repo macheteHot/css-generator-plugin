@@ -1,4 +1,6 @@
 const { UNIT } = require('./constant')
+const cssbeautify = require('cssbeautify')
+
 const { getConfig } = require('./config')
 let preArry = []
 
@@ -34,7 +36,7 @@ function renderCss () {
       }
       return t + c.render() + '\n'
     }, '')
-  return cssStr
+  return cssbeautify(cssStr, { indent: '  ', openbrace: 'separate-line', autosemicolon: true })
 }
 module.exports = {
   pushPreObj,

@@ -108,6 +108,10 @@ function getRegList () {
       className: 'border',
       // 这个宽度没有百分比
       regExp: /^(border|border-width|border-w)-([trblxy]-)?(0|[1-9]\d*)(rem|em|vw|vh|px|rpx)?$/
+    },
+    {
+      className: 'border-radius',
+      regExp: /^(border-radius|br)-(0|[1-9]\d*)(rem|em|vw|vh|px|rpx|p)?$/
     }
   ]
 }
