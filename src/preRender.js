@@ -1,4 +1,4 @@
-const { UNIT } = require('./constant')
+const { UNIT, IMPORTANT } = require('./constant')
 const cssbeautify = require('cssbeautify')
 
 const { getConfig } = require('./config')
@@ -23,7 +23,7 @@ function convertUnit (str) {
 }
 
 function renderCss () {
-  const cssStr = preArry
+  let cssStr = preArry
     .sort((a, b) => a.order - b.order)
     .reduce((t, c) => {
       // 如果有数值 并且数值是 0 将单位清空 数值转换number 防止 -0
@@ -36,7 +36,11 @@ function renderCss () {
       }
       return t + c.render()
     }, '')
-  return cssbeautify(cssStr, { indent: '  ', openbrace: 'end-of-line', autosemicolon: true })
+  cssStr = cssbeautify(cssStr, { indent: '  ', openbrace: 'end-of-line', autosemicolon: true })
+  if (getConfig(IMPORTANT)) {
+    cssStr = cssStr.replace(/;/g, ' !important;')
+  }
+  return cssStr
 }
 module.exports = {
   pushPreObj,

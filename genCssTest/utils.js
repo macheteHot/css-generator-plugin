@@ -4,7 +4,8 @@ const { filterClass } = require('../src/filterClass')
 function getCss (str) {
   clearPreArray() // 先清空
   filterClass(str)
-  return renderCss().replace(/\n/, '')
+  const cssStr = renderCss()
+  return cssStr ? cssStr + '\n' : ''
 }
 
 module.exports = {

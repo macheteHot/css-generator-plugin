@@ -374,12 +374,12 @@ function getBorder (str) {
 
 function getBorderRadius (str) {
   const reg = new RegExp(`^(?:border-radius|br)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
-  const [name, unm, unit] = str.match(reg)
+  const [name, num, unit] = str.match(reg)
   return {
     name,
-    unm,
+    num,
     unit,
-    render () { return `.${this.name}{border-radius:${this.unm}${this.unit}}` }
+    render () { return `.${this.name}{border-radius:${this.num}${this.unit}}` }
   }
 }
 
