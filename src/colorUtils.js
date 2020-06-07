@@ -1,20 +1,20 @@
 const { getConfig } = require('./config')
 const { COLORS } = require('./constant')
-const colorStore = {
+const colorStore = () => ({
   red: '#f00',
   white: '#fff',
   black: '#000',
   blue: '#00f',
   transparent: 'transparent',
   ...getConfig(COLORS)
-}
+})
 
 function getColors () {
-  return colorStore
+  return colorStore()
 }
 
 function getColorsKey () {
-  return Object.keys(colorStore)
+  return Object.keys(colorStore())
 }
 
 function radix16 (value) {
@@ -24,7 +24,7 @@ function radix16 (value) {
 function textToRgbText (str) {
   const hex = /^([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str)
     ? str
-    : colorStore[str].replace(/^#/, '')
+    : colorStore()[str].replace(/^#/, '')
   if (hex.length === 3) {
     return hex
       .split('')
