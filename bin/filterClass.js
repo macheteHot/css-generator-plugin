@@ -9,24 +9,28 @@ const {
   getSquare,
   getMorP,
   getFlex,
+  getJustifyContent,
+  geteAlignItems,
+  getFlexDirection,
   getKeyValue,
-  getLineHeight,
-  getMinOrMaxHeightOrWidth,
   getKeyValueLast,
-  getFw,
   getOrientation,
   getFs,
-  getDisplay,
-  getColor,
-  getWordBreak,
+  getFw,
   getTextAlign,
   getTextAlignLast,
   getTextDecoration,
+  getDisplay,
+  getColor,
+  getWordBreak,
   getLetterSpacing,
+  getMinOrMaxHeightOrWidth,
   getZindex,
+  getLineHeight,
   getFlexBasis,
   getBorder,
-  getBorderRadius
+  getBorderRadius,
+  getTextEllipsisNum
 } = require('./classNameToObj')
 const { clearPreArray } = require('./preRender')
 
@@ -74,6 +78,15 @@ function filterClass (classStr) {
         case 'flex':
           pushPreObj(getFlex(v))
           break
+        case 'justify-content':
+          pushPreObj(getJustifyContent(v))
+          break
+        case 'align-items':
+          pushPreObj(geteAlignItems(v))
+          break
+        case 'flex-direction':
+          pushPreObj(getFlexDirection(v))
+          break
         case 'word-break': // 文字折叠
           pushPreObj(getWordBreak(v))
           break
@@ -112,6 +125,9 @@ function filterClass (classStr) {
           break
         case 'text-decoration':
           pushPreObj(getTextDecoration(v))
+          break
+        case 'text-ellipsis-num':
+          pushPreObj(getTextEllipsisNum(v))
           break
         case 'flexNum': // flex 数值
         case 'position': // 定位方式

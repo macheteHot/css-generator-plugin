@@ -1,22 +1,28 @@
 const { getColorsKey } = require('./colorUtils')
+const {
+  JUSTIFY_CONTENT_ENMU_STR,
+  ALIGN_ITEMS_ENMU_STR,
+  UNIT_ENMU_STR,
+  CURSOR_ENMU_STR
+} = require('./constant')
 
 function getRegList () {
   return [
     {
       className: 'widthOrHeight',
-      regExp: /^[wh]-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+      regExp: new RegExp(`^[wh]-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
       className: 'square',
-      regExp: /^square-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+      regExp: new RegExp(`^square-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
       className: 'minMaxWidthOrHeight',
-      regExp: /^(min|max)-[wh]-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+      regExp: new RegExp(`^(min|max)-[wh]-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
       className: 'marginOrPadding',
-      regExp: /^[mp]-(([trblxy])-)?(m-)?(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+      regExp: new RegExp(`^[mp]-(([trblxy])-)?(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
       className: 'zIndex',
@@ -33,12 +39,24 @@ function getRegList () {
     },
     { //
       className: 'line-height',
-      regExp: /^(lh|line-height)-(((0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?)|normal|unset|inherit|initial)$/
+      regExp: new RegExp(`^(lh|line-height)-(((0|[1-9]\\d*)(${UNIT_ENMU_STR})?)|normal|unset|inherit|initial)$`)
     },
     {
     // flex-just-ali
       className: 'flex',
-      regExp: /^flex-(auto|flex-start|flex-end|center|space-between|space-around)-(auto|flex-start|flex-end|center|stretch)$/
+      regExp: new RegExp(`^flex-(${JUSTIFY_CONTENT_ENMU_STR})-(${ALIGN_ITEMS_ENMU_STR})$`)
+    },
+    {
+      className: 'justify-content',
+      regExp: new RegExp(`^justify-content-(${JUSTIFY_CONTENT_ENMU_STR})$`)
+    },
+    {
+      className: 'align-items',
+      regExp: new RegExp(`^align-items-(${ALIGN_ITEMS_ENMU_STR})$`)
+    },
+    {
+      className: 'flex-direction',
+      regExp: /^(flex-direction|flex)-(row|row-reverse|column|column-reverse)$/
     },
     {
     // 定位方式枚举
@@ -48,12 +66,12 @@ function getRegList () {
     {
     // 绝对定位 方向 t-20vh top:20vh -m负数
       className: 'orientation',
-      regExp: /^[trbl]-(m-)?(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+      regExp: new RegExp(`^[trbl]-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
     // 鼠标样式方式枚举
       className: 'cursor',
-      regExp: /^cursor-(auto|default|none|context-menu|help|pointer|progress|wait|cell|crosshair|text|vertical-text|alias|copy|move|no-drop|not-allowed|e-resize|n-resize|ne-resize|nw-resize|s-resize|se-resize|sw-resize|w-resize|ew-resize|ns-resize|nesw-resize|nwse-resize|col-resize|row-resize|all-scroll|zoom-in|zoom-out|grab|grabbing)$/
+      regExp: new RegExp(`^cursor-(${CURSOR_ENMU_STR})$`)
     },
     {
     // 文字折叠
@@ -68,7 +86,7 @@ function getRegList () {
     {
     // 字体粗细
       className: 'font-size',
-      regExp: /^(font-size|fs)-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+      regExp: new RegExp(`^(font-size|fs)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     // display
     {
@@ -89,8 +107,7 @@ function getRegList () {
     },
     {
       className: 'letter-spacing',
-      // 这个宽度没有百分比
-      regExp: /^letter-spacing-(m-)?(0|[1-9]\d*)(rem|em|vw|vh|px|rpx)?$/
+      regExp: new RegExp(`^letter-spacing-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
       className: 'circle',
@@ -103,16 +120,16 @@ function getRegList () {
     },
     {
       className: 'flex-basis',
-      regExp: /^flex-basis-((0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?|initial|inherit|auto)$/
+      regExp: new RegExp(`^flex-basis-((0|[1-9]\\d*)(${UNIT_ENMU_STR})?|initial|inherit|auto)$`)
     },
     {
       className: 'border',
       // 这个宽度没有百分比
-      regExp: /^(border|border-width|border-w)-([trblxy]-)?(0|[1-9]\d*)(rem|em|vw|vh|px|rpx)?$/
+      regExp: new RegExp(`^(border|border-width|border-w)-([trblxy]-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
       className: 'border-radius',
-      regExp: /^(border-radius|br)-(0|[1-9]\d*)(rem|em|vw|vh|px|rpx|p)?$/
+      regExp: new RegExp(`^(border-radius|br)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
       className: 'border-style',
@@ -129,7 +146,7 @@ function getRegList () {
     {
       className: 'text-ellipsis',
       regExp: /^text-ellipsis$/,
-      static: '.text-ellipsis{display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}'
+      static: '.text-ellipsis {display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}'
     },
     {
       className: 'user-select',
@@ -139,6 +156,10 @@ function getRegList () {
       className: 'select-none',
       regExp: /^select-none$/,
       static: '.select-none{user-select:none}'
+    },
+    {
+      className: 'text-ellipsis-num',
+      regExp: /^(text-)?ellipsis-[1-9]\d*$/
     }
   ]
 }

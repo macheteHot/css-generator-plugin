@@ -1,4 +1,8 @@
 const { textToRgbText, getColorsKey } = require('./colorUtils')
+const {
+  JUSTIFY_CONTENT_ENMU_STR,
+  UNIT_ENMU_STR
+} = require('./constant')
 const directionMap = new Map()
 directionMap.set(undefined, { dirStr: [''], order: 10 }) // 全部
 directionMap.set('', { dirStr: [''], order: 10 }) // 全部
@@ -66,7 +70,7 @@ function getWorH (str) {
 }
 
 function getSquare (str) {
-  const reg = /^square-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+  const reg = /^square-(0|[1-9]\d*)(\w{0,4})$/
   const [name, num, unit] = str.match(reg)
   return {
     name,
@@ -81,7 +85,7 @@ function getSquare (str) {
 
 // 获取margin 或者 padding
 function getMorP (str) {
-  const reg = /^(m|p)-(?:([trblxy])-)?(?:m-)?(\d+)(\w{0,3})$/
+  const reg = /^(m|p)-(?:([trblxy])-)?(?:m-)?(\d+)(\w{0,4})$/
   const [name, type, direction, num, unit] = str.match(reg)
   const {
     dirStr,
@@ -103,7 +107,7 @@ function getMorP (str) {
 }
 
 function getFlex (str) {
-  const reg = /^(?:flex-)(auto|flex-start|flex-end|center|space-between|space-around)-(.+)$/
+  const reg = new RegExp(`^(?:flex-)(${JUSTIFY_CONTENT_ENMU_STR})-(.+)$`)
   const [name, jc, ai] = str.match(reg)
   return {
     name,
@@ -116,8 +120,18 @@ function getFlex (str) {
   }
 }
 
+function getFlexDirection (str) {
+  const reg = /^(?:flex-direction|flex)-(.*)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    render () { return `.${this.name}{flex-direction:${this.value}}` }
+  }
+}
+
 function getOrientation (str) {
-  const reg = /^([trbl])-(?:m-)?(\d+)(rem|em|vw|vh|p|px|rpx)?$/
+  const reg = /^([trbl])-(?:m-)?(\d+)(\w{0,4})$/
   const [name, type, num, unit] = str.match(reg)
   const {
     dirStr,
@@ -252,7 +266,7 @@ function getWordBreak (str) {
 }
 
 function getLetterSpacing (str) {
-  const reg = /^letter-spacing-(?:m-)?(\d+)(rem|em|vw|vh|p|px|rpx)?$/
+  const reg = /^letter-spacing-(?:m-)?(\d+)(\w{0,4})$/
   const [name, num, unit] = str.match(reg)
   return {
     name,
@@ -266,7 +280,7 @@ function getLetterSpacing (str) {
 }
 
 function getMinOrMaxHeightOrWidth (str) {
-  const reg = /^(min|max)-([wh])-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+  const reg = /^(min|max)-([wh])-(0|[1-9]\d*)(\w{0,4})$/
   const [name, type, wh, num, unit] = str.match(reg)
   return {
     name,
@@ -295,7 +309,7 @@ function getZindex (str) {
 }
 
 function getLineHeight (str) {
-  const reg = /^(?:lh|line-height)-((?:(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?)|normal|unset|inherit|initial)$/
+  const reg = /^(?:lh|line-height)-((?:(0|[1-9]\d*)(\w{0,4}))|normal|unset|inherit|initial)$/
   const [name, value, num, unit] = str.match(reg)
   const obj = { name, order: Infinity }
   if (num === undefined) {
@@ -310,7 +324,7 @@ function getLineHeight (str) {
 }
 
 function getFlexBasis (str) {
-  const reg = /^flex-basis-((?:(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?)|initial|inherit|auto)$/
+  const reg = /^flex-basis-((?:(0|[1-9]\d*)(\w{0,4}))|initial|inherit|auto)$/
   const [name, value, num, unit] = str.match(reg)
   const obj = {
     name,
@@ -332,7 +346,7 @@ function getFlexBasis (str) {
 }
 // border 类型 符合
 function getBorder (str) {
-  const reg = /^(?:border|border-width|border-w)-(?:([trblxy])-)?(0|[1-9]\d*)(rem|em|vw|vh|px|rpx)?$/
+  const reg = new RegExp(`^(?:border|border-width|border-w)-(?:([trblxy])-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
   // "border-w-x-20rem", "x", "20", "rem",
   const [name, direction, num, unit] = str.match(reg)
   const { dirStr } = directionMap.get(direction)
@@ -359,7 +373,7 @@ function getBorder (str) {
 }
 
 function getBorderRadius (str) {
-  const reg = /^(?:border-radius|br)-(0|[1-9]\d*)(rem|em|vw|vh|px|rpx|p)?$/
+  const reg = new RegExp(`^(?:border-radius|br)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
   const [name, unm, unit] = str.match(reg)
   return {
     name,
@@ -394,12 +408,50 @@ function getTextDecoration (str) {
     }
   }
 }
+function getJustifyContent (str) {
+  const reg = /^justify-content-(.*)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    render () {
+      return `.${this.name}{justify-content:${this.value};}`
+    }
+  }
+}
+
+function geteAlignItems (str) {
+  const reg = /^align-items-(.*)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    render () {
+      return `.${this.name}{align-items:${this.value};}`
+    }
+  }
+}
+
+function getTextEllipsisNum (str) {
+  const reg = /^(?:text-)?ellipsis-([1-9]\d*)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    render () {
+      return `.${this.name}{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:${this.value};-webkit-box-orient:vertical;}`
+    }
+  }
+}
 
 module.exports = {
   getWorH,
   getSquare,
   getMorP,
   getFlex,
+  getJustifyContent,
+  geteAlignItems,
+  getFlexDirection,
   getKeyValue,
   getKeyValueLast,
   getOrientation,
@@ -417,5 +469,6 @@ module.exports = {
   getLineHeight,
   getFlexBasis,
   getBorder,
-  getBorderRadius
+  getBorderRadius,
+  getTextEllipsisNum
 }

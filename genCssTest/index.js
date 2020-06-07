@@ -9,7 +9,9 @@ regObjList.forEach(obj => {
   for (let i = 0; i < 100; i++) {
     const str = mock(obj.regExp)
     const cssStr = getCss(str)
-    fs.writeFileSync(path.resolve(__dirname, `./css/${obj.className}.css`), `/* ${str} */\n${cssStr}\n`, { flag: 'a' })
+    if (cssStr) {
+      fs.writeFileSync(path.resolve(__dirname, `./css/${obj.className}.css`), `${cssStr}`, { flag: 'a' })
+    }
   }
 })
 console.log('please check file in css folder ')
