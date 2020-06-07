@@ -12,7 +12,7 @@ const {
   getKeyValue,
   getLineHeight,
   getMinOrMaxHeightOrWidth,
-  // getKeyValueLast,
+  getKeyValueLast,
   getFw,
   getOrientation,
   getFs,
@@ -21,7 +21,10 @@ const {
   getWordBreak,
   getTextAlign,
   getLetterSpacing,
-  getZindex
+  getZindex,
+  getCircle,
+  getFlexBasis,
+  getBorder
 } = require('./classNameToObj')
 const { clearPreArray } = require('./preRender')
 
@@ -97,6 +100,21 @@ function filterClass (classStr) {
           break
         case 'zIndex':
           pushPreObj(getZindex(v))
+          break
+        case 'overflow':
+          pushPreObj(getKeyValueLast(v))
+          break
+        case 'circle':
+          pushPreObj(getCircle(v))
+          break
+        case 'flexShrinkAndGrow':
+          pushPreObj(getKeyValueLast(v))
+          break
+        case 'flex-basis':
+          pushPreObj(getFlexBasis(v))
+          break
+        case 'border':
+          pushPreObj(getBorder(v))
           break
       }
     }

@@ -19,7 +19,7 @@ function wirteToFile () {
   if (!fs.existsSync(cssDirPath)) {
     shelljs.mkdir('-p', cssDirPath)
   }
-  fs.writeFileSync(cssFilePath, renderCss())
+  fs.writeFileSync(cssFilePath, `@charset "UTF-8";\n${renderCss()}`)
 }
 
 function main (options) {

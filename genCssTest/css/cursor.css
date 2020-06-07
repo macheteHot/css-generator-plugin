@@ -1,40 +1,42 @@
 /* cursor-auto */
 .cursor-auto{cursor:auto;}
-/* cursor-none */
-.cursor-none{cursor:none;}
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
 /* cursor-default */
 .cursor-default{cursor:default;}
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-auto */
+
 /* cursor-auto */
 
 /* cursor-none */
+.cursor-none{cursor:none;}
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-auto */
 
 /* cursor-auto */
 
 /* cursor-context-menu */
 .cursor-context-menu{cursor:context-menu;}
+/* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-pointer */
+.cursor-pointer{cursor:pointer;}
+/* cursor-auto */
+
 /* cursor-auto */
 
 /* cursor-default */
-
-/* cursor-context-menu */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
 
 /* cursor-help */
 .cursor-help{cursor:help;}
@@ -42,37 +44,9 @@
 
 /* cursor-auto */
 
-/* cursor-none */
+/* cursor-context-menu */
 
 /* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-default */
-
-/* cursor-default */
-
-/* cursor-default */
-
-/* cursor-default */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-default */
-
-/* cursor-auto */
-
-/* cursor-cell */
-.cursor-cell{cursor:cell;}
-/* cursor-none */
-
-/* cursor-pointer */
-.cursor-pointer{cursor:pointer;}
-/* cursor-help */
-
-/* cursor-none */
 
 /* cursor-default */
 
@@ -82,51 +56,57 @@
 
 /* cursor-auto */
 
-/* cursor-auto */
-
-/* cursor-cell */
-
-/* cursor-auto */
-
 /* cursor-default */
 
-/* cursor-pointer */
-
-/* cursor-none */
+/* cursor-auto */
 
 /* cursor-context-menu */
 
-/* cursor-none */
-
-/* cursor-default */
-
 /* cursor-auto */
 
-/* cursor-pointer */
-
-/* cursor-default */
-
-/* cursor-default */
-
 /* cursor-none */
 
 /* cursor-default */
 
-/* cursor-default */
+/* cursor-wait */
+.cursor-wait{cursor:wait;}
+/* cursor-none */
+
+/* cursor-auto */
 
 /* cursor-default */
 
 /* cursor-help */
 
-/* cursor-none */
+/* cursor-auto */
 
 /* cursor-default */
 
+/* cursor-context-menu */
+
+/* cursor-context-menu */
+
 /* cursor-auto */
 
-/* cursor-none */
+/* cursor-default */
+
+/* cursor-default */
 
 /* cursor-none */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-context-menu */
+
+/* cursor-context-menu */
+
+/* cursor-default */
 
 /* cursor-help */
 
@@ -134,6 +114,10 @@
 
 /* cursor-auto */
 
+/* cursor-auto */
+
+/* cursor-default */
+
 /* cursor-default */
 
 /* cursor-default */
@@ -141,6 +125,42 @@
 /* cursor-default */
 
 /* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-default */
+
+/* cursor-auto */
+
+/* cursor-context-menu */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-auto */
+
+/* cursor-none */
 
 /* cursor-default */
 
@@ -150,23 +170,9 @@
 
 /* cursor-default */
 
-/* cursor-auto */
-
-/* cursor-none */
-
 /* cursor-default */
 
 /* cursor-default */
-
-/* cursor-auto */
-
-/* cursor-none */
-
-/* cursor-auto */
-
-/* cursor-auto */
-
-/* cursor-auto */
 
 /* cursor-auto */
 
@@ -180,21 +186,15 @@
 
 /* cursor-auto */
 
-/* cursor-none */
+/* cursor-default */
+
+/* cursor-context-menu */
 
 /* cursor-auto */
-
-/* cursor-none */
-
-/* cursor-pointer */
 
 /* cursor-default */
 
 /* cursor-default */
 
 /* cursor-auto */
-
-/* cursor-none */
-
-/* cursor-none */
 

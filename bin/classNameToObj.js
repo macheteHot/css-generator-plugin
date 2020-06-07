@@ -13,8 +13,9 @@ function isMinus (str) {
   return str.includes('-m-')
 }
 /**
- *
+ * 按最后一个 - 分割 属性
  * @param {string} 最后一个 - 分割
+ * 单条属性 优先级最高 Infinity
  */
 function getKeyValueLast (str) {
   const reg = /^(.+)-(.+)$/
@@ -22,7 +23,7 @@ function getKeyValueLast (str) {
   return {
     name,
     key,
-    order: 100,
+    order: Infinity,
     value,
     render () {
       return `.${this.name}{${this.key}:${this.value};}`
@@ -30,8 +31,9 @@ function getKeyValueLast (str) {
   }
 }
 /**
- *
+ * 通过 第一个 - 分割属性
  * @param {string} 第一个 - 分割
+ * 单条属性 优先级最高 Infinity
  */
 function getKeyValue (str) {
   const reg = /^(.+?)-(.+)$/
@@ -39,7 +41,7 @@ function getKeyValue (str) {
   return {
     name,
     key,
-    order: 100,
+    order: Infinity,
     value,
     render () {
       return `.${this.name}{${this.key}:${this.value};}`
@@ -53,7 +55,7 @@ function getWorH (str) {
   return {
     name,
     type: type === 'w' ? 'width' : 'height',
-    order: type === 'w' ? 4 : 5, // w is 4 h is 5
+    order: Infinity, // w is 4 h is 5
     num,
     // 不可转类型防止数值过大
     unit, // unit 渲染的时候添加
@@ -68,6 +70,7 @@ function getSquare (str) {
   const [name, num, unit] = str.match(reg)
   return {
     name,
+    order: 5,
     num,
     unit,
     render () {
@@ -80,7 +83,10 @@ function getSquare (str) {
 function getMorP (str) {
   const reg = /^(m|p)-(?:([trblxy])-)?(?:m-)?(\d+)(\w{0,3})$/
   const [name, type, direction, num, unit] = str.match(reg)
-  const { dirStr, order } = directionMap.get(direction)
+  const {
+    dirStr,
+    order
+  } = directionMap.get(direction)
   return {
     name,
     type: type === 'm' ? 'margin' : 'padding',
@@ -113,7 +119,10 @@ function getFlex (str) {
 function getOrientation (str) {
   const reg = /^([trbl])-(?:m-)?(\d+)(rem|em|vw|vh|p|px|rpx)?$/
   const [name, type, num, unit] = str.match(reg)
-  const { dirStr, order } = directionMap.get(type)
+  const {
+    dirStr,
+    order
+  } = directionMap.get(type)
   return {
     name,
     type: dirStr,
@@ -132,7 +141,7 @@ function getFs (str) {
   return {
     name,
     type: 'font-size',
-    order: 60,
+    order: Infinity,
     num,
     unit: unit,
     render () {
@@ -146,19 +155,20 @@ function getTextAlign (str) {
   const [name, value] = str.match(reg)
   return {
     name,
-    order: 100,
+    order: Infinity,
     value,
     render () {
       return `.${this.name}{text-align:${this.value};}`
     }
   }
 }
+
 function getFw (str) {
   const value = str.split('-')[1]
   return {
     name: str,
     type: 'fw',
-    order: 60,
+    order: Infinity,
     value,
     render () {
       return `.${this.name}{font-weight:${this.value};}`
@@ -172,7 +182,7 @@ function getDisplay (str) {
   return {
     name,
     type: 'display',
-    order: 70,
+    order: Infinity,
     value,
     render () {
       return `.${this.name}{display:${this.value};}`
@@ -189,7 +199,7 @@ function getColor (str) {
   const obj = {
     name,
     type: 'color',
-    order: 80,
+    order: Infinity,
     cssType,
     pseudo,
     color: textToRgbText(color),
@@ -263,11 +273,11 @@ function getMinOrMaxHeightOrWidth (str) {
     type,
     wh: wh === 'w' ? 'width' : 'height',
     num,
+    order: Infinity,
     unit,
     render () {
       return `.${this.name}{${this.type}-${this.wh}:${this.num}${this.unit};}`
     }
-
   }
 }
 
@@ -276,6 +286,7 @@ function getZindex (str) {
   const [name, num] = str.match(reg)
   return {
     name,
+    order: Infinity,
     num: `${isMinus(name) ? '-' : ''}${num}`,
     render () {
       return `.${this.name}{z-index:${this.num}}`
@@ -285,19 +296,70 @@ function getZindex (str) {
 
 function getLineHeight (str) {
   const reg = /^(?:lh|line-height)-((?:(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?)|normal|unset|inherit|initial)$/
-  // "lh-200px", "200px", "200", "px"
   const [name, value, num, unit] = str.match(reg)
-  const obj = { name }
+  const obj = { name, order: Infinity }
+  if (num === undefined) {
+    obj.value = value
+    obj.render = function () { return `.${this.name}{line-height:${this.value};}` }
+  } else {
+    obj.num = num
+    obj.unit = unit
+    obj.render = function () { return `.${this.name}{line-height:${this.num}${this.unit};}` }
+  }
+  return obj
+}
+
+function getCircle () {
+  return {
+    render () {
+      return '.circle{border-radius:50%;}'
+    }
+  }
+}
+
+function getFlexBasis (str) {
+  const reg = /^flex-basis-((?:(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?)|initial|inherit|auto)$/
+  const [name, value, num, unit] = str.match(reg)
+  const obj = {
+    name,
+    order: Infinity
+  }
   if (num === undefined) {
     obj.value = value
     obj.render = function () {
-      return `.${this.name}{line-height:${this.value};}`
+      return `.${this.name}{flex-basis:${this.value};}`
     }
   } else {
     obj.num = num
     obj.unit = unit
     obj.render = function () {
-      return `.${this.name}{line-height:${this.num}${this.unit};}`
+      return `.${this.name}{flex-basis:${this.num}${this.unit};}`
+    }
+  }
+  return obj
+}
+function getBorder (str) {
+  const reg = /^(?:border|border-width|border-w)-(?:([trblxy])-)?(0|[1-9]\d*)(rem|em|vw|vh|px|rpx)?$/
+  // "border-w-x-20rem", "x", "20", "rem",
+  const [name, direction, num, unit] = str.match(reg)
+  const { dirStr, order } = directionMap.get(direction)
+  const obj = {
+    name,
+    dirStr, // 循环方向
+    order,
+    num,
+    unit
+  }
+  if (dirStr[0] === '') { // 没有方向 四个方向都有
+    obj.render = function () {
+      return `.${this.name} {\n\n  border-width: ${this.num}${this.unit};\n  border-style: solid;\n  border-color: black;\n}`
+    }
+  } else {
+    obj.render = function () {
+      const cssStr = this.dirStr.reduce((t, c) => {
+        return t + `border${c ? `-${c}` : ''}-width:${this.num}${this.unit};\n  `
+      }, `.${this.name} {\n\n  border-width: 0;\n  `)
+      return `${cssStr}border-style:solid;\n  border-color: black;\n}`
     }
   }
   return obj
@@ -320,5 +382,8 @@ module.exports = {
   getLetterSpacing,
   getMinOrMaxHeightOrWidth,
   getZindex,
-  getLineHeight
+  getLineHeight,
+  getCircle,
+  getFlexBasis,
+  getBorder
 }

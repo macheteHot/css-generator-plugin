@@ -1,158 +1,130 @@
 /* text-align-start */
 .text-align-start{text-align:start;}
-/* text-end */
-.text-end{text-align:end;}
-/* text-end */
-
-/* text-end */
-
-/* text-align-start */
-
 /* text-left */
 .text-left{text-align:left;}
+/* text-start */
+.text-start{text-align:start;}
+/* text-align-start */
+
 /* text-align-end */
 .text-align-end{text-align:end;}
+/* text-align-right */
+.text-align-right{text-align:right;}
 /* text-align-left */
 .text-align-left{text-align:left;}
 /* text-align-start */
 
 /* text-start */
-.text-start{text-align:start;}
-/* text-start */
+
+/* text-left */
 
 /* text-start */
 
-/* text-end */
+/* text-align-end */
+
+/* text-start */
 
 /* text-right */
 .text-right{text-align:right;}
-/* text-align-start */
-
-/* text-align-start */
-
-/* text-align-start */
-
 /* text-left */
 
 /* text-align-start */
 
-/* text-start */
-
-/* text-right */
-
 /* text-align-start */
-
-/* text-align-start */
-
-/* text-align-start */
-
-/* text-start */
 
 /* text-align-end */
 
-/* text-match-parent */
-.text-match-parent{text-align:match-parent;}
+/* text-align-start */
+
+/* text-start */
+
 /* text-start */
 
 /* text-align-start */
 
-/* text-align-right */
-.text-align-right{text-align:right;}
+/* text-align-start */
+
+/* text-align-start */
+
+/* text-align-left */
+
+/* text-align-start */
+
 /* text-align-end */
+
+/* text-align-start */
+
+/* text-align-end */
+
+/* text-start */
+
+/* text-align-start */
+
+/* text-start */
+
+/* text-align-start */
+
+/* text-align-start */
+
+/* text-start */
+
+/* text-start */
+
+/* text-align-start */
+
+/* text-align-start */
 
 /* text-align-end */
 
 /* text-end */
+.text-end{text-align:end;}
+/* text-align-left */
+
+/* text-start */
+
+/* text-align-start */
+
+/* text-start */
+
+/* text-left */
+
+/* text-align-right */
+
+/* text-align-end */
+
+/* text-align-start */
+
+/* text-align-start */
+
+/* text-align-start */
+
+/* text-align-start */
 
 /* text-center */
 .text-center{text-align:center;}
-/* text-end */
-
 /* text-start */
-
-/* text-align-left */
-
-/* text-align-start */
 
 /* text-end */
-
-/* text-align-left */
-
-/* text-start */
-
-/* text-start */
-
-/* text-align-end */
-
-/* text-align-end */
-
-/* text-align-end */
-
-/* text-align-start */
-
-/* text-align-start */
 
 /* text-left */
 
-/* text-end */
+/* text-start */
+
+/* text-start */
 
 /* text-align-start */
 
-/* text-justify */
-.text-justify{text-align:justify;}
+/* text-start */
+
 /* text-align-end */
 
-/* text-left */
-
-/* text-align-start */
-
-/* text-align-start */
-
 /* text-end */
 
-/* text-start */
-
-/* text-start */
+/* text-end */
 
 /* text-align-match-parent */
 .text-align-match-parent{text-align:match-parent;}
-/* text-start */
-
-/* text-align-start */
-
-/* text-start */
-
-/* text-start */
-
-/* text-align-start */
-
-/* text-match-parent */
-
-/* text-start */
-
-/* text-start */
-
-/* text-match-parent */
-
-/* text-align-start */
-
-/* text-end */
-
-/* text-end */
-
-/* text-align-start */
-
-/* text-right */
-
-/* text-align-start */
-
-/* text-end */
-
-/* text-align-start */
-
-/* text-align-start */
-
-/* text-end */
+/* text-align-right */
 
 /* text-align-right */
 
@@ -160,41 +132,69 @@
 
 /* text-align-end */
 
-/* text-start */
-
-/* text-justify */
-
-/* text-align-start */
-
 /* text-align-end */
+
+/* text-end */
+
+/* text-start */
 
 /* text-left */
 
+/* text-align-start */
+
+/* text-align-start */
+
+/* text-right */
+
+/* text-align-start */
+
+/* text-start */
+
+/* text-start */
+
+/* text-align-left */
+
+/* text-end */
+
+/* text-align-end */
+
+/* text-align-left */
+
+/* text-start */
+
+/* text-align-start */
+
+/* text-align-right */
+
+/* text-right */
+
+/* text-align-start */
+
+/* text-align-start */
+
+/* text-right */
+
+/* text-center */
+
+/* text-start */
+
+/* text-start */
+
+/* text-justify */
+.text-justify{text-align:justify;}
+/* text-end */
+
+/* text-align-left */
+
+/* text-align-start */
+
+/* text-end */
+
 /* text-start */
 
 /* text-right */
 
-/* text-align-right */
-
-/* text-align-right */
-
 /* text-start */
 
-/* text-align-start */
-
-/* text-align-start */
-
-/* text-end */
-
-/* text-end */
-
-/* text-end */
-
-/* text-justify */
-
-/* text-end */
-
-/* text-end */
-
-/* text-align-start */
+/* text-start */
 

@@ -70,9 +70,15 @@ function getRegList () {
       className: 'font-size',
       regExp: /^(font-size|fs)-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
     },
+    // display
     {
       className: 'display',
       regExp: /^(display|d)-(none|inline|block|inline-block|flex)$/
+    },
+    // overflow
+    {
+      className: 'overflow',
+      regExp: /^overflow(-[xy])?-(hidden|auto|visible|scroll|inherit)$/
     },
     {
     // 所有有关颜色的
@@ -83,7 +89,25 @@ function getRegList () {
     },
     {
       className: 'letter-spacing',
-      regExp: /^letter-spacing-(m-)?(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+      // 这个宽度没有百分比
+      regExp: /^letter-spacing-(m-)?(0|[1-9]\d*)(rem|em|vw|vh|px|rpx)?$/
+    },
+    {
+      className: 'circle',
+      regExp: /^circle$/
+    },
+    {
+      className: 'flexShrinkAndGrow',
+      regExp: /^flex-(shrink|grow)-((0|[1-9]\d*)|initial|inherit)$/
+    },
+    {
+      className: 'flex-basis',
+      regExp: /^flex-basis-((0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?|initial|inherit|auto)$/
+    },
+    {
+      className: 'border',
+      // 这个宽度没有百分比
+      regExp: /^(border|border-width|border-w)-([trblxy]-)?(0|[1-9]\d*)(rem|em|vw|vh|px|rpx)?$/
     }
   ]
 }
