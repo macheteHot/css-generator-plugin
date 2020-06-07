@@ -36,8 +36,8 @@ function getWorH (str) {
     type: type === 'w' ? 'width' : 'height',
     order: type === 'w' ? 4 : 5, // w is 4 h is 5
     num,
-    // 不可用~~ 防止数值过大
-    unit: parseInt(num) === 0 ? '' : unit, // unit 渲染的时候添加
+    // 不可转类型防止数值过大
+    unit, // unit 渲染的时候添加
     render () {
       return `.${this.name}{${this.type}:${this.num}${this.unit};}`
     }
@@ -54,8 +54,6 @@ function getMorP (str) {
     direction: dirStr,
     order,
     num: `${isMinus(name) ? '-' : ''}${num}`,
-    // 隐式转换 两个等于!!!!!!
-    // eslint-disable-next-line eqeqeq
     unit,
     render () {
       const cssText = this.direction.reduce((t, c) =>
@@ -88,7 +86,7 @@ function getOrientation (str) {
     type: dirStr,
     order,
     num: `${isMinus(name) ? '-' : ''}${num}`,
-    unit: parseInt(num) === 0 ? '' : unit, // unit 渲染的时候添加
+    unit, // unit 渲染的时候添加
     render () {
       return `.${this.name}{${this.type}:${this.num}${this.unit};}`
     }
@@ -201,7 +199,7 @@ function getLetterSpacing (str) {
     name,
     num: `${isMinus(name) ? '-' : ''}${num}`,
     order: 110,
-    unit: parseInt(num) === 0 ? '' : unit, // unit 渲染的时候添加
+    unit, // unit 渲染的时候添加
     render () {
       return `.${this.name}{letter-spacing:${this.num}${this.unit};}`
     }

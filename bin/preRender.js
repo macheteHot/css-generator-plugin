@@ -24,8 +24,12 @@ function renderCss () {
   const cssStr = preArry
     .sort((a, b) => a.order - b.order)
     .reduce((t, c) => {
-      // 如果有单位 进行单位转换
-      if (Object.prototype.hasOwnProperty.call(c, UNIT)) {
+      // 如果有数值 并且数值是 0 将单位清空 数值转换number 防止 -0
+      if (Object.prototype.hasOwnProperty.call(c, 'num') && parseInt(c.num) === 0) {
+        c[UNIT] = ''
+        c.num = 0
+        // 如果有单位 那么进行单位转换
+      } else if (Object.prototype.hasOwnProperty.call(c, UNIT)) {
         c[UNIT] = convertUnit(c[UNIT])
       }
       return t + c.render() + '\n'
