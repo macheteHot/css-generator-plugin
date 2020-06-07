@@ -7,17 +7,33 @@ function getRegList () {
       regExp: /^[wh]-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
     },
     {
+      className: 'square',
+      regExp: /^square-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+    },
+    {
       className: 'minMaxWidthOrHeight',
-      regExp: /^(min|max)-[wh]-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)$/
+      regExp: /^(min|max)-[wh]-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
     },
     {
       className: 'marginOrPadding',
       regExp: /^[mp]-(([trblxy])-)?(m-)?(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
     },
     {
+      className: 'zIndex',
+      regExp: /^z-index-(m-)?(0|[1-9]\d*)$/
+    },
+    {
     // flex-1 flex-9999
       className: 'flexNum',
       regExp: /^flex-(null|auto|(0|[1-9]\d*))$/
+    },
+    {
+      className: 'text-align',
+      regExp: /^(text-align|text)-(start|end|left|right|center|justify|match-parent)$/
+    },
+    { //
+      className: 'line-height',
+      regExp: /^(lh|line-height)-(((0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?)|normal|unset|inherit|initial)$/
     },
     {
     // flex-just-ali
@@ -62,7 +78,7 @@ function getRegList () {
     // 所有有关颜色的
       className: 'color',
       regExp: new RegExp(
-        `^(color|c|text|bg|background|border-color)-((hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-([1-9]\\d|100))?$`
+        `^(color|c|text|bg|background|border-color|border-c)-((hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-([1-9]\\d|100))?$`
       )
     },
     {

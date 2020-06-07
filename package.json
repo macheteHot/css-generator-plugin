@@ -38,6 +38,7 @@
   },
   "scripts": {
     "test": "jest --coverage",
-    "test:watch": "jest --watch -- __tests__/server/.*.test.js"
+    "test:watch": "jest --watch -- __tests__/server/.*.test.js",
+    "genTest":"node genCssTest/index.js"
   }
 }

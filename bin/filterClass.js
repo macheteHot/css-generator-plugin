@@ -6,16 +6,22 @@ const { GLOB_REG } = require('./constant')
 const { getConfig } = require('./config')
 const {
   getWorH,
+  getSquare,
   getMorP,
   getFlex,
   getKeyValue,
-  getOrientation,
+  getLineHeight,
+  getMinOrMaxHeightOrWidth,
+  // getKeyValueLast,
   getFw,
+  getOrientation,
   getFs,
   getDisplay,
   getColor,
   getWordBreak,
-  getLetterSpacing
+  getTextAlign,
+  getLetterSpacing,
+  getZindex
 } = require('./classNameToObj')
 const { clearPreArray } = require('./preRender')
 
@@ -41,8 +47,20 @@ function filterClass (classStr) {
         case 'widthOrHeight':
           pushPreObj(getWorH(v))
           break
+        case 'square':
+          pushPreObj(getSquare(v))
+          break
+        case 'minMaxWidthOrHeight':
+          pushPreObj(getMinOrMaxHeightOrWidth(v))
+          break
         case 'marginOrPadding':
           pushPreObj(getMorP(v))
+          break
+        case 'text-align':
+          pushPreObj(getTextAlign(v))
+          break
+        case 'line-height':
+          pushPreObj(getLineHeight(v))
           break
         case 'flex':
           pushPreObj(getFlex(v))
@@ -76,6 +94,9 @@ function filterClass (classStr) {
           break
         case 'letter-spacing':
           pushPreObj(getLetterSpacing(v))
+          break
+        case 'zIndex':
+          pushPreObj(getZindex(v))
           break
       }
     }

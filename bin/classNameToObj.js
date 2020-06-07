@@ -12,10 +12,29 @@ directionMap.set('l', { dirStr: ['left'], order: 16 })
 function isMinus (str) {
   return str.includes('-m-')
 }
-
-function getKeyValue (str) {
-  // 最后一个-分割
+/**
+ *
+ * @param {string} 最后一个 - 分割
+ */
+function getKeyValueLast (str) {
   const reg = /^(.+)-(.+)$/
+  const [name, key, value] = str.match(reg)
+  return {
+    name,
+    key,
+    order: 100,
+    value,
+    render () {
+      return `.${this.name}{${this.key}:${this.value};}`
+    }
+  }
+}
+/**
+ *
+ * @param {string} 第一个 - 分割
+ */
+function getKeyValue (str) {
+  const reg = /^(.+?)-(.+)$/
   const [name, key, value] = str.match(reg)
   return {
     name,
@@ -43,6 +62,20 @@ function getWorH (str) {
     }
   }
 }
+
+function getSquare (str) {
+  const reg = /^square-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+  const [name, num, unit] = str.match(reg)
+  return {
+    name,
+    num,
+    unit,
+    render () {
+      return `.${this.name}{width:${this.num}${this.unit};height:${this.num}${this.unit};}`
+    }
+  }
+}
+
 // 获取margin 或者 padding
 function getMorP (str) {
   const reg = /^(m|p)-(?:([trblxy])-)?(?:m-)?(\d+)(\w{0,3})$/
@@ -93,19 +126,6 @@ function getOrientation (str) {
   }
 }
 
-function getFw (str) {
-  const value = str.split('-')[1]
-  return {
-    name: str,
-    type: 'fw',
-    order: 60,
-    value,
-    render () {
-      return `.${this.name}{font-weight:${this.value};}`
-    }
-  }
-}
-
 function getFs (str) {
   const reg = /^(?:fs|font-size)-(\d+)(.*)$/
   const [name, num, unit] = str.match(reg)
@@ -117,6 +137,31 @@ function getFs (str) {
     unit: unit,
     render () {
       return `.${this.name}{font-size:${this.num}${this.unit};}`
+    }
+  }
+}
+
+function getTextAlign (str) {
+  const reg = /^(?:text-align|text)-(start|end|left|right|center|justify|match-parent)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    order: 100,
+    value,
+    render () {
+      return `.${this.name}{text-align:${this.value};}`
+    }
+  }
+}
+function getFw (str) {
+  const value = str.split('-')[1]
+  return {
+    name: str,
+    type: 'fw',
+    order: 60,
+    value,
+    render () {
+      return `.${this.name}{font-weight:${this.value};}`
     }
   }
 }
@@ -138,7 +183,7 @@ function getDisplay (str) {
 function getColor (str) {
   const colorRegSplit = getColorsKey().length === 0 ? '' : `|${getColorsKey().join('|')}`
   const reg = new RegExp(
-    `^(color|c|text|bg|background|border-color)-(?:(hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}${colorRegSplit})(?:-(1|([1-9]\\d{0,1})|100))?$`
+    `^(color|c|text|bg|background|border-color|border-c)-(?:(hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}${colorRegSplit})(?:-(1|([1-9]\\d{0,1})|100))?$`
   )
   const [name, cssType, pseudo, color, opacity] = str.match(reg)
   const obj = {
@@ -161,6 +206,10 @@ function getColor (str) {
         case 'bg':
         case 'background':
           perfix = 'background-color'
+          break
+        case 'border-c':
+        case 'border-color':
+          perfix = 'border-color'
           break
         default:
           perfix = this.cssType
@@ -206,16 +255,70 @@ function getLetterSpacing (str) {
   }
 }
 
+function getMinOrMaxHeightOrWidth (str) {
+  const reg = /^(min|max)-([wh])-(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?$/
+  const [name, type, wh, num, unit] = str.match(reg)
+  return {
+    name,
+    type,
+    wh: wh === 'w' ? 'width' : 'height',
+    num,
+    unit,
+    render () {
+      return `.${this.name}{${this.type}-${this.wh}:${this.num}${this.unit};}`
+    }
+
+  }
+}
+
+function getZindex (str) {
+  const reg = /^z-index-(?:m-)?(0|[1-9]\d*)$/
+  const [name, num] = str.match(reg)
+  return {
+    name,
+    num: `${isMinus(name) ? '-' : ''}${num}`,
+    render () {
+      return `.${this.name}{z-index:${this.num}}`
+    }
+  }
+}
+
+function getLineHeight (str) {
+  const reg = /^(?:lh|line-height)-((?:(0|[1-9]\d*)(rem|em|vw|vh|p|px|rpx)?)|normal|unset|inherit|initial)$/
+  // "lh-200px", "200px", "200", "px"
+  const [name, value, num, unit] = str.match(reg)
+  const obj = { name }
+  if (num === undefined) {
+    obj.value = value
+    obj.render = function () {
+      return `.${this.name}{line-height:${this.value};}`
+    }
+  } else {
+    obj.num = num
+    obj.unit = unit
+    obj.render = function () {
+      return `.${this.name}{line-height:${this.num}${this.unit};}`
+    }
+  }
+  return obj
+}
+
 module.exports = {
   getWorH,
+  getSquare,
   getMorP,
   getFlex,
   getKeyValue,
+  getKeyValueLast,
   getOrientation,
-  getFw,
   getFs,
+  getFw,
+  getTextAlign,
   getDisplay,
   getColor,
   getWordBreak,
-  getLetterSpacing
+  getLetterSpacing,
+  getMinOrMaxHeightOrWidth,
+  getZindex,
+  getLineHeight
 }
