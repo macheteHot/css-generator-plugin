@@ -34,9 +34,9 @@ function renderCss () {
       } else if (Object.prototype.hasOwnProperty.call(c, UNIT)) {
         c[UNIT] = convertUnit(c[UNIT])
       }
-      return t + c.render() + '\n'
+      return t + c.render()
     }, '')
-  return cssbeautify(cssStr, { indent: '  ', openbrace: 'separate-line', autosemicolon: true })
+  return cssbeautify(cssStr, { indent: '  ', openbrace: 'end-of-line', autosemicolon: true })
 }
 module.exports = {
   pushPreObj,
