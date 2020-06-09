@@ -3,7 +3,7 @@
   "version": "0.9.6",
   "license": "MIT",
   "bin": {
-    "gcss": "./bin/gcss"
+    "css-generator-plugin": "./bin/gcss"
   },
   "main": "./src/index.js",
   "repository": {

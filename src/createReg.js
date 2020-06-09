@@ -144,11 +144,6 @@ function getRegList () {
       regExp: /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/
     },
     {
-      className: 'text-ellipsis',
-      regExp: /^text-ellipsis$/,
-      static: '.text-ellipsis {display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}'
-    },
-    {
       className: 'user-select',
       regExp: /^user-select-(none|auto|text|all|contain|element)$/
     },
@@ -159,7 +154,7 @@ function getRegList () {
     },
     {
       className: 'text-ellipsis-num',
-      regExp: /^(text-)?ellipsis-[1-9]\d*$/
+      regExp: /^(text-)?ellipsis(-[1-9]\d*)?$/
     }
   ]
 }

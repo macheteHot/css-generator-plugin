@@ -21,9 +21,19 @@ function wirteToFile () {
   }
   fs.writeFileSync(cssFilePath, `${CSS_ANNOTATION}${renderCss()}\n`)
 }
-
+function getFilePath (str) {
+  return path.resolve(process.cwd(), str)
+}
 class Main {
   constructor (options) {
+    if (options === undefined) {
+      if (fs.existsSync(getFilePath('css.generator.config.json'))) {
+        options = JSON.parse(fs.readFileSync(getFilePath('css.generator.config.json')))
+      } else
+      if (fs.existsSync(getFilePath('css.generator.config.js'))) {
+        options = require(getFilePath('css.generator.config.js'))
+      }
+    }
     setConfig(options)
   }
 

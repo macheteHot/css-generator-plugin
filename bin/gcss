@@ -5,7 +5,7 @@ const program = require('commander')
 const path = require('path')
 const description =
   `An application to generate Style Sheets file
-the default config file is gcss.json or gcss.js`
+the default config file is css.generator.config.json or css.generator.config.js`
 program
   .version('1.0.0', '-v, --version')
   .description(description)
@@ -20,12 +20,12 @@ function getFilePath (str) {
 }
 
 if (!program.configFile) {
-  if (fs.existsSync(getFilePath('gcss.json'))) {
-    configObj = JSON.parse(fs.readFileSync(getFilePath('gcss.json')))
+  if (fs.existsSync(getFilePath('css.generator.config.json'))) {
+    configObj = JSON.parse(fs.readFileSync(getFilePath('css.generator.config.json')))
     run(configObj)
   } else
-  if (fs.existsSync(getFilePath('gcss.js'))) {
-    configObj = require(getFilePath('gcss.js'))
+  if (fs.existsSync(getFilePath('css.generator.config.js'))) {
+    configObj = require(getFilePath('css.generator.config.js'))
     run(configObj)
   } else {
     program.help()

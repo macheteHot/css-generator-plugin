@@ -433,13 +433,17 @@ function geteAlignItems (str) {
 }
 
 function getTextEllipsisNum (str) {
-  const reg = /^(?:text-)?ellipsis-([1-9]\d*)$/
+  const reg = /^(?:text-)?ellipsis(?:-([1-9]\d*))?$/
   const [name, value] = str.match(reg)
   return {
     name,
     value,
     render () {
-      return `.${this.name}{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:${this.value};-webkit-box-orient:vertical;}`
+      if (value === undefined) {
+        return `.${this.name}{display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}`
+      } else {
+        return `.${this.name}{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:${this.value};-webkit-box-orient:vertical;}`
+      }
     }
   }
 }

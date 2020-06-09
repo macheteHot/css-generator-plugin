@@ -1,4 +1,4 @@
-const { EXT_NAME, GLOB_REG, COLORS, UNIT } = require('./constant')
+const { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT } = require('./constant')
 let programConfig = {}
 const runType = {
   vue: {
@@ -21,6 +21,8 @@ function getConfig (str) {
       return programConfig[COLORS] !== undefined ? programConfig[COLORS] : {}
     case UNIT: // 默认px
       return programConfig[UNIT] !== undefined ? programConfig[UNIT] : 'px'
+    case IMPORTANT: // 默认添加！important
+      return programConfig[IMPORTANT] !== undefined ? programConfig[IMPORTANT] : true
     default: // dirPath generate  等项目配置
       return programConfig[str]
   }
