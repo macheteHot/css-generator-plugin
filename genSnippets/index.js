@@ -109,7 +109,7 @@ function getRegList () {
     // 所有有关颜色的
     className: 'color',
     regExp: new RegExp(
-        `^(color|c|text|bg|background|border-color|border-c)-((hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-(25|100))?$`
+        `^(color|c|text|bg|background|border-color|border-c)-((hover|link|visited|active|focus|focus-within)-)?(fafafa|${getColorsKey().join('|')})(-(25|100))?$`
     )
   },
   {
