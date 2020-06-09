@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/macheteHot/css-generator-plugin.git"
   },
-  "files": ["bin/**/*","src/**/*"],
+  "files": ["bin/**/*", "src/**/*"],
   "author": "machete <rtpppp163@gmail.com>",
   "bugs": {
     "url": "https://github.com/macheteHot/css-generator-plugin/issues"
@@ -41,6 +41,7 @@
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "jest --watch -- __tests__/server/.*.test.js",
-    "genTest": "node genCssTest/index.js"
+    "genTest": "node genCssTest/index.js",
+    "GenSnippets": "node genSnippets/index.js"
   }
 }
