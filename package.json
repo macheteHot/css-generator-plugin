@@ -1,6 +1,6 @@
 {
-  "name": "gcss-cli",
-  "version": "0.9.6",
+  "name": "css-generator-plugin",
+  "version": "0.1.0",
   "license": "MIT",
   "bin": {
     "css-generator-plugin": "./bin/gcss"
@@ -8,14 +8,14 @@
   "main": "./src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/macheteHot/gcss-cli.git"
+    "url": "git+https://github.com/macheteHot/css-generator-plugin.git"
   },
   "files": ["bin/**/*","src/**/*"],
   "author": "machete <rtpppp163@gmail.com>",
   "bugs": {
-    "url": "https://github.com/macheteHot/gcss-cli/issues"
+    "url": "https://github.com/macheteHot/css-generator-plugin/issues"
   },
-  "homepage": "https://github.com/macheteHot/gcss-cli#readme",
+  "homepage": "https://github.com/macheteHot/css-generator-plugin#readme",
   "keywords": [
     "css",
     "generate",

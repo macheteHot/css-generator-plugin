@@ -8,8 +8,8 @@
  yarn add css-generator-plugin -D
 ```
 
-## webpack启动
-
+## webpack启动  
+传入配置参数 或者 项目根目录配置css.generator.config.js/css.generator.config.json(文件名固定)
 ```javascript
 const CssGeneratorPlugin = require('css-generator-plugin')
 {
@@ -48,7 +48,7 @@ module.exports = {
 ```
 + 运行指令（建议配置到package.json的scripts）
 ```text
-npm run css-generator-plugin
+css-generator-plugin
 ```
 
 
