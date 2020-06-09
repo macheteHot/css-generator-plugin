@@ -51,8 +51,10 @@ module.exports = {
 npm run css-generator-plugin
 ```
 
-
-
++ 入口文件（main.js）手动引入动态生成的css
+```javascript
+import '@/style/auto.css'
+```
 
 
 
