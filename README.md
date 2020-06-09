@@ -339,7 +339,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     /^circle$/
     ```
   * flex缩放
-    #### flex-(shrink|grow)-(数值|参数) 如:
+    #### flex-(shrink|grow)-(数值|参数)
     ```css
     .flex-grow-1{flex-grow:1}
     .flex-shrink-0{flex-shrink:0}
@@ -349,7 +349,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     /^flex-(shrink|grow)-((0|[1-9]\d*)|initial|inherit)$/
     ```
   * flex占用轴空间
-    #### flex-basis-((数值(单位)?)|其他参数) 如:
+    #### flex-basis-((数值(单位)?)|其他参数)
     ```css
     .flex-basis-20p{flex-basis:20%}
     .flex-basis-20{flex-basis:20px;}
@@ -359,7 +359,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     new RegExp(`^flex-basis-((0|[1-9]\\d*)(${UNIT_ENMU_STR})?|initial|inherit|auto)$`)
     ```
   * 边框宽度 自带实线 黑色
-    #### (border|border-width|border-w)-(方向-)?(数值)(单位)? 如:
+    #### (border|border-width|border-w)-(方向-)?(数值)(单位)?
     ```css
     .border-2{
       border-width: 2px; 
@@ -376,7 +376,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     new new RegExp(`^(border|border-width|border-w)-([trblxy]-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     ```
   * 边框圆角
-    #### (border-radius|br)-(数值)(单位)? 如:
+    #### (border-radius|br)-(数值)(单位)?
     ```css
     .border-radius-4{border-radius:4px}
     .br-20p{border-radius:20%}
@@ -385,7 +385,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     new RegExp(`^(border-radius|br)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     ```
   * 边框类型
-    #### border-style-(参数) 如:
+    #### border-style-(参数)
     ```css
     .border-style-dashed{border-style:dashed}
     ```
