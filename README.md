@@ -1,6 +1,6 @@
-##### css-generator-plugin 自动生成css文件，高效开发页面
+# css-generator-plugin 自动生成css文件，高效开发页面
 
-#### 如何使用
+### 如何使用
 
 + 安装依赖
 ```
@@ -8,8 +8,8 @@
  yarn add css-generator-plugin -D
 ```
 
-## webpack启动  
-传入配置参数 或者 项目根目录配置css.generator.config.js/css.generator.config.json(文件名固定)
+#### webpack启动
+
 ```javascript
 const CssGeneratorPlugin = require('css-generator-plugin')
 {
@@ -33,7 +33,7 @@ const CssGeneratorPlugin = require('css-generator-plugin')
 };
 ```
 
-## 命令行启动（如小程序类和老项目，无webpack）
+#### 命令行启动（如小程序类和老项目，无webpack）
 
 + 项目根目录配置css.generator.config.js/css.generator.config.json(文件名固定)
 ```javascript
@@ -48,7 +48,7 @@ module.exports = {
 ```
 + 运行指令（建议配置到package.json的scripts）
 ```text
-css-generator-plugin
+npm run css-generator-plugin
 ```
 
 
@@ -56,7 +56,7 @@ css-generator-plugin
 
 
 
-##### 规则约定
+# 规则约定
 
 ### 伪类约定 
 ```text
