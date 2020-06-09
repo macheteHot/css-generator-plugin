@@ -8,6 +8,9 @@
  yarn add css-generator-plugin -D
 ```
 
+### 代码提示
+  如需提示 可下载 genSnippets/css/snippets.css 
+
 #### webpack启动
 
 ```javascript
