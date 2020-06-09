@@ -126,7 +126,7 @@ function getFlexDirection (str) {
   return {
     name,
     value,
-    render () { return `.${this.name}{flex-direction:${this.value}}` }
+    render () { return `.${this.name}{flex-direction:${this.value};}` }
   }
 }
 
@@ -241,12 +241,12 @@ function getColor (str) {
       }
       let colorRgba
       if (this.color !== '') {
-        colorRgba = `rgba(${this.color},${this.opacity})`
+        colorRgba = `rgba(${this.color},${this.opacity});`
       }
       if (this.color === 'transparent') {
-        colorRgba = 'transparent'
+        colorRgba = 'transparent;'
       }
-      return `.${getName}{${perfix}:${colorRgba};}`
+      return `.${getName}{${perfix}:${colorRgba}}`
     }
   }
   return obj
@@ -303,7 +303,7 @@ function getZindex (str) {
     order: Infinity,
     num: `${isMinus(name) ? '-' : ''}${num}`,
     render () {
-      return `.${this.name}{z-index:${this.num}}`
+      return `.${this.name}{z-index:${this.num};}`
     }
   }
 }
@@ -379,7 +379,7 @@ function getBorderRadius (str) {
     name,
     num,
     unit,
-    render () { return `.${this.name}{border-radius:${this.num}${this.unit}}` }
+    render () { return `.${this.name}{border-radius:${this.num}${this.unit};}` }
   }
 }
 
@@ -440,7 +440,7 @@ function getTextEllipsisNum (str) {
     value,
     render () {
       if (value === undefined) {
-        return `.${this.name}{display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}`
+        return `.${this.name}{display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}`
       } else {
         return `.${this.name}{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:${this.value};-webkit-box-orient:vertical;}`
       }

@@ -5,11 +5,12 @@ const path = require('path')
 const chokidar = require('chokidar')
 const glob = require('glob')
 const shelljs = require('shelljs')
-const { getConfig, setConfig } = require('./config')
-const { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION } = require('./constant')
+const { getConfig } = require('./config')
+const { EXT_NAMES, GENERATE, DIR_PATH, CSS_ANNOTATION } = require('./constant')
 
 function getAllVueFileClassStr () {
-  const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.${getConfig(EXT_NAME)}`))
+  const globSyncStr = getConfig(EXT_NAMES).join(',')
+  const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.{${globSyncStr}}`))
   return files.reduce((t, c) => t + fs.readFileSync(path.resolve(c), 'utf8'), '')
 }
 
@@ -21,44 +22,49 @@ function wirteToFile () {
   }
   fs.writeFileSync(cssFilePath, `${CSS_ANNOTATION}${renderCss()}\n`)
 }
+
 function getFilePath (str) {
   return path.resolve(process.cwd(), str)
 }
-class Main {
-  constructor (options) {
-    if (options === undefined) {
-      if (fs.existsSync(getFilePath('css.generator.config.json'))) {
-        options = JSON.parse(fs.readFileSync(getFilePath('css.generator.config.json')))
-      } else
-      if (fs.existsSync(getFilePath('css.generator.config.js'))) {
-        options = require(getFilePath('css.generator.config.js'))
-      }
-    }
-    setConfig(options)
-  }
 
-  apply (compiler) {
-    compiler.hooks.afterPlugins.tap('vue-generate-css', () => {
-      console.time('初始化耗时')
-      filterClassNames(getAllVueFileClassStr())
-      wirteToFile()
-      console.log('=============初始化完成=============')
-      console.timeEnd('初始化耗时')
-      console.log('\n\n')
-      const watcher = chokidar.watch(path.resolve(getConfig(DIR_PATH)), {
-        ignored: new RegExp(`^.*\\.(?:(?!(${getConfig(EXT_NAME)})).)+$`),
-        persistent: true
-      })
-      watcher.on('change', () => {
-        console.time('热更新耗时')
-        filterClassNames(getAllVueFileClassStr())
-        wirteToFile()
-        console.log('=============热更新完成=============')
-        console.timeEnd('热更新耗时')
-        console.log('\n\n')
-      })
-    })
-  }
+function init () {
+  console.time('init Time')
+  filterClassNames(getAllVueFileClassStr())
+  wirteToFile()
+  console.log('=============init done=============')
+  console.timeEnd('init Time')
 }
 
-module.exports = Main
+function readConfigFile () {
+  let options = null
+  if (fs.existsSync(getFilePath('css.generator.config.js'))) {
+    options = require(getFilePath('css.generator.config.js'))
+  } else
+  if (fs.existsSync(getFilePath('css.generator.config.json'))) {
+    options = JSON.parse(fs.readFileSync(getFilePath('css.generator.config.json')))
+  } else {
+    throw new Error('you dont have any config!!! see https://github.com/macheteHot/css-generator-plugin/blob/master/README.md')
+  }
+  return options
+}
+
+function hotReloadwatcher () {
+  const regStr = getConfig(EXT_NAMES).join('|')
+  const watcher = chokidar.watch(path.resolve(getConfig(DIR_PATH)), {
+    ignored: new RegExp(`^.*\\.(?:(?!(${regStr})).)+$`),
+    persistent: true
+  })
+  watcher.on('change', () => {
+    console.time('reload time')
+    filterClassNames(getAllVueFileClassStr())
+    wirteToFile()
+    console.log('=============reload done=============')
+    console.timeEnd('reload time')
+  })
+}
+
+module.exports = {
+  init,
+  hotReloadwatcher,
+  readConfigFile
+}
