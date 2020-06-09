@@ -23,7 +23,7 @@ module.exports.UNIT_ENMU_STR = UNIT_ENMU.join('|')
 const { version } = require('../package.json')
 // 文件开头
 let CSS_ANNOTATION = ''
-CSS_ANNOTATION += '@charset "UTF-8"\n'
+CSS_ANNOTATION += '@charset "UTF-8;"\n'
 CSS_ANNOTATION += '/* https://github.com/macheteHot/css-generator-plugin/\n'
 CSS_ANNOTATION += `   version: v${version}\n`
 CSS_ANNOTATION += '   this file will auto generate and update\n'
