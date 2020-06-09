@@ -6,7 +6,7 @@ const chokidar = require('chokidar')
 const glob = require('glob')
 const shelljs = require('shelljs')
 const { getConfig, setConfig } = require('./config')
-const { EXT_NAME, GENERATE, DIR_PATH } = require('./constant')
+const { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION } = require('./constant')
 
 function getAllVueFileClassStr () {
   const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.${getConfig(EXT_NAME)}`))
@@ -19,7 +19,7 @@ function wirteToFile () {
   if (!fs.existsSync(cssDirPath)) {
     shelljs.mkdir('-p', cssDirPath)
   }
-  fs.writeFileSync(cssFilePath, `@charset "UTF-8";\n${renderCss()}`)
+  fs.writeFileSync(cssFilePath, `${CSS_ANNOTATION}${renderCss()}\n`)
 }
 
 // cli 调用

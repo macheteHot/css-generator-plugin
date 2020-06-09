@@ -4,13 +4,13 @@ const path = require('path')
 const { getRegList } = require('../src/createReg')
 const { getCss } = require('./utils')
 const regObjList = getRegList()
+fs.writeFileSync(path.resolve(__dirname, './css/test.css'), '', { flag: 'w' })
 regObjList.forEach(obj => {
-  fs.writeFileSync(path.resolve(__dirname, `./css/${obj.className}.css`), '', { flag: 'w' })
   for (let i = 0; i < 100; i++) {
     const str = mock(obj.regExp)
     const cssStr = getCss(str)
     if (cssStr) {
-      fs.writeFileSync(path.resolve(__dirname, `./css/${obj.className}.css`), `${cssStr}`, { flag: 'a' })
+      fs.writeFileSync(path.resolve(__dirname, './css/test.css'), `${cssStr}`, { flag: 'a' })
     }
   }
 })

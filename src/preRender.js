@@ -1,5 +1,4 @@
 const { UNIT, IMPORTANT } = require('./constant')
-const cssbeautify = require('cssbeautify')
 
 const { getConfig } = require('./config')
 let preArry = []
@@ -34,9 +33,8 @@ function renderCss () {
       } else if (Object.prototype.hasOwnProperty.call(c, UNIT)) {
         c[UNIT] = convertUnit(c[UNIT])
       }
-      return t + c.render()
+      return t + c.render() + '\n'
     }, '')
-  cssStr = cssbeautify(cssStr, { indent: '  ', openbrace: 'end-of-line', autosemicolon: true })
   if (getConfig(IMPORTANT)) {
     cssStr = cssStr.replace(/;/g, ' !important;')
   }

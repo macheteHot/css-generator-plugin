@@ -397,7 +397,7 @@ function getTextAlignLast (str) {
 }
 
 function getTextDecoration (str) {
-  const reg = /^(?:.+)-(.+)$/
+  const reg = /^(?:text-decoration|text)-(.+)$/
   const [name, value] = str.match(reg)
   return {
     name,

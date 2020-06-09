@@ -112,7 +112,7 @@ function getRegList () {
     {
       className: 'circle',
       regExp: /^circle$/,
-      static: '.circle{border-radius:50%}'
+      static: '.circle{border-radius:50%;}'
     },
     {
       className: 'flexShrinkAndGrow',
@@ -155,7 +155,7 @@ function getRegList () {
     { // 单独提出来 很常用
       className: 'select-none',
       regExp: /^select-none$/,
-      static: '.select-none{user-select:none}'
+      static: '.select-none{user-select:none;}'
     },
     {
       className: 'text-ellipsis-num',
