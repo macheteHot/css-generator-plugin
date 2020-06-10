@@ -145,12 +145,7 @@ function getRegList () {
     },
     {
       className: 'user-select',
-      regExp: /^user-select-(none|auto|text|all|contain|element)$/
-    },
-    { // 单独提出来 很常用
-      className: 'select-none',
-      regExp: /^select-none$/,
-      static: '.select-none{user-select:none;}'
+      regExp: /^(user-)?select-(none|auto|text|all|contain|element)$/
     },
     {
       className: 'text-ellipsis-num',

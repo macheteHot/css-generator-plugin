@@ -395,6 +395,18 @@ function getTextAlignLast (str) {
     }
   }
 }
+function getUserSelect (str) {
+  const reg = /^(?:.+)-(.+)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    order: Infinity,
+    render () {
+      return `.${name}{user-select:${value};}`
+    }
+  }
+}
 
 function getTextDecoration (str) {
   const reg = /^(?:text-decoration|text)-(.+)$/
@@ -463,6 +475,7 @@ module.exports = {
   getFw,
   getTextAlign,
   getTextAlignLast,
+  getUserSelect,
   getTextDecoration,
   getDisplay,
   getColor,
