@@ -19,6 +19,7 @@ const {
   getFw,
   getTextAlign,
   getTextAlignLast,
+  getUserSelect,
   getTextDecoration,
   getDisplay,
   getColor,
@@ -129,6 +130,9 @@ function filterClass (classStr) {
         case 'text-ellipsis-num':
           pushPreObj(getTextEllipsisNum(v))
           break
+        case 'user-select':
+          pushPreObj(getUserSelect(v))
+          break
         case 'flexNum': // flex 数值
         case 'position': // 定位方式
         case 'cursor': // 鼠标样式
@@ -137,7 +141,6 @@ function filterClass (classStr) {
         case 'border-style':
         case 'overflow':
         case 'flexShrinkAndGrow':
-        case 'user-select':
           pushPreObj(getKeyValueLast(v))
           break
       }

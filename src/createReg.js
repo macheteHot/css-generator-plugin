@@ -102,7 +102,7 @@ function getRegList () {
     // 所有有关颜色的
       className: 'color',
       regExp: new RegExp(
-        `^(color|c|text|bg|background|border-color|border-c)-((hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-([1-9]\\d|100))?$`
+        `^(color|c|text|bg|background|border-color|border-c)-((hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-([1-9]\\d*|100))?$`
       )
     },
     {
@@ -145,12 +145,7 @@ function getRegList () {
     },
     {
       className: 'user-select',
-      regExp: /^user-select-(none|auto|text|all|contain|element)$/
-    },
-    { // 单独提出来 很常用
-      className: 'select-none',
-      regExp: /^select-none$/,
-      static: '.select-none{user-select:none;}'
+      regExp: /^(user-)?select-(none|auto|text|all|contain|element)$/
     },
     {
       className: 'text-ellipsis-num',

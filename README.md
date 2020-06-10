@@ -1,5 +1,7 @@
 # css-generator-plugin 自动生成css文件，高效开发页面
 
+![avatar](./img/demo.gif)
+
 ### 如何使用
 
 + 安装依赖

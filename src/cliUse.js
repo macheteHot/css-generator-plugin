@@ -5,11 +5,7 @@ const { setConfig } = require('./config')
 function main (options) {
   setConfig(options)
   init()
-  if (process.env.NODE_ENV === 'development') {
-    hotReloadwatcher()
-  } else {
-    console.log('init done have a nice day!')
-  }
+  hotReloadwatcher()
 }
 
 module.exports = main
