@@ -1,20 +1,20 @@
-const { EXT_NAMES, GLOB_REG, COLORS, UNIT, IMPORTANT } = require('./constant')
+const { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT } = require('./constant')
 let programConfig = {}
 const runType = {
   vue: {
-    [EXT_NAMES]: ['vue'],
+    [EXT_NAME]: ['vue'],
     reg: /((?<=class=")[\s\S]+?(?="))|((?<=class={)[\s\S]+?(?=}))/g
   },
   'd-mini-program': {
-    [EXT_NAMES]: ['axml'],
+    [EXT_NAME]: ['axml'],
     reg: /(?<=class=")[\s\S]+?(?=")/g
   }
 }
 function getConfig (str) {
   switch (str) {
     // 此处配置默认值
-    case EXT_NAMES:
-      return runType[programConfig.type][EXT_NAMES]
+    case EXT_NAME:
+      return runType[programConfig.type][EXT_NAME]
     case GLOB_REG:
       return runType[programConfig.type].reg
     case COLORS: // 默认空对象

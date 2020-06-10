@@ -4,7 +4,7 @@ module.exports.GENERATE = 'generate' // 必填 生成地址
 module.exports.UNIT = 'unit' // 选填 单位
 module.exports.IMPORTANT = 'important' // 选填 单位
 // 以下是项目配置 不从配置文件读
-module.exports.EXT_NAMES = 'extNames'
+module.exports.EXT_NAME = 'extNames'
 module.exports.GLOB_REG = 'globReg'
 
 // 以下是枚举

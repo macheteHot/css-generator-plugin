@@ -6,11 +6,11 @@ const chokidar = require('chokidar')
 const glob = require('glob')
 const shelljs = require('shelljs')
 const { getConfig } = require('./config')
-const { EXT_NAMES, GENERATE, DIR_PATH, CSS_ANNOTATION } = require('./constant')
+const { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION } = require('./constant')
 
 function getAllVueFileClassStr () {
-  const globSyncStr = getConfig(EXT_NAMES).join(',')
-  const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.{${globSyncStr}}`))
+  const globSyncStr = getConfig(EXT_NAME).join('|')
+  const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.@(${globSyncStr})`))
   return files.reduce((t, c) => t + fs.readFileSync(path.resolve(c), 'utf8'), '')
 }
 
@@ -31,7 +31,7 @@ function init () {
   console.time('init Time')
   filterClassNames(getAllVueFileClassStr())
   wirteToFile()
-  console.log('=============init done=============')
+  console.log('============= init done =============')
   console.timeEnd('init Time')
 }
 
@@ -49,7 +49,7 @@ function readConfigFile () {
 }
 
 function hotReloadwatcher () {
-  const regStr = getConfig(EXT_NAMES).join('|')
+  const regStr = getConfig(EXT_NAME).join('|')
   const watcher = chokidar.watch(path.resolve(getConfig(DIR_PATH)), {
     ignored: new RegExp(`^.*\\.(?:(?!(${regStr})).)+$`),
     persistent: true
@@ -58,7 +58,7 @@ function hotReloadwatcher () {
     console.time('reload time')
     filterClassNames(getAllVueFileClassStr())
     wirteToFile()
-    console.log('=============reload done=============')
+    console.log('============= reload done =============')
     console.timeEnd('reload time')
   })
 }
