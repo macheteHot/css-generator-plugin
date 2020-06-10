@@ -6,7 +6,7 @@ const { getCss } = require('./utils')
 const regObjList = getRegList()
 fs.writeFileSync(path.resolve(__dirname, './css/test.css'), '', { flag: 'w' })
 regObjList.forEach(obj => {
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 300; i++) {
     const str = mock(obj.regExp)
     const cssStr = getCss(str)
     if (cssStr) {
