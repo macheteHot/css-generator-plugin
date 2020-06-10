@@ -7,7 +7,7 @@ const runType = {
   },
   'd-mini-program': {
     [EXT_NAME]: ['axml'],
-    reg: /(?<=class=")[\s\S]+?(?=")/g
+    reg: /(?<=[cC]lass=")[\s\S]+?(?=")/g
   }
 }
 function getConfig (str) {
