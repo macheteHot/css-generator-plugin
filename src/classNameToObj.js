@@ -207,7 +207,7 @@ function getDisplay (str) {
 function getColor (str) {
   const colorRegSplit = getColorsKey().length === 0 ? '' : `|${getColorsKey().join('|')}`
   const reg = new RegExp(
-    `^(color|c|text|bg|background|border-color|border-c)-(?:(hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}${colorRegSplit})(?:-(1|([1-9]\\d{0,1})|100))?$`
+    `^(color|c|text|bg|background|border-color|border-c)-(?:(hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}${colorRegSplit})(?:-(1|([1-9]\\d{0,1})))?$`
   )
   const [name, cssType, pseudo, color, opacity] = str.match(reg)
   const obj = {
