@@ -112,7 +112,7 @@ function getFlex (str) {
   return {
     name,
     order: 50,
-    jc,
+    jc: jc.includes(['between', 'around', 'evenly']) ? `space-${jc}` : jc,
     ai,
     render () {
       return `.${this.name}{display:flex;justify-content:${this.jc};align-items:${this.ai};}`
@@ -413,7 +413,7 @@ function getJustifyContent (str) {
   const [name, value] = str.match(reg)
   return {
     name,
-    value,
+    value: value.includes(['between', 'around', 'evenly']) ? `space-${value}` : value,
     render () {
       return `.${this.name}{justify-content:${this.value};}`
     }
