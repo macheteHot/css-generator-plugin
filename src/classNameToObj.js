@@ -178,9 +178,10 @@ function getTextAlign (str) {
 }
 
 function getFw (str) {
-  const value = str.split('-')[1]
+  const reg = /^(?:font-weight|fw)-(.*)$/
+  const [name, value] = str.match(reg)
   return {
-    name: str,
+    name,
     type: 'fw',
     order: Infinity,
     value,

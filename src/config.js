@@ -31,6 +31,7 @@ function getConfig (str) {
 function setConfig (config) {
   programConfig = config
 }
+
 module.exports = {
   setConfig,
   getConfig
