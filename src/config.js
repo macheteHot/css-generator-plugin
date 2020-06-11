@@ -21,8 +21,8 @@ function getConfig (str) {
       return programConfig[COLORS] || {}
     case UNIT: // 默认px
       return programConfig[UNIT] || 'px'
-    case IMPORTANT: // 默认添加！important
-      return programConfig[IMPORTANT] || true
+    case IMPORTANT: // 默认添加！important 设置默认值
+      return programConfig[IMPORTANT] === undefined ? true : programConfig[IMPORTANT]
     default: // dirPath generate  等项目配置
       return programConfig[str]
   }
