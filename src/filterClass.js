@@ -9,6 +9,7 @@ const {
   getSquare,
   getMorP,
   getFlex,
+  getFlexWrap,
   getJustifyContent,
   geteAlignItems,
   getFlexDirection,
@@ -78,6 +79,9 @@ function filterClass (classStr) {
           break
         case 'flex':
           pushPreObj(getFlex(v))
+          break
+        case 'flex-wrap-value':
+          pushPreObj(getFlexWrap(v))
           break
         case 'justify-content':
           pushPreObj(getJustifyContent(v))

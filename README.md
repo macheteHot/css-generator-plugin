@@ -185,6 +185,22 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     ```javascript
     new RegExp(`^flex-(${JUSTIFY_CONTENT_ENMU_STR})-(${ALIGN_ITEMS_ENMU_STR})$`)
     ```
+  * flex 换行
+    #### flex-wrap-(参数)
+    ```css
+    .flex-wrap-inherit{flex-wrap:inherit;}
+
+    .flex-wrap-initial{flex-wrap:initial;}
+
+    .flex-wrap-nowrap{flex-wrap:nowrap;}
+
+    .flex-wrap-wrap-reverse{flex-wrap:wrap-reverse;}
+
+    .flex-wrap-wrap{flex-wrap:wrap;}
+    ```
+    ```javascript
+    /^flex-wrap-(inherit|initial|nowrap|wrap|wrap-reverse)$/
+    ```
   * flex主轴
     #### justify-content-(主轴参数)
     ```css

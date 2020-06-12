@@ -1,17 +1,10 @@
 const {
-  getColorsKey
-} = require('../src/colorUtils')
-const {
   JUSTIFY_CONTENT_ENMU,
   ALIGN_ITEMS_ENMU,
   CURSOR_ENMU
 } = require('../src/constant')
-const {
-  mock
-} = require('mockjs')
 const fs = require('fs')
 const path = require('path')
-const classNameSet = new Set()
 const NUM_ENMU = [1, 2]
 const UNIT_ENMU = ['', 'p', 'rem', 'vh']
 const NUM_WIDTH_UNIT = [1, 2, '1p', '1rem', '1vh']
@@ -179,6 +172,16 @@ function getRegList () {
         ['row', 'row-reverse', 'column', 'column-reverse'].forEach(v => {
           str += `.${t}-${v}{}`
         })
+      })
+      return str
+    }
+  },
+  {
+    className: 'flex-wrap-value',
+    render () {
+      let str = '';
+      ['inherit', 'initial', 'nowrap', 'wrap', 'wrap-reverse'].forEach(v => {
+        str += `.flex-wrap-${v}{}`
       })
       return str
     }

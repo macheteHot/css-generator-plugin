@@ -120,8 +120,20 @@ function getFlex (str) {
   }
 }
 
+function getFlexWrap (str) {
+  const reg = /^flex-wrap-(.+)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    render () {
+      return `.${this.name}{flex-wrap:${this.value};}`
+    }
+  }
+}
+
 function getFlexDirection (str) {
-  const reg = /^(?:flex-direction|flex)-(.*)$/
+  const reg = /^(?:flex-direction|flex)-(.+)$/
   const [name, value] = str.match(reg)
   return {
     name,
@@ -150,7 +162,7 @@ function getOrientation (str) {
 }
 
 function getFs (str) {
-  const reg = /^(?:fs|font-size)-(\d+)(.*)$/
+  const reg = /^(?:fs|font-size)-(\d+)(.+)?$/
   const [name, num, unit] = str.match(reg)
   return {
     name,
@@ -466,6 +478,7 @@ module.exports = {
   getSquare,
   getMorP,
   getFlex,
+  getFlexWrap,
   getJustifyContent,
   geteAlignItems,
   getFlexDirection,
