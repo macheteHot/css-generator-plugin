@@ -3,11 +3,11 @@ let programConfig = {}
 const runType = {
   vue: {
     [EXT_NAME]: ['vue'],
-    reg: /((?<=class=")[\s\S]+?(?="))|((?<=class={)[\s\S]+?(?=}))/g
+    reg: /((?<=class=(["']))[\s\S]*?(?=\2))|((?<=class={)[\s\S]*?(?=}))/gi
   },
   'd-mini-program': {
     [EXT_NAME]: ['axml'],
-    reg: /(?<=[cC]lass=")[\s\S]+?(?=")/g
+    reg: /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
   }
 }
 function getConfig (str) {
@@ -31,6 +31,7 @@ function getConfig (str) {
 function setConfig (config) {
   programConfig = config
 }
+
 module.exports = {
   setConfig,
   getConfig

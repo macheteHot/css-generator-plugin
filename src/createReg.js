@@ -59,6 +59,10 @@ function getRegList () {
       regExp: /^(flex-direction|flex)-(row|row-reverse|column|column-reverse)$/
     },
     {
+      className: 'flex-wrap-value',
+      regExp: /^flex-wrap-(inherit|initial|nowrap|wrap|wrap-reverse)$/
+    },
+    {
     // 定位方式枚举
       className: 'position',
       regExp: /^position-(static|relative|sticky|unset|absolute|fixed|inherit|initial)$/
@@ -66,7 +70,7 @@ function getRegList () {
     {
     // 绝对定位 方向 t-20vh top:20vh -m负数
       className: 'orientation',
-      regExp: new RegExp(`^[trbl]-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+      regExp: new RegExp(`^([trbl]|top|right|bottom|left)-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
     },
     {
     // 鼠标样式方式枚举

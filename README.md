@@ -185,6 +185,22 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     ```javascript
     new RegExp(`^flex-(${JUSTIFY_CONTENT_ENMU_STR})-(${ALIGN_ITEMS_ENMU_STR})$`)
     ```
+  * flex 换行
+    #### flex-wrap-(参数)
+    ```css
+    .flex-wrap-inherit{flex-wrap:inherit;}
+
+    .flex-wrap-initial{flex-wrap:initial;}
+
+    .flex-wrap-nowrap{flex-wrap:nowrap;}
+
+    .flex-wrap-wrap-reverse{flex-wrap:wrap-reverse;}
+
+    .flex-wrap-wrap{flex-wrap:wrap;}
+    ```
+    ```javascript
+    /^flex-wrap-(inherit|initial|nowrap|wrap|wrap-reverse)$/
+    ```
   * flex主轴
     #### justify-content-(主轴参数)
     ```css
@@ -238,9 +254,11 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     /^position-(static|relative|sticky|unset|absolute|fixed|inherit|initial)$/
     ```
   * 方向定位
-    #### (方向[trbl])-(m-)?-(数值)(单位)?
+    #### (方向[trbl]top|right|bottom|left)-(m-)?-(数值)(单位)?
     ```css
-    .position-relative{position:relative}
+    .l-283{left:283px;}
+    .top-0px{top:0;}
+    .right-m-672{right:-672px;}
     ```
     ```javascript
     new RegExp(`^[trbl]-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)

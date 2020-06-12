@@ -1,17 +1,10 @@
 const {
-  getColorsKey
-} = require('../src/colorUtils')
-const {
   JUSTIFY_CONTENT_ENMU,
   ALIGN_ITEMS_ENMU,
   CURSOR_ENMU
 } = require('../src/constant')
-const {
-  mock
-} = require('mockjs')
 const fs = require('fs')
 const path = require('path')
-const classNameSet = new Set()
 const NUM_ENMU = [1, 2]
 const UNIT_ENMU = ['', 'p', 'rem', 'vh']
 const NUM_WIDTH_UNIT = [1, 2, '1p', '1rem', '1vh']
@@ -184,6 +177,16 @@ function getRegList () {
     }
   },
   {
+    className: 'flex-wrap-value',
+    render () {
+      let str = '';
+      ['inherit', 'initial', 'nowrap', 'wrap', 'wrap-reverse'].forEach(v => {
+        str += `.flex-wrap-${v}{}`
+      })
+      return str
+    }
+  },
+  {
     // 定位方式枚举
     className: 'position',
     // regExp: /^position-(static|relative|sticky|unset|absolute|fixed|inherit|initial)$/,
@@ -198,10 +201,10 @@ function getRegList () {
   {
     // 绝对定位 方向 t-20vh top:20vh -m负数
     className: 'orientation',
-    // regExp: new RegExp(`^[trbl]-(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
+    // regExp: new RegExp(`^([trbl]|top|right|bottom|left)-(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
       let str = '';
-      ['t', 'r', 'b', 'l'].forEach(trbl => {
+      ['t', 'r', 'b', 'l', 'top', 'right', 'bottom', 'left'].forEach(trbl => {
         ['m-', ''].forEach(m => {
           NUM_WIDTH_UNIT.forEach(v => {
             str += `.${trbl}-${m}${v}{}`

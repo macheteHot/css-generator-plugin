@@ -12,6 +12,10 @@ directionMap.set('t', { dirStr: ['top'], order: 13 })
 directionMap.set('r', { dirStr: ['right'], order: 14 })
 directionMap.set('b', { dirStr: ['bottom'], order: 15 })
 directionMap.set('l', { dirStr: ['left'], order: 16 })
+directionMap.set('top', { dirStr: ['top'], order: 13 })
+directionMap.set('right', { dirStr: ['right'], order: 14 })
+directionMap.set('bottom', { dirStr: ['bottom'], order: 15 })
+directionMap.set('left', { dirStr: ['left'], order: 16 })
 // 通过存在-mi- 判断是否是负数
 function isMinus (str) {
   return str.includes('-m-')
@@ -112,7 +116,7 @@ function getFlex (str) {
   return {
     name,
     order: 50,
-    jc: jc.includes(['between', 'around', 'evenly']) ? `space-${jc}` : jc,
+    jc: ['between', 'around', 'evenly'].includes(jc) ? `space-${jc}` : jc,
     ai,
     render () {
       return `.${this.name}{display:flex;justify-content:${this.jc};align-items:${this.ai};}`
@@ -120,8 +124,20 @@ function getFlex (str) {
   }
 }
 
+function getFlexWrap (str) {
+  const reg = /^flex-wrap-(.+)$/
+  const [name, value] = str.match(reg)
+  return {
+    name,
+    value,
+    render () {
+      return `.${this.name}{flex-wrap:${this.value};}`
+    }
+  }
+}
+
 function getFlexDirection (str) {
-  const reg = /^(?:flex-direction|flex)-(.*)$/
+  const reg = /^(?:flex-direction|flex)-(.+)$/
   const [name, value] = str.match(reg)
   return {
     name,
@@ -131,12 +147,9 @@ function getFlexDirection (str) {
 }
 
 function getOrientation (str) {
-  const reg = /^([trbl])-(?:m-)?(\d+)(\w{0,4})$/
+  const reg = /^([trbl]|top|right|bottom|left)-(?:m-)?(\d+)(\w{0,4})$/
   const [name, type, num, unit] = str.match(reg)
-  const {
-    dirStr,
-    order
-  } = directionMap.get(type)
+  const { dirStr, order } = directionMap.get(type)
   return {
     name,
     type: dirStr,
@@ -150,7 +163,7 @@ function getOrientation (str) {
 }
 
 function getFs (str) {
-  const reg = /^(?:fs|font-size)-(\d+)(.*)$/
+  const reg = /^(?:fs|font-size)-(\d+)(.+)?$/
   const [name, num, unit] = str.match(reg)
   return {
     name,
@@ -178,9 +191,10 @@ function getTextAlign (str) {
 }
 
 function getFw (str) {
-  const value = str.split('-')[1]
+  const reg = /^(?:font-weight|fw)-(.*)$/
+  const [name, value] = str.match(reg)
   return {
-    name: str,
+    name,
     type: 'fw',
     order: Infinity,
     value,
@@ -425,7 +439,7 @@ function getJustifyContent (str) {
   const [name, value] = str.match(reg)
   return {
     name,
-    value: value.includes(['between', 'around', 'evenly']) ? `space-${value}` : value,
+    value: ['between', 'around', 'evenly'].includes(value) ? `space-${value}` : value,
     render () {
       return `.${this.name}{justify-content:${this.value};}`
     }
@@ -465,6 +479,7 @@ module.exports = {
   getSquare,
   getMorP,
   getFlex,
+  getFlexWrap,
   getJustifyContent,
   geteAlignItems,
   getFlexDirection,
