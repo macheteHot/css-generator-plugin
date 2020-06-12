@@ -12,6 +12,10 @@ directionMap.set('t', { dirStr: ['top'], order: 13 })
 directionMap.set('r', { dirStr: ['right'], order: 14 })
 directionMap.set('b', { dirStr: ['bottom'], order: 15 })
 directionMap.set('l', { dirStr: ['left'], order: 16 })
+directionMap.set('top', { dirStr: ['top'], order: 13 })
+directionMap.set('right', { dirStr: ['right'], order: 14 })
+directionMap.set('bottom', { dirStr: ['bottom'], order: 15 })
+directionMap.set('left', { dirStr: ['left'], order: 16 })
 // 通过存在-mi- 判断是否是负数
 function isMinus (str) {
   return str.includes('-m-')
@@ -143,12 +147,9 @@ function getFlexDirection (str) {
 }
 
 function getOrientation (str) {
-  const reg = /^([trbl])-(?:m-)?(\d+)(\w{0,4})$/
+  const reg = /^([trbl]|top|right|bottom|left)-(?:m-)?(\d+)(\w{0,4})$/
   const [name, type, num, unit] = str.match(reg)
-  const {
-    dirStr,
-    order
-  } = directionMap.get(type)
+  const { dirStr, order } = directionMap.get(type)
   return {
     name,
     type: dirStr,

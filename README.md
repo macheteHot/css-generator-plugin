@@ -254,9 +254,11 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     /^position-(static|relative|sticky|unset|absolute|fixed|inherit|initial)$/
     ```
   * 方向定位
-    #### (方向[trbl])-(m-)?-(数值)(单位)?
+    #### (方向[trbl]top|right|bottom|left)-(m-)?-(数值)(单位)?
     ```css
-    .position-relative{position:relative}
+    .l-283{left:283px;}
+    .top-0px{top:0;}
+    .right-m-672{right:-672px;}
     ```
     ```javascript
     new RegExp(`^[trbl]-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)

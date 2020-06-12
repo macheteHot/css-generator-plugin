@@ -201,10 +201,10 @@ function getRegList () {
   {
     // 绝对定位 方向 t-20vh top:20vh -m负数
     className: 'orientation',
-    // regExp: new RegExp(`^[trbl]-(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
+    // regExp: new RegExp(`^([trbl]|top|right|bottom|left)-(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
       let str = '';
-      ['t', 'r', 'b', 'l'].forEach(trbl => {
+      ['t', 'r', 'b', 'l', 'top', 'right', 'bottom', 'left'].forEach(trbl => {
         ['m-', ''].forEach(m => {
           NUM_WIDTH_UNIT.forEach(v => {
             str += `.${trbl}-${m}${v}{}`
