@@ -31,8 +31,18 @@ function getConfig (str) {
 function setConfig (config) {
   programConfig = config
 }
+function getUnit (str) {
+  if (str === 'p') {
+    return '%'
+  }
+  if (!str) {
+    return programConfig[UNIT] || 'px'
+  }
+  return str
+}
 
 module.exports = {
   setConfig,
-  getConfig
+  getConfig,
+  getUnit
 }

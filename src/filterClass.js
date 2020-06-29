@@ -1,39 +1,10 @@
 
 const cssSet = new Set() // 用来去重
 const { getRegList } = require('./createReg')
-const { pushPreObj } = require('./preRender')
+// const { pushPreObj } = require('./preRender')
 const { GLOB_REG } = require('./constant')
 const { getConfig } = require('./config')
-const {
-  getWorH,
-  getSquare,
-  getMorP,
-  getFlex,
-  getFlexWrap,
-  getJustifyContent,
-  geteAlignItems,
-  getFlexDirection,
-  getKeyValue,
-  getKeyValueLast,
-  getOrientation,
-  getFs,
-  getFw,
-  getTextAlign,
-  getTextAlignLast,
-  getUserSelect,
-  getTextDecoration,
-  getDisplay,
-  getColor,
-  getWordBreak,
-  getLetterSpacing,
-  getMinOrMaxHeightOrWidth,
-  getZindex,
-  getLineHeight,
-  getFlexBasis,
-  getBorder,
-  getBorderRadius,
-  getTextEllipsisNum
-} = require('./classNameToObj')
+
 const { clearPreArray } = require('./preRender')
 
 function filterClassNames (sourceStr) {
@@ -50,104 +21,13 @@ function filterClassNames (sourceStr) {
   return ''
 }
 function filterClass (classStr) {
+  if (cssSet.has(classStr)) {
+    return null
+  }
   getRegList().forEach((rule) => {
-    if (rule.regExp.test(classStr) && !cssSet.has(classStr)) { // 经过正则匹配 并且 list 中不存在
-      cssSet.add(classStr)
-      const v = classStr
-      if (rule.static !== undefined) {
-        pushPreObj({ render: () => rule.static })
-        return null
-      }
-      switch (rule.className) {
-        case 'widthOrHeight':
-          pushPreObj(getWorH(v))
-          break
-        case 'square':
-          pushPreObj(getSquare(v))
-          break
-        case 'minMaxWidthOrHeight':
-          pushPreObj(getMinOrMaxHeightOrWidth(v))
-          break
-        case 'marginOrPadding':
-          pushPreObj(getMorP(v))
-          break
-        case 'text-align':
-          pushPreObj(getTextAlign(v))
-          break
-        case 'line-height':
-          pushPreObj(getLineHeight(v))
-          break
-        case 'flex':
-          pushPreObj(getFlex(v))
-          break
-        case 'flex-wrap-value':
-          pushPreObj(getFlexWrap(v))
-          break
-        case 'justify-content':
-          pushPreObj(getJustifyContent(v))
-          break
-        case 'align-items':
-          pushPreObj(geteAlignItems(v))
-          break
-        case 'flex-direction':
-          pushPreObj(getFlexDirection(v))
-          break
-        case 'word-break': // 文字折叠
-          pushPreObj(getWordBreak(v))
-          break
-        case 'orientation': // 绝对定位
-          pushPreObj(getOrientation(v))
-          break
-        case 'font-weight': // 字体粗细
-          pushPreObj(getFw(v))
-          break
-        case 'font-size':
-          pushPreObj(getFs(v))
-          break
-        case 'display':
-          pushPreObj(getDisplay(v))
-          break
-        case 'color':
-          pushPreObj(getColor(v))
-          break
-        case 'letter-spacing':
-          pushPreObj(getLetterSpacing(v))
-          break
-        case 'zIndex':
-          pushPreObj(getZindex(v))
-          break
-        case 'flex-basis':
-          pushPreObj(getFlexBasis(v))
-          break
-        case 'border':
-          pushPreObj(getBorder(v))
-          break
-        case 'border-radius':
-          pushPreObj(getBorderRadius(v))
-          break
-        case 'text-align-last':
-          pushPreObj(getTextAlignLast(v))
-          break
-        case 'text-decoration':
-          pushPreObj(getTextDecoration(v))
-          break
-        case 'text-ellipsis-num':
-          pushPreObj(getTextEllipsisNum(v))
-          break
-        case 'user-select':
-          pushPreObj(getUserSelect(v))
-          break
-        case 'flexNum': // flex 数值
-        case 'position': // 定位方式
-        case 'cursor': // 鼠标样式
-          pushPreObj(getKeyValue(v))
-          break
-        case 'border-style':
-        case 'overflow':
-        case 'flexShrinkAndGrow':
-          pushPreObj(getKeyValueLast(v))
-          break
-      }
+    const res = classStr.match(rule.regExp)
+    if (res !== null) {
+      console.log(rule.render(res))
     }
   })
 }
