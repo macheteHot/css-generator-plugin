@@ -2194,5 +2194,4610 @@
     "css": [
       "z-index: 2"
     ]
+  },
+  {
+    "className": "flex-null",
+    "name": "flex",
+    "order": 250,
+    "css": [
+      "flex: null"
+    ]
+  },
+  {
+    "className": "flex-auto",
+    "name": "flex",
+    "order": 250,
+    "css": [
+      "flex: auto"
+    ]
+  },
+  {
+    "className": "flex-0",
+    "name": "flex",
+    "order": 250,
+    "css": [
+      "flex: 0"
+    ]
+  },
+  {
+    "className": "flex-1",
+    "name": "flex",
+    "order": 250,
+    "css": [
+      "flex: 1"
+    ]
+  },
+  {
+    "className": "text-align-start",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: start"
+    ]
+  },
+  {
+    "className": "text-align-end",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: end"
+    ]
+  },
+  {
+    "className": "text-align-left",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: left"
+    ]
+  },
+  {
+    "className": "text-align-right",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: right"
+    ]
+  },
+  {
+    "className": "text-align-center",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: center"
+    ]
+  },
+  {
+    "className": "text-align-justify",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: justify"
+    ]
+  },
+  {
+    "className": "text-align-match-parent",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: match-parent"
+    ]
+  },
+  {
+    "className": "text-start",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: start"
+    ]
+  },
+  {
+    "className": "text-end",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: end"
+    ]
+  },
+  {
+    "className": "text-left",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: left"
+    ]
+  },
+  {
+    "className": "text-right",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: right"
+    ]
+  },
+  {
+    "className": "text-center",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: center"
+    ]
+  },
+  {
+    "className": "text-justify",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: justify"
+    ]
+  },
+  {
+    "className": "text-match-parent",
+    "name": "textAlign",
+    "order": 320,
+    "css": [
+      "text-align: match-parent"
+    ]
+  },
+  {
+    "className": "lh-0",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "0",
+    "css": [
+      "line-height: 0"
+    ]
+  },
+  {
+    "className": "lh-1",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "1",
+    "css": [
+      "line-height: 1px"
+    ]
+  },
+  {
+    "className": "lh-2",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "2",
+    "css": [
+      "line-height: 2px"
+    ]
+  },
+  {
+    "className": "lh-1p",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "1",
+    "css": [
+      "line-height: 1%"
+    ]
+  },
+  {
+    "className": "lh-1rem",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "1",
+    "css": [
+      "line-height: 1rem"
+    ]
+  },
+  {
+    "className": "lh-1vh",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "1",
+    "css": [
+      "line-height: 1vh"
+    ]
+  },
+  {
+    "className": "lh-normal",
+    "name": "lineHeight",
+    "order": 330,
+    "num": null,
+    "css": [
+      "line-height: normal"
+    ]
+  },
+  {
+    "className": "lh-unset",
+    "name": "lineHeight",
+    "order": 330,
+    "num": null,
+    "css": [
+      "line-height: unset"
+    ]
+  },
+  {
+    "className": "lh-inherit",
+    "name": "lineHeight",
+    "order": 330,
+    "num": null,
+    "css": [
+      "line-height: inherit"
+    ]
+  },
+  {
+    "className": "lh-initial",
+    "name": "lineHeight",
+    "order": 330,
+    "num": null,
+    "css": [
+      "line-height: initial"
+    ]
+  },
+  {
+    "className": "line-height-1",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "1",
+    "css": [
+      "line-height: 1px"
+    ]
+  },
+  {
+    "className": "line-height-2",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "2",
+    "css": [
+      "line-height: 2px"
+    ]
+  },
+  {
+    "className": "line-height-1p",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "1",
+    "css": [
+      "line-height: 1%"
+    ]
+  },
+  {
+    "className": "line-height-1rem",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "1",
+    "css": [
+      "line-height: 1rem"
+    ]
+  },
+  {
+    "className": "line-height-1vh",
+    "name": "lineHeight",
+    "order": 330,
+    "num": "1",
+    "css": [
+      "line-height: 1vh"
+    ]
+  },
+  {
+    "className": "line-height-normal",
+    "name": "lineHeight",
+    "order": 330,
+    "num": null,
+    "css": [
+      "line-height: normal"
+    ]
+  },
+  {
+    "className": "line-height-unset",
+    "name": "lineHeight",
+    "order": 330,
+    "num": null,
+    "css": [
+      "line-height: unset"
+    ]
+  },
+  {
+    "className": "line-height-inherit",
+    "name": "lineHeight",
+    "order": 330,
+    "num": null,
+    "css": [
+      "line-height: inherit"
+    ]
+  },
+  {
+    "className": "line-height-initial",
+    "name": "lineHeight",
+    "order": 330,
+    "num": null,
+    "css": [
+      "line-height: initial"
+    ]
+  },
+  {
+    "className": "flex-center-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-center-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-center-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-center-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-center-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-center-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-center-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-center-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-center-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-center-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-center-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-center-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-center-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: center",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-start-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-start-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-start-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-start-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-start-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-start-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-start-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-start-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-start-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-start-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-start-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-start-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-start-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: start",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-end-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-end-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-end-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-end-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-end-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-end-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-end-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-end-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-end-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-end-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-end-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-end-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-end-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: end",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-flex-start-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-flex-start-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-flex-start-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-flex-start-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-flex-start-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-flex-start-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-flex-start-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-flex-start-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-flex-start-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-flex-start-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-flex-start-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-flex-start-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-flex-start-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-start",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-flex-end-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-flex-end-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-flex-end-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-flex-end-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-flex-end-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-flex-end-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-flex-end-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-flex-end-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-flex-end-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-flex-end-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-flex-end-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-flex-end-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-flex-end-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: flex-end",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-left-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-left-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-left-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-left-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-left-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-left-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-left-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-left-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-left-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-left-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-left-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-left-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-left-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: left",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-right-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-right-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-right-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-right-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-right-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-right-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-right-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-right-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-right-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-right-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-right-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-right-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-right-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: right",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-space-between-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-space-between-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-space-between-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-space-between-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-space-between-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-space-between-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-space-between-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-space-between-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-space-between-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-space-between-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-space-between-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-space-between-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-space-between-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-between",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-between-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-between-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-between-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-between-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-between-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-between-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-between-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-between-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-between-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-between-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-between-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-between-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-between-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: between",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-space-around-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-space-around-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-space-around-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-space-around-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-space-around-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-space-around-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-space-around-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-space-around-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-space-around-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-space-around-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-space-around-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-space-around-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-space-around-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-around",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-around-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-around-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-around-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-around-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-around-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-around-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-around-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-around-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-around-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-around-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-around-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-around-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-around-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: around",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-space-evenly-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: space-evenly",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-evenly-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-evenly-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-evenly-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-evenly-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-evenly-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-evenly-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-evenly-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-evenly-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-evenly-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-evenly-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-evenly-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-evenly-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-evenly-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: evenly",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-stretch-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-stretch-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-stretch-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-stretch-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-stretch-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-stretch-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-stretch-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-stretch-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-stretch-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-stretch-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-stretch-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-stretch-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-stretch-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: stretch",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-inherit-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-inherit-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-inherit-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-inherit-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-inherit-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-inherit-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-inherit-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-inherit-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-inherit-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-inherit-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-inherit-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-inherit-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-inherit-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: inherit",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-initial-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-initial-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-initial-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-initial-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-initial-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-initial-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-initial-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-initial-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-initial-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-initial-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-initial-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-initial-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-initial-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: initial",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-unset-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-unset-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-unset-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-unset-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-unset-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-unset-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-unset-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-unset-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-unset-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-unset-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-unset-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-unset-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-unset-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: unset",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "flex-normal-baseline",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: baseline"
+    ]
+  },
+  {
+    "className": "flex-normal-center",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: center"
+    ]
+  },
+  {
+    "className": "flex-normal-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: end"
+    ]
+  },
+  {
+    "className": "flex-normal-flex-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: flex-end"
+    ]
+  },
+  {
+    "className": "flex-normal-flex-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: flex-start"
+    ]
+  },
+  {
+    "className": "flex-normal-inherit",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: inherit"
+    ]
+  },
+  {
+    "className": "flex-normal-initial",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: initial"
+    ]
+  },
+  {
+    "className": "flex-normal-normal",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: normal"
+    ]
+  },
+  {
+    "className": "flex-normal-self-end",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: self-end"
+    ]
+  },
+  {
+    "className": "flex-normal-self-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: self-start"
+    ]
+  },
+  {
+    "className": "flex-normal-start",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: start"
+    ]
+  },
+  {
+    "className": "flex-normal-stretch",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: stretch"
+    ]
+  },
+  {
+    "className": "flex-normal-unset",
+    "name": "flexJustAli",
+    "order": 200,
+    "css": [
+      "justify-content: normal",
+      "align-items: unset"
+    ]
+  },
+  {
+    "className": "justify-content-center",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: center"
+    ]
+  },
+  {
+    "className": "justify-content-start",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: start"
+    ]
+  },
+  {
+    "className": "justify-content-end",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: end"
+    ]
+  },
+  {
+    "className": "justify-content-flex-start",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: flex-start"
+    ]
+  },
+  {
+    "className": "justify-content-flex-end",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: flex-end"
+    ]
+  },
+  {
+    "className": "justify-content-left",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: left"
+    ]
+  },
+  {
+    "className": "justify-content-right",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: right"
+    ]
+  },
+  {
+    "className": "justify-content-space-between",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: space-between"
+    ]
+  },
+  {
+    "className": "justify-content-between",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: between"
+    ]
+  },
+  {
+    "className": "justify-content-space-around",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: space-around"
+    ]
+  },
+  {
+    "className": "justify-content-around",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: around"
+    ]
+  },
+  {
+    "className": "justify-content-space-evenly",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: space-evenly"
+    ]
+  },
+  {
+    "className": "justify-content-evenly",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: evenly"
+    ]
+  },
+  {
+    "className": "justify-content-stretch",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: stretch"
+    ]
+  },
+  {
+    "className": "justify-content-inherit",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: inherit"
+    ]
+  },
+  {
+    "className": "justify-content-initial",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: initial"
+    ]
+  },
+  {
+    "className": "justify-content-unset",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: unset"
+    ]
+  },
+  {
+    "className": "justify-content-normal",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: normal"
+    ]
+  },
+  {
+    "className": "justify-content-center",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: center"
+    ]
+  },
+  {
+    "className": "justify-content-end",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: end"
+    ]
+  },
+  {
+    "className": "justify-content-flex-end",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: flex-end"
+    ]
+  },
+  {
+    "className": "justify-content-flex-start",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: flex-start"
+    ]
+  },
+  {
+    "className": "justify-content-inherit",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: inherit"
+    ]
+  },
+  {
+    "className": "justify-content-initial",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: initial"
+    ]
+  },
+  {
+    "className": "justify-content-normal",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: normal"
+    ]
+  },
+  {
+    "className": "justify-content-start",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: start"
+    ]
+  },
+  {
+    "className": "justify-content-stretch",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: stretch"
+    ]
+  },
+  {
+    "className": "justify-content-unset",
+    "name": "justifyContent",
+    "order": 210,
+    "css": [
+      "justify-content: unset"
+    ]
+  },
+  {
+    "className": "flex-direction-row",
+    "name": "flexDirection",
+    "order": 230,
+    "css": [
+      "flex-direction: row"
+    ]
+  },
+  {
+    "className": "flex-direction-row-reverse",
+    "name": "flexDirection",
+    "order": 230,
+    "css": [
+      "flex-direction: row-reverse"
+    ]
+  },
+  {
+    "className": "flex-direction-column",
+    "name": "flexDirection",
+    "order": 230,
+    "css": [
+      "flex-direction: column"
+    ]
+  },
+  {
+    "className": "flex-direction-column-reverse",
+    "name": "flexDirection",
+    "order": 230,
+    "css": [
+      "flex-direction: column-reverse"
+    ]
+  },
+  {
+    "className": "flex-row",
+    "name": "flexDirection",
+    "order": 230,
+    "css": [
+      "flex-direction: row"
+    ]
+  },
+  {
+    "className": "flex-row-reverse",
+    "name": "flexDirection",
+    "order": 230,
+    "css": [
+      "flex-direction: row-reverse"
+    ]
+  },
+  {
+    "className": "flex-column",
+    "name": "flexDirection",
+    "order": 230,
+    "css": [
+      "flex-direction: column"
+    ]
+  },
+  {
+    "className": "flex-column-reverse",
+    "name": "flexDirection",
+    "order": 230,
+    "css": [
+      "flex-direction: column-reverse"
+    ]
+  },
+  {
+    "className": "flex-wrap-inherit",
+    "name": "flexDirection",
+    "order": 240,
+    "css": [
+      "flex-wrap: inherit"
+    ]
+  },
+  {
+    "className": "flex-wrap-initial",
+    "name": "flexDirection",
+    "order": 240,
+    "css": [
+      "flex-wrap: initial"
+    ]
+  },
+  {
+    "className": "flex-wrap-nowrap",
+    "name": "flexDirection",
+    "order": 240,
+    "css": [
+      "flex-wrap: nowrap"
+    ]
+  },
+  {
+    "className": "flex-wrap-wrap",
+    "name": "flexDirection",
+    "order": 240,
+    "css": [
+      "flex-wrap: wrap"
+    ]
+  },
+  {
+    "className": "flex-wrap-wrap-reverse",
+    "name": "flexDirection",
+    "order": 240,
+    "css": [
+      "flex-wrap: wrap-reverse"
+    ]
+  },
+  {
+    "className": "position-static",
+    "name": "position",
+    "order": 300,
+    "css": [
+      "position: static"
+    ]
+  },
+  {
+    "className": "position-relative",
+    "name": "position",
+    "order": 300,
+    "css": [
+      "position: relative"
+    ]
+  },
+  {
+    "className": "position-sticky",
+    "name": "position",
+    "order": 300,
+    "css": [
+      "position: sticky"
+    ]
+  },
+  {
+    "className": "position-unset",
+    "name": "position",
+    "order": 300,
+    "css": [
+      "position: unset"
+    ]
+  },
+  {
+    "className": "position-absolute",
+    "name": "position",
+    "order": 300,
+    "css": [
+      "position: absolute"
+    ]
+  },
+  {
+    "className": "position-fixed",
+    "name": "position",
+    "order": 300,
+    "css": [
+      "position: fixed"
+    ]
+  },
+  {
+    "className": "position-inherit",
+    "name": "position",
+    "order": 300,
+    "css": [
+      "position: inherit"
+    ]
+  },
+  {
+    "className": "position-initial",
+    "name": "position",
+    "order": 300,
+    "css": [
+      "position: initial"
+    ]
+  },
+  {
+    "className": "t-m-1",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "top: -1px"
+    ]
+  },
+  {
+    "className": "t-m-2",
+    "name": "orientation",
+    "order": 310,
+    "num": -2,
+    "css": [
+      "top: -2px"
+    ]
+  },
+  {
+    "className": "t-m-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "top: -1%"
+    ]
+  },
+  {
+    "className": "t-m-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "top: -1rem"
+    ]
+  },
+  {
+    "className": "t-m-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "top: -1vh"
+    ]
+  },
+  {
+    "className": "t-1",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "top: 1px"
+    ]
+  },
+  {
+    "className": "t-2",
+    "name": "orientation",
+    "order": 310,
+    "num": "2",
+    "css": [
+      "top: 2px"
+    ]
+  },
+  {
+    "className": "t-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "top: 1%"
+    ]
+  },
+  {
+    "className": "t-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "top: 1rem"
+    ]
+  },
+  {
+    "className": "t-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "top: 1vh"
+    ]
+  },
+  {
+    "className": "r-m-1",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "right: -1px"
+    ]
+  },
+  {
+    "className": "r-m-2",
+    "name": "orientation",
+    "order": 310,
+    "num": -2,
+    "css": [
+      "right: -2px"
+    ]
+  },
+  {
+    "className": "r-m-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "right: -1%"
+    ]
+  },
+  {
+    "className": "r-m-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "right: -1rem"
+    ]
+  },
+  {
+    "className": "r-m-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "right: -1vh"
+    ]
+  },
+  {
+    "className": "r-1",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "right: 1px"
+    ]
+  },
+  {
+    "className": "r-2",
+    "name": "orientation",
+    "order": 310,
+    "num": "2",
+    "css": [
+      "right: 2px"
+    ]
+  },
+  {
+    "className": "r-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "right: 1%"
+    ]
+  },
+  {
+    "className": "r-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "right: 1rem"
+    ]
+  },
+  {
+    "className": "r-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "right: 1vh"
+    ]
+  },
+  {
+    "className": "b-m-1",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "bottom: -1px"
+    ]
+  },
+  {
+    "className": "b-m-2",
+    "name": "orientation",
+    "order": 310,
+    "num": -2,
+    "css": [
+      "bottom: -2px"
+    ]
+  },
+  {
+    "className": "b-m-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "bottom: -1%"
+    ]
+  },
+  {
+    "className": "b-m-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "bottom: -1rem"
+    ]
+  },
+  {
+    "className": "b-m-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "bottom: -1vh"
+    ]
+  },
+  {
+    "className": "b-1",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "bottom: 1px"
+    ]
+  },
+  {
+    "className": "b-2",
+    "name": "orientation",
+    "order": 310,
+    "num": "2",
+    "css": [
+      "bottom: 2px"
+    ]
+  },
+  {
+    "className": "b-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "bottom: 1%"
+    ]
+  },
+  {
+    "className": "b-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "bottom: 1rem"
+    ]
+  },
+  {
+    "className": "b-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "bottom: 1vh"
+    ]
+  },
+  {
+    "className": "l-m-1",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "left: -1px"
+    ]
+  },
+  {
+    "className": "l-m-2",
+    "name": "orientation",
+    "order": 310,
+    "num": -2,
+    "css": [
+      "left: -2px"
+    ]
+  },
+  {
+    "className": "l-m-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "left: -1%"
+    ]
+  },
+  {
+    "className": "l-m-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "left: -1rem"
+    ]
+  },
+  {
+    "className": "l-m-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "left: -1vh"
+    ]
+  },
+  {
+    "className": "l-1",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "left: 1px"
+    ]
+  },
+  {
+    "className": "l-2",
+    "name": "orientation",
+    "order": 310,
+    "num": "2",
+    "css": [
+      "left: 2px"
+    ]
+  },
+  {
+    "className": "l-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "left: 1%"
+    ]
+  },
+  {
+    "className": "l-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "left: 1rem"
+    ]
+  },
+  {
+    "className": "l-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "left: 1vh"
+    ]
+  },
+  {
+    "className": "top-m-1",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "top: -1px"
+    ]
+  },
+  {
+    "className": "top-m-2",
+    "name": "orientation",
+    "order": 310,
+    "num": -2,
+    "css": [
+      "top: -2px"
+    ]
+  },
+  {
+    "className": "top-m-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "top: -1%"
+    ]
+  },
+  {
+    "className": "top-m-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "top: -1rem"
+    ]
+  },
+  {
+    "className": "top-m-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "top: -1vh"
+    ]
+  },
+  {
+    "className": "top-1",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "top: 1px"
+    ]
+  },
+  {
+    "className": "top-2",
+    "name": "orientation",
+    "order": 310,
+    "num": "2",
+    "css": [
+      "top: 2px"
+    ]
+  },
+  {
+    "className": "top-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "top: 1%"
+    ]
+  },
+  {
+    "className": "top-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "top: 1rem"
+    ]
+  },
+  {
+    "className": "top-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "top: 1vh"
+    ]
+  },
+  {
+    "className": "right-m-1",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "right: -1px"
+    ]
+  },
+  {
+    "className": "right-m-2",
+    "name": "orientation",
+    "order": 310,
+    "num": -2,
+    "css": [
+      "right: -2px"
+    ]
+  },
+  {
+    "className": "right-m-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "right: -1%"
+    ]
+  },
+  {
+    "className": "right-m-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "right: -1rem"
+    ]
+  },
+  {
+    "className": "right-m-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "right: -1vh"
+    ]
+  },
+  {
+    "className": "right-1",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "right: 1px"
+    ]
+  },
+  {
+    "className": "right-2",
+    "name": "orientation",
+    "order": 310,
+    "num": "2",
+    "css": [
+      "right: 2px"
+    ]
+  },
+  {
+    "className": "right-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "right: 1%"
+    ]
+  },
+  {
+    "className": "right-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "right: 1rem"
+    ]
+  },
+  {
+    "className": "right-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "right: 1vh"
+    ]
+  },
+  {
+    "className": "bottom-m-1",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "bottom: -1px"
+    ]
+  },
+  {
+    "className": "bottom-m-2",
+    "name": "orientation",
+    "order": 310,
+    "num": -2,
+    "css": [
+      "bottom: -2px"
+    ]
+  },
+  {
+    "className": "bottom-m-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "bottom: -1%"
+    ]
+  },
+  {
+    "className": "bottom-m-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "bottom: -1rem"
+    ]
+  },
+  {
+    "className": "bottom-m-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "bottom: -1vh"
+    ]
+  },
+  {
+    "className": "bottom-1",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "bottom: 1px"
+    ]
+  },
+  {
+    "className": "bottom-2",
+    "name": "orientation",
+    "order": 310,
+    "num": "2",
+    "css": [
+      "bottom: 2px"
+    ]
+  },
+  {
+    "className": "bottom-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "bottom: 1%"
+    ]
+  },
+  {
+    "className": "bottom-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "bottom: 1rem"
+    ]
+  },
+  {
+    "className": "bottom-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "bottom: 1vh"
+    ]
+  },
+  {
+    "className": "left-m-1",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "left: -1px"
+    ]
+  },
+  {
+    "className": "left-m-2",
+    "name": "orientation",
+    "order": 310,
+    "num": -2,
+    "css": [
+      "left: -2px"
+    ]
+  },
+  {
+    "className": "left-m-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "left: -1%"
+    ]
+  },
+  {
+    "className": "left-m-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "left: -1rem"
+    ]
+  },
+  {
+    "className": "left-m-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": -1,
+    "css": [
+      "left: -1vh"
+    ]
+  },
+  {
+    "className": "left-1",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "left: 1px"
+    ]
+  },
+  {
+    "className": "left-2",
+    "name": "orientation",
+    "order": 310,
+    "num": "2",
+    "css": [
+      "left: 2px"
+    ]
+  },
+  {
+    "className": "left-1p",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "left: 1%"
+    ]
+  },
+  {
+    "className": "left-1rem",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "left: 1rem"
+    ]
+  },
+  {
+    "className": "left-1vh",
+    "name": "orientation",
+    "order": 310,
+    "num": "1",
+    "css": [
+      "left: 1vh"
+    ]
+  },
+  {
+    "className": "cursor-auto",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: auto"
+    ]
+  },
+  {
+    "className": "cursor-default",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: default"
+    ]
+  },
+  {
+    "className": "cursor-none",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: none"
+    ]
+  },
+  {
+    "className": "cursor-context-menu",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: context-menu"
+    ]
+  },
+  {
+    "className": "cursor-help",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: help"
+    ]
+  },
+  {
+    "className": "cursor-pointer",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: pointer"
+    ]
+  },
+  {
+    "className": "cursor-progress",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: progress"
+    ]
+  },
+  {
+    "className": "cursor-wait",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: wait"
+    ]
+  },
+  {
+    "className": "cursor-cell",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: cell"
+    ]
+  },
+  {
+    "className": "cursor-crosshair",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: crosshair"
+    ]
+  },
+  {
+    "className": "cursor-text",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: text"
+    ]
+  },
+  {
+    "className": "cursor-vertical-text",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: vertical-text"
+    ]
+  },
+  {
+    "className": "cursor-alias",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: alias"
+    ]
+  },
+  {
+    "className": "cursor-copy",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: copy"
+    ]
+  },
+  {
+    "className": "cursor-move",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: move"
+    ]
+  },
+  {
+    "className": "cursor-no-drop",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: no-drop"
+    ]
+  },
+  {
+    "className": "cursor-not-allowed",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: not-allowed"
+    ]
+  },
+  {
+    "className": "cursor-e-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: e-resize"
+    ]
+  },
+  {
+    "className": "cursor-n-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: n-resize"
+    ]
+  },
+  {
+    "className": "cursor-ne-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: ne-resize"
+    ]
+  },
+  {
+    "className": "cursor-nw-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: nw-resize"
+    ]
+  },
+  {
+    "className": "cursor-s-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: s-resize"
+    ]
+  },
+  {
+    "className": "cursor-se-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: se-resize"
+    ]
+  },
+  {
+    "className": "cursor-sw-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: sw-resize"
+    ]
+  },
+  {
+    "className": "cursor-w-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: w-resize"
+    ]
+  },
+  {
+    "className": "cursor-ew-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: ew-resize"
+    ]
+  },
+  {
+    "className": "cursor-ns-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: ns-resize"
+    ]
+  },
+  {
+    "className": "cursor-nesw-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: nesw-resize"
+    ]
+  },
+  {
+    "className": "cursor-nwse-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: nwse-resize"
+    ]
+  },
+  {
+    "className": "cursor-col-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: col-resize"
+    ]
+  },
+  {
+    "className": "cursor-row-resize",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: row-resize"
+    ]
+  },
+  {
+    "className": "cursor-all-scroll",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: all-scroll"
+    ]
+  },
+  {
+    "className": "cursor-zoom-in",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: zoom-in"
+    ]
+  },
+  {
+    "className": "cursor-zoom-out",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: zoom-out"
+    ]
+  },
+  {
+    "className": "cursor-grab",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: grab"
+    ]
+  },
+  {
+    "className": "cursor-grabbing",
+    "name": "cursor",
+    "order": 340,
+    "css": [
+      "cursor: grabbing"
+    ]
+  },
+  {
+    "className": "word-break-normal",
+    "name": "wordBreak",
+    "order": 350,
+    "css": [
+      "word-break: normal"
+    ]
+  },
+  {
+    "className": "word-break-break-all",
+    "name": "wordBreak",
+    "order": 350,
+    "css": [
+      "word-break: break-all"
+    ]
+  },
+  {
+    "className": "word-break-keep-all",
+    "name": "wordBreak",
+    "order": 350,
+    "css": [
+      "word-break: keep-all"
+    ]
+  },
+  {
+    "className": "word-break-break-word",
+    "name": "wordBreak",
+    "order": 350,
+    "css": [
+      "word-break: break-word"
+    ]
+  },
+  {
+    "className": "word-break-inherit",
+    "name": "wordBreak",
+    "order": 350,
+    "css": [
+      "word-break: inherit"
+    ]
+  },
+  {
+    "className": "word-break-initial",
+    "name": "wordBreak",
+    "order": 350,
+    "css": [
+      "word-break: initial"
+    ]
+  },
+  {
+    "className": "word-break-unset",
+    "name": "wordBreak",
+    "order": 350,
+    "css": [
+      "word-break: unset"
+    ]
+  },
+  {
+    "className": "font-weight-100",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 100"
+    ]
+  },
+  {
+    "className": "font-weight-200",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 200"
+    ]
+  },
+  {
+    "className": "font-weight-300",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 300"
+    ]
+  },
+  {
+    "className": "font-weight-400",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 400"
+    ]
+  },
+  {
+    "className": "font-weight-500",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 500"
+    ]
+  },
+  {
+    "className": "font-weight-600",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 600"
+    ]
+  },
+  {
+    "className": "font-weight-700",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 700"
+    ]
+  },
+  {
+    "className": "font-weight-800",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 800"
+    ]
+  },
+  {
+    "className": "font-weight-900",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 900"
+    ]
+  },
+  {
+    "className": "font-weight-normal",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: normal"
+    ]
+  },
+  {
+    "className": "font-weight-bold",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: bold"
+    ]
+  },
+  {
+    "className": "font-weight-bolder",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: bolder"
+    ]
+  },
+  {
+    "className": "font-weight-inherit",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: inherit"
+    ]
+  },
+  {
+    "className": "font-weight-initial",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: initial"
+    ]
+  },
+  {
+    "className": "font-weight-lighter",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: lighter"
+    ]
+  },
+  {
+    "className": "font-weight-normal",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: normal"
+    ]
+  },
+  {
+    "className": "font-weight-unset",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: unset"
+    ]
+  },
+  {
+    "className": "fw-100",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 100"
+    ]
+  },
+  {
+    "className": "fw-200",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 200"
+    ]
+  },
+  {
+    "className": "fw-300",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 300"
+    ]
+  },
+  {
+    "className": "fw-400",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 400"
+    ]
+  },
+  {
+    "className": "fw-500",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 500"
+    ]
+  },
+  {
+    "className": "fw-600",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 600"
+    ]
+  },
+  {
+    "className": "fw-700",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 700"
+    ]
+  },
+  {
+    "className": "fw-800",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 800"
+    ]
+  },
+  {
+    "className": "fw-900",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: 900"
+    ]
+  },
+  {
+    "className": "fw-normal",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: normal"
+    ]
+  },
+  {
+    "className": "fw-bold",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: bold"
+    ]
+  },
+  {
+    "className": "fw-bolder",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: bolder"
+    ]
+  },
+  {
+    "className": "fw-inherit",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: inherit"
+    ]
+  },
+  {
+    "className": "fw-initial",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: initial"
+    ]
+  },
+  {
+    "className": "fw-lighter",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: lighter"
+    ]
+  },
+  {
+    "className": "fw-normal",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: normal"
+    ]
+  },
+  {
+    "className": "fw-unset",
+    "name": "fontWeight",
+    "order": 360,
+    "css": [
+      "font-weight: unset"
+    ]
+  },
+  {
+    "className": "font-size-1",
+    "name": "fontSize",
+    "order": 370,
+    "num": "1",
+    "css": [
+      "font-size: 1px"
+    ]
+  },
+  {
+    "className": "font-size-1p",
+    "name": "fontSize",
+    "order": 370,
+    "num": "1",
+    "css": [
+      "font-size: 1%"
+    ]
+  },
+  {
+    "className": "font-size-1rem",
+    "name": "fontSize",
+    "order": 370,
+    "num": "1",
+    "css": [
+      "font-size: 1rem"
+    ]
+  },
+  {
+    "className": "font-size-1vh",
+    "name": "fontSize",
+    "order": 370,
+    "num": "1",
+    "css": [
+      "font-size: 1vh"
+    ]
+  },
+  {
+    "className": "font-size-2",
+    "name": "fontSize",
+    "order": 370,
+    "num": "2",
+    "css": [
+      "font-size: 2px"
+    ]
+  },
+  {
+    "className": "font-size-2p",
+    "name": "fontSize",
+    "order": 370,
+    "num": "2",
+    "css": [
+      "font-size: 2%"
+    ]
+  },
+  {
+    "className": "font-size-2rem",
+    "name": "fontSize",
+    "order": 370,
+    "num": "2",
+    "css": [
+      "font-size: 2rem"
+    ]
+  },
+  {
+    "className": "font-size-2vh",
+    "name": "fontSize",
+    "order": 370,
+    "num": "2",
+    "css": [
+      "font-size: 2vh"
+    ]
+  },
+  {
+    "className": "fs-1",
+    "name": "fontSize",
+    "order": 370,
+    "num": "1",
+    "css": [
+      "font-size: 1px"
+    ]
+  },
+  {
+    "className": "fs-1p",
+    "name": "fontSize",
+    "order": 370,
+    "num": "1",
+    "css": [
+      "font-size: 1%"
+    ]
+  },
+  {
+    "className": "fs-1rem",
+    "name": "fontSize",
+    "order": 370,
+    "num": "1",
+    "css": [
+      "font-size: 1rem"
+    ]
+  },
+  {
+    "className": "fs-1vh",
+    "name": "fontSize",
+    "order": 370,
+    "num": "1",
+    "css": [
+      "font-size: 1vh"
+    ]
+  },
+  {
+    "className": "fs-2",
+    "name": "fontSize",
+    "order": 370,
+    "num": "2",
+    "css": [
+      "font-size: 2px"
+    ]
+  },
+  {
+    "className": "fs-2p",
+    "name": "fontSize",
+    "order": 370,
+    "num": "2",
+    "css": [
+      "font-size: 2%"
+    ]
+  },
+  {
+    "className": "fs-2rem",
+    "name": "fontSize",
+    "order": 370,
+    "num": "2",
+    "css": [
+      "font-size: 2rem"
+    ]
+  },
+  {
+    "className": "fs-2vh",
+    "name": "fontSize",
+    "order": 370,
+    "num": "2",
+    "css": [
+      "font-size: 2vh"
+    ]
+  },
+  {
+    "className": "display-none",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: none"
+    ]
+  },
+  {
+    "className": "display-inline",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: inline"
+    ]
+  },
+  {
+    "className": "display-block",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: block"
+    ]
+  },
+  {
+    "className": "display-inline-block",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: inline-block"
+    ]
+  },
+  {
+    "className": "display-flex",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: flex"
+    ]
+  },
+  {
+    "className": "d-none",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: none"
+    ]
+  },
+  {
+    "className": "d-inline",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: inline"
+    ]
+  },
+  {
+    "className": "d-block",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: block"
+    ]
+  },
+  {
+    "className": "d-inline-block",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: inline-block"
+    ]
+  },
+  {
+    "className": "d-flex",
+    "name": "display",
+    "order": 280,
+    "css": [
+      "display: flex"
+    ]
+  },
+  {
+    "className": "overflow-x-hidden",
+    "name": "overflow",
+    "order": 390,
+    "css": [
+      "overflow-x: hidden"
+    ]
+  },
+  {
+    "className": "overflow-x-auto",
+    "name": "overflow",
+    "order": 390,
+    "css": [
+      "overflow-x: auto"
+    ]
+  },
+  {
+    "className": "overflow-x-visible",
+    "name": "overflow",
+    "order": 390,
+    "css": [
+      "overflow-x: visible"
+    ]
+  },
+  {
+    "className": "overflow-x-scroll",
+    "name": "overflow",
+    "order": 390,
+    "css": [
+      "overflow-x: scroll"
+    ]
+  },
+  {
+    "className": "overflow-x-inherit",
+    "name": "overflow",
+    "order": 390,
+    "css": [
+      "overflow-x: inherit"
+    ]
+  },
+  {
+    "className": "overflow-y-hidden",
+    "name": "overflow",
+    "order": 400,
+    "css": [
+      "overflow-y: hidden"
+    ]
+  },
+  {
+    "className": "overflow-y-auto",
+    "name": "overflow",
+    "order": 400,
+    "css": [
+      "overflow-y: auto"
+    ]
+  },
+  {
+    "className": "overflow-y-visible",
+    "name": "overflow",
+    "order": 400,
+    "css": [
+      "overflow-y: visible"
+    ]
+  },
+  {
+    "className": "overflow-y-scroll",
+    "name": "overflow",
+    "order": 400,
+    "css": [
+      "overflow-y: scroll"
+    ]
+  },
+  {
+    "className": "overflow-y-inherit",
+    "name": "overflow",
+    "order": 400,
+    "css": [
+      "overflow-y: inherit"
+    ]
+  },
+  {
+    "className": "overflow-hidden",
+    "name": "overflow",
+    "order": 380,
+    "css": [
+      "overflow: hidden"
+    ]
+  },
+  {
+    "className": "overflow-auto",
+    "name": "overflow",
+    "order": 380,
+    "css": [
+      "overflow: auto"
+    ]
+  },
+  {
+    "className": "overflow-visible",
+    "name": "overflow",
+    "order": 380,
+    "css": [
+      "overflow: visible"
+    ]
+  },
+  {
+    "className": "overflow-scroll",
+    "name": "overflow",
+    "order": 380,
+    "css": [
+      "overflow: scroll"
+    ]
+  },
+  {
+    "className": "overflow-inherit",
+    "name": "overflow",
+    "order": 380,
+    "css": [
+      "overflow: inherit"
+    ]
+  },
+  {
+    "className": "flex-shrink-1",
+    "name": "flexShrink",
+    "order": 260,
+    "css": [
+      "flex-shrink: 1"
+    ]
+  },
+  {
+    "className": "flex-shrink-2",
+    "name": "flexShrink",
+    "order": 260,
+    "css": [
+      "flex-shrink: 2"
+    ]
+  },
+  {
+    "className": "flex-shrink-initial",
+    "name": "flexShrink",
+    "order": 260,
+    "css": [
+      "flex-shrink: initial"
+    ]
+  },
+  {
+    "className": "flex-shrink-inherit",
+    "name": "flexShrink",
+    "order": 260,
+    "css": [
+      "flex-shrink: inherit"
+    ]
+  },
+  {
+    "className": "flex-grow-1",
+    "name": "flexGrow",
+    "order": 270,
+    "css": [
+      "flex-grow: 1"
+    ]
+  },
+  {
+    "className": "flex-grow-2",
+    "name": "flexGrow",
+    "order": 270,
+    "css": [
+      "flex-grow: 2"
+    ]
+  },
+  {
+    "className": "flex-grow-initial",
+    "name": "flexGrow",
+    "order": 270,
+    "css": [
+      "flex-grow: initial"
+    ]
+  },
+  {
+    "className": "flex-grow-inherit",
+    "name": "flexGrow",
+    "order": 270,
+    "css": [
+      "flex-grow: inherit"
+    ]
+  },
+  {
+    "className": "flex-basis-1p",
+    "name": "flexBasis",
+    "order": 280,
+    "css": [
+      "flex-basis: 1p"
+    ]
+  },
+  {
+    "className": "flex-basis-1rem",
+    "name": "flexBasis",
+    "order": 280,
+    "css": [
+      "flex-basis: 1rem"
+    ]
+  },
+  {
+    "className": "flex-basis-1vh",
+    "name": "flexBasis",
+    "order": 280,
+    "css": [
+      "flex-basis: 1vh"
+    ]
+  },
+  {
+    "className": "flex-basis-initial",
+    "name": "flexBasis",
+    "order": 280,
+    "css": [
+      "flex-basis: initial"
+    ]
+  },
+  {
+    "className": "flex-basis-inherit",
+    "name": "flexBasis",
+    "order": 280,
+    "css": [
+      "flex-basis: inherit"
+    ]
+  },
+  {
+    "className": "flex-basis-auto",
+    "name": "flexBasis",
+    "order": 280,
+    "css": [
+      "flex-basis: auto"
+    ]
   }
 ]

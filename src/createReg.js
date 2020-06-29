@@ -6,51 +6,6 @@ const rulesObjList = require('require-all')({
 })
 function getRegList () {
   return Object.values(rulesObjList)
-  // return [
-  // {
-  //   className: 'text-align',
-  //   regExp: /^(text-align|text)-(start|end|left|right|center|justify|match-parent)$/
-  // },
-  // { //
-  //   className: 'line-height',
-  //   regExp: new RegExp(`^(lh|line-height)-(((0|[1-9]\\d*)(${UNIT_ENMU_STR})?)|normal|unset|inherit|initial)$`)
-  // },
-
-  // {
-  // // 定位方式枚举
-  //   className: 'position',
-  //   regExp: /^position-(static|relative|sticky|unset|absolute|fixed|inherit|initial)$/
-  // },
-  // {
-  // // 绝对定位 方向 t-20vh top:20vh -m负数
-  //   className: 'orientation',
-  //   regExp: new RegExp(`^([trbl]|top|right|bottom|left)-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
-  // },
-  // {
-  // // 鼠标样式方式枚举
-  //   className: 'cursor',
-  //   regExp: new RegExp(`^cursor-(${CURSOR_ENMU_STR})$`)
-  // },
-  // {
-  // // 文字折叠
-  //   className: 'word-break',
-  //   regExp: /^word-break-(normal|break-all|keep-all|break-word|inherit|initial|unset)$/
-  // },
-  // {
-  // // 字体粗细
-  //   className: 'font-weight',
-  //   regExp: /^(font-weight|fw)-([1-9]00|normal|bold|bolder|inherit|initial|lighter|normal|unset)$/
-  // },
-  // {
-  // // 字体粗细
-  //   className: 'font-size',
-  //   regExp: new RegExp(`^(font-size|fs)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
-  // },
-  // // display
-  // {
-  //   className: 'display',
-  //   regExp: /^(display|d)-(none|inline|block|inline-block|flex)$/
-  // },
   // // overflow
   // {
   //   className: 'overflow',
@@ -71,10 +26,6 @@ function getRegList () {
   //   className: 'circle',
   //   regExp: /^circle$/,
   //   static: '.circle{border-radius:50%;}'
-  // },
-  // {
-  //   className: 'flex-basis',
-  //   regExp: new RegExp(`^flex-basis-((0|[1-9]\\d*)(${UNIT_ENMU_STR})?|initial|inherit|auto)$`)
   // },
   // {
   //   className: 'border',

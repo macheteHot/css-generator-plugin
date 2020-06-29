@@ -1,7 +1,7 @@
 /**
  * order 280
  */
-import { UNIT_ENMU_STR } from '../constant'
+const { UNIT_ENMU_STR } = require('../constant')
 
 module.exports = {
   regExp: new RegExp(`^flex-basis-(?<value>(0|[1-9]\\d*(${UNIT_ENMU_STR}))|initial|inherit|auto)$`),
