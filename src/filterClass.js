@@ -6,6 +6,7 @@ const { GLOB_REG } = require('./constant')
 const { getConfig } = require('./config')
 
 const { clearPreArray } = require('./preRender')
+const { isFunction } = require('lodash')
 
 function filterClassNames (sourceStr) {
   cssSet.clear() // 清空set
@@ -26,7 +27,9 @@ function filterClass (classStr) {
   }
   cssSet.add(classStr)
   getRegList().forEach((rule) => {
-    const res = classStr.match(rule.regExp)
+    // regExp maybe function
+    const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
+    const res = classStr.match(reg)
     if (res !== null) {
       pushPreObj({ classStr, ...rule.render(res) })
     }

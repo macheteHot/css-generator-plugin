@@ -3,9 +3,8 @@
  */
 
 const { getColorsKey, textToRgbText } = require('../colorUtils')
-
 module.exports = {
-  regExp: new RegExp(
+  regExp: () => new RegExp(
     `^(?<type>color|c|text|bg|background|border-color|border-c)-((?<pseudo>hover|link|visited|active|focus|focus-within)-)?(?<color>[a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-(?<opacity>1|([1-9]\\d{0,1})))?$`),
   render ({ groups }) {
     let { type, pseudo, color, opacity } = groups
