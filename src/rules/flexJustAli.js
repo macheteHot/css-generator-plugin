@@ -18,7 +18,7 @@ module.exports = {
     return {
       name: 'flexJustAli',
       order: 200,
-      css: [`justify-content: ${justify}`, `align-items: ${align}`]
+      css: ['display: flex', `justify-content: ${justify}`, `align-items: ${align}`]
     }
   }
 }

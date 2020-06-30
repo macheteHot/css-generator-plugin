@@ -1,5 +1,5 @@
 const { IMPORTANT } = require('./constant')
-const { groupBy } = require('lodash')
+const { groupBy, every } = require('lodash')
 
 const { getConfig } = require('./config')
 let preArry = []
@@ -25,6 +25,14 @@ function getCssSingle ({ classStr, pseudo, css }) {
   }, `.${classStr}{ `) + '}'
 }
 
+function sortCss (a, b) {
+  if (a !== undefined && b !== undefined) {
+    return parseInt(a.num) - parseInt(b.num)
+  } else {
+    return 0
+  }
+}
+
 function renderCss () {
   let cssStr = ''
   const cssObject = groupBy(preArry.sort((a, b) => a.order - b.order), 'name')
@@ -32,7 +40,7 @@ function renderCss () {
     if (Object.prototype.hasOwnProperty.call(cssObject, key)) {
       cssStr += `/* ${key} order ${cssObject[key][0].order} */\n`
       cssStr += cssObject[key]
-        .sort((a, b) => a.num - b.num)
+        .sort(sortCss)
         .map(getCssSingle)
         .join('\n')
       cssStr += '\n\n'
