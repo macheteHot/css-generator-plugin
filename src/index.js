@@ -8,7 +8,7 @@ const shelljs = require('shelljs')
 const { getConfig } = require('./config')
 const { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION } = require('./constant')
 
-function getAllVueFileClassStr () {
+function getAllFileClassStr () {
   const globSyncStr = getConfig(EXT_NAME).join('|')
   const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.@(${globSyncStr})`))
   return files.reduce((t, c) => t + fs.readFileSync(path.resolve(c), 'utf8'), '')
@@ -29,7 +29,7 @@ function getFilePath (str) {
 
 function init () {
   console.time('init Time')
-  filterClassNames(getAllVueFileClassStr())
+  filterClassNames(getAllFileClassStr())
   wirteToFile()
   console.log('============= init done =============')
   console.timeEnd('init Time')
@@ -56,7 +56,7 @@ function hotReloadwatcher () {
   })
   watcher.on('change', () => {
     console.time('reload time')
-    filterClassNames(getAllVueFileClassStr())
+    filterClassNames(getAllFileClassStr())
     wirteToFile()
     console.log('============= reload done =============')
     console.timeEnd('reload time')

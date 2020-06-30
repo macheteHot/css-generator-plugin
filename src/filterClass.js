@@ -1,7 +1,7 @@
 
 const cssSet = new Set() // 用来去重
 const { getRegList } = require('./createReg')
-// const { pushPreObj } = require('./preRender')
+const { pushPreObj } = require('./preRender')
 const { GLOB_REG } = require('./constant')
 const { getConfig } = require('./config')
 
@@ -24,10 +24,11 @@ function filterClass (classStr) {
   if (cssSet.has(classStr)) {
     return null
   }
+  cssSet.add(classStr)
   getRegList().forEach((rule) => {
     const res = classStr.match(rule.regExp)
     if (res !== null) {
-      console.log(rule.render(res))
+      pushPreObj({ classStr, ...rule.render(res) })
     }
   })
 }

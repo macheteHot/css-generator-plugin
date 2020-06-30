@@ -26,7 +26,6 @@ function getOrder (direction) {
   }
   return order
 }
-
 module.exports = {
   regExp: new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
@@ -42,7 +41,7 @@ module.exports = {
       num,
       css: DIRECTION_MAP
         .get(direction)
-        .reduce((t, c) => [c ? `border-width-${c}: ${num}${unit}` : `border-width: ${num}${unit}`, ...t], ['border-style: solid', 'border-color: #000'])
+        .reduce((t, c) => [c ? `border-${c}-width: ${num}${unit}` : `border-width: ${num}${unit}`, ...t], ['border-style: solid', 'border-color: #000'])
 
     }
   }
