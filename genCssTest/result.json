@@ -6689,6 +6689,104 @@
     ]
   },
   {
+    "className": "letter-spacing-m-1",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": -1,
+    "css": [
+      "letter-spacing: -1px"
+    ]
+  },
+  {
+    "className": "letter-spacing-m-2",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": -2,
+    "css": [
+      "letter-spacing: -2px"
+    ]
+  },
+  {
+    "className": "letter-spacing-m-1p",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": -1,
+    "css": [
+      "letter-spacing: -1%"
+    ]
+  },
+  {
+    "className": "letter-spacing-m-1rem",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": -1,
+    "css": [
+      "letter-spacing: -1rem"
+    ]
+  },
+  {
+    "className": "letter-spacing-m-1vh",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": -1,
+    "css": [
+      "letter-spacing: -1vh"
+    ]
+  },
+  {
+    "className": "letter-spacing-1",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": "1",
+    "css": [
+      "letter-spacing: 1px"
+    ]
+  },
+  {
+    "className": "letter-spacing-2",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": "2",
+    "css": [
+      "letter-spacing: 2px"
+    ]
+  },
+  {
+    "className": "letter-spacing-1p",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": "1",
+    "css": [
+      "letter-spacing: 1%"
+    ]
+  },
+  {
+    "className": "letter-spacing-1rem",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": "1",
+    "css": [
+      "letter-spacing: 1rem"
+    ]
+  },
+  {
+    "className": "letter-spacing-1vh",
+    "name": "letterSpacing",
+    "order": 410,
+    "num": "1",
+    "css": [
+      "letter-spacing: 1vh"
+    ]
+  },
+  {
+    "className": "circle",
+    "name": "borderStyle",
+    "order": 540,
+    "css": [
+      "border-radius: 50%"
+    ]
+  },
+  {
     "className": "flex-shrink-1",
     "name": "flexShrink",
     "order": 260,
@@ -6798,6 +6896,6987 @@
     "order": 280,
     "css": [
       "flex-basis: auto"
+    ]
+  },
+  {
+    "className": "border-t-0",
+    "name": "border",
+    "order": 490,
+    "num": "0",
+    "css": [
+      "border-width-top: 0",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-t-1",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-t-2",
+    "name": "border",
+    "order": 490,
+    "num": "2",
+    "css": [
+      "border-width-top: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-t-1p",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-t-1rem",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-t-1vh",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-r-1",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-r-2",
+    "name": "border",
+    "order": 510,
+    "num": "2",
+    "css": [
+      "border-width-right: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-r-1p",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-r-1rem",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-r-1vh",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-b-1",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-b-2",
+    "name": "border",
+    "order": 500,
+    "num": "2",
+    "css": [
+      "border-width-bottom: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-b-1p",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-b-1rem",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-b-1vh",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-l-1",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-l-2",
+    "name": "border",
+    "order": 520,
+    "num": "2",
+    "css": [
+      "border-width-left: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-l-1p",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-l-1rem",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-l-1vh",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-x-1",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1px",
+      "border-width-left: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-x-2",
+    "name": "border",
+    "order": 470,
+    "num": "2",
+    "css": [
+      "border-width-right: 2px",
+      "border-width-left: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-x-1p",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1%",
+      "border-width-left: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-x-1rem",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1rem",
+      "border-width-left: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-x-1vh",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1vh",
+      "border-width-left: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-y-1",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1px",
+      "border-width-top: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-y-2",
+    "name": "border",
+    "order": 480,
+    "num": "2",
+    "css": [
+      "border-width-bottom: 2px",
+      "border-width-top: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-y-1p",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1%",
+      "border-width-top: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-y-1rem",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1rem",
+      "border-width-top: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-y-1vh",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1vh",
+      "border-width-top: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-y-0",
+    "name": "border",
+    "order": 480,
+    "num": "0",
+    "css": [
+      "border-width-bottom: 0",
+      "border-width-top: 0",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-0rem",
+    "name": "border",
+    "order": 460,
+    "num": "0",
+    "css": [
+      "border-width: 0",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-1",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-2",
+    "name": "border",
+    "order": 460,
+    "num": "2",
+    "css": [
+      "border-width: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-1p",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-1rem",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-1vh",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-t-1",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-t-2",
+    "name": "border",
+    "order": 490,
+    "num": "2",
+    "css": [
+      "border-width-top: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-t-1p",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-t-1rem",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-t-1vh",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-r-1",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-r-2",
+    "name": "border",
+    "order": 510,
+    "num": "2",
+    "css": [
+      "border-width-right: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-r-1p",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-r-1rem",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-r-1vh",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-b-1",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-b-2",
+    "name": "border",
+    "order": 500,
+    "num": "2",
+    "css": [
+      "border-width-bottom: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-b-1p",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-b-1rem",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-b-1vh",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-l-1",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-l-2",
+    "name": "border",
+    "order": 520,
+    "num": "2",
+    "css": [
+      "border-width-left: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-l-1p",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-l-1rem",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-l-1vh",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-x-1",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1px",
+      "border-width-left: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-x-2",
+    "name": "border",
+    "order": 470,
+    "num": "2",
+    "css": [
+      "border-width-right: 2px",
+      "border-width-left: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-x-1p",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1%",
+      "border-width-left: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-x-1rem",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1rem",
+      "border-width-left: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-x-1vh",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1vh",
+      "border-width-left: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-y-1",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1px",
+      "border-width-top: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-y-2",
+    "name": "border",
+    "order": 480,
+    "num": "2",
+    "css": [
+      "border-width-bottom: 2px",
+      "border-width-top: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-y-1p",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1%",
+      "border-width-top: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-y-1rem",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1rem",
+      "border-width-top: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-y-1vh",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1vh",
+      "border-width-top: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-1",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-2",
+    "name": "border",
+    "order": 460,
+    "num": "2",
+    "css": [
+      "border-width: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-1p",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-1rem",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-width-1vh",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-t-1",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-t-2",
+    "name": "border",
+    "order": 490,
+    "num": "2",
+    "css": [
+      "border-width-top: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-t-1p",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-t-1rem",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-t-1vh",
+    "name": "border",
+    "order": 490,
+    "num": "1",
+    "css": [
+      "border-width-top: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-r-1",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-r-2",
+    "name": "border",
+    "order": 510,
+    "num": "2",
+    "css": [
+      "border-width-right: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-r-1p",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-r-1rem",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-r-1vh",
+    "name": "border",
+    "order": 510,
+    "num": "1",
+    "css": [
+      "border-width-right: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-b-1",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-b-2",
+    "name": "border",
+    "order": 500,
+    "num": "2",
+    "css": [
+      "border-width-bottom: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-b-1p",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-b-1rem",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-b-1vh",
+    "name": "border",
+    "order": 500,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-l-1",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-l-2",
+    "name": "border",
+    "order": 520,
+    "num": "2",
+    "css": [
+      "border-width-left: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-l-1p",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-l-1rem",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-l-1vh",
+    "name": "border",
+    "order": 520,
+    "num": "1",
+    "css": [
+      "border-width-left: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-x-1",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1px",
+      "border-width-left: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-x-2",
+    "name": "border",
+    "order": 470,
+    "num": "2",
+    "css": [
+      "border-width-right: 2px",
+      "border-width-left: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-x-1p",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1%",
+      "border-width-left: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-x-1rem",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1rem",
+      "border-width-left: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-x-1vh",
+    "name": "border",
+    "order": 470,
+    "num": "1",
+    "css": [
+      "border-width-right: 1vh",
+      "border-width-left: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-y-1",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1px",
+      "border-width-top: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-y-2",
+    "name": "border",
+    "order": 480,
+    "num": "2",
+    "css": [
+      "border-width-bottom: 2px",
+      "border-width-top: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-y-1p",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1%",
+      "border-width-top: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-y-1rem",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1rem",
+      "border-width-top: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-y-1vh",
+    "name": "border",
+    "order": 480,
+    "num": "1",
+    "css": [
+      "border-width-bottom: 1vh",
+      "border-width-top: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-1",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-2",
+    "name": "border",
+    "order": 460,
+    "num": "2",
+    "css": [
+      "border-width: 2px",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-1p",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1%",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-1rem",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1rem",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-w-1vh",
+    "name": "border",
+    "order": 460,
+    "num": "1",
+    "css": [
+      "border-width: 1vh",
+      "border-style: solid",
+      "border-color: #000"
+    ]
+  },
+  {
+    "className": "border-radius-1",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 1px"
+    ]
+  },
+  {
+    "className": "border-radius-2",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 2px"
+    ]
+  },
+  {
+    "className": "border-radius-1p",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 1%"
+    ]
+  },
+  {
+    "className": "border-radius-1rem",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 1rem"
+    ]
+  },
+  {
+    "className": "border-radius-1vh",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 1vh"
+    ]
+  },
+  {
+    "className": "br-1",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 1px"
+    ]
+  },
+  {
+    "className": "br-2",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 2px"
+    ]
+  },
+  {
+    "className": "br-1p",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 1%"
+    ]
+  },
+  {
+    "className": "br-1rem",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 1rem"
+    ]
+  },
+  {
+    "className": "br-1vh",
+    "name": "borderRadius",
+    "order": 530,
+    "css": [
+      "border-radius: 1vh"
+    ]
+  },
+  {
+    "className": "border-style-none",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: none"
+    ]
+  },
+  {
+    "className": "border-style-hidden",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: hidden"
+    ]
+  },
+  {
+    "className": "border-style-dotted",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: dotted"
+    ]
+  },
+  {
+    "className": "border-style-dashed",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: dashed"
+    ]
+  },
+  {
+    "className": "border-style-solid",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: solid"
+    ]
+  },
+  {
+    "className": "border-style-double",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: double"
+    ]
+  },
+  {
+    "className": "border-style-groove",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: groove"
+    ]
+  },
+  {
+    "className": "border-style-ridge",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: ridge"
+    ]
+  },
+  {
+    "className": "border-style-inset",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: inset"
+    ]
+  },
+  {
+    "className": "border-style-outset",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: outset"
+    ]
+  },
+  {
+    "className": "border-style-inherit",
+    "name": "borderStyle",
+    "order": 550,
+    "css": [
+      "border-style: inherit"
+    ]
+  },
+  {
+    "className": "text-align-last-auto",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: auto"
+    ]
+  },
+  {
+    "className": "text-align-last-left",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: left"
+    ]
+  },
+  {
+    "className": "text-align-last-right",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: right"
+    ]
+  },
+  {
+    "className": "text-align-last-center",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: center"
+    ]
+  },
+  {
+    "className": "text-align-last-justify",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: justify"
+    ]
+  },
+  {
+    "className": "text-align-last-start",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: start"
+    ]
+  },
+  {
+    "className": "text-align-last-end",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: end"
+    ]
+  },
+  {
+    "className": "text-align-last-initial",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: initial"
+    ]
+  },
+  {
+    "className": "text-align-last-inherit",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: inherit"
+    ]
+  },
+  {
+    "className": "text-last-auto",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: auto"
+    ]
+  },
+  {
+    "className": "text-last-left",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: left"
+    ]
+  },
+  {
+    "className": "text-last-right",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: right"
+    ]
+  },
+  {
+    "className": "text-last-center",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: center"
+    ]
+  },
+  {
+    "className": "text-last-justify",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: justify"
+    ]
+  },
+  {
+    "className": "text-last-start",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: start"
+    ]
+  },
+  {
+    "className": "text-last-end",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: end"
+    ]
+  },
+  {
+    "className": "text-last-initial",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: initial"
+    ]
+  },
+  {
+    "className": "text-last-inherit",
+    "name": "textAlignLast",
+    "order": 440,
+    "css": [
+      "text-align-last: inherit"
+    ]
+  },
+  {
+    "className": "text-decoration-none",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: none"
+    ]
+  },
+  {
+    "className": "text-decoration-underline",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: underline"
+    ]
+  },
+  {
+    "className": "text-decoration-overline",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: overline"
+    ]
+  },
+  {
+    "className": "text-decoration-line-through",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: line-through"
+    ]
+  },
+  {
+    "className": "text-decoration-blink",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: blink"
+    ]
+  },
+  {
+    "className": "text-decoration-inherit",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: inherit"
+    ]
+  },
+  {
+    "className": "text-none",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: none"
+    ]
+  },
+  {
+    "className": "text-underline",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: underline"
+    ]
+  },
+  {
+    "className": "text-overline",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: overline"
+    ]
+  },
+  {
+    "className": "text-line-through",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: line-through"
+    ]
+  },
+  {
+    "className": "text-blink",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: blink"
+    ]
+  },
+  {
+    "className": "text-inherit",
+    "name": "textDecoration",
+    "order": 420,
+    "css": [
+      "text-decoration: inherit"
+    ]
+  },
+  {
+    "className": "user-select-none",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: none"
+    ]
+  },
+  {
+    "className": "user-select-auto",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: auto"
+    ]
+  },
+  {
+    "className": "user-select-text",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: text"
+    ]
+  },
+  {
+    "className": "user-select-all",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: all"
+    ]
+  },
+  {
+    "className": "user-select-contain",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: contain"
+    ]
+  },
+  {
+    "className": "user-select-element",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: element"
+    ]
+  },
+  {
+    "className": "select-none",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: none"
+    ]
+  },
+  {
+    "className": "select-auto",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: auto"
+    ]
+  },
+  {
+    "className": "select-text",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: text"
+    ]
+  },
+  {
+    "className": "select-all",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: all"
+    ]
+  },
+  {
+    "className": "select-contain",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: contain"
+    ]
+  },
+  {
+    "className": "select-element",
+    "name": "userSelect",
+    "order": 430,
+    "css": [
+      "user-select: element"
+    ]
+  },
+  {
+    "className": "ellipsis-1",
+    "name": "",
+    "order": 450,
+    "num": 0,
+    "css": [
+      "display: inline-block",
+      "overflow: hidden",
+      "text-overflow: ellipsis",
+      "white-space: nowrap"
+    ]
+  },
+  {
+    "className": "ellipsis-2",
+    "name": "",
+    "order": 450,
+    "num": "2",
+    "css": [
+      "overflow: hidden",
+      "text-overflow: ellipsis",
+      "display: -webkit-box",
+      "-webkit-line-clamp: undefined",
+      "-webkit-box-orient: vertical"
+    ]
+  },
+  {
+    "className": "text-ellipsis-1",
+    "name": "",
+    "order": 450,
+    "num": 0,
+    "css": [
+      "display: inline-block",
+      "overflow: hidden",
+      "text-overflow: ellipsis",
+      "white-space: nowrap"
+    ]
+  },
+  {
+    "className": "text-ellipsis-2",
+    "name": "",
+    "order": 450,
+    "num": "2",
+    "css": [
+      "overflow: hidden",
+      "text-overflow: ellipsis",
+      "display: -webkit-box",
+      "-webkit-line-clamp: undefined",
+      "-webkit-box-orient: vertical"
+    ]
+  },
+  {
+    "className": "color-ff0",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "color-ff0-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-ff0-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-fafafa",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "color-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "color-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "color-red",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "color-red-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-red-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-transparent",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-transparent-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-transparent-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-hover-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "color-hover-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-hover-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-hover-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "color-hover-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "color-hover-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "color-hover-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "color-hover-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-hover-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-hover-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-hover-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-hover-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-link-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "color-link-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-link-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-link-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "color-link-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "color-link-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "color-link-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "color-link-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-link-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-link-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-link-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-link-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-visited-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "color-visited-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-visited-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-visited-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "color-visited-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "color-visited-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "color-visited-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "color-visited-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-visited-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-visited-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-visited-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-visited-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-active-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "color-active-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-active-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-active-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "color-active-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "color-active-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "color-active-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "color-active-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-active-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-active-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-active-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-active-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-focus-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "color-focus-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-focus-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-focus-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "color-focus-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "color-focus-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "color-focus-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "color-focus-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-focus-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-focus-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-focus-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-focus-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-focus-within-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "color-focus-within-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-focus-within-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-focus-within-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "color-focus-within-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "color-focus-within-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "color-focus-within-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "color-focus-within-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "color-focus-within-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "color-focus-within-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-focus-within-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "color-focus-within-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-ff0",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "c-ff0-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-ff0-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-fafafa",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "c-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "c-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "c-red",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "c-red-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-red-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-transparent",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-transparent-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-transparent-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-hover-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "c-hover-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-hover-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-hover-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "c-hover-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "c-hover-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "c-hover-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "c-hover-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-hover-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-hover-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-hover-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-hover-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-link-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "c-link-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-link-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-link-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "c-link-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "c-link-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "c-link-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "c-link-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-link-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-link-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-link-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-link-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-visited-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "c-visited-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-visited-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-visited-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "c-visited-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "c-visited-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "c-visited-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "c-visited-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-visited-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-visited-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-visited-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-visited-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-active-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "c-active-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-active-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-active-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "c-active-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "c-active-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "c-active-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "c-active-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-active-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-active-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-active-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-active-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-focus-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "c-focus-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-focus-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-focus-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "c-focus-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "c-focus-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "c-focus-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "c-focus-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-focus-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-focus-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-focus-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-focus-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-focus-within-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "c-focus-within-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-focus-within-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-focus-within-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "c-focus-within-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "c-focus-within-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "c-focus-within-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "c-focus-within-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "c-focus-within-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "c-focus-within-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-focus-within-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "c-focus-within-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-ff0",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "text-ff0-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-ff0-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-fafafa",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "text-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "text-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "text-red",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "text-red-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-red-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-transparent",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-transparent-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-transparent-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-hover-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "text-hover-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-hover-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-hover-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "text-hover-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "text-hover-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "text-hover-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "text-hover-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-hover-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-hover-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-hover-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-hover-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-link-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "text-link-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-link-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-link-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "text-link-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "text-link-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "text-link-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "text-link-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-link-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-link-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-link-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-link-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-visited-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "text-visited-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-visited-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-visited-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "text-visited-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "text-visited-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "text-visited-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "text-visited-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-visited-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-visited-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-visited-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-visited-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-active-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "text-active-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-active-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-active-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "text-active-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "text-active-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "text-active-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "text-active-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-active-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-active-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-active-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-active-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-focus-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "text-focus-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-focus-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-focus-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "text-focus-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "text-focus-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "text-focus-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "text-focus-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-focus-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-focus-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-focus-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-focus-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-focus-within-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "text-focus-within-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-focus-within-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-focus-within-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "text-focus-within-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "text-focus-within-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "text-focus-within-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "text-focus-within-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "text-focus-within-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "text-focus-within-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-focus-within-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "text-focus-within-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "color: transparent"
+    ]
+  },
+  {
+    "className": "bg-ff0",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "bg-ff0-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-ff0-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-fafafa",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "bg-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "bg-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "bg-red",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "bg-red-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-red-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-transparent",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-transparent-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-transparent-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-hover-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "bg-hover-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-hover-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-hover-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "bg-hover-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "bg-hover-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "bg-hover-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "bg-hover-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-hover-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-hover-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-hover-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-hover-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-link-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "bg-link-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-link-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-link-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "bg-link-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "bg-link-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "bg-link-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "bg-link-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-link-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-link-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-link-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-link-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-visited-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "bg-visited-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-visited-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-visited-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "bg-visited-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "bg-visited-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "bg-visited-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "bg-visited-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-visited-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-visited-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-visited-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-visited-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-active-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "bg-active-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-active-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-active-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "bg-active-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "bg-active-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "bg-active-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "bg-active-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-active-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-active-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-active-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-active-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-focus-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "bg-focus-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-focus-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-focus-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "bg-focus-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "bg-focus-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "bg-focus-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "bg-focus-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-focus-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-focus-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-focus-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-focus-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-focus-within-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "bg-focus-within-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-focus-within-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "bg-focus-within-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-ff0",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "background-ff0-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-ff0-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-fafafa",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "background-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "background-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "background-red",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "background-red-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-red-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-transparent",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-transparent-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-transparent-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-hover-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "background-hover-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-hover-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-hover-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "background-hover-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "background-hover-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "background-hover-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "background-hover-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-hover-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-hover-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-hover-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-hover-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-link-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "background-link-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-link-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-link-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "background-link-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "background-link-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "background-link-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "background-link-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-link-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-link-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-link-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-link-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-visited-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "background-visited-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-visited-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-visited-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "background-visited-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "background-visited-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "background-visited-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "background-visited-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-visited-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-visited-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-visited-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-visited-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-active-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "background-active-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-active-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-active-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "background-active-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "background-active-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "background-active-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "background-active-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-active-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-active-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-active-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-active-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-focus-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "background-focus-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-focus-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-focus-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "background-focus-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "background-focus-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "background-focus-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "background-focus-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-focus-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-focus-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-focus-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-focus-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-focus-within-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "background-focus-within-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-focus-within-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-focus-within-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "background-focus-within-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "background-focus-within-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "background-focus-within-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "background-focus-within-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "background-focus-within-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "background-focus-within-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-focus-within-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "background-focus-within-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "background-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-ff0",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-ff0-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-ff0-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-fafafa",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-color-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-red",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-red-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-red-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-transparent",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-transparent-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-transparent-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-hover-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-hover-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-hover-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-hover-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-color-hover-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-hover-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-hover-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-hover-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-hover-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-hover-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-hover-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-hover-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-link-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-link-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-link-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-link-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-color-link-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-link-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-link-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-link-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-link-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-link-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-link-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-link-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-visited-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-visited-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-visited-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-visited-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-color-visited-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-visited-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-visited-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-visited-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-visited-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-visited-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-visited-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-visited-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-active-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-active-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-active-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-active-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-color-active-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-active-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-active-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-active-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-active-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-active-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-active-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-active-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-focus-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-focus-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-focus-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-focus-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-color-focus-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-focus-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-focus-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-focus-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-focus-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-focus-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-focus-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-focus-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-color-focus-within-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-ff0",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-ff0-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-ff0-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-fafafa",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-c-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-red",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-red-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-red-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-transparent",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-transparent-65",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-transparent-85",
+    "name": "color",
+    "order": 560,
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-hover-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-hover-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-hover-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-hover-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-c-hover-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-hover-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-hover-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-hover-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-hover-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-hover-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-hover-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-hover-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "hover",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-link-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-link-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-link-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-link-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-c-link-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-link-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-link-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-link-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-link-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-link-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-link-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-link-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "link",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-visited-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-visited-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-visited-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-visited-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-c-visited-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-visited-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-visited-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-visited-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-visited-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-visited-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-visited-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-visited-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "visited",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-active-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-active-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-active-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-active-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-c-active-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-active-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-active-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-active-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-active-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-active-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-active-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-active-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "active",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-focus-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-focus-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-focus-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-focus-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-c-focus-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-focus-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-focus-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-focus-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-focus-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-focus-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-focus-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-focus-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-ff0",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,255,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-ff0-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,255,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-ff0-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,255,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-fafafa",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(250,250,250,1)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-fafafa-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(250,250,250,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-fafafa-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(250,250,250,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-red",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,0,0,1)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-red-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,0,0,0.65)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-red-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: rgba(255,0,0,0.85)"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-transparent",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-transparent-65",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: transparent"
+    ]
+  },
+  {
+    "className": "border-c-focus-within-transparent-85",
+    "name": "color",
+    "order": 560,
+    "pseudo": "focus-within",
+    "css": [
+      "border-color: transparent"
     ]
   }
 ]

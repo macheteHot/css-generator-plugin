@@ -21,25 +21,27 @@ function radix16 (value) {
   return parseInt(value, 16)
 }
 
-function textToRgbText (str) {
-  const hex = /^([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str)
+function textToRgbText (str, opacity = 1) {
+  const hex = /^([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str) // is hex text or word
     ? str
     : colorStore()[str].replace(/^#/, '')
+  if (hex === 'transparent') {
+    return 'transparent'
+  }
   if (hex.length === 3) {
-    return hex
+    return 'rgba(' + hex
       .split('')
-      .map(_ => radix16(_.repeat(2)))
-      .join(',')
+      .map(x => radix16(x.repeat(2)))
+      .join(',') +
+      `,${opacity})`
   }
   if (hex.length === 6) {
     const reg = /[a-fA-F0-9]{2}/g
-    return hex
+    return 'rgba(' + hex
       .match(reg)
       .map(radix16)
-      .join(',')
-  }
-  if (hex === 'transparent') {
-    return 'transparent'
+      .join(',') +
+      `,${opacity})`
   }
   return ''
 }

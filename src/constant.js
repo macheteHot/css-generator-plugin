@@ -37,7 +37,7 @@ CSS_ANNOTATION += '*/\n\n'
 module.exports.CSS_ANNOTATION = CSS_ANNOTATION
 
 const DIRECTION_MAP = new Map()
-DIRECTION_MAP.set(undefined, { dirList: [''] }) // 全部
+DIRECTION_MAP.set(undefined, ['']) // 全部
 DIRECTION_MAP.set('x', ['left', 'right'])
 DIRECTION_MAP.set('y', ['top', 'bottom'])
 DIRECTION_MAP.set('t', ['top'])
