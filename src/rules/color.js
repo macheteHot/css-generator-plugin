@@ -1,5 +1,5 @@
 /**
- * order 560
+ * order Infinity
  */
 
 const { getColorsKey, textToRgbText } = require('../colorUtils')
@@ -31,6 +31,6 @@ module.exports = {
         break
     }
     // put pesudo maybe undefind or string
-    return { name: 'color', order: 560, pseudo, css: [`${perfix}: ${color}`] }
+    return { name: 'color', order: Infinity, pseudo, css: [`${perfix}: ${color}`] }
   }
 }
