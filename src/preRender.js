@@ -1,5 +1,5 @@
 const { IMPORTANT } = require('./constant')
-const { groupBy, every } = require('lodash')
+const { groupBy } = require('lodash')
 
 const { getConfig } = require('./config')
 let preArry = []
