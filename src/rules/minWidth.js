@@ -1,5 +1,5 @@
 /**
- * order 30
+ * order 41
  */
 const { UNIT_ENMU_STR } = require('../constant')
 const { getUnit } = require('../config')
@@ -8,7 +8,7 @@ module.exports = {
   render ({ groups }) {
     let { num, unit } = groups
     unit = getUnit(unit)
-    const base = { name: 'min-width', order: 30, num }
+    const base = { name: 'min-width', order: 41, num }
     return parseInt(num === 0)
       ? { ...base, css: ['min-width: 0'] }
       : { ...base, css: [`min-width: ${num}${unit}`] }
