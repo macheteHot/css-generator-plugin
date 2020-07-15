@@ -41,16 +41,16 @@ function getConfig (type, direction) {
 }
 
 const rule = {
-  regExp: new RegExp(`^(?<type>m|margin|p|padding)-((?<direction>[trblxy])-)?(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+  regExp: new RegExp(`^(?<type>m|margin|p|padding)-((?<direction>[trblxy])-)?(?<isMinus>m-)?(?<num>0|auto|([1-9]\\d*))(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
     let { type, direction, isMinus, num, unit } = groups
-    if (parseInt(num) === 0) {
+    if (parseInt(num) === 0 || Number.isNaN(Number(num))) {
       unit = ''
     } else {
       unit = getUnit(unit)
-    }
-    if (isMinus) {
-      num = 0 - num
+      if (isMinus) {
+        num = 0 - num
+      }
     }
     const baseConfig = getConfig(type, direction)
     if (type === 'm') {

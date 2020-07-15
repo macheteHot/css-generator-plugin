@@ -5,6 +5,10 @@ const runType = {
     [EXT_NAME]: ['vue'],
     reg: /((?<=class=(["']))[\s\S]*?(?=\2))|((?<=class={)[\s\S]*?(?=}))/gi
   },
+  react: {
+    [EXT_NAME]: ['tsx', 'jsx'],
+    reg: /((?<=className=(["']))[\s\S]*?(?=\2))|((?<=className={)[\s\S]*?(?=}))/gi
+  },
   'd-mini-program': {
     [EXT_NAME]: ['axml'],
     reg: /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
