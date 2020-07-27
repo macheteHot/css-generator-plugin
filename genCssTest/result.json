@@ -226,7 +226,7 @@
   {
     "className": "min-w-1",
     "name": "min-width",
-    "order": 30,
+    "order": 41,
     "num": "1",
     "css": [
       "min-width: 1px"
@@ -235,7 +235,7 @@
   {
     "className": "min-w-1p",
     "name": "min-width",
-    "order": 30,
+    "order": 41,
     "num": "1",
     "css": [
       "min-width: 1%"
@@ -244,7 +244,7 @@
   {
     "className": "min-w-1rem",
     "name": "min-width",
-    "order": 30,
+    "order": 41,
     "num": "1",
     "css": [
       "min-width: 1rem"
@@ -253,7 +253,7 @@
   {
     "className": "min-w-1vh",
     "name": "min-width",
-    "order": 30,
+    "order": 41,
     "num": "1",
     "css": [
       "min-width: 1vh"
@@ -262,7 +262,7 @@
   {
     "className": "min-w-2",
     "name": "min-width",
-    "order": 30,
+    "order": 41,
     "num": "2",
     "css": [
       "min-width: 2px"
@@ -271,7 +271,7 @@
   {
     "className": "min-w-2p",
     "name": "min-width",
-    "order": 30,
+    "order": 41,
     "num": "2",
     "css": [
       "min-width: 2%"
@@ -280,7 +280,7 @@
   {
     "className": "min-w-2rem",
     "name": "min-width",
-    "order": 30,
+    "order": 41,
     "num": "2",
     "css": [
       "min-width: 2rem"
@@ -289,7 +289,7 @@
   {
     "className": "min-w-2vh",
     "name": "min-width",
-    "order": 30,
+    "order": 41,
     "num": "2",
     "css": [
       "min-width: 2vh"
@@ -365,6 +365,150 @@
     "num": "2",
     "css": [
       "min-height: 2vh"
+    ]
+  },
+  {
+    "className": "max-w-1",
+    "name": "max-width",
+    "order": 31,
+    "num": "1",
+    "css": [
+      "max-width: 1px"
+    ]
+  },
+  {
+    "className": "max-w-1p",
+    "name": "max-width",
+    "order": 31,
+    "num": "1",
+    "css": [
+      "max-width: 1%"
+    ]
+  },
+  {
+    "className": "max-w-1rem",
+    "name": "max-width",
+    "order": 31,
+    "num": "1",
+    "css": [
+      "max-width: 1rem"
+    ]
+  },
+  {
+    "className": "max-w-1vh",
+    "name": "max-width",
+    "order": 31,
+    "num": "1",
+    "css": [
+      "max-width: 1vh"
+    ]
+  },
+  {
+    "className": "max-w-2",
+    "name": "max-width",
+    "order": 31,
+    "num": "2",
+    "css": [
+      "max-width: 2px"
+    ]
+  },
+  {
+    "className": "max-w-2p",
+    "name": "max-width",
+    "order": 31,
+    "num": "2",
+    "css": [
+      "max-width: 2%"
+    ]
+  },
+  {
+    "className": "max-w-2rem",
+    "name": "max-width",
+    "order": 31,
+    "num": "2",
+    "css": [
+      "max-width: 2rem"
+    ]
+  },
+  {
+    "className": "max-w-2vh",
+    "name": "max-width",
+    "order": 31,
+    "num": "2",
+    "css": [
+      "max-width: 2vh"
+    ]
+  },
+  {
+    "className": "max-h-1",
+    "name": "max-height",
+    "order": 31,
+    "num": "1",
+    "css": [
+      "max-height: 1px"
+    ]
+  },
+  {
+    "className": "max-h-1p",
+    "name": "max-height",
+    "order": 31,
+    "num": "1",
+    "css": [
+      "max-height: 1%"
+    ]
+  },
+  {
+    "className": "max-h-1rem",
+    "name": "max-height",
+    "order": 31,
+    "num": "1",
+    "css": [
+      "max-height: 1rem"
+    ]
+  },
+  {
+    "className": "max-h-1vh",
+    "name": "max-height",
+    "order": 31,
+    "num": "1",
+    "css": [
+      "max-height: 1vh"
+    ]
+  },
+  {
+    "className": "max-h-2",
+    "name": "max-height",
+    "order": 31,
+    "num": "2",
+    "css": [
+      "max-height: 2px"
+    ]
+  },
+  {
+    "className": "max-h-2p",
+    "name": "max-height",
+    "order": 31,
+    "num": "2",
+    "css": [
+      "max-height: 2%"
+    ]
+  },
+  {
+    "className": "max-h-2rem",
+    "name": "max-height",
+    "order": 31,
+    "num": "2",
+    "css": [
+      "max-height: 2rem"
+    ]
+  },
+  {
+    "className": "max-h-2vh",
+    "name": "max-height",
+    "order": 31,
+    "num": "2",
+    "css": [
+      "max-height: 2vh"
     ]
   },
   {
@@ -1264,6 +1408,150 @@
     ]
   },
   {
+    "className": "m-m-1",
+    "name": "margin",
+    "order": 50,
+    "num": -1,
+    "css": [
+      "margin: -1px"
+    ]
+  },
+  {
+    "className": "m-m-1p",
+    "name": "margin",
+    "order": 50,
+    "num": -1,
+    "css": [
+      "margin: -1%"
+    ]
+  },
+  {
+    "className": "m-m-1rem",
+    "name": "margin",
+    "order": 50,
+    "num": -1,
+    "css": [
+      "margin: -1rem"
+    ]
+  },
+  {
+    "className": "m-m-1vh",
+    "name": "margin",
+    "order": 50,
+    "num": -1,
+    "css": [
+      "margin: -1vh"
+    ]
+  },
+  {
+    "className": "m-m-2",
+    "name": "margin",
+    "order": 50,
+    "num": -2,
+    "css": [
+      "margin: -2px"
+    ]
+  },
+  {
+    "className": "m-m-2p",
+    "name": "margin",
+    "order": 50,
+    "num": -2,
+    "css": [
+      "margin: -2%"
+    ]
+  },
+  {
+    "className": "m-m-2rem",
+    "name": "margin",
+    "order": 50,
+    "num": -2,
+    "css": [
+      "margin: -2rem"
+    ]
+  },
+  {
+    "className": "m-m-2vh",
+    "name": "margin",
+    "order": 50,
+    "num": -2,
+    "css": [
+      "margin: -2vh"
+    ]
+  },
+  {
+    "className": "m-1",
+    "name": "margin",
+    "order": 50,
+    "num": "1",
+    "css": [
+      "margin: 1px"
+    ]
+  },
+  {
+    "className": "m-1p",
+    "name": "margin",
+    "order": 50,
+    "num": "1",
+    "css": [
+      "margin: 1%"
+    ]
+  },
+  {
+    "className": "m-1rem",
+    "name": "margin",
+    "order": 50,
+    "num": "1",
+    "css": [
+      "margin: 1rem"
+    ]
+  },
+  {
+    "className": "m-1vh",
+    "name": "margin",
+    "order": 50,
+    "num": "1",
+    "css": [
+      "margin: 1vh"
+    ]
+  },
+  {
+    "className": "m-2",
+    "name": "margin",
+    "order": 50,
+    "num": "2",
+    "css": [
+      "margin: 2px"
+    ]
+  },
+  {
+    "className": "m-2p",
+    "name": "margin",
+    "order": 50,
+    "num": "2",
+    "css": [
+      "margin: 2%"
+    ]
+  },
+  {
+    "className": "m-2rem",
+    "name": "margin",
+    "order": 50,
+    "num": "2",
+    "css": [
+      "margin: 2rem"
+    ]
+  },
+  {
+    "className": "m-2vh",
+    "name": "margin",
+    "order": 50,
+    "num": "2",
+    "css": [
+      "margin: 2vh"
+    ]
+  },
+  {
     "className": "p-t-m-1",
     "name": "padding-t",
     "order": 140,
@@ -2160,6 +2448,280 @@
     ]
   },
   {
+    "className": "p-m-1",
+    "name": "padding",
+    "order": 110,
+    "num": -1,
+    "css": [
+      "padding: -1px"
+    ]
+  },
+  {
+    "className": "p-m-1p",
+    "name": "padding",
+    "order": 110,
+    "num": -1,
+    "css": [
+      "padding: -1%"
+    ]
+  },
+  {
+    "className": "p-m-1rem",
+    "name": "padding",
+    "order": 110,
+    "num": -1,
+    "css": [
+      "padding: -1rem"
+    ]
+  },
+  {
+    "className": "p-m-1vh",
+    "name": "padding",
+    "order": 110,
+    "num": -1,
+    "css": [
+      "padding: -1vh"
+    ]
+  },
+  {
+    "className": "p-m-2",
+    "name": "padding",
+    "order": 110,
+    "num": -2,
+    "css": [
+      "padding: -2px"
+    ]
+  },
+  {
+    "className": "p-m-2p",
+    "name": "padding",
+    "order": 110,
+    "num": -2,
+    "css": [
+      "padding: -2%"
+    ]
+  },
+  {
+    "className": "p-m-2rem",
+    "name": "padding",
+    "order": 110,
+    "num": -2,
+    "css": [
+      "padding: -2rem"
+    ]
+  },
+  {
+    "className": "p-m-2vh",
+    "name": "padding",
+    "order": 110,
+    "num": -2,
+    "css": [
+      "padding: -2vh"
+    ]
+  },
+  {
+    "className": "p-1",
+    "name": "padding",
+    "order": 110,
+    "num": "1",
+    "css": [
+      "padding: 1px"
+    ]
+  },
+  {
+    "className": "p-1p",
+    "name": "padding",
+    "order": 110,
+    "num": "1",
+    "css": [
+      "padding: 1%"
+    ]
+  },
+  {
+    "className": "p-1rem",
+    "name": "padding",
+    "order": 110,
+    "num": "1",
+    "css": [
+      "padding: 1rem"
+    ]
+  },
+  {
+    "className": "p-1vh",
+    "name": "padding",
+    "order": 110,
+    "num": "1",
+    "css": [
+      "padding: 1vh"
+    ]
+  },
+  {
+    "className": "p-2",
+    "name": "padding",
+    "order": 110,
+    "num": "2",
+    "css": [
+      "padding: 2px"
+    ]
+  },
+  {
+    "className": "p-2p",
+    "name": "padding",
+    "order": 110,
+    "num": "2",
+    "css": [
+      "padding: 2%"
+    ]
+  },
+  {
+    "className": "p-2rem",
+    "name": "padding",
+    "order": 110,
+    "num": "2",
+    "css": [
+      "padding: 2rem"
+    ]
+  },
+  {
+    "className": "p-2vh",
+    "name": "padding",
+    "order": 110,
+    "num": "2",
+    "css": [
+      "padding: 2vh"
+    ]
+  },
+  {
+    "className": "m-t-auto",
+    "name": "margin-t",
+    "order": 80,
+    "num": "auto",
+    "css": [
+      "margin-top: auto"
+    ]
+  },
+  {
+    "className": "m-r-auto",
+    "name": "margin-r",
+    "order": 100,
+    "num": "auto",
+    "css": [
+      "margin-right: auto"
+    ]
+  },
+  {
+    "className": "m-b-auto",
+    "name": "margin-b",
+    "order": 90,
+    "num": "auto",
+    "css": [
+      "margin-bottom: auto"
+    ]
+  },
+  {
+    "className": "m-l-auto",
+    "name": "margin-l",
+    "order": 110,
+    "num": "auto",
+    "css": [
+      "margin-left: auto"
+    ]
+  },
+  {
+    "className": "m-x-auto",
+    "name": "margin-x",
+    "order": 60,
+    "num": "auto",
+    "css": [
+      "margin-left: auto",
+      "margin-right: auto"
+    ]
+  },
+  {
+    "className": "m-y-auto",
+    "name": "margin-y",
+    "order": 70,
+    "num": "auto",
+    "css": [
+      "margin-top: auto",
+      "margin-bottom: auto"
+    ]
+  },
+  {
+    "className": "m-auto",
+    "name": "margin",
+    "order": 50,
+    "num": "auto",
+    "css": [
+      "margin: auto"
+    ]
+  },
+  {
+    "className": "p-t-auto",
+    "name": "padding-t",
+    "order": 140,
+    "num": "auto",
+    "css": [
+      "padding-top: auto"
+    ]
+  },
+  {
+    "className": "p-r-auto",
+    "name": "padding-r",
+    "order": 160,
+    "num": "auto",
+    "css": [
+      "padding-right: auto"
+    ]
+  },
+  {
+    "className": "p-b-auto",
+    "name": "padding-b",
+    "order": 150,
+    "num": "auto",
+    "css": [
+      "padding-bottom: auto"
+    ]
+  },
+  {
+    "className": "p-l-auto",
+    "name": "padding-l",
+    "order": 170,
+    "num": "auto",
+    "css": [
+      "padding-left: auto"
+    ]
+  },
+  {
+    "className": "p-x-auto",
+    "name": "padding-x",
+    "order": 120,
+    "num": "auto",
+    "css": [
+      "padding-left: auto",
+      "padding-right: auto"
+    ]
+  },
+  {
+    "className": "p-y-auto",
+    "name": "padding-y",
+    "order": 130,
+    "num": "auto",
+    "css": [
+      "padding-top: auto",
+      "padding-bottom: auto"
+    ]
+  },
+  {
+    "className": "p-auto",
+    "name": "padding",
+    "order": 110,
+    "num": "auto",
+    "css": [
+      "padding: auto"
+    ]
+  },
+  {
     "className": "z-index-m-1",
     "name": "zIndex",
     "order": 190,
@@ -2340,15 +2902,6 @@
     ]
   },
   {
-    "className": "lh-0",
-    "name": "lineHeight",
-    "order": 330,
-    "num": "0",
-    "css": [
-      "line-height: 0"
-    ]
-  },
-  {
     "className": "lh-1",
     "name": "lineHeight",
     "order": 330,
@@ -2515,6 +3068,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: baseline"
     ]
@@ -2524,6 +3078,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: center"
     ]
@@ -2533,6 +3088,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: end"
     ]
@@ -2542,6 +3098,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: flex-end"
     ]
@@ -2551,6 +3108,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: flex-start"
     ]
@@ -2560,6 +3118,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: inherit"
     ]
@@ -2569,6 +3128,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: initial"
     ]
@@ -2578,6 +3138,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: normal"
     ]
@@ -2587,6 +3148,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: self-end"
     ]
@@ -2596,6 +3158,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: self-start"
     ]
@@ -2605,6 +3168,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: start"
     ]
@@ -2614,6 +3178,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: stretch"
     ]
@@ -2623,6 +3188,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: center",
       "align-items: unset"
     ]
@@ -2632,6 +3198,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: baseline"
     ]
@@ -2641,6 +3208,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: center"
     ]
@@ -2650,6 +3218,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: end"
     ]
@@ -2659,6 +3228,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: flex-end"
     ]
@@ -2668,6 +3238,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: flex-start"
     ]
@@ -2677,6 +3248,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: inherit"
     ]
@@ -2686,6 +3258,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: initial"
     ]
@@ -2695,6 +3268,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: normal"
     ]
@@ -2704,6 +3278,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: self-end"
     ]
@@ -2713,6 +3288,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: self-start"
     ]
@@ -2722,6 +3298,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: start"
     ]
@@ -2731,6 +3308,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: stretch"
     ]
@@ -2740,6 +3318,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: start",
       "align-items: unset"
     ]
@@ -2749,6 +3328,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: baseline"
     ]
@@ -2758,6 +3338,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: center"
     ]
@@ -2767,6 +3348,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: end"
     ]
@@ -2776,6 +3358,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: flex-end"
     ]
@@ -2785,6 +3368,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: flex-start"
     ]
@@ -2794,6 +3378,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: inherit"
     ]
@@ -2803,6 +3388,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: initial"
     ]
@@ -2812,6 +3398,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: normal"
     ]
@@ -2821,6 +3408,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: self-end"
     ]
@@ -2830,6 +3418,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: self-start"
     ]
@@ -2839,6 +3428,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: start"
     ]
@@ -2848,6 +3438,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: stretch"
     ]
@@ -2857,6 +3448,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: end",
       "align-items: unset"
     ]
@@ -2866,6 +3458,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: baseline"
     ]
@@ -2875,6 +3468,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: center"
     ]
@@ -2884,6 +3478,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: end"
     ]
@@ -2893,6 +3488,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: flex-end"
     ]
@@ -2902,6 +3498,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: flex-start"
     ]
@@ -2911,6 +3508,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: inherit"
     ]
@@ -2920,6 +3518,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: initial"
     ]
@@ -2929,6 +3528,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: normal"
     ]
@@ -2938,6 +3538,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: self-end"
     ]
@@ -2947,6 +3548,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: self-start"
     ]
@@ -2956,6 +3558,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: start"
     ]
@@ -2965,6 +3568,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: stretch"
     ]
@@ -2974,6 +3578,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-start",
       "align-items: unset"
     ]
@@ -2983,6 +3588,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: baseline"
     ]
@@ -2992,6 +3598,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: center"
     ]
@@ -3001,6 +3608,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: end"
     ]
@@ -3010,6 +3618,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: flex-end"
     ]
@@ -3019,6 +3628,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: flex-start"
     ]
@@ -3028,6 +3638,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: inherit"
     ]
@@ -3037,6 +3648,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: initial"
     ]
@@ -3046,6 +3658,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: normal"
     ]
@@ -3055,6 +3668,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: self-end"
     ]
@@ -3064,6 +3678,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: self-start"
     ]
@@ -3073,6 +3688,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: start"
     ]
@@ -3082,6 +3698,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: stretch"
     ]
@@ -3091,6 +3708,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: flex-end",
       "align-items: unset"
     ]
@@ -3100,6 +3718,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: baseline"
     ]
@@ -3109,6 +3728,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: center"
     ]
@@ -3118,6 +3738,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: end"
     ]
@@ -3127,6 +3748,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: flex-end"
     ]
@@ -3136,6 +3758,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: flex-start"
     ]
@@ -3145,6 +3768,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: inherit"
     ]
@@ -3154,6 +3778,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: initial"
     ]
@@ -3163,6 +3788,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: normal"
     ]
@@ -3172,6 +3798,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: self-end"
     ]
@@ -3181,6 +3808,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: self-start"
     ]
@@ -3190,6 +3818,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: start"
     ]
@@ -3199,6 +3828,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: stretch"
     ]
@@ -3208,6 +3838,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: left",
       "align-items: unset"
     ]
@@ -3217,6 +3848,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: baseline"
     ]
@@ -3226,6 +3858,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: center"
     ]
@@ -3235,6 +3868,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: end"
     ]
@@ -3244,6 +3878,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: flex-end"
     ]
@@ -3253,6 +3888,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: flex-start"
     ]
@@ -3262,6 +3898,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: inherit"
     ]
@@ -3271,6 +3908,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: initial"
     ]
@@ -3280,6 +3918,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: normal"
     ]
@@ -3289,6 +3928,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: self-end"
     ]
@@ -3298,6 +3938,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: self-start"
     ]
@@ -3307,6 +3948,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: start"
     ]
@@ -3316,6 +3958,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: stretch"
     ]
@@ -3325,6 +3968,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: right",
       "align-items: unset"
     ]
@@ -3334,6 +3978,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: baseline"
     ]
@@ -3343,6 +3988,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: center"
     ]
@@ -3352,6 +3998,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: end"
     ]
@@ -3361,6 +4008,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: flex-end"
     ]
@@ -3370,6 +4018,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: flex-start"
     ]
@@ -3379,6 +4028,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: inherit"
     ]
@@ -3388,6 +4038,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: initial"
     ]
@@ -3397,6 +4048,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: normal"
     ]
@@ -3406,6 +4058,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: self-end"
     ]
@@ -3415,6 +4068,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: self-start"
     ]
@@ -3424,6 +4078,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: start"
     ]
@@ -3433,6 +4088,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: stretch"
     ]
@@ -3442,6 +4098,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-between",
       "align-items: unset"
     ]
@@ -3451,7 +4108,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: baseline"
     ]
   },
@@ -3460,7 +4118,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: center"
     ]
   },
@@ -3469,7 +4128,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: end"
     ]
   },
@@ -3478,7 +4138,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: flex-end"
     ]
   },
@@ -3487,7 +4148,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: flex-start"
     ]
   },
@@ -3496,7 +4158,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: inherit"
     ]
   },
@@ -3505,7 +4168,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: initial"
     ]
   },
@@ -3514,7 +4178,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: normal"
     ]
   },
@@ -3523,7 +4188,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: self-end"
     ]
   },
@@ -3532,7 +4198,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: self-start"
     ]
   },
@@ -3541,7 +4208,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: start"
     ]
   },
@@ -3550,7 +4218,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: stretch"
     ]
   },
@@ -3559,7 +4228,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: between",
+      "display: flex",
+      "justify-content: space-between",
       "align-items: unset"
     ]
   },
@@ -3568,6 +4238,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: baseline"
     ]
@@ -3577,6 +4248,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: center"
     ]
@@ -3586,6 +4258,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: end"
     ]
@@ -3595,6 +4268,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: flex-end"
     ]
@@ -3604,6 +4278,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: flex-start"
     ]
@@ -3613,6 +4288,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: inherit"
     ]
@@ -3622,6 +4298,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: initial"
     ]
@@ -3631,6 +4308,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: normal"
     ]
@@ -3640,6 +4318,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: self-end"
     ]
@@ -3649,6 +4328,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: self-start"
     ]
@@ -3658,6 +4338,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: start"
     ]
@@ -3667,6 +4348,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: stretch"
     ]
@@ -3676,6 +4358,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-around",
       "align-items: unset"
     ]
@@ -3685,7 +4368,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: baseline"
     ]
   },
@@ -3694,7 +4378,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: center"
     ]
   },
@@ -3703,7 +4388,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: end"
     ]
   },
@@ -3712,7 +4398,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: flex-end"
     ]
   },
@@ -3721,7 +4408,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: flex-start"
     ]
   },
@@ -3730,7 +4418,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: inherit"
     ]
   },
@@ -3739,7 +4428,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: initial"
     ]
   },
@@ -3748,7 +4438,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: normal"
     ]
   },
@@ -3757,7 +4448,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: self-end"
     ]
   },
@@ -3766,7 +4458,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: self-start"
     ]
   },
@@ -3775,7 +4468,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: start"
     ]
   },
@@ -3784,7 +4478,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: stretch"
     ]
   },
@@ -3793,7 +4488,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: around",
+      "display: flex",
+      "justify-content: space-around",
       "align-items: unset"
     ]
   },
@@ -3802,6 +4498,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: baseline"
     ]
@@ -3811,6 +4508,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: center"
     ]
@@ -3820,6 +4518,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: end"
     ]
@@ -3829,6 +4528,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: flex-end"
     ]
@@ -3838,6 +4538,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: flex-start"
     ]
@@ -3847,6 +4548,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: inherit"
     ]
@@ -3856,6 +4558,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: initial"
     ]
@@ -3865,6 +4568,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: normal"
     ]
@@ -3874,6 +4578,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: self-end"
     ]
@@ -3883,6 +4588,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: self-start"
     ]
@@ -3892,6 +4598,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: start"
     ]
@@ -3901,6 +4608,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: stretch"
     ]
@@ -3910,6 +4618,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: space-evenly",
       "align-items: unset"
     ]
@@ -3919,7 +4628,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: baseline"
     ]
   },
@@ -3928,7 +4638,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: center"
     ]
   },
@@ -3937,7 +4648,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: end"
     ]
   },
@@ -3946,7 +4658,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: flex-end"
     ]
   },
@@ -3955,7 +4668,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: flex-start"
     ]
   },
@@ -3964,7 +4678,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: inherit"
     ]
   },
@@ -3973,7 +4688,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: initial"
     ]
   },
@@ -3982,7 +4698,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: normal"
     ]
   },
@@ -3991,7 +4708,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: self-end"
     ]
   },
@@ -4000,7 +4718,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: self-start"
     ]
   },
@@ -4009,7 +4728,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: start"
     ]
   },
@@ -4018,7 +4738,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: stretch"
     ]
   },
@@ -4027,7 +4748,8 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
-      "justify-content: evenly",
+      "display: flex",
+      "justify-content: space-evenly",
       "align-items: unset"
     ]
   },
@@ -4036,6 +4758,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: baseline"
     ]
@@ -4045,6 +4768,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: center"
     ]
@@ -4054,6 +4778,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: end"
     ]
@@ -4063,6 +4788,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: flex-end"
     ]
@@ -4072,6 +4798,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: flex-start"
     ]
@@ -4081,6 +4808,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: inherit"
     ]
@@ -4090,6 +4818,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: initial"
     ]
@@ -4099,6 +4828,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: normal"
     ]
@@ -4108,6 +4838,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: self-end"
     ]
@@ -4117,6 +4848,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: self-start"
     ]
@@ -4126,6 +4858,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: start"
     ]
@@ -4135,6 +4868,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: stretch"
     ]
@@ -4144,6 +4878,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: stretch",
       "align-items: unset"
     ]
@@ -4153,6 +4888,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: baseline"
     ]
@@ -4162,6 +4898,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: center"
     ]
@@ -4171,6 +4908,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: end"
     ]
@@ -4180,6 +4918,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: flex-end"
     ]
@@ -4189,6 +4928,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: flex-start"
     ]
@@ -4198,6 +4938,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: inherit"
     ]
@@ -4207,6 +4948,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: initial"
     ]
@@ -4216,6 +4958,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: normal"
     ]
@@ -4225,6 +4968,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: self-end"
     ]
@@ -4234,6 +4978,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: self-start"
     ]
@@ -4243,6 +4988,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: start"
     ]
@@ -4252,6 +4998,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: stretch"
     ]
@@ -4261,6 +5008,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: inherit",
       "align-items: unset"
     ]
@@ -4270,6 +5018,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: baseline"
     ]
@@ -4279,6 +5028,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: center"
     ]
@@ -4288,6 +5038,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: end"
     ]
@@ -4297,6 +5048,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: flex-end"
     ]
@@ -4306,6 +5058,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: flex-start"
     ]
@@ -4315,6 +5068,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: inherit"
     ]
@@ -4324,6 +5078,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: initial"
     ]
@@ -4333,6 +5088,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: normal"
     ]
@@ -4342,6 +5098,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: self-end"
     ]
@@ -4351,6 +5108,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: self-start"
     ]
@@ -4360,6 +5118,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: start"
     ]
@@ -4369,6 +5128,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: stretch"
     ]
@@ -4378,6 +5138,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: initial",
       "align-items: unset"
     ]
@@ -4387,6 +5148,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: baseline"
     ]
@@ -4396,6 +5158,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: center"
     ]
@@ -4405,6 +5168,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: end"
     ]
@@ -4414,6 +5178,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: flex-end"
     ]
@@ -4423,6 +5188,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: flex-start"
     ]
@@ -4432,6 +5198,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: inherit"
     ]
@@ -4441,6 +5208,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: initial"
     ]
@@ -4450,6 +5218,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: normal"
     ]
@@ -4459,6 +5228,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: self-end"
     ]
@@ -4468,6 +5238,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: self-start"
     ]
@@ -4477,6 +5248,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: start"
     ]
@@ -4486,6 +5258,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: stretch"
     ]
@@ -4495,6 +5268,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: unset",
       "align-items: unset"
     ]
@@ -4504,6 +5278,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: baseline"
     ]
@@ -4513,6 +5288,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: center"
     ]
@@ -4522,6 +5298,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: end"
     ]
@@ -4531,6 +5308,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: flex-end"
     ]
@@ -4540,6 +5318,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: flex-start"
     ]
@@ -4549,6 +5328,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: inherit"
     ]
@@ -4558,6 +5338,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: initial"
     ]
@@ -4567,6 +5348,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: normal"
     ]
@@ -4576,6 +5358,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: self-end"
     ]
@@ -4585,6 +5368,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: self-start"
     ]
@@ -4594,6 +5378,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: start"
     ]
@@ -4603,6 +5388,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: stretch"
     ]
@@ -4612,6 +5398,7 @@
     "name": "flexJustAli",
     "order": 200,
     "css": [
+      "display: flex",
       "justify-content: normal",
       "align-items: unset"
     ]
@@ -6851,11 +7638,27 @@
     ]
   },
   {
+    "className": "flex-basis-1",
+    "name": "flexBasis",
+    "order": 280,
+    "css": [
+      "flex-basis: 1px"
+    ]
+  },
+  {
+    "className": "flex-basis-2",
+    "name": "flexBasis",
+    "order": 280,
+    "css": [
+      "flex-basis: 2px"
+    ]
+  },
+  {
     "className": "flex-basis-1p",
     "name": "flexBasis",
     "order": 280,
     "css": [
-      "flex-basis: 1p"
+      "flex-basis: 1%"
     ]
   },
   {
@@ -6899,25 +7702,14 @@
     ]
   },
   {
-    "className": "border-t-0",
-    "name": "border",
-    "order": 490,
-    "num": "0",
-    "css": [
-      "border-width-top: 0",
-      "border-style: solid",
-      "border-color: #000"
-    ]
-  },
-  {
     "className": "border-t-1",
     "name": "border",
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1px",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -6926,9 +7718,9 @@
     "order": 490,
     "num": "2",
     "css": [
-      "border-width-top: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 2px",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -6937,9 +7729,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1%",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -6948,9 +7740,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1rem",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -6959,9 +7751,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1vh",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -6970,9 +7762,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -6981,9 +7773,9 @@
     "order": 510,
     "num": "2",
     "css": [
-      "border-width-right: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 2px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -6992,9 +7784,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1%",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7003,9 +7795,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1rem",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7014,9 +7806,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1vh",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7025,9 +7817,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7036,9 +7828,9 @@
     "order": 500,
     "num": "2",
     "css": [
-      "border-width-bottom: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 2px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7047,9 +7839,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1%",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7058,9 +7850,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1rem",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7069,9 +7861,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1vh",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7080,9 +7872,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1px",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7091,9 +7883,9 @@
     "order": 520,
     "num": "2",
     "css": [
-      "border-width-left: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 2px",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7102,9 +7894,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1%",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7113,9 +7905,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1rem",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7124,9 +7916,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1vh",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7135,10 +7927,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1px",
-      "border-width-left: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1px",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7147,10 +7941,12 @@
     "order": 470,
     "num": "2",
     "css": [
-      "border-width-right: 2px",
-      "border-width-left: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 2px",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 2px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7159,10 +7955,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1%",
-      "border-width-left: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1%",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1%",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7171,10 +7969,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1rem",
-      "border-width-left: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1rem",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1rem",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7183,10 +7983,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1vh",
-      "border-width-left: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1vh",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1vh",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7195,10 +7997,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1px",
-      "border-width-top: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1px",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7207,10 +8011,12 @@
     "order": 480,
     "num": "2",
     "css": [
-      "border-width-bottom: 2px",
-      "border-width-top: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 2px",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 2px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7219,10 +8025,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1%",
-      "border-width-top: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1%",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1%",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7231,10 +8039,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1rem",
-      "border-width-top: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1rem",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1rem",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7243,33 +8053,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1vh",
-      "border-width-top: 1vh",
-      "border-style: solid",
-      "border-color: #000"
-    ]
-  },
-  {
-    "className": "border-y-0",
-    "name": "border",
-    "order": 480,
-    "num": "0",
-    "css": [
-      "border-width-bottom: 0",
-      "border-width-top: 0",
-      "border-style: solid",
-      "border-color: #000"
-    ]
-  },
-  {
-    "className": "border-0rem",
-    "name": "border",
-    "order": 460,
-    "num": "0",
-    "css": [
-      "border-width: 0",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1vh",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1vh",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7280,7 +8069,7 @@
     "css": [
       "border-width: 1px",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7291,7 +8080,7 @@
     "css": [
       "border-width: 2px",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7302,7 +8091,7 @@
     "css": [
       "border-width: 1%",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7313,7 +8102,7 @@
     "css": [
       "border-width: 1rem",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7324,7 +8113,7 @@
     "css": [
       "border-width: 1vh",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7333,9 +8122,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1px",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7344,9 +8133,9 @@
     "order": 490,
     "num": "2",
     "css": [
-      "border-width-top: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 2px",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7355,9 +8144,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1%",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7366,9 +8155,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1rem",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7377,9 +8166,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1vh",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7388,9 +8177,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7399,9 +8188,9 @@
     "order": 510,
     "num": "2",
     "css": [
-      "border-width-right: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 2px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7410,9 +8199,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1%",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7421,9 +8210,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1rem",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7432,9 +8221,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1vh",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7443,9 +8232,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7454,9 +8243,9 @@
     "order": 500,
     "num": "2",
     "css": [
-      "border-width-bottom: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 2px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7465,9 +8254,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1%",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7476,9 +8265,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1rem",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7487,9 +8276,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1vh",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7498,9 +8287,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1px",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7509,9 +8298,9 @@
     "order": 520,
     "num": "2",
     "css": [
-      "border-width-left: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 2px",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7520,9 +8309,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1%",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7531,9 +8320,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1rem",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7542,9 +8331,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1vh",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7553,10 +8342,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1px",
-      "border-width-left: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1px",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7565,10 +8356,12 @@
     "order": 470,
     "num": "2",
     "css": [
-      "border-width-right: 2px",
-      "border-width-left: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 2px",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 2px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7577,10 +8370,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1%",
-      "border-width-left: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1%",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1%",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7589,10 +8384,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1rem",
-      "border-width-left: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1rem",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1rem",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7601,10 +8398,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1vh",
-      "border-width-left: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1vh",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1vh",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7613,10 +8412,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1px",
-      "border-width-top: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1px",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7625,10 +8426,12 @@
     "order": 480,
     "num": "2",
     "css": [
-      "border-width-bottom: 2px",
-      "border-width-top: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 2px",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 2px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7637,10 +8440,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1%",
-      "border-width-top: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1%",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1%",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7649,10 +8454,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1rem",
-      "border-width-top: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1rem",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1rem",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7661,10 +8468,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1vh",
-      "border-width-top: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1vh",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1vh",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7675,7 +8484,7 @@
     "css": [
       "border-width: 1px",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7686,7 +8495,7 @@
     "css": [
       "border-width: 2px",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7697,7 +8506,7 @@
     "css": [
       "border-width: 1%",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7708,7 +8517,7 @@
     "css": [
       "border-width: 1rem",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7719,7 +8528,7 @@
     "css": [
       "border-width: 1vh",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -7728,9 +8537,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1px",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7739,9 +8548,9 @@
     "order": 490,
     "num": "2",
     "css": [
-      "border-width-top: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 2px",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7750,9 +8559,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1%",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7761,9 +8570,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1rem",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7772,9 +8581,9 @@
     "order": 490,
     "num": "1",
     "css": [
-      "border-width-top: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1vh",
+      "border-top-style: solid",
+      "border-top-style: solid"
     ]
   },
   {
@@ -7783,9 +8592,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7794,9 +8603,9 @@
     "order": 510,
     "num": "2",
     "css": [
-      "border-width-right: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 2px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7805,9 +8614,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1%",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7816,9 +8625,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1rem",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7827,9 +8636,9 @@
     "order": 510,
     "num": "1",
     "css": [
-      "border-width-right: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-right-width: 1vh",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7838,9 +8647,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7849,9 +8658,9 @@
     "order": 500,
     "num": "2",
     "css": [
-      "border-width-bottom: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 2px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7860,9 +8669,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1%",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7871,9 +8680,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1rem",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7882,9 +8691,9 @@
     "order": 500,
     "num": "1",
     "css": [
-      "border-width-bottom: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-bottom-width: 1vh",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -7893,9 +8702,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1px",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7904,9 +8713,9 @@
     "order": 520,
     "num": "2",
     "css": [
-      "border-width-left: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 2px",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7915,9 +8724,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1%",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7926,9 +8735,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1rem",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7937,9 +8746,9 @@
     "order": 520,
     "num": "1",
     "css": [
-      "border-width-left: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1vh",
+      "border-left-style: solid",
+      "border-left-style: solid"
     ]
   },
   {
@@ -7948,10 +8757,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1px",
-      "border-width-left: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1px",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7960,10 +8771,12 @@
     "order": 470,
     "num": "2",
     "css": [
-      "border-width-right: 2px",
-      "border-width-left: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 2px",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 2px",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7972,10 +8785,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1%",
-      "border-width-left: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1%",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1%",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7984,10 +8799,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1rem",
-      "border-width-left: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1rem",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1rem",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -7996,10 +8813,12 @@
     "order": 470,
     "num": "1",
     "css": [
-      "border-width-right: 1vh",
-      "border-width-left: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-left-width: 1vh",
+      "border-left-style: solid",
+      "border-left-style: solid",
+      "border-right-width: 1vh",
+      "border-right-style: solid",
+      "border-right-style: solid"
     ]
   },
   {
@@ -8008,10 +8827,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1px",
-      "border-width-top: 1px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1px",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -8020,10 +8841,12 @@
     "order": 480,
     "num": "2",
     "css": [
-      "border-width-bottom: 2px",
-      "border-width-top: 2px",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 2px",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 2px",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -8032,10 +8855,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1%",
-      "border-width-top: 1%",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1%",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1%",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -8044,10 +8869,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1rem",
-      "border-width-top: 1rem",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1rem",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1rem",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -8056,10 +8883,12 @@
     "order": 480,
     "num": "1",
     "css": [
-      "border-width-bottom: 1vh",
-      "border-width-top: 1vh",
-      "border-style: solid",
-      "border-color: #000"
+      "border-top-width: 1vh",
+      "border-top-style: solid",
+      "border-top-style: solid",
+      "border-bottom-width: 1vh",
+      "border-bottom-style: solid",
+      "border-bottom-style: solid"
     ]
   },
   {
@@ -8070,7 +8899,7 @@
     "css": [
       "border-width: 1px",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -8081,7 +8910,7 @@
     "css": [
       "border-width: 2px",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -8092,7 +8921,7 @@
     "css": [
       "border-width: 1%",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -8103,7 +8932,7 @@
     "css": [
       "border-width: 1rem",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -8114,7 +8943,7 @@
     "css": [
       "border-width: 1vh",
       "border-style: solid",
-      "border-color: #000"
+      "border-style: solid"
     ]
   },
   {
@@ -8642,7 +9471,7 @@
       "overflow: hidden",
       "text-overflow: ellipsis",
       "display: -webkit-box",
-      "-webkit-line-clamp: undefined",
+      "-webkit-line-clamp: 2",
       "-webkit-box-orient: vertical"
     ]
   },
@@ -8667,5216 +9496,8 @@
       "overflow: hidden",
       "text-overflow: ellipsis",
       "display: -webkit-box",
-      "-webkit-line-clamp: undefined",
+      "-webkit-line-clamp: 2",
       "-webkit-box-orient: vertical"
-    ]
-  },
-  {
-    "className": "color-ff0",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "color-ff0-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-ff0-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-fafafa",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "color-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "color-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "color-red",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "color-red-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-red-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-transparent",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-transparent-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-transparent-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-hover-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "color-hover-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-hover-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-hover-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "color-hover-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "color-hover-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "color-hover-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "color-hover-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-hover-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-hover-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-hover-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-hover-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-link-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "color-link-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-link-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-link-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "color-link-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "color-link-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "color-link-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "color-link-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-link-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-link-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-link-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-link-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-visited-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "color-visited-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-visited-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-visited-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "color-visited-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "color-visited-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "color-visited-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "color-visited-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-visited-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-visited-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-visited-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-visited-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-active-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "color-active-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-active-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-active-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "color-active-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "color-active-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "color-active-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "color-active-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-active-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-active-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-active-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-active-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-focus-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "color-focus-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-focus-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-focus-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "color-focus-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "color-focus-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "color-focus-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "color-focus-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-focus-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-focus-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-focus-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-focus-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-focus-within-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "color-focus-within-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-focus-within-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-focus-within-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "color-focus-within-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "color-focus-within-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "color-focus-within-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "color-focus-within-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "color-focus-within-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "color-focus-within-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-focus-within-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "color-focus-within-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-ff0",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "c-ff0-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-ff0-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-fafafa",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "c-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "c-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "c-red",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "c-red-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-red-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-transparent",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-transparent-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-transparent-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-hover-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "c-hover-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-hover-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-hover-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "c-hover-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "c-hover-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "c-hover-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "c-hover-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-hover-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-hover-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-hover-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-hover-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-link-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "c-link-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-link-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-link-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "c-link-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "c-link-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "c-link-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "c-link-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-link-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-link-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-link-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-link-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-visited-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "c-visited-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-visited-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-visited-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "c-visited-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "c-visited-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "c-visited-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "c-visited-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-visited-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-visited-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-visited-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-visited-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-active-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "c-active-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-active-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-active-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "c-active-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "c-active-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "c-active-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "c-active-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-active-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-active-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-active-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-active-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-focus-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "c-focus-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-focus-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-focus-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "c-focus-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "c-focus-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "c-focus-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "c-focus-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-focus-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-focus-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-focus-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-focus-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-focus-within-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "c-focus-within-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-focus-within-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-focus-within-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "c-focus-within-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "c-focus-within-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "c-focus-within-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "c-focus-within-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "c-focus-within-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "c-focus-within-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-focus-within-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "c-focus-within-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-ff0",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "text-ff0-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-ff0-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-fafafa",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "text-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "text-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "text-red",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "text-red-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-red-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-transparent",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-transparent-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-transparent-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-hover-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "text-hover-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-hover-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-hover-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "text-hover-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "text-hover-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "text-hover-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "text-hover-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-hover-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-hover-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-hover-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-hover-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-link-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "text-link-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-link-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-link-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "text-link-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "text-link-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "text-link-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "text-link-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-link-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-link-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-link-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-link-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-visited-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "text-visited-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-visited-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-visited-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "text-visited-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "text-visited-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "text-visited-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "text-visited-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-visited-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-visited-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-visited-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-visited-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-active-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "text-active-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-active-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-active-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "text-active-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "text-active-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "text-active-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "text-active-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-active-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-active-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-active-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-active-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-focus-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "text-focus-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-focus-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-focus-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "text-focus-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "text-focus-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "text-focus-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "text-focus-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-focus-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-focus-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-focus-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-focus-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-focus-within-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "text-focus-within-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-focus-within-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-focus-within-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "text-focus-within-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "text-focus-within-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "text-focus-within-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "text-focus-within-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "text-focus-within-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "text-focus-within-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-focus-within-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "text-focus-within-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "color: transparent"
-    ]
-  },
-  {
-    "className": "bg-ff0",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "bg-ff0-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-ff0-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-fafafa",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "bg-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "bg-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "bg-red",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "bg-red-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-red-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-transparent",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-transparent-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-transparent-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-hover-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "bg-hover-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-hover-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-hover-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "bg-hover-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "bg-hover-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "bg-hover-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "bg-hover-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-hover-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-hover-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-hover-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-hover-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-link-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "bg-link-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-link-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-link-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "bg-link-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "bg-link-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "bg-link-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "bg-link-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-link-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-link-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-link-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-link-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-visited-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "bg-visited-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-visited-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-visited-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "bg-visited-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "bg-visited-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "bg-visited-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "bg-visited-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-visited-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-visited-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-visited-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-visited-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-active-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "bg-active-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-active-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-active-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "bg-active-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "bg-active-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "bg-active-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "bg-active-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-active-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-active-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-active-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-active-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-focus-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "bg-focus-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-focus-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-focus-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "bg-focus-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "bg-focus-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "bg-focus-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "bg-focus-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-focus-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-focus-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-focus-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-focus-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-focus-within-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "bg-focus-within-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-focus-within-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "bg-focus-within-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-ff0",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "background-ff0-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-ff0-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-fafafa",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "background-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "background-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "background-red",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "background-red-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-red-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-transparent",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-transparent-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-transparent-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-hover-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "background-hover-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-hover-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-hover-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "background-hover-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "background-hover-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "background-hover-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "background-hover-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-hover-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-hover-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-hover-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-hover-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-link-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "background-link-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-link-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-link-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "background-link-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "background-link-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "background-link-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "background-link-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-link-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-link-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-link-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-link-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-visited-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "background-visited-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-visited-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-visited-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "background-visited-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "background-visited-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "background-visited-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "background-visited-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-visited-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-visited-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-visited-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-visited-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-active-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "background-active-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-active-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-active-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "background-active-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "background-active-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "background-active-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "background-active-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-active-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-active-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-active-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-active-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-focus-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "background-focus-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-focus-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-focus-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "background-focus-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "background-focus-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "background-focus-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "background-focus-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-focus-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-focus-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-focus-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-focus-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-focus-within-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "background-focus-within-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-focus-within-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-focus-within-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "background-focus-within-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "background-focus-within-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "background-focus-within-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "background-focus-within-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "background-focus-within-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "background-focus-within-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-focus-within-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "background-focus-within-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "background-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-ff0",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-ff0-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-ff0-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-fafafa",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-color-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-red",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-red-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-red-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-transparent",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-transparent-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-transparent-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-hover-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-hover-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-hover-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-hover-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-color-hover-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-hover-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-hover-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-hover-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-hover-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-hover-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-hover-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-hover-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-link-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-link-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-link-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-link-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-color-link-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-link-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-link-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-link-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-link-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-link-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-link-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-link-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-visited-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-visited-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-visited-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-visited-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-color-visited-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-visited-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-visited-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-visited-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-visited-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-visited-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-visited-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-visited-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-active-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-active-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-active-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-active-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-color-active-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-active-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-active-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-active-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-active-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-active-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-active-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-active-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-focus-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-focus-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-focus-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-focus-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-color-focus-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-focus-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-focus-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-focus-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-focus-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-focus-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-focus-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-focus-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-color-focus-within-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-ff0",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-ff0-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-ff0-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-fafafa",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-c-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-red",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-red-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-red-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-transparent",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-transparent-65",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-transparent-85",
-    "name": "color",
-    "order": 560,
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-hover-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-hover-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-hover-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-hover-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-c-hover-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-hover-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-hover-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-hover-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-hover-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-hover-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-hover-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-hover-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "hover",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-link-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-link-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-link-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-link-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-c-link-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-link-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-link-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-link-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-link-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-link-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-link-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-link-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "link",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-visited-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-visited-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-visited-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-visited-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-c-visited-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-visited-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-visited-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-visited-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-visited-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-visited-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-visited-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-visited-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "visited",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-active-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-active-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-active-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-active-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-c-active-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-active-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-active-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-active-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-active-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-active-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-active-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-active-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "active",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-focus-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-focus-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-focus-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-focus-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-c-focus-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-focus-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-focus-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-focus-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-focus-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-focus-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-focus-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-focus-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-ff0",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,255,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-ff0-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,255,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-ff0-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,255,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-fafafa",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(250,250,250,1)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-fafafa-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(250,250,250,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-fafafa-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(250,250,250,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-red",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,0,0,1)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-red-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,0,0,0.65)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-red-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: rgba(255,0,0,0.85)"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-transparent",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-transparent-65",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: transparent"
-    ]
-  },
-  {
-    "className": "border-c-focus-within-transparent-85",
-    "name": "color",
-    "order": 560,
-    "pseudo": "focus-within",
-    "css": [
-      "border-color: transparent"
     ]
   }
 ]

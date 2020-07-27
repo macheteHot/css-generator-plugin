@@ -1,10 +1,11 @@
 {
   "name": "css-generator-plugin",
   "description": "css file generator only write class name",
-  "version": "0.15.1",
+  "version": "0.15.3",
   "license": "MIT",
   "bin": {
-    "css-generator-plugin": "./bin/gcss"
+    "css-generator-plugin": "./bin/gcss",
+    "gen-snippets": "./bin/genSnippets"
   },
   "main": "./src/webpackUse.js",
   "repository": {
@@ -46,6 +47,6 @@
   },
   "scripts": {
     "genTest": "node genCssTest/index.js",
-    "GenSnippets": "node genSnippets/index.js"
+    "GenSnippets": "node genSnippets/run.js"
   }
 }

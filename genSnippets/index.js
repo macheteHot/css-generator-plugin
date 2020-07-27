@@ -61,14 +61,26 @@ function getRegList () {
     render () {
       let marginOrPadding = '';
       ['m', 'p'].forEach(mp => {
-        ['t', 'r', 'b', 'l', 'x', 'y'].forEach(trblxy => {
+        ['t-', 'r-', 'b-', 'l-', 'x-', 'y-', ''].forEach(trblxy => {
           ['m-', ''].forEach(m => {
             NUM_ENMU.forEach(n => {
               UNIT_ENMU.forEach(u => {
-                marginOrPadding += `.${mp}-${trblxy}-${m}${n}${u}{}`
+                marginOrPadding += `.${mp}-${trblxy}${m}${n}${u}{}`
               })
             })
           })
+        })
+      })
+      return marginOrPadding
+    }
+  },
+  {
+    className: 'marginOrPaddingUseAuto',
+    render () {
+      let marginOrPadding = '';
+      ['m', 'p'].forEach(mp => {
+        ['t-', 'r-', 'b-', 'l-', 'x-', 'y-', ''].forEach(trblxy => {
+          marginOrPadding += `.${mp}-${trblxy}auto{}`
         })
       })
       return marginOrPadding
@@ -461,7 +473,7 @@ function fwFile (str, flag) {
   })
 }
 
-function main () {
+function localTest () {
   fwFile('', 'w')
   getRegList().forEach(obj => {
     const str = obj.render()
@@ -469,4 +481,7 @@ function main () {
   })
 }
 
-main()
+module.exports = {
+  getRegList,
+  localTest
+}

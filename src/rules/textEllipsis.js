@@ -29,7 +29,7 @@ module.exports = {
           'overflow: hidden',
           'text-overflow: ellipsis',
           'display: -webkit-box',
-          `-webkit-line-clamp: ${this.num}`,
+          `-webkit-line-clamp: ${num}`,
           '-webkit-box-orient: vertical'
         ]
       }
