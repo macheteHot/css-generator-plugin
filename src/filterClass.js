@@ -1,11 +1,10 @@
 
 const cssSet = new Set() // 用来去重
 const { getRegList } = require('./createReg')
-const { pushPreObj } = require('./preRender')
+const { pushPreObj, clearPreArray } = require('./preRender')
 const { GLOB_REG } = require('./constant')
 const { getConfig } = require('./config')
 
-const { clearPreArray } = require('./preRender')
 const { isFunction } = require('lodash')
 
 function filterClassNames (sourceStr) {
