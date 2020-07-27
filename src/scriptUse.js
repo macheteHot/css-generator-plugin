@@ -1,9 +1,7 @@
-const { scriptgetRegList } = require('./createReg')
+const { getRegList } = require('./scriptCreateReg')
 const { pushPreObj, clearPreArray, renderCss } = require('./preRender')
-const { isFunction } = require('lodash')
-const { setConfig, getConfig } = require('./config')
-const { COLORS } = require('./constant')
-
+const { isFunction } = require('./utils')
+const { setConfig } = require('./config')
 const NODE_ID = 'autocss'
 const cssSet = new Set()
 
@@ -27,11 +25,14 @@ function filterClass (classStr) {
     return null
   }
   cssSet.add(classStr)
-  scriptgetRegList().forEach((rule) => {
+  getRegList().forEach((rule) => {
     const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
     const res = classStr.match(reg)
     if (res !== null) {
-      pushPreObj({ classStr, ...rule.render(res) })
+      pushPreObj({
+        classStr,
+        ...rule.render(res)
+      })
     }
   })
 }
@@ -51,9 +52,9 @@ function genCss () {
   document.getElementsByTagName('head')[0].appendChild(style)
 }
 
-class Gcss {
-  constructor (config) {
-    setConfig(config || {})
+window.Gcss = class {
+  constructor (cfg = {}) {
+    setConfig(cfg)
   }
 
   start () {
@@ -63,5 +64,3 @@ class Gcss {
     }
   }
 }
-
-window.Gcss = Gcss

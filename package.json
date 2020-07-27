@@ -44,7 +44,6 @@
     "chokidar": "^3.4.0",
     "commander": "^5.1.0",
     "glob": "^7.1.6",
-    "lodash": "^4.17.19",
     "require-all": "^3.0.0",
     "shelljs": "^0.8.4"
   },

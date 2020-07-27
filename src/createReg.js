@@ -7,14 +7,6 @@ function getRegList () {
   return Object.values(rulesObjList)
 }
 
-const requireRules = require.context('./rules', false, /\.js$/)
-function scriptgetRegList () {
-  // return Object.values(rulesObjList)
-  const list = requireRules.keys().map(requireRules)
-  return list
-}
-
 module.exports = {
-  getRegList,
-  scriptgetRegList
+  getRegList
 }

@@ -7,9 +7,22 @@ function resolve (str) {
 module.exports = {
   mode: 'production',
   entry: resolve('../src/scriptUse.js'),
-  devtool: 'source-map',
+  devtool: 'none',
   output: {
     path: resolve('../dist'),
     filename: 'gcss.js'
+  },
+  module: {
+    // 高级正则不支持转es5
+    // rules: [
+    //   {
+    //     test: /\.js$/,
+    //     exclude: /node_modules/,
+    //     loader: 'babel-loader',
+    //     options: {
+    //       presets: ['@babel/preset-env']
+    //     }
+    //   }
+    // ]
   }
 }
