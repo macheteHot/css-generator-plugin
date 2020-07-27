@@ -9,11 +9,12 @@
  npm install css-generator-plugin -D
  yarn add css-generator-plugin -D
 ```
-
-### 代码提示
-  使用 npm  时 运行 npx gen-snippets   
-  使用 yarn 时 运行 yarn gen-snippets   
-  将会在根目录生成 auto-use-snippets.css 作为代码提示文件
++ 代码提示
+将会在根目录生成 auto-use-snippets.css 作为代码提示文件
+```
+  npx gen-snippets
+  yarn gen-snippets
+```
 
 #### webpack启动
 
@@ -47,7 +48,7 @@ const CssGeneratorPlugin = require('css-generator-plugin')
 module.exports = {
   colors: {}, // 可选项。颜色配置，内置包含以上默认值
   dirPath: 'src', // 必填项。源码根目录(必须存在此目录)
-      generate: 'src/style/auto.css', // 必填项。生成文件位置(不存在会自动创建目录)
+  generate: 'src/style/auto.css', // 必填项。生成文件位置(不存在会自动创建目录)
   type: 'vue', // 必填项。项目类型 vue|d-mini-program
   unit: 'px', // 可选项。默认单位
   important: true // 可选项。默认为true。css是否添加！important
