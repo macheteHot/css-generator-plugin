@@ -10,10 +10,27 @@
  yarn add css-generator-plugin -D
 ```
 + 代码提示
-将会在根目录生成 auto-use-snippets.css 作为代码提示文件
+
+  将会在根目录生成 auto-use-snippets.css 作为代码提示文件
 ```
   npx gen-snippets
   yarn gen-snippets
+```
++ 试用 (请勿用于生产环境 不支持低版本浏览器)
+
+  [在线尝试](https://codepen.io/machetehot/pen/oNbRgzV?editors=1010)
+```html
+<script src="https://cdn.jsdelivr.net/npm/css-generator-plugin@0.17.0/dist/gcss.js"></script>
+<script>
+  // 与下面配置相同
+  new Gcss({
+    colors: {
+      info: '#ff0'
+    },
+    unit: 'px',
+    important: true
+  }).start()
+</script>
 ```
 
 #### webpack启动
