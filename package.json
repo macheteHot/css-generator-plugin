@@ -1,7 +1,7 @@
 {
   "name": "css-generator-plugin",
   "description": "css file generator only write class name",
-  "version": "0.15.3",
+  "version": "0.16.0",
   "license": "MIT",
   "bin": {
     "css-generator-plugin": "./bin/gcss",
@@ -14,7 +14,8 @@
   },
   "files": [
     "bin/**/*",
-    "src/**/*"
+    "src/**/*",
+    "genSnippets/index.js"
   ],
   "author": "machete <rtpppp163@gmail.com>",
   "bugs": {

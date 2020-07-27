@@ -11,7 +11,9 @@
 ```
 
 ### 代码提示
-  如需提示 可下载 genSnippets/css/snippets.css 
+  使用 npm  时 运行 npx gen-snippets
+  使用 yarn 时 运行 yarn gen-snippets
+  将会在根目录生成 auto-use-snippets.css 作为代码提示文件
 
 #### webpack启动
 

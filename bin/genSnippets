@@ -8,6 +8,6 @@ function fwFile (str, flag) {
     flag
   })
 }
-fwFile('', 'W')
+fwFile('', 'w')
 const snippetStr = getRegList().reduce((t, c) => `${t}${c.render()}`, '')
-fwFile(snippetStr, 'W')
+fwFile(snippetStr, 'w')
