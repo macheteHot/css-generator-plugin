@@ -22,6 +22,6 @@ webpack(config, (err) => {
   if (err) {
     console.error(err)
   } else {
-    fs.copyFileSync(resolve(output.path, output.filename), resolve(resolve('../docs/', output.filename)))
+    fs.copyFileSync(resolve(output.path, output.filename), resolve('../docs/', output.filename))
   }
 })
