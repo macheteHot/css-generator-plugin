@@ -1,6 +1,4 @@
-let cssStr = ''
-
-function showCss(str) {
+function showCss (str) {
   str = str.replace(/^(\/\*[\s\S]+?\*\/)/gm, '<span style="color:#009926;font-size:14px;">$1</span></br>')
   str = str.replace(/\.([a-z0-9-:\s]+)/gm, '<span style="color:#990073">.$1</span>')
   str = str.replace(/\{/g, '&nbsp;{</br>')
@@ -14,7 +12,6 @@ function showCss(str) {
   })
 }
 
-
 const obj = {
   fclassName: '',
   cOneclassName: '',
@@ -26,22 +23,20 @@ const watchObj = {}
 
 // 简单版 proxy 只支持基础类型
 const handlerProxy = {
-  set(target, key, value) {
-    console.log('set')
+  set (target, key, value) {
     Reflect.set(target, key, value)
     watchObj[key].forEach(node => {
       node.className = value
     })
-    watchInputObj[key].forEach(node => node.value = value)
+    watchInputObj[key].forEach(node => { node.value = value })
     showCss(window.getCssStr())
   },
-  get(target, key) {
+  get (target, key) {
     return Reflect.get(target, key)
   }
 }
 
 const state = new Proxy(obj, handlerProxy)
-
 
 const inputNodeList = document.querySelectorAll('[data-value]')
 inputNodeList.forEach(node => {
@@ -58,7 +53,6 @@ inputNodeList.forEach(node => {
   })
 })
 
-
 const wathNodeList = document.querySelectorAll('[data-showClass]')
 wathNodeList.forEach(node => {
   const name = node.getAttribute('data-showClass')
@@ -69,8 +63,7 @@ wathNodeList.forEach(node => {
   }
 })
 
-function setState(obj) {
-  console.log(71)
+function setState (obj) {
   for (const key in obj) {
     state[key] = obj[key]
   }
@@ -83,6 +76,6 @@ setState({
 })
 
 window.onload = () => {
-  const gc = new Gcss()
+  const gc = new window.Gcss()
   gc.start()
 }
