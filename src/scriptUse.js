@@ -37,9 +37,13 @@ function filterClass (classStr) {
   })
 }
 
-function genCss () {
+function getCssStr () {
   getClass()
-  const cssStr = renderCss()
+  return renderCss()
+}
+
+function genCss () {
+  const cssStr = getCssStr()
   const oldStyleNode = document.getElementById(NODE_ID)
   if (oldStyleNode) {
     oldStyleNode.remove()
@@ -55,12 +59,20 @@ function genCss () {
 window.Gcss = class {
   constructor (cfg = {}) {
     setConfig(cfg)
+    this.str = ''
   }
 
   start () {
     genCss()
-    window.onload = function () {
-      document.addEventListener('DOMNodeInserted', genCss)
-    }
+    // eslint-disable-next-line no-undef
+    const observer = new MutationObserver(genCss)
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['class'],
+      childList: true,
+      subtree: true
+    })
   }
 }
+
+window.getCssStr = getCssStr
