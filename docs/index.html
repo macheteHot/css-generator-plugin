@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css 生成预览工具</title>
+  <script src="../dist/gcss.js"></script>
+  <link rel="stylesheet" href="./reset.css">
+</head>
+
+<body>
+  <div class="default-flex-flex-start-flex-start default-bg-f2f5fc">
+    <div class="default-w-600 default-h-100vh default-position-sticky default-t-0 default-p-x-24 default-p-y-17 default-flex-flex-start-flex-start default-flex-column default-bg-fff">
+      <h3 class="default-fs-18 default-c-111f2c default-m-b-19">生成代码预览:</h3>
+      <div data-html="cssCode" class="default-bg-f7f8fc default-flex-1 default-w-100p default-p-24 default-overflow-y-auto default-sc-1"></div>
+    </div>
+    <div class="default-m-24 default-flex-1 default-flex-flex-start-flex-start default-flex-column">
+      <div class="default-w-100p default-d-flex default-br-4 default-flex-column default-p-16 default-bg-fff default-m-b-24">
+        <p class="default-fs-18 default-c-111f2c default-fw-600 default-m-b-16">视图区</p>
+        <div data-showClass="fclassName">
+          <div data-showClass="cOneclassName">test1</div>
+          <div data-showClass="cTwolassName">test2</div>
+        </div>
+      </div>
+      <div class="default-w-100p default-d-flex default-br-4 default-flex-column default-p-16 default-bg-fff default-m-b-24">
+        <p class="default-fs-18 default-c-111f2c default-fw-600 default-m-b-16">编辑区</p>
+        <div class="default-w-100p default-h-354 default-border-1 default-border-c-eee default-p-24 default-p-t-16 default-flex-between-flex-start">
+          <div class="default-flex-1 default-m-r-24 default-h-100p default-d-flex default-flex-column">
+            <p>父元素class:</p>
+            <textarea data-value="fclassName" class="default-m-t-16 default-w-100p default-flex-1 default-p-16" placeholder="视图区父元素class 以空格分割"></textarea>
+          </div>
+          <div class="default-flex-1 default-h-100p default-flex-flex-start-flex-start default-flex-column">
+            <div class="default-flex-flex-start-flex-start default-flex-column default-flex-1 default-bg-f7f8fc default-w-100p default-p-16 default-p-t-12 default-m-b-24">
+              <p class="default-m-b-8">子元素1clas:</p>
+              <textarea data-value="cOneclassName" class="default-p-16 default-flex-1 default-w-100p" placeholder="视图区子元素1class 以空格分割"></textarea>
+            </div>
+            <div class="default-flex-flex-start-flex-start default-flex-column default-flex-1 default-bg-f7f8fc default-w-100p default-p-16 default-p-t-12">
+              <p class="default-m-b-8">子元素2clas:</p>
+              <textarea data-value="cTwolassName" class="default-p-16 default-flex-1 default-w-100p" placeholder="视图区子元素2class 以空格分割"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="default-w-100p default-d-flex default-br-4 default-flex-column default-p-16 default-bg-fff">
+        <p class="default-fs-18 default-c-111f2c default-fw-600 default-m-b-16">功能说明</p>
+        <div class="default-w-100p">
+          <p>在编辑区为 预览区div添加 class 将会自动生成样式 可在左侧预览</p>
+          <h5>class 编写规则 详见 <a class="default-fs-25" href="https://github.com/macheteHot/css-generator-plugin" target="_blank">github</a></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
