@@ -18,7 +18,7 @@
 ```
 + 试用 (请勿用于生产环境 不支持低版本浏览器)
 
-  [在线尝试](https://codepen.io/machetehot/pen/oNbRgzV?editors=1010)
+  [在线尝试](https://machetehot.github.io/css-generator-plugin/)
 ```html
 <script src="https://cdn.jsdelivr.net/npm/css-generator-plugin@0.17.0/dist/gcss.js"></script>
 <script>
