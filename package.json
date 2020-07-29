@@ -38,8 +38,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "jest": "^26.0.1",
     "mockjs": "^1.1.0",
-    "webpack": "^4.44.0",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^4.44.0"
   },
   "dependencies": {
     "chokidar": "^3.4.0",
@@ -51,6 +50,6 @@
   "scripts": {
     "genTest": "node genCssTest/index.js",
     "GenSnippets": "node genSnippets/run.js",
-    "build": "webpack --config ./build/webpack.config.js"
+    "build": "node build/build.js"
   }
 }
