@@ -37,7 +37,7 @@ export function renderCss () {
   const cssObject = groupBy(preArry.sort((a, b) => a.order - b.order), 'name')
   for (const key in cssObject) {
     if (Object.prototype.hasOwnProperty.call(cssObject, key)) {
-      cssStr += `/* ${cssObject[key][0].name ?? 'unknow name'} order ${cssObject[key][0].order} */\n`
+      cssStr += `/* ${cssObject[key][0].name || 'unknow name'} order ${cssObject[key][0].order} */\n`
       cssStr += cssObject[key]
         .sort(sortCss)
         .map(getCssSingle)
