@@ -2,7 +2,7 @@
  * order 350
  */
 
-module.exports = {
+export default {
   regExp: /^word-break-(?<value>normal|break-all|keep-all|break-word|inherit|initial|unset)$/,
   render ({ groups }) {
     const { value } = groups

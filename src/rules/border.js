@@ -1,8 +1,8 @@
 /**
  * order 520 460 + 60
  */
-const { UNIT_ENMU_STR, DIRECTION_MAP } = require('../constant')
-const { getUnit } = require('../config')
+import { UNIT_ENMU_STR, DIRECTION_MAP } from '../constant'
+import { getUnit } from '../config'
 
 function getOrder (direction) {
   let order = 460
@@ -39,7 +39,7 @@ function getCss (direction, num, unit) {
     }, [])
 }
 
-module.exports = {
+export default {
   regExp: new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
     let { direction, num, unit } = groups

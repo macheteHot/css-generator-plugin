@@ -2,7 +2,7 @@
  * order 420
  */
 
-module.exports = {
+export default {
   regExp: /^(text-decoration|text)-(?<value>none|underline|overline|line-through|blink|inherit)$/,
   render ({ groups }) {
     const { value } = groups

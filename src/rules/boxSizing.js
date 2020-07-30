@@ -2,7 +2,7 @@
  * order 560
  */
 
-module.exports = {
+export default {
   regExp: /^box-sizing-(?<value>content-box|border-box)$/,
   render ({ groups }) {
     const { value } = groups

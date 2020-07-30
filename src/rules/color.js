@@ -2,8 +2,9 @@
  * order Infinity
  */
 
-const { getColorsKey, textToRgbText } = require('../colorUtils')
-module.exports = {
+import { getColorsKey, textToRgbText } from '../colorUtils'
+
+export default {
   regExp: () => new RegExp(
     `^(?<type>color|c|text|bg|background|border-color|border-c)-((?<pseudo>hover|link|visited|active|focus|focus-within)-)?(?<color>[a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-(?<opacity>1|([1-9]\\d{0,1})))?$`),
   render ({ groups }) {

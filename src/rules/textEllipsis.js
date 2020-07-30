@@ -2,7 +2,7 @@
  * order 450
  */
 
-module.exports = {
+export default {
   regExp: /^(text-)?ellipsis(-(?<num>[1-9]\d*))?$/,
   render ({ groups }) {
     let { num } = groups

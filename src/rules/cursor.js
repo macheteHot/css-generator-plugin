@@ -1,9 +1,9 @@
 /**
  * order 340
  */
-const { CURSOR_ENMU_STR } = require('../constant')
+import { CURSOR_ENMU_STR } from '../constant'
 
-module.exports = {
+export default {
   regExp: new RegExp(`^cursor-(?<value>${CURSOR_ENMU_STR})$`),
   render ({ groups }) {
     const { value } = groups

@@ -1,11 +1,13 @@
 
-const cssSet = new Set() // 用来去重
-const { getRegList } = require('./createReg')
-const { pushPreObj, clearPreArray } = require('./preRender')
-const { GLOB_REG } = require('./constant')
-const { getConfig } = require('./config')
+// 用来去重
+import * as rules from './rules/index'
+import { pushPreObj, clearPreArray } from './preRender'
+import { GLOB_REG } from './constant'
+import { getConfig } from './config'
 
-function filterClassNames (sourceStr) {
+const cssSet = new Set()
+
+export function filterClassNames (sourceStr) {
   cssSet.clear() // 清空set
   clearPreArray() // 清空预编译
   const classNameList = sourceStr.match(getConfig(GLOB_REG))
@@ -18,12 +20,12 @@ function filterClassNames (sourceStr) {
   }
   return ''
 }
-function filterClass (classStr) {
+export function filterClass (classStr) {
   if (cssSet.has(classStr)) {
     return null
   }
   cssSet.add(classStr)
-  getRegList().forEach((rule) => {
+  Object.values(rules).forEach((rule) => {
     // regExp maybe function
     const reg = typeof rule.regExp === 'function' ? rule.regExp() : rule.regExp
     const res = classStr.match(reg)
@@ -31,9 +33,4 @@ function filterClass (classStr) {
       pushPreObj({ classStr, ...rule.render(res) })
     }
   })
-}
-
-module.exports = {
-  filterClassNames,
-  filterClass
 }

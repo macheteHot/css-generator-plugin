@@ -1,7 +1,7 @@
 /**
  * order 260-270
  */
-module.exports = {
+export default {
   regExp: /^flex-(?<type>shrink|grow)-(?<value>(0|[1-9]\d*)|initial|inherit)$/,
   render ({ groups }) {
     const { type, value } = groups

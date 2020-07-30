@@ -1,8 +1,8 @@
-function isFunction (payload) {
+export function isFunction (payload) {
   return typeof payload === 'function'
 }
 
-function groupBy (array, name) {
+export function groupBy (array, name) {
   const groups = {}
   array.forEach(function (o) {
     const group = JSON.stringify(o[name])
@@ -12,9 +12,4 @@ function groupBy (array, name) {
   return Object.keys(groups).map(function (group) {
     return groups[group]
   })
-}
-
-module.exports = {
-  isFunction,
-  groupBy
 }

@@ -1,9 +1,9 @@
 /**
  * order 31
  */
-const { UNIT_ENMU_STR } = require('../constant')
-const { getUnit } = require('../config')
-module.exports = {
+import { UNIT_ENMU_STR } from '../constant'
+import { getUnit } from '../config'
+export default {
   regExp: new RegExp(`^(max-h|max-height)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
     let { num, unit } = groups

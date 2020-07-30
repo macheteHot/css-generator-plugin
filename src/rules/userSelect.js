@@ -2,7 +2,7 @@
  * order 430
  */
 
-module.exports = {
+export default {
   regExp: /^(user-)?select-(?<value>none|auto|text|all|contain|element)$/,
   render ({ groups }) {
     const { value } = groups

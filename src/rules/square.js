@@ -1,9 +1,9 @@
 /**
  * order 50
  */
-const { UNIT_ENMU_STR } = require('../constant')
-const { getUnit } = require('../config')
-module.exports = {
+import { UNIT_ENMU_STR } from '../constant'
+import { getUnit } from '../config'
+export default {
   className: 'square',
   regExp: new RegExp(`^square-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {

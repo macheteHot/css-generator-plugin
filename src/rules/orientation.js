@@ -1,10 +1,10 @@
 /**
  * order 310
  */
-const { UNIT_ENMU_STR } = require('../constant')
-const { getUnit } = require('../config')
+import { UNIT_ENMU_STR } from '../constant'
+import { getUnit } from '../config'
 
-module.exports = {
+export default {
   regExp: new RegExp(`^(?<direction>[trbl]|top|right|bottom|left)-(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
     let { direction, isMinus, num, unit } = groups

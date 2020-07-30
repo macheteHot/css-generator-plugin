@@ -1,18 +1,17 @@
-const { IMPORTANT } = require('./constant')
-const { groupBy } = require('./utils')
-
-const { getConfig } = require('./config')
+import { IMPORTANT } from './constant'
+import { groupBy } from './utils/index'
+import { getConfig } from './config'
 let preArry = []
 
-function pushPreObj (obj) {
+export function pushPreObj (obj) {
   return preArry.push(obj)
 }
 
-function getPreArray () {
+export function getPreArray () {
   return preArry
 }
 
-function clearPreArray () {
+export function clearPreArray () {
   preArry = []
 }
 
@@ -33,12 +32,12 @@ function sortCss (a, b) {
   }
 }
 
-function renderCss () {
+export function renderCss () {
   let cssStr = ''
   const cssObject = groupBy(preArry.sort((a, b) => a.order - b.order), 'name')
   for (const key in cssObject) {
     if (Object.prototype.hasOwnProperty.call(cssObject, key)) {
-      cssStr += `/* ${key} order ${cssObject[key][0].order} */\n`
+      cssStr += `/* ${cssObject[key][0].name ?? 'unknow name'} order ${cssObject[key][0].order} */\n`
       cssStr += cssObject[key]
         .sort(sortCss)
         .map(getCssSingle)
@@ -47,27 +46,4 @@ function renderCss () {
     }
   }
   return cssStr
-  // let cssStr = preArry
-  //   .sort((a, b) => a.order - b.order)
-  //   .reduce((t, c) => {
-  //     // 如果有数值 并且数值是 0 将单位清空 数值转换number 防止 -0
-  //     if (Object.prototype.hasOwnProperty.call(c, 'num') && parseInt(c.num) === 0) {
-  //       c[UNIT] = ''
-  //       c.num = 0
-  //       // 如果有单位 那么进行单位转换
-  //     } else if (Object.prototype.hasOwnProperty.call(c, UNIT)) {
-  //       c[UNIT] = convertUnit(c[UNIT])
-  //     }
-  //     return t + c.render() + '\n'
-  //   }, '')
-  // if (getConfig(IMPORTANT)) {
-  //   cssStr = cssStr.replace(/;/g, ' !important;')
-  // }
-  // return cssStr
-}
-module.exports = {
-  pushPreObj,
-  renderCss,
-  getPreArray,
-  clearPreArray
 }

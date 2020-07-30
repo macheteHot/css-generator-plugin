@@ -1,4 +1,5 @@
-const { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT } = require('./constant')
+import { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT } from './constant'
+
 let programConfig = {}
 const runType = {
   vue: {
@@ -12,9 +13,13 @@ const runType = {
   'd-mini-program': {
     [EXT_NAME]: ['axml'],
     reg: /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
+  },
+  'wx-mini-program': {
+    [EXT_NAME]: ['wxml'],
+    reg: /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
   }
 }
-function getConfig (str) {
+export function getConfig (str) {
   switch (str) {
     // 此处配置默认值
     case EXT_NAME:
@@ -32,10 +37,10 @@ function getConfig (str) {
   }
 }
 
-function setConfig (config) {
+export function setConfig (config) {
   programConfig = config
 }
-function getUnit (str) {
+export function getUnit (str) {
   if (str === 'p') {
     return '%'
   }
@@ -43,10 +48,4 @@ function getUnit (str) {
     return programConfig[UNIT] || 'px'
   }
   return str
-}
-
-module.exports = {
-  setConfig,
-  getConfig,
-  getUnit
 }

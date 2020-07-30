@@ -1,10 +1,10 @@
 /**
  * order 280
  */
-const { UNIT_ENMU_STR } = require('../constant')
-const { getUnit } = require('../config')
+import { UNIT_ENMU_STR } from '../constant'
+import { getUnit } from '../config'
 
-module.exports = {
+export default {
   regExp: new RegExp(`^flex-basis-(?<value>((?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?)|initial|inherit|auto)$`),
   render ({ groups }) {
     let { value, num, unit } = groups

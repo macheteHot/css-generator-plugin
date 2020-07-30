@@ -2,7 +2,7 @@
  * order 300
  */
 
-module.exports = {
+export default {
   regExp: /^position-(?<value>static|relative|sticky|unset|absolute|fixed|inherit|initial)$/,
   render ({ groups }) {
     const { value } = groups

@@ -1,12 +1,13 @@
-const { filterClassNames } = require('./filterClass')
-const { renderCss } = require('./preRender')
+import { filterClassNames } from './filterClass'
+import { renderCss } from './preRender'
+import { getConfig } from './config'
+import { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION } from './constant'
+
 const fs = require('fs')
 const path = require('path')
 const chokidar = require('chokidar')
 const glob = require('glob')
 const shelljs = require('shelljs')
-const { getConfig } = require('./config')
-const { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION } = require('./constant')
 
 function getAllFileClassStr () {
   const globSyncStr = getConfig(EXT_NAME).join('|')
@@ -27,7 +28,7 @@ function getFilePath (str) {
   return path.resolve(process.cwd(), str)
 }
 
-function init () {
+export function init () {
   console.time('init Time')
   filterClassNames(getAllFileClassStr())
   wirteToFile()
@@ -35,7 +36,7 @@ function init () {
   console.timeEnd('init Time')
 }
 
-function readConfigFile () {
+export function readConfigFile () {
   let options = null
   if (fs.existsSync(getFilePath('css.generator.config.js'))) {
     options = require(getFilePath('css.generator.config.js'))
@@ -48,7 +49,7 @@ function readConfigFile () {
   return options
 }
 
-function hotReloadwatcher () {
+export function hotReloadwatcher () {
   const regStr = getConfig(EXT_NAME).join('|')
   const watcher = chokidar.watch(path.resolve(getConfig(DIR_PATH)), {
     ignored: new RegExp(`^.*\\.(?:(?!(${regStr})).)+$`),
@@ -61,10 +62,4 @@ function hotReloadwatcher () {
     console.log('============= reload done =============')
     console.timeEnd('reload time')
   })
-}
-
-module.exports = {
-  init,
-  hotReloadwatcher,
-  readConfigFile
 }

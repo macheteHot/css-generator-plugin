@@ -1,7 +1,7 @@
 /**
  * order 230
  */
-module.exports = {
+export default {
   regExp: /^(flex-direction|flex)-(?<value>row|row-reverse|column|column-reverse)$/,
   render ({ groups }) {
     const { value } = groups

@@ -2,7 +2,7 @@
  * order 320
  */
 
-module.exports = {
+export default {
   regExp: /^(text-align|text)-(?<value>start|end|left|right|center|justify|match-parent)$/,
   render ({ groups }) {
     const { value } = groups

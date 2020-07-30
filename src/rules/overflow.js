@@ -2,7 +2,7 @@
  * order 380 - 400
  */
 
-module.exports = {
+export default {
   regExp: /^overflow(-(?<direction>x|y))?-(?<value>hidden|auto|visible|scroll|inherit)$/,
   render ({ groups }) {
     const { direction, value } = groups

@@ -1,8 +1,8 @@
 /**
  * order 220
  */
-const { ALIGN_ITEMS_ENMU_STR } = require('../constant')
-module.exports = {
+import { ALIGN_ITEMS_ENMU_STR } from '../constant'
+export default {
   regExp: new RegExp(`^align-items-(?<align>${ALIGN_ITEMS_ENMU_STR})$`),
   render ({ groups }) {
     const { align } = groups

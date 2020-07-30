@@ -2,7 +2,7 @@
  * order 540
  */
 
-module.exports = {
+export default {
   regExp: /^circle$/,
   render () {
     return {

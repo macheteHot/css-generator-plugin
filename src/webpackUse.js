@@ -1,7 +1,7 @@
-const { init, hotReloadwatcher, readConfigFile } = require('./index')
-const { setConfig } = require('./config')
+import { init, hotReloadwatcher, readConfigFile } from './index'
+import { setConfig } from './config'
 
-class Main {
+module.exports = class Main {
   constructor (options) {
     if (options === undefined) {
       options = readConfigFile()
@@ -18,5 +18,3 @@ class Main {
     })
   }
 }
-
-module.exports = Main

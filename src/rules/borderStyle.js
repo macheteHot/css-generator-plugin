@@ -2,7 +2,7 @@
  * order 550
  */
 
-module.exports = {
+export default {
   regExp: /^border-style-(?<value>none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit)$/,
   render ({ groups }) {
     const { value } = groups

@@ -1,7 +1,8 @@
-const { getRegList } = require('./scriptCreateReg')
-const { pushPreObj, clearPreArray, renderCss } = require('./preRender')
-const { isFunction } = require('./utils')
-const { setConfig } = require('./config')
+import { pushPreObj, clearPreArray, renderCss } from './preRender'
+import { isFunction } from './utils/index.js'
+import { setConfig } from './config'
+import * as rules from './rules/index'
+
 const NODE_ID = 'autocss'
 const cssSet = new Set()
 
@@ -25,7 +26,7 @@ function filterClass (classStr) {
     return null
   }
   cssSet.add(classStr)
-  getRegList().forEach((rule) => {
+  Object.values(rules).forEach((rule) => {
     const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
     const res = classStr.match(reg)
     if (res !== null) {

@@ -1,7 +1,7 @@
 /**
  * order 190
  */
-module.exports = {
+export default {
   regExp: /^z-index-(?<isMinus>m-)?(?<num>0|[1-9]\d*)$/,
   render ({ groups }) {
     let { isMinus, num } = groups

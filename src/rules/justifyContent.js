@@ -1,8 +1,8 @@
 /**
  * order 210
  */
-const { JUSTIFY_CONTENT_ENMU_STR } = require('../constant')
-module.exports = {
+import { JUSTIFY_CONTENT_ENMU_STR } from '../constant'
+export default {
   regExp: new RegExp(`^justify-content-(?<justify>${JUSTIFY_CONTENT_ENMU_STR})$`),
   render ({ groups }) {
     const { justify } = groups

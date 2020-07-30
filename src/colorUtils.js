@@ -1,5 +1,6 @@
-const { getConfig } = require('./config')
-const { COLORS } = require('./constant')
+import { getConfig } from './config'
+import { COLORS } from './constant'
+
 const colorStore = () => ({
   red: '#f00',
   white: '#fff',
@@ -9,11 +10,11 @@ const colorStore = () => ({
   ...getConfig(COLORS)
 })
 
-function getColors () {
+export function getColors () {
   return colorStore()
 }
 
-function getColorsKey () {
+export function getColorsKey () {
   return Object.keys(colorStore())
 }
 
@@ -21,7 +22,7 @@ function radix16 (value) {
   return parseInt(value, 16)
 }
 
-function textToRgbText (str, opacity = 1) {
+export function textToRgbText (str, opacity = 1) {
   const hex = /^([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str) // is hex text or word
     ? str
     : colorStore()[str].replace(/^#/, '')
@@ -44,10 +45,4 @@ function textToRgbText (str, opacity = 1) {
       `,${opacity})`
   }
   return ''
-}
-
-module.exports = {
-  getColors,
-  getColorsKey,
-  textToRgbText
 }

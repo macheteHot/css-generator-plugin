@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+
+"use strict";const e=require("fs"),s=require("path"),{getRegList:r}=require("../genSnippets");function t(r,t){e.writeFileSync(s.resolve(process.cwd(),"./auto-use-snippets.css"),r,{flag:t})}t("","w");t(r().reduce((e,s)=>`${e}${s.render()}`,""),"w");

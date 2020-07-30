@@ -2,7 +2,7 @@
  * order 290
  */
 
-module.exports = {
+export default {
   regExp: /^(display|d)-(?<value>none|inline|block|inline-block|flex)$/,
   render ({ groups }) {
     const { value } = groups
