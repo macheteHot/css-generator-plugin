@@ -2,8 +2,9 @@
 // 用来去重
 import * as rules from './rules/index'
 import { pushPreObj, clearPreArray } from './preRender'
-import { GLOB_REG } from './constant'
-import { getConfig } from './config'
+import { GLOB_REG, MODIFY_RULES } from './constant'
+import { getConfig, getUnit } from './config'
+import { isFunction } from './utils/index'
 
 const cssSet = new Set()
 
@@ -25,9 +26,9 @@ export function filterClass (classStr) {
     return null
   }
   cssSet.add(classStr)
-  Object.values(rules).forEach((rule) => {
-    // regExp maybe function
-    const reg = typeof rule.regExp === 'function' ? rule.regExp() : rule.regExp
+  Object.values({ ...rules, ...getConfig(MODIFY_RULES) }).forEach((rule) => {
+    rule = isFunction(rule) ? rule({ getUnit }) : rule
+    const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
     const res = classStr.match(reg)
     if (res !== null) {
       pushPreObj({ classStr, ...rule.render(res) })

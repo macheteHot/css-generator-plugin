@@ -1,6 +1,8 @@
-import { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT } from './constant'
+import { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT, MODIFY_RULES } from './constant'
 
-let programConfig = {}
+let programConfig = {
+  [MODIFY_RULES]: {}
+}
 const runType = {
   vue: {
     [EXT_NAME]: ['vue'],
@@ -10,13 +12,17 @@ const runType = {
     [EXT_NAME]: ['tsx', 'jsx'],
     reg: /((?<=className=(["']))[\s\S]*?(?=\2))|((?<=className={)[\s\S]*?(?=}))/gi
   },
-  'd-mini-program': {
+  'd-mini-program': { // 钉钉小程序
     [EXT_NAME]: ['axml'],
     reg: /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
   },
-  'wx-mini-program': {
+  'wx-mini-program': { // 微信小程序
     [EXT_NAME]: ['wxml'],
     reg: /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
+  },
+  html: { // 单纯 html
+    [EXT_NAME]: ['html'],
+    reg: /((?<=class=(["']))[\s\S]*?(?=\2))/gi
   }
 }
 export function getConfig (str) {
