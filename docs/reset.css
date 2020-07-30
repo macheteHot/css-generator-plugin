@@ -49,7 +49,6 @@ p {
 }
 
 .default-sc-1::-webkit-scrollbar-track {
-
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background: #ededed;
@@ -190,6 +189,9 @@ p {
   font-size: 18px !important;
 }
 
+.default-fs-12{
+  font-size: 12px !important;
+}
 
 .default-overflow-y-auto {
   overflow-y: auto !important;
@@ -207,6 +209,10 @@ p {
   border-radius: 4px !important;
 }
 
+
+.default-c-red {
+  color: rgba(255, 0, 0, 1) !important;
+}
 
 .default-bg-f2f5fc {
   background-color: rgba(242, 245, 252, 1) !important;
