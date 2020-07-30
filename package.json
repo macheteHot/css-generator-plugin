@@ -4,19 +4,16 @@
   "version": "0.17.3",
   "license": "MIT",
   "bin": {
-    "css-generator-plugin": "./bin/gcss",
-    "gen-snippets": "./bin/genSnippets"
+    "css-generator": "./dist/css-generator",
+    "gen-snippets": "./dist/genSnippets"
   },
-  "main": "./src/webpackUse.js",
+  "main": "./dist/webpackUse.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/macheteHot/css-generator-plugin.git"
   },
   "files": [
-    "bin/**/*",
-    "src/**/*",
-    "dist/gcss.js",
-    "genSnippets"
+    "dist/*"
   ],
   "author": "machete <rtpppp163@gmail.com>",
   "bugs": {
@@ -25,8 +22,10 @@
   "homepage": "https://github.com/macheteHot/css-generator-plugin#readme",
   "keywords": [
     "css",
-    "generate",
     "vue",
+    "react",
+    "weixin",
+    "dingding",
     "webpack-plugin"
   ],
   "devDependencies": {
