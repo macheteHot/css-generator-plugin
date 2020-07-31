@@ -76,7 +76,7 @@ module.exports = {
 ```
 + 运行指令(建议配置到package.json的scripts)
 ```text
-npm run css-generator-plugin
+npm run css-generator
 直接启动 npx css-generator | yarn css-generator
 ```
 
