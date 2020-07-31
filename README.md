@@ -547,6 +547,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
             * 入参 为 字符串mathch 正则表达式的结果 (只有匹配上的才会调用render)
             * render 函数必须返回 name:String order:Number css:Array<String>
             * 将会使用 render 返回的结果 生成css
+            * 如果导出 num 则会按照num 组内渲染排序 与其他css 排序无关
             */
            regExp: /^zindex-(?<isMinus>m-)?(?<num>0|[1-9]\d*)$/,
            render ({ groups }) {
