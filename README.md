@@ -60,7 +60,7 @@ const CssGeneratorPlugin = require('css-generator-plugin')
 
 #### 命令行启动(如小程序类和老项目，无webpack)
 
-+ 项目根目录配置css.generator.config.js/css.generator.config.json(文件名固定)
++ 项目根目录配置css.generator.config.js(文件名固定)
 ```javascript
 module.exports = {
   colors: {}, // 可选项。颜色配置，内置包含以上默认值

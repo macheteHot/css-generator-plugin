@@ -56,8 +56,8 @@ export function init (compiler) {
 
 export function readConfigFile () {
   let options = null
-  if (fs.existsSync(getFilePath('css.generator.config.json'))) {
-    options = JSON.parse(fs.readFileSync(getFilePath('css.generator.config.json')))
+  if (fs.existsSync(getFilePath('css.generator.config.js'))) {
+    options = JSON.parse(fs.readFileSync(getFilePath('css.generator.config.js')))
   } else {
     throw new Error('you dont have any config!!! see https://github.com/macheteHot/css-generator-plugin/blob/master/README.md')
   }
