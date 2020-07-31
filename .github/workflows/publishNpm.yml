@@ -1,5 +1,6 @@
-# This workflow will run build using node and then publish to npm  when a version is change
-name: Node.js publish npm
+# This workflow will run build and publish to npm when version change
+
+name: Node.js Package
 
 on:
   push:
@@ -7,15 +8,24 @@ on:
       - v*.*.*
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: yarn
+      - run: yarn build
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      uses: actions/checkout@master
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: yarn
-      - run: yarn build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
