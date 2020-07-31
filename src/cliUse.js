@@ -1,4 +1,4 @@
-import { init, hotReloadwatcher } from './index'
+import { init, hotReloadwatcher, readConfigFile } from './index'
 import { setConfig } from './config'
 
 // cli 调用
@@ -8,9 +8,7 @@ function run (options) {
   hotReloadwatcher()
 }
 
-const fs = require('fs')
 const program = require('commander')
-const path = require('path')
 const { version } = require('../package.json')
 
 const description =
@@ -21,42 +19,6 @@ program
   .description(description)
   .option('-c, --config-file [fileName]', 'set config file')
   .parse(process.argv)
-let configObj = {}
 
-function getFilePath (str) {
-  return path.resolve(process.cwd(), str)
-}
-
-if (!program.configFile) {
-  if (fs.existsSync(getFilePath('css.generator.config.js'))) {
-    configObj = require(getFilePath('css.generator.config.js'))
-    run(configObj)
-  } else {
-    program.help()
-    process.exit()
-  }
-}
-
-if (program.configFile) {
-  if (!fs.existsSync(getFilePath(program.configFile))) { // 配置文件不存在
-    console.error('')
-    console.error('error file path!')
-    console.error('')
-    process.exit()
-  }
-
-  const extname = path.extname(program.configFile)
-
-  if (extname === 'json') {
-    configObj = JSON.parse(fs.readFileSync(getFilePath(program.configFile)))
-    run(configObj)
-  } else if (extname === 'js') {
-    configObj = require(getFilePath(program.configFile))
-    run(configObj)
-  } else {
-    console.error('')
-    console.error('only accpect js or json file!')
-    console.error('')
-    process.exit()
-  }
-}
+const configObj = readConfigFile()
+run(configObj)

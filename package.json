@@ -1,7 +1,7 @@
 {
   "name": "css-generator-plugin",
   "description": "css file generator only write class name",
-  "version": "0.20.2-beta.1",
+  "version": "0.20.2-beta.2",
   "license": "MIT",
   "bin": {
     "css-generator": "./dist/css-generator",
