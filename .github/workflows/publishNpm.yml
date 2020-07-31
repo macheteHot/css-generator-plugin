@@ -1,6 +1,6 @@
 # This workflow will run build and publish to npm when version change
 
-name: Node.js Package
+name: publish to npm
 
 on:
   push:
