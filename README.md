@@ -1,7 +1,5 @@
 # css-generator-plugin 自动生成css文件，高效开发页面
 
-![avatar](https://cdnfileimg.115.com/58fddc92bc3e37e6e6fa32d5a40125c7/5EE3B5C3/5ee3b5b4d6c8ba1cfe217193ca8c3a80b6a76be1)
-
 ### 如何使用
 
 + 安装依赖
