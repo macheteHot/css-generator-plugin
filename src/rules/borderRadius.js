@@ -12,6 +12,7 @@ export default {
     return {
       name: 'borderRadius',
       order: 530,
+      num,
       css: parseInt(num) === 0 ? ['border-radius: 0'] : [`border-radius: ${num}${unit}`]
     }
   }
