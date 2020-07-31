@@ -68,12 +68,16 @@ module.exports = {
   generate: 'src/style/auto.css', // 必填项。生成文件位置(不存在会自动创建目录)
   type: 'vue', // 必填项。项目类型 vue|d-mini-program
   unit: 'px', // 可选项。默认单位
+  modifyRules:{ // 可覆写规则 或自定义规则 详见进阶使用
+
+  },
   important: true // 可选项。默认为true。css是否添加！important
 }
 ```
 + 运行指令(建议配置到package.json的scripts)
 ```text
 npm run css-generator-plugin
+直接启动 npx css-generator | yarn css-generator
 ```
 
 + 入口文件(main.js)手动引入动态生成的css
@@ -486,3 +490,76 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     ```javascript
     regExp: /^(text-)?ellipsis-[1-9]\d*$/
     ```
+
+
+### 进阶使用
++ 关于 modifyRules 可覆盖属性如下
+  + alignItems
+  + border
+  + borderRadius
+  + borderStyle
+  + boxSizing
+  + circle
+  + color
+  + cursor
+  + display
+  + flexBasis
+  + flexDirection
+  + flexJustAli
+  + flexNum
+  + flexShrinkAndGrow
+  + flexWrap
+  + fontSize
+  + fontWeight
+  + height
+  + justifyContent
+  + letterSpacing
+  + lineHeight
+  + marginAndPadding
+  + maxHeight
+  + maxWidth
+  + minHeight
+  + minWidth
+  + orientation
+  + overflow
+  + position
+  + square
+  + textAlign
+  + textAlignLast
+  + textDecoration
+  + textEllipsis
+  + userSelect
+  + width
+  + wordBreak
+  + zIndex
+  ### 说明如下
+  ```javascript
+  modifyRules: {
+        /**
+         * 如需覆盖自带属性 则属性名 相同
+         * 此处值 为 object 或者 函数 函数必须返回相同格式的对象
+         * 函数可接受 自带工具 工具有
+         * getUnit 将单位根据默认值进行转换
+         */
+       zIndex: ({ getUnit }) => { 
+         return {
+           /**
+            * 此处必须存在 regExp 为正则表达式 或 函数 函数必须返回正则表达式
+            * 此处必须存在 render 函数 
+            * 入参 为 字符串mathch 正则表达式的结果 (只有匹配上的才会调用render)
+            * render 函数必须返回 name:String order:Number css:Array<String>
+            * 将会使用 render 返回的结果 生成css
+            */
+           regExp: /^zindex-(?<isMinus>m-)?(?<num>0|[1-9]\d*)$/,
+           render ({ groups }) {
+             let { isMinus, num } = groups
+             if (isMinus) {
+               num = 0 - num
+             }
+             return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}${getUnit('')}`] }
+           }
+         }
+       },
+
+    }
+  ```

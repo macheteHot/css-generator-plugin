@@ -6,7 +6,7 @@ export default {
   regExp: /^circle$/,
   render () {
     return {
-      name: 'borderStyle',
+      name: 'circle',
       order: 540,
       css: ['border-radius: 50%']
     }
