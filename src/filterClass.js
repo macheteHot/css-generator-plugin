@@ -1,7 +1,7 @@
 
 // 用来去重
 import * as rules from './rules/index'
-import { pushPreObj, clearPreArray } from './preRender'
+import { pushPreObj } from './preRender'
 import { GLOB_REG, MODIFY_RULES } from './constant'
 import { getConfig, getUnit } from './config'
 import { isFunction } from './utils/index'
@@ -9,8 +9,8 @@ import { isFunction } from './utils/index'
 const cssSet = new Set()
 
 export function filterClassNames (sourceStr) {
-  cssSet.clear() // 清空set
-  clearPreArray() // 清空预编译
+  // cssSet.clear() // 清空set
+  // clearPreArray() // 清空预编译
   const classNameList = sourceStr.match(getConfig(GLOB_REG))
   if (classNameList) {
     classNameList.forEach(hasClassNameStr => {

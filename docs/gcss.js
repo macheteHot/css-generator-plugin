@@ -1,3 +1,1057 @@
 #!/usr/bin/env node
 
-!function(){"use strict";const e=["center","start","end","flex-start","flex-end","left","right","space-between","between","space-around","around","space-evenly","evenly","stretch","inherit","initial","unset","normal"].join("|"),r=["baseline","center","end","flex-end","flex-start","inherit","initial","normal","self-end","self-start","start","stretch","unset"].join("|"),t=["auto","default","none","context-menu","help","pointer","progress","wait","cell","crosshair","text","vertical-text","alias","copy","move","no-drop","not-allowed","e-resize","n-resize","ne-resize","nw-resize","s-resize","se-resize","sw-resize","w-resize","ew-resize","ns-resize","nesw-resize","nwse-resize","col-resize","row-resize","all-scroll","zoom-in","zoom-out","grab","grabbing"].join("|"),n=["cm","mm","in","px","pt","pc","em","ex","ch","rem","vw","vh","vmin","vmax","p"].join("|"),s=new Map;s.set(void 0,[""]),s.set("x",["left","right"]),s.set("y",["top","bottom"]),s.set("t",["top"]),s.set("r",["right"]),s.set("b",["bottom"]),s.set("l",["left"]),s.set("top",["top"]),s.set("right",["right"]),s.set("bottom",["bottom"]),s.set("left",["left"]);var i={regExp:new RegExp(`^align-items-(?<align>${r})$`),render({groups:e}){const{align:r}=e;return{name:"alignItems",order:220,css:["align-items: "+r]}}};let o={modifyRules:{}};const a={vue:{extNames:["vue"],reg:/((?<=class=(["']))[\s\S]*?(?=\2))|((?<=class={)[\s\S]*?(?=}))/gi},react:{extNames:["tsx","jsx"],reg:/((?<=className=(["']))[\s\S]*?(?=\2))|((?<=className={)[\s\S]*?(?=}))/gi},"d-mini-program":{extNames:["axml"],reg:/((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi},"wx-mini-program":{extNames:["wxml"],reg:/((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi},html:{extNames:["html"],reg:/((?<=class=(["']))[\s\S]*?(?=\2))/gi}};function u(e){switch(e){case"extNames":return a[o.type].extNames;case"globReg":return a[o.type].reg;case"colors":return o.colors||{};case"unit":return o.unit||"px";case"important":return void 0===o.important||o.important;default:return o[e]}}function l(e){return"p"===e?"%":e||(o.unit||"px")}function c(e){let r=460;return"x"===e&&(r+=10),"y"===e&&(r+=20),"t"===e&&(r+=30),"b"===e&&(r+=40),"r"===e&&(r+=50),"l"===e&&(r+=60),r}function d(e,r,t){return s.get(e).reduce((e,n)=>n?[...e,`border-${n}-width: ${r}${t}`,`border-${n}-style: solid`,`border-${n}-style: solid`]:[...e,`border-width: ${r}${t}`,"border-style: solid","border-style: solid"],[])}var p={regExp:new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{direction:r,num:t,unit:n}=e;return n=0===parseInt(t)?"":l(n),{name:"border",order:c(r),num:t,css:d(r,t,n)}}},g={regExp:new RegExp(`^(border-radius|br)-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{num:r,unit:t}=e;return t=l(t),{name:"borderRadius",order:530,css:0===parseInt(r)?["border-radius: 0"]:[`border-radius: ${r}${t}`]}}},m={regExp:/^border-style-(?<value>none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit)$/,render({groups:e}){const{value:r}=e;return{name:"borderStyle",order:550,css:["border-style: "+r]}}},x={regExp:/^box-sizing-(?<value>content-box|border-box)$/,render({groups:e}){const{value:r}=e;return{name:"boxSizing",order:560,css:["box-sizing: "+r]}}},h={regExp:/^circle$/,render:()=>({name:"circle",order:540,css:["border-radius: 50%"]})};const f=()=>({red:"#f00",white:"#fff",black:"#000",blue:"#00f",transparent:"transparent",...u("colors")});function $(e){return parseInt(e,16)}var w={regExp:()=>new RegExp(`^(?<type>color|c|text|bg|background|border-color|border-c)-((?<pseudo>hover|link|visited|active|focus|focus-within)-)?(?<color>[a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${Object.keys(f()).join("|")})(-(?<opacity>1|([1-9]\\d{0,1})))?$`),render({groups:e}){let{type:r,pseudo:t,color:n,opacity:s}=e;s=void 0===s?1:(.01*s).toFixed(2),n=function(e,r=1){const t=/^([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(e)?e:f()[e].replace(/^#/,"");if("transparent"===t)return"transparent";if(3===t.length)return"rgba("+t.split("").map(e=>$(e.repeat(2))).join(",")+`,${r})`;if(6===t.length){const e=/[a-fA-F0-9]{2}/g;return"rgba("+t.match(e).map($).join(",")+`,${r})`}return""}(n,s);let i="";switch(r){case"c":case"color":case"text":i="color";break;case"bg":case"background":i="background-color";break;case"border-c":case"border-color":i="border-color";break;default:i=r}return{name:"color",order:1/0,pseudo:t,css:[`${i}: ${n}`]}}},b={regExp:new RegExp(`^cursor-(?<value>${t})$`),render({groups:e}){const{value:r}=e;return{name:"cursor",order:340,css:["cursor: "+r]}}},v={regExp:/^(display|d)-(?<value>none|inline|block|inline-block|flex)$/,render({groups:e}){const{value:r}=e;return{name:"display",order:280,css:["display: "+r]}}},E={regExp:new RegExp(`^flex-basis-(?<value>((?<num>0|[1-9]\\d*)(?<unit>${n})?)|initial|inherit|auto)$`),render({groups:e}){let{value:r,num:t,unit:n}=e;return t&&(n=l(n),r=`${t}${n}`),{name:"flexBasis",order:280,css:["flex-basis: "+r]}}},y={regExp:/^(flex-direction|flex)-(?<value>row|row-reverse|column|column-reverse)$/,render({groups:e}){const{value:r}=e;return{name:"flexDirection",order:230,css:["flex-direction: "+r]}}},k={regExp:new RegExp(`^flex-(?<justify>${e})-(?<align>${r})$`),render({groups:e}){let{justify:r,align:t}=e;return"between"===r&&(r="space-between"),"around"===r&&(r="space-around"),"evenly"===r&&(r="space-evenly"),{name:"flexJustAli",order:200,css:["display: flex","justify-content: "+r,"align-items: "+t]}}},z={regExp:/^flex-(?<value>null|auto|none|(0|[1-9]\d*))$/,render({groups:e}){const{value:r}=e;return{name:"flex",order:250,css:["flex: "+r]}}},R={regExp:/^flex-(?<type>shrink|grow)-(?<value>(0|[1-9]\d*)|initial|inherit)$/,render({groups:e}){const{type:r,value:t}=e;return{name:"shrink"===r?"flexShrink":"flexGrow",order:"shrink"===r?260:270,css:[`flex-${r}: ${t}`]}}},j={regExp:/^flex-wrap-(?<value>inherit|initial|nowrap|wrap|wrap-reverse)$/,render({groups:e}){const{value:r}=e;return{name:"flexDirection",order:240,css:["flex-wrap: "+r]}}},S={regExp:new RegExp(`^(font-size|fs)-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{num:r,unit:t}=e;t=l(t);const n={name:"fontSize",order:370,num:r};return 0===parseInt(r)?{...n,css:["font-size: 0"]}:{...n,css:[`font-size: ${r}${t}`]}}},I={regExp:/^(font-weight|fw)-(?<value>[1-9]00|normal|bold|bolder|inherit|initial|lighter|normal|unset)$/,render({groups:e}){const{value:r}=e;return{name:"fontWeight",order:360,css:["font-weight: "+r]}}},A={regExp:new RegExp(`^(h|height)-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){const{num:r,unit:t}=e,n={name:"height",order:20,num:r};return 0===parseInt(r)?{...n,css:["height: 0"]}:{...n,css:[`height: ${r}${l(t)}`]}}},N={regExp:new RegExp(`^justify-content-(?<justify>${e})$`),render({groups:e}){const{justify:r}=e;return{name:"justifyContent",order:210,css:["justify-content: "+r]}}},M={regExp:new RegExp(`^letter-spacing-(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{isMinus:r,num:t,unit:n}=e;r&&(t=0-t),n=l(n);return{...{name:"letterSpacing",order:410,num:t},css:0!==parseInt(t)?[`letter-spacing: ${t}${n}`]:["letter-spacing: 0"]}}},O={regExp:new RegExp(`^(lh|line-height)-(?<value>((?<num>0|[1-9]\\d*)(?<unit>${n})?)|normal|unset|inherit|initial)$`),render({groups:e}){let{value:r,num:t,unit:n}=e;const s={name:"lineHeight",order:330};return 0===parseInt(t)?{...s,num:t,css:["line-height: 0"]}:void 0!==t?(n=l(n),{...s,num:t,css:[`line-height: ${t}${n}`]}):{...s,num:1/0,css:["line-height: "+r]}}};var F={regExp:new RegExp(`^(?<type>m|margin|p|padding)-((?<direction>[trblxy])-)?((?<auto>auto)|(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${n})?)$`),render({groups:e}){let{type:r,direction:t,isMinus:n,num:i,unit:o,auto:a}=e;a?(o="",i="auto"):o=0===parseInt(i)?"":l(o),n&&(i=0-i);const u=function(e,r){let t,n="";return"m"!==e&&"margin"!==e||(t=50,n+="margin"),"p"!==e&&"padding"!==e||(t=110,n+="padding"),"x"===r&&(t+=10),"y"===r&&(t+=20),"t"===r&&(t+=30),"b"===r&&(t+=40),"r"===r&&(t+=50),"l"===r&&(t+=60),r&&(n+="-"+r),{name:n,order:t}}(r,t);return"m"===r&&(r="margin"),"p"===r&&(r="padding"),{...u,num:i,css:s.get(t).reduce((e,t)=>[...e,t?`${r}-${t}: ${i}${o}`:`${r}: ${i}${o}`],[])}}},B={regExp:new RegExp(`^(max-h|max-height)-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{num:r,unit:t}=e;t=l(t);const n={name:"max-height",order:31,num:r};return parseInt(0===r)?{...n,css:["max-height: 0"]}:{...n,css:[`max-height: ${r}${t}`]}}},C={regExp:new RegExp(`^(max-w|max-width)-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{num:r,unit:t}=e;t=l(t);const n={name:"max-width",order:31,num:r};return parseInt(0===r)?{...n,css:["max-width: 0"]}:{...n,css:[`max-width: ${r}${t}`]}}},D={regExp:new RegExp(`^(min-h|min-height)-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{num:r,unit:t}=e;t=l(t);const n={name:"min-height",order:40,num:r};return parseInt(0===r)?{...n,css:["min-height: 0"]}:{...n,css:[`min-height: ${r}${t}`]}}},H={regExp:new RegExp(`^(min-w|min-width)-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{num:r,unit:t}=e;t=l(t);const n={name:"min-width",order:41,num:r};return parseInt(0===r)?{...n,css:["min-width: 0"]}:{...n,css:[`min-width: ${r}${t}`]}}},W={regExp:new RegExp(`^(?<direction>[trbl]|top|right|bottom|left)-(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{direction:r,isMinus:t,num:n,unit:s}=e;t&&(n=0-n),s=l(s),"t"===r&&(r="top"),"r"===r&&(r="right"),"b"===r&&(r="bottom"),"l"===r&&(r="left");const i={name:"orientation",order:310,num:n};return 0===n?{...i,css:[r+": 0"]}:{...i,css:[`${r}: ${n}${s}`]}}},q={regExp:/^overflow(-(?<direction>x|y))?-(?<value>hidden|auto|visible|scroll|inherit)$/,render({groups:e}){const{direction:r,value:t}=e,n={name:"overflow"};return r?"x"===r?{...n,order:390,css:["overflow-x: "+t]}:"y"===r?{...n,order:400,css:["overflow-y: "+t]}:void 0:{...n,order:380,css:["overflow: "+t]}}},L={regExp:/^position-(?<value>static|relative|sticky|unset|absolute|fixed|inherit|initial)$/,render({groups:e}){const{value:r}=e;return{name:"position",order:300,css:["position: "+r]}}},_={className:"square",regExp:new RegExp(`^square-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){let{num:r,unit:t}=e;t=l(t);const n={name:"square",order:50,num:r};return parseInt(0===r)?{...n,css:["width: 0","height: 0"]}:{...n,css:[`width: ${r}${t}`,`height: ${r}${t}`]}}},G={regExp:/^(text-align|text)-(?<value>start|end|left|right|center|justify|match-parent)$/,render({groups:e}){const{value:r}=e;return{name:"textAlign",order:320,css:["text-align: "+r]}}},J={regExp:/^(text-align-last|text-last)-(?<value>auto|left|right|center|justify|start|end|initial|inherit)$/,render({groups:e}){const{value:r}=e;return{name:"textAlignLast",order:440,css:["text-align-last: "+r]}}},T={regExp:/^(text-decoration|text)-(?<value>none|underline|overline|line-through|blink|inherit)$/,render({groups:e}){const{value:r}=e;return{name:"textDecoration",order:420,css:["text-decoration: "+r]}}},P={regExp:/^(text-)?ellipsis(-(?<num>[1-9]\d*))?$/,render({groups:e}){let{num:r}=e;const t={name:"",order:450};return 1===parseInt(r)&&(r=void 0),void 0===r?{...t,num:0,css:["display: inline-block","overflow: hidden","text-overflow: ellipsis","white-space: nowrap"]}:{...t,num:r,css:["overflow: hidden","text-overflow: ellipsis","display: -webkit-box","-webkit-line-clamp: "+r,"-webkit-box-orient: vertical"]}}},U={regExp:/^(user-)?select-(?<value>none|auto|text|all|contain|element)$/,render({groups:e}){const{value:r}=e;return{name:"userSelect",order:430,css:["user-select: "+r]}}},Z={regExp:new RegExp(`^(w|width)-(?<num>0|[1-9]\\d*)(?<unit>${n})?$`),render({groups:e}){const{num:r,unit:t}=e,n={name:"width",order:10,num:r};return 0===parseInt(r)?{...n,css:["width: 0"]}:{...n,css:[`width: ${r}${l(t)}`]}}},K={regExp:/^word-break-(?<value>normal|break-all|keep-all|break-word|inherit|initial|unset)$/,render({groups:e}){const{value:r}=e;return{name:"wordBreak",order:350,css:["word-break: "+r]}}},Q={regExp:/^z-index-(?<isMinus>m-)?(?<num>0|[1-9]\d*)$/,render({groups:e}){let{isMinus:r,num:t}=e;return r&&(t=0-t),{name:"zIndex",order:190,num:t,css:["z-index: "+t]}}},V=Object.freeze({__proto__:null,alignItems:i,border:p,borderRadius:g,borderStyle:m,boxSizing:x,circle:h,color:w,cursor:b,display:v,flexBasis:E,flexDirection:y,flexJustAli:k,flexNum:z,flexShrinkAndGrow:R,flexWrap:j,fontSize:S,fontWeight:I,height:A,justifyContent:N,letterSpacing:M,lineHeight:O,marginAndPadding:F,maxHeight:B,maxWidth:C,minHeight:D,minWidth:H,orientation:W,overflow:q,position:L,square:_,textAlign:G,textAlignLast:J,textDecoration:T,textEllipsis:P,userSelect:U,width:Z,wordBreak:K,zIndex:Q});function X(e){return"function"==typeof e}let Y=[];function ee({classStr:e,pseudo:r,css:t}){return r&&(e=e+":"+r),t.reduce((e,r,t)=>e+(u("important")?r+" !important; ":r+"; "),`.${e}{ `)+"}"}function re(e,r){return void 0!==e&&void 0!==r?parseInt(e.num)-parseInt(r.num):0}function te(){let e="";const r=function(e,r){const t={};return e.forEach((function(e){const n=JSON.stringify(e[r]);t[n]=t[n]||[],t[n].push(e)})),Object.keys(t).map((function(e){return t[e]}))}(Y.sort((e,r)=>e.order-r.order),"name");for(const t in r)Object.prototype.hasOwnProperty.call(r,t)&&(e+=`/* ${r[t][0].name||"unknow name"} order ${r[t][0].order} */\n`,e+=r[t].sort(re).map(ee).join("\n"),e+="\n\n");return e}const ne=new Set;function se(e){ne.clear(),Y=[];const r=e.match(u("globReg"));return r&&r.forEach(e=>{e.replace(/[^a-zA-Z0-9-]/g," ").split(" ").forEach(ie)}),""}function ie(e){if(ne.has(e))return null;ne.add(e),Object.values({...V,...u("modifyRules")}).forEach(r=>{r=X(r)?r({getUnit:l}):r;const t=X(r.regExp)?r.regExp():r.regExp,n=e.match(t);var s;null!==n&&(s={classStr:e,...r.render(n)},Y.push(s))})}function oe(){se(document.body.innerHTML);const e=document.getElementById("autocss");e&&e.remove();const r=document.createElement("style");r.type="text/css",r.rel="stylesheet",r.setAttribute("id","autocss"),r.appendChild(document.createTextNode(te())),document.getElementsByTagName("head")[0].appendChild(r)}window.Gcss=class{constructor(e={}){var r;r={...e,type:"html"},o=r,this.str=""}start(){oe();new MutationObserver(oe).observe(document.body,{attributes:!0,attributeFilter:["class"],childList:!0,subtree:!0})}},window.getCssStr=te}();
+(function () {
+  'use strict';
+
+  const COLORS = 'colors'; // 选填
+  const UNIT = 'unit'; // 选填 单位
+  const IMPORTANT = 'important'; // 选填 单位
+  // 以下是项目配置 不从配置文件读
+  const EXT_NAME = 'extNames';
+  const GLOB_REG = 'globReg';
+  const MODIFY_RULES = 'modifyRules';
+  // 以下是枚举
+
+  const JUSTIFY_CONTENT_ENMU = ['center', 'start', 'end', 'flex-start', 'flex-end', 'left', 'right', 'space-between', 'between', 'space-around', 'around', 'space-evenly', 'evenly', 'stretch', 'inherit', 'initial', 'unset', 'normal'];
+  const ALIGN_ITEMS_ENMU = ['baseline', 'center', 'end', 'flex-end', 'flex-start', 'inherit', 'initial', 'normal', 'self-end', 'self-start', 'start', 'stretch', 'unset'];
+
+  const CURSOR_ENMU = ['auto', 'default', 'none', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'e-resize', 'n-resize', 'ne-resize', 'nw-resize', 's-resize', 'se-resize', 'sw-resize', 'w-resize', 'ew-resize', 'ns-resize', 'nesw-resize', 'nwse-resize', 'col-resize', 'row-resize', 'all-scroll', 'zoom-in', 'zoom-out', 'grab', 'grabbing'];
+
+  const UNIT_ENMU = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 'vw', 'vh', 'vmin', 'vmax', 'p'];
+  const JUSTIFY_CONTENT_ENMU_STR = JUSTIFY_CONTENT_ENMU.join('|');
+  const ALIGN_ITEMS_ENMU_STR = ALIGN_ITEMS_ENMU.join('|');
+  const CURSOR_ENMU_STR = CURSOR_ENMU.join('|');
+  const UNIT_ENMU_STR = UNIT_ENMU.join('|');
+
+  const DIRECTION_MAP = new Map();
+  DIRECTION_MAP.set(undefined, ['']); // 全部
+  DIRECTION_MAP.set('x', ['left', 'right']);
+  DIRECTION_MAP.set('y', ['top', 'bottom']);
+  DIRECTION_MAP.set('t', ['top']);
+  DIRECTION_MAP.set('r', ['right']);
+  DIRECTION_MAP.set('b', ['bottom']);
+  DIRECTION_MAP.set('l', ['left']);
+  DIRECTION_MAP.set('top', ['top']);
+  DIRECTION_MAP.set('right', ['right']);
+  DIRECTION_MAP.set('bottom', ['bottom']);
+  DIRECTION_MAP.set('left', ['left']);
+
+  /**
+   * order 220
+   */
+  var alignItems = {
+    regExp: new RegExp(`^align-items-(?<align>${ALIGN_ITEMS_ENMU_STR})$`),
+    render ({ groups }) {
+      const { align } = groups;
+      return { name: 'alignItems', order: 220, css: [`align-items: ${align}`] }
+    }
+  };
+
+  let programConfig = {
+    [MODIFY_RULES]: {}
+  };
+  const runType = {
+    vue: {
+      [EXT_NAME]: ['vue'],
+      reg: /((?<=class=(["']))[\s\S]*?(?=\2))|((?<=class={)[\s\S]*?(?=}))/gi
+    },
+    react: {
+      [EXT_NAME]: ['tsx', 'jsx'],
+      reg: /((?<=className=(["']))[\s\S]*?(?=\2))|((?<=className={)[\s\S]*?(?=}))/gi
+    },
+    'd-mini-program': { // 钉钉小程序
+      [EXT_NAME]: ['axml'],
+      reg: /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
+    },
+    'wx-mini-program': { // 微信小程序
+      [EXT_NAME]: ['wxml'],
+      reg: /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
+    },
+    html: { // 单纯 html
+      [EXT_NAME]: ['html'],
+      reg: /((?<=class=(["']))[\s\S]*?(?=\2))/gi
+    }
+  };
+  function getConfig (str) {
+    switch (str) {
+      // 此处配置默认值
+      case EXT_NAME:
+        return runType[programConfig.type][EXT_NAME]
+      case GLOB_REG:
+        return runType[programConfig.type].reg
+      case COLORS: // 默认空对象
+        return programConfig[COLORS] || {}
+      case UNIT: // 默认px
+        return programConfig[UNIT] || 'px'
+      case IMPORTANT: // 默认添加！important 设置默认值
+        return programConfig[IMPORTANT] === undefined ? true : programConfig[IMPORTANT]
+      default: // dirPath generate  等项目配置
+        return programConfig[str]
+    }
+  }
+
+  function setConfig (config) {
+    programConfig = config;
+  }
+  function getUnit (str) {
+    if (str === 'p') {
+      return '%'
+    }
+    if (!str) {
+      return programConfig[UNIT] || 'px'
+    }
+    return str
+  }
+
+  /**
+   * order 520 460 + 60
+   */
+
+  function getOrder (direction) {
+    let order = 460;
+    if (direction === 'x') {
+      order += 10;
+    }
+    if (direction === 'y') {
+      order += 20;
+    }
+    if (direction === 't') {
+      order += 30;
+    }
+    if (direction === 'b') {
+      order += 40;
+    }
+    if (direction === 'r') {
+      order += 50;
+    }
+    if (direction === 'l') {
+      order += 60;
+    }
+    return order
+  }
+
+  function getCss (direction, num, unit) {
+    return DIRECTION_MAP
+      .get(direction)
+      .reduce((t, c) => {
+        if (c) {
+          return [...t, `border-${c}-width: ${num}${unit}`, `border-${c}-style: solid`, `border-${c}-style: solid`]
+        } else {
+          return [...t, `border-width: ${num}${unit}`, 'border-style: solid', 'border-style: solid']
+        }
+      }, [])
+  }
+
+  var border = {
+    regExp: new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { direction, num, unit } = groups;
+      if (parseInt(num) === 0) {
+        unit = '';
+      } else {
+        unit = getUnit(unit);
+      }
+      return {
+        name: 'border',
+        order: getOrder(direction),
+        num,
+        css: getCss(direction, num, unit)
+      }
+    }
+  };
+
+  /**
+   * order 530
+   */
+
+  var borderRadius = {
+    regExp: new RegExp(`^(border-radius|br)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { num, unit } = groups;
+      unit = getUnit(unit);
+      return {
+        name: 'borderRadius',
+        order: 530,
+        css: parseInt(num) === 0 ? ['border-radius: 0'] : [`border-radius: ${num}${unit}`]
+      }
+    }
+  };
+
+  /**
+   * order 550
+   */
+
+  var borderStyle = {
+    regExp: /^border-style-(?<value>none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'borderStyle',
+        order: 550,
+        css: [`border-style: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 560
+   */
+
+  var boxSizing = {
+    regExp: /^box-sizing-(?<value>content-box|border-box)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'boxSizing',
+        order: 560,
+        css: [`box-sizing: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 540
+   */
+
+  var circle = {
+    regExp: /^circle$/,
+    render () {
+      return {
+        name: 'circle',
+        order: 540,
+        css: ['border-radius: 50%']
+      }
+    }
+  };
+
+  const colorStore = () => ({
+    red: '#f00',
+    white: '#fff',
+    black: '#000',
+    blue: '#00f',
+    transparent: 'transparent',
+    ...getConfig(COLORS)
+  });
+
+  function getColorsKey () {
+    return Object.keys(colorStore())
+  }
+
+  function radix16 (value) {
+    return parseInt(value, 16)
+  }
+
+  function textToRgbText (str, opacity = 1) {
+    const hex = /^([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str) // is hex text or word
+      ? str
+      : colorStore()[str].replace(/^#/, '');
+    if (hex === 'transparent') {
+      return 'transparent'
+    }
+    if (hex.length === 3) {
+      return 'rgba(' + hex
+        .split('')
+        .map(x => radix16(x.repeat(2)))
+        .join(',') +
+        `,${opacity})`
+    }
+    if (hex.length === 6) {
+      const reg = /[a-fA-F0-9]{2}/g;
+      return 'rgba(' + hex
+        .match(reg)
+        .map(radix16)
+        .join(',') +
+        `,${opacity})`
+    }
+    return ''
+  }
+
+  /**
+   * order Infinity
+   */
+
+  var color = {
+    regExp: () => new RegExp(
+      `^(?<type>color|c|text|bg|background|border-color|border-c)-((?<pseudo>hover|link|visited|active|focus|focus-within)-)?(?<color>[a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-(?<opacity>1|([1-9]\\d{0,1})))?$`),
+    render ({ groups }) {
+      let { type, pseudo, color, opacity } = groups;
+      opacity = opacity === undefined ? 1 : (opacity * 0.01).toFixed(2);
+      color = textToRgbText(color, opacity); // rgba(xxxx) or transparent
+      let perfix = '';
+      switch (type) {
+        case 'c':
+        case 'color':
+        case 'text':
+          perfix = 'color';
+          break
+        case 'bg':
+        case 'background':
+          perfix = 'background-color';
+          break
+        case 'border-c':
+        case 'border-color':
+          perfix = 'border-color';
+          break
+        default:
+          perfix = type;
+          break
+      }
+      // put pesudo maybe undefind or string
+      return { name: 'color', order: Infinity, pseudo, css: [`${perfix}: ${color}`] }
+    }
+  };
+
+  /**
+   * order 340
+   */
+
+  var cursor = {
+    regExp: new RegExp(`^cursor-(?<value>${CURSOR_ENMU_STR})$`),
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'cursor',
+        order: 340,
+        css: [`cursor: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 290
+   */
+
+  var display = {
+    regExp: /^(display|d)-(?<value>none|inline|block|inline-block|flex)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'display',
+        order: 280,
+        css: [`display: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 280
+   */
+
+  var flexBasis = {
+    regExp: new RegExp(`^flex-basis-(?<value>((?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?)|initial|inherit|auto)$`),
+    render ({ groups }) {
+      let { value, num, unit } = groups;
+      if (num) {
+        unit = getUnit(unit);
+        value = `${num}${unit}`;
+      }
+      return {
+        name: 'flexBasis',
+        order: 280,
+        css: [`flex-basis: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 230
+   */
+  var flexDirection = {
+    regExp: /^(flex-direction|flex)-(?<value>row|row-reverse|column|column-reverse)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return { name: 'flexDirection', order: 230, css: [`flex-direction: ${value}`] }
+    }
+  };
+
+  /**
+   * order 200
+   */
+  var flexJustAli = {
+    regExp: new RegExp(`^flex-(?<justify>${JUSTIFY_CONTENT_ENMU_STR})-(?<align>${ALIGN_ITEMS_ENMU_STR})$`),
+    render ({ groups }) {
+      let { justify, align } = groups;
+      if (justify === 'between') {
+        justify = 'space-between';
+      }
+      if (justify === 'around') {
+        justify = 'space-around';
+      }
+      if (justify === 'evenly') {
+        justify = 'space-evenly';
+      }
+      return {
+        name: 'flexJustAli',
+        order: 200,
+        css: ['display: flex', `justify-content: ${justify}`, `align-items: ${align}`]
+      }
+    }
+  };
+
+  /**
+   * order 250
+   */
+  var flexNum = {
+    regExp: /^flex-(?<value>null|auto|none|(0|[1-9]\d*))$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return { name: 'flex', order: 250, css: [`flex: ${value}`] }
+    }
+  };
+
+  /**
+   * order 260-270
+   */
+  var flexShrinkAndGrow = {
+    regExp: /^flex-(?<type>shrink|grow)-(?<value>(0|[1-9]\d*)|initial|inherit)$/,
+    render ({ groups }) {
+      const { type, value } = groups;
+      return {
+        name: type === 'shrink' ? 'flexShrink' : 'flexGrow',
+        order: type === 'shrink' ? 260 : 270,
+        css: [`flex-${type}: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 240
+   */
+  var flexWrap = {
+    regExp: /^flex-wrap-(?<value>inherit|initial|nowrap|wrap|wrap-reverse)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return { name: 'flexDirection', order: 240, css: [`flex-wrap: ${value}`] }
+    }
+  };
+
+  /**
+   * order 370
+   */
+
+  var fontSize = {
+    regExp: new RegExp(`^(font-size|fs)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { num, unit } = groups;
+      unit = getUnit(unit);
+      const base = { name: 'fontSize', order: 370, num };
+      return parseInt(num) === 0
+        ? { ...base, css: ['font-size: 0'] }
+        : { ...base, css: [`font-size: ${num}${unit}`] }
+    }
+  };
+
+  /**
+   * order 360
+   */
+  var fontWeight = {
+    regExp: /^(font-weight|fw)-(?<value>[1-9]00|normal|bold|bolder|inherit|initial|lighter|normal|unset)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'fontWeight',
+        order: 360,
+        css: [`font-weight: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 20
+   */
+
+  var height = {
+    regExp: new RegExp(`^(h|height)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      const { num, unit } = groups;
+      const base = { name: 'height', order: 20, num };
+      return parseInt(num) === 0
+        ? { ...base, css: ['height: 0'] }
+        : { ...base, css: [`height: ${num}${getUnit(unit)}`] }
+    }
+  };
+
+  /**
+   * order 210
+   */
+  var justifyContent = {
+    regExp: new RegExp(`^justify-content-(?<justify>${JUSTIFY_CONTENT_ENMU_STR})$`),
+    render ({ groups }) {
+      const { justify } = groups;
+      return { name: 'justifyContent', order: 210, css: [`justify-content: ${justify}`] }
+    }
+  };
+
+  /**
+   * order 410
+   */
+  var letterSpacing = {
+    regExp: new RegExp(`^letter-spacing-(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { isMinus, num, unit } = groups;
+      if (isMinus) {
+        num = 0 - num;
+      }
+      unit = getUnit(unit);
+      const base = { name: 'letterSpacing', order: 410, num };
+      return {
+        ...base,
+        css: parseInt(num) !== 0
+          ? [`letter-spacing: ${num}${unit}`]
+          : ['letter-spacing: 0']
+      }
+    }
+  };
+
+  /**
+   * order 330
+   */
+
+  var lineHeight = {
+    regExp: new RegExp(`^(lh|line-height)-(?<value>((?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?)|normal|unset|inherit|initial)$`),
+    render ({ groups }) {
+      let { value, num, unit } = groups;
+      const base = { name: 'lineHeight', order: 330 };
+      if (parseInt(num) === 0) { // 如果num 是0 就不管其他的了
+        return { ...base, num, css: ['line-height: 0'] }
+      }
+      if (num !== undefined) { // 如果有数字 就转换单位
+        unit = getUnit(unit);
+        return { ...base, num, css: [`line-height: ${num}${unit}`] }
+      }
+      return { ...base, num: Infinity, css: [`line-height: ${value}`] }
+    }
+  };
+
+  /**
+   * 50 - 180 order
+   */
+
+  function getConfig$1 (type, direction) {
+    let order;
+    let name = '';
+    if (type === 'm' || type === 'margin') {
+      order = 50;
+      name += 'margin';
+    }
+    // 单项加 60 order m-l-10 最大为50 + 60 padding 从 120 起
+    if (type === 'p' || type === 'padding') {
+      order = 110;
+      name += 'padding';
+    }
+    if (direction === 'x') {
+      order += 10;
+    }
+    if (direction === 'y') {
+      order += 20;
+    }
+    if (direction === 't') {
+      order += 30;
+    }
+    if (direction === 'b') {
+      order += 40;
+    }
+    if (direction === 'r') {
+      order += 50;
+    }
+    if (direction === 'l') {
+      order += 60;
+    }
+    if (direction) {
+      name += `-${direction}`;
+    }
+    return { name, order }
+  }
+
+  var marginAndPadding = {
+    regExp: new RegExp(`^(?<type>m|margin|p|padding)-((?<direction>[trblxy])-)?((?<auto>auto)|(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?)$`),
+    render ({ groups }) {
+      let { type, direction, isMinus, num, unit, auto } = groups;
+      if (auto) {
+        unit = '';
+        num = 'auto';
+      } else if (parseInt(num) === 0) {
+        unit = '';
+      } else {
+        unit = getUnit(unit);
+      }
+      // if has auto never has isMinus
+      if (isMinus) {
+        num = 0 - num;
+      }
+      const baseConfig = getConfig$1(type, direction);
+      if (type === 'm') {
+        type = 'margin';
+      }
+      if (type === 'p') {
+        type = 'padding';
+      }
+      return {
+        ...baseConfig,
+        num,
+        css: DIRECTION_MAP
+          .get(direction)
+          .reduce((t, c) =>
+            [...t, c ? `${type}-${c}: ${num}${unit}` : `${type}: ${num}${unit}`], [])
+      }
+    }
+  };
+
+  /**
+   * order 31
+   */
+  var maxHeight = {
+    regExp: new RegExp(`^(max-h|max-height)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { num, unit } = groups;
+      unit = getUnit(unit);
+      const base = { name: 'max-height', order: 31, num };
+      return parseInt(num === 0)
+        ? { ...base, css: ['max-height: 0'] }
+        : { ...base, css: [`max-height: ${num}${unit}`] }
+    }
+  };
+
+  /**
+   * order 31
+   */
+  var maxWidth = {
+    regExp: new RegExp(`^(max-w|max-width)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { num, unit } = groups;
+      unit = getUnit(unit);
+      const base = { name: 'max-width', order: 31, num };
+      return parseInt(num === 0)
+        ? { ...base, css: ['max-width: 0'] }
+        : { ...base, css: [`max-width: ${num}${unit}`] }
+    }
+  };
+
+  /**
+   * order 40
+   */
+
+  var minHeight = {
+    regExp: new RegExp(`^(min-h|min-height)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { num, unit } = groups;
+      unit = getUnit(unit);
+      const base = { name: 'min-height', order: 40, num };
+      return parseInt(num === 0)
+        ? { ...base, css: ['min-height: 0'] }
+        : { ...base, css: [`min-height: ${num}${unit}`] }
+    }
+  };
+
+  /**
+   * order 41
+   */
+  var minWidth = {
+    regExp: new RegExp(`^(min-w|min-width)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { num, unit } = groups;
+      unit = getUnit(unit);
+      const base = { name: 'min-width', order: 41, num };
+      return parseInt(num === 0)
+        ? { ...base, css: ['min-width: 0'] }
+        : { ...base, css: [`min-width: ${num}${unit}`] }
+    }
+  };
+
+  /**
+   * order 310
+   */
+
+  var orientation = {
+    regExp: new RegExp(`^(?<direction>[trbl]|top|right|bottom|left)-(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { direction, isMinus, num, unit } = groups;
+      if (isMinus) {
+        num = 0 - num;
+      }
+      unit = getUnit(unit);
+      if (direction === 't') {
+        direction = 'top';
+      }
+      if (direction === 'r') {
+        direction = 'right';
+      }
+      if (direction === 'b') {
+        direction = 'bottom';
+      }
+      if (direction === 'l') {
+        direction = 'left';
+      }
+      const base = { name: 'orientation', order: 310, num };
+      return num === 0
+        ? { ...base, css: [`${direction}: 0`] }
+        : { ...base, css: [`${direction}: ${num}${unit}`] }
+    }
+  };
+
+  /**
+   * order 380 - 400
+   */
+
+  var overflow = {
+    regExp: /^overflow(-(?<direction>x|y))?-(?<value>hidden|auto|visible|scroll|inherit)$/,
+    render ({ groups }) {
+      const { direction, value } = groups;
+      const base = { name: 'overflow' };
+      if (!direction) {
+        return { ...base, order: 380, css: [`overflow: ${value}`] }
+      }
+      if (direction === 'x') {
+        return { ...base, order: 390, css: [`overflow-x: ${value}`] }
+      }
+      if (direction === 'y') {
+        return { ...base, order: 400, css: [`overflow-y: ${value}`] }
+      }
+    }
+  };
+
+  /**
+   * order 300
+   */
+
+  var position = {
+    regExp: /^position-(?<value>static|relative|sticky|unset|absolute|fixed|inherit|initial)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'position',
+        order: 300,
+        css: [`position: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 50
+   */
+  var square = {
+    className: 'square',
+    regExp: new RegExp(`^square-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      let { num, unit } = groups;
+      unit = getUnit(unit);
+      const base = { name: 'square', order: 50, num };
+      return parseInt(num === 0)
+        ? { ...base, css: ['width: 0', 'height: 0'] }
+        : { ...base, css: [`width: ${num}${unit}`, `height: ${num}${unit}`] }
+    }
+  };
+
+  /**
+   * order 320
+   */
+
+  var textAlign = {
+    regExp: /^(text-align|text)-(?<value>start|end|left|right|center|justify|match-parent)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'textAlign',
+        order: 320,
+        css: [`text-align: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 440
+   */
+
+  var textAlignLast = {
+    regExp: /^(text-align-last|text-last)-(?<value>auto|left|right|center|justify|start|end|initial|inherit)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'textAlignLast',
+        order: 440,
+        css: [`text-align-last: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 420
+   */
+
+  var textDecoration = {
+    regExp: /^(text-decoration|text)-(?<value>none|underline|overline|line-through|blink|inherit)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'textDecoration',
+        order: 420,
+        css: [`text-decoration: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 450
+   */
+
+  var textEllipsis = {
+    regExp: /^(text-)?ellipsis(-(?<num>[1-9]\d*))?$/,
+    render ({ groups }) {
+      let { num } = groups;
+      const base = { name: '', order: 450 };
+      if (parseInt(num) === 1) {
+        num = undefined; // 和没写是一样的
+      }
+      if (num === undefined) {
+        return {
+          ...base,
+          num: 0,
+          css: [
+            'display: inline-block',
+            'overflow: hidden',
+            'text-overflow: ellipsis',
+            'white-space: nowrap'
+          ]
+        }
+      } else {
+        return {
+          ...base,
+          num,
+          css: [
+            'overflow: hidden',
+            'text-overflow: ellipsis',
+            'display: -webkit-box',
+            `-webkit-line-clamp: ${num}`,
+            '-webkit-box-orient: vertical'
+          ]
+        }
+      }
+    }
+  };
+
+  /**
+   * order 430
+   */
+
+  var userSelect = {
+    regExp: /^(user-)?select-(?<value>none|auto|text|all|contain|element)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'userSelect',
+        order: 430,
+        css: [`user-select: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 10
+   */
+  var width = {
+    regExp: new RegExp(`^(w|width)-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+    render ({ groups }) {
+      const { num, unit } = groups;
+      const base = { name: 'width', order: 10, num };
+      return parseInt(num) === 0
+        ? { ...base, css: ['width: 0'] }
+        : { ...base, css: [`width: ${num}${getUnit(unit)}`] }
+    }
+  };
+
+  /**
+   * order 350
+   */
+
+  var wordBreak = {
+    regExp: /^word-break-(?<value>normal|break-all|keep-all|break-word|inherit|initial|unset)$/,
+    render ({ groups }) {
+      const { value } = groups;
+      return {
+        name: 'wordBreak',
+        order: 350,
+        css: [`word-break: ${value}`]
+      }
+    }
+  };
+
+  /**
+   * order 190
+   */
+  var zIndex = {
+    regExp: /^z-index-(?<isMinus>m-)?(?<num>0|[1-9]\d*)$/,
+    render ({ groups }) {
+      let { isMinus, num } = groups;
+      if (isMinus) {
+        num = 0 - num;
+      }
+      return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}`] }
+    }
+  };
+
+  var rules = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    alignItems: alignItems,
+    border: border,
+    borderRadius: borderRadius,
+    borderStyle: borderStyle,
+    boxSizing: boxSizing,
+    circle: circle,
+    color: color,
+    cursor: cursor,
+    display: display,
+    flexBasis: flexBasis,
+    flexDirection: flexDirection,
+    flexJustAli: flexJustAli,
+    flexNum: flexNum,
+    flexShrinkAndGrow: flexShrinkAndGrow,
+    flexWrap: flexWrap,
+    fontSize: fontSize,
+    fontWeight: fontWeight,
+    height: height,
+    justifyContent: justifyContent,
+    letterSpacing: letterSpacing,
+    lineHeight: lineHeight,
+    marginAndPadding: marginAndPadding,
+    maxHeight: maxHeight,
+    maxWidth: maxWidth,
+    minHeight: minHeight,
+    minWidth: minWidth,
+    orientation: orientation,
+    overflow: overflow,
+    position: position,
+    square: square,
+    textAlign: textAlign,
+    textAlignLast: textAlignLast,
+    textDecoration: textDecoration,
+    textEllipsis: textEllipsis,
+    userSelect: userSelect,
+    width: width,
+    wordBreak: wordBreak,
+    zIndex: zIndex
+  });
+
+  function isFunction (payload) {
+    return typeof payload === 'function'
+  }
+
+  function groupBy (array, name) {
+    const groups = {};
+    array.forEach(function (o) {
+      const group = JSON.stringify(o[name]);
+      groups[group] = groups[group] || [];
+      groups[group].push(o);
+    });
+    return Object.keys(groups).map(function (group) {
+      return groups[group]
+    })
+  }
+
+  let preArry = [];
+
+  function pushPreObj (obj) {
+    return preArry.push(obj)
+  }
+
+  function getCssSingle ({ classStr, pseudo, css }) {
+    if (pseudo) {
+      classStr = classStr + `:${pseudo}`;
+    }
+    return css.reduce((t, c, i) => {
+      return t + (getConfig(IMPORTANT) ? `${c} !important; ` : `${c}; `)
+    }, `.${classStr}{ `) + '}'
+  }
+
+  function sortCss (a, b) {
+    if (a !== undefined && b !== undefined) {
+      return parseInt(a.num) - parseInt(b.num)
+    } else {
+      return 0
+    }
+  }
+
+  function renderCss () {
+    let cssStr = '';
+    const cssObject = groupBy(preArry.sort((a, b) => a.order - b.order), 'name');
+    for (const key in cssObject) {
+      if (Object.prototype.hasOwnProperty.call(cssObject, key)) {
+        cssStr += `/* ${cssObject[key][0].name || 'unknow name'} order ${cssObject[key][0].order} */\n`;
+        cssStr += cssObject[key]
+          .sort(sortCss)
+          .map(getCssSingle)
+          .join('\n');
+        cssStr += '\n\n';
+      }
+    }
+    return cssStr
+  }
+
+  const cssSet = new Set();
+
+  function filterClassNames (sourceStr) {
+    // cssSet.clear() // 清空set
+    // clearPreArray() // 清空预编译
+    const classNameList = sourceStr.match(getConfig(GLOB_REG));
+    if (classNameList) {
+      classNameList.forEach(hasClassNameStr => {
+        // 替换我们规则中不会出现的字符 替换成空格 注意前后必须有空格 可能导致拼接合法 会多生成几条 无所谓
+        const className = hasClassNameStr.replace(/[^a-zA-Z0-9-]/g, ' ');
+        className.split(' ').forEach(filterClass);
+      });
+    }
+    return ''
+  }
+  function filterClass (classStr) {
+    if (cssSet.has(classStr)) {
+      return null
+    }
+    cssSet.add(classStr);
+    Object.values({ ...rules, ...getConfig(MODIFY_RULES) }).forEach((rule) => {
+      rule = isFunction(rule) ? rule({ getUnit }) : rule;
+      const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp;
+      const res = classStr.match(reg);
+      if (res !== null) {
+        pushPreObj({ classStr, ...rule.render(res) });
+      }
+    });
+  }
+
+  const NODE_ID = 'autocss';
+
+  function genCss () {
+    const sourceStr = document.body.innerHTML;
+    filterClassNames(sourceStr);
+    const oldStyleNode = document.getElementById(NODE_ID);
+    if (oldStyleNode) {
+      oldStyleNode.remove();
+    }
+    const style = document.createElement('style');
+    style.type = 'text/css';
+    style.rel = 'stylesheet';
+    style.setAttribute('id', NODE_ID);
+    style.appendChild(document.createTextNode(renderCss()));
+    document.getElementsByTagName('head')[0].appendChild(style);
+  }
+
+  window.Gcss = class {
+    constructor (cfg = {}) {
+      setConfig({ ...cfg, type: 'html' });
+      this.str = '';
+    }
+
+    start () {
+      genCss();
+      // eslint-disable-next-line no-undef
+      const observer = new MutationObserver(genCss);
+      observer.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class'],
+        childList: true,
+        subtree: true
+      });
+    }
+  };
+
+  window.getCssStr = renderCss;
+
+}());

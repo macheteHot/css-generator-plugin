@@ -8,6 +8,7 @@ const path = require('path')
 const chokidar = require('chokidar')
 const glob = require('glob')
 const shelljs = require('shelljs')
+let hotReload = false
 
 let startTime = 0
 let endTime = 0
@@ -19,6 +20,11 @@ const setTimeEnd = () => {
 }
 
 const getUseTime = () => (endTime - startTime).toFixed(2)
+
+function readFile (path) {
+  return fs.readFileSync(path, 'utf8')
+}
+
 function getAllFileClassStr () {
   const globSyncStr = getConfig(EXT_NAME).join('|')
   const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.@(${globSyncStr})`))
@@ -39,7 +45,7 @@ function getFilePath (str) {
 }
 
 function logUseTime () {
-  console.log(`css generator done use time ${getUseTime()}ms`)
+  console.log(`css generator ${hotReload ? 'reload' : 'init'} done use time ${getUseTime()}ms`)
 }
 
 export function init (compiler) {
@@ -65,19 +71,18 @@ export function readConfigFile () {
 }
 
 export function hotReloadwatcher (compiler) {
+  hotReload = true
   const regStr = getConfig(EXT_NAME).join('|')
   const watcher = chokidar.watch(path.resolve(getConfig(DIR_PATH)), {
     ignored: new RegExp(`^.*\\.(?:(?!(${regStr})).)+$`),
     persistent: true
   })
-  watcher.on('change', () => {
+  watcher.on('change', (path) => {
     setTimeStart()
     startTime = performance.now()
-    filterClassNames(getAllFileClassStr())
+    filterClassNames(readFile(path))
     wirteToFile()
     setTimeEnd()
-    if (!compiler) {
-      logUseTime()
-    }
+    if (!compiler) { logUseTime() }
   })
 }

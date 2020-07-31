@@ -6,7 +6,7 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "node_modules": true,
-    "dist": true,
+    "dist": false,
   },
   "editor.codeActionsOnSave": { // eslint 自动修复
     "source.fixAll.eslint": true
