@@ -11,9 +11,9 @@ module.exports = class Main {
 
   apply (compiler) {
     compiler.hooks.afterPlugins.tap('vue-generate-css', () => {
-      init()
+      init(compiler)
       if (process.env.NODE_ENV === 'development') {
-        hotReloadwatcher()
+        hotReloadwatcher(compiler)
       }
     })
   }
