@@ -56,9 +56,6 @@ export function init (compiler) {
 
 export function readConfigFile () {
   let options = null
-  if (fs.existsSync(getFilePath('css.generator.config.js'))) {
-    options = require(getFilePath('css.generator.config.js'))
-  } else
   if (fs.existsSync(getFilePath('css.generator.config.json'))) {
     options = JSON.parse(fs.readFileSync(getFilePath('css.generator.config.json')))
   } else {

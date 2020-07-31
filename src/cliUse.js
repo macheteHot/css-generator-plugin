@@ -15,7 +15,7 @@ const { version } = require('../package.json')
 
 const description =
   `An application to generate Style Sheets file
-the default config file is css.generator.config.json or css.generator.config.js`
+the default config file is css.generator.config.js`
 program
   .version(version, '-v, --version')
   .description(description)
@@ -28,10 +28,6 @@ function getFilePath (str) {
 }
 
 if (!program.configFile) {
-  if (fs.existsSync(getFilePath('css.generator.config.json'))) {
-    configObj = JSON.parse(fs.readFileSync(getFilePath('css.generator.config.json')))
-    run(configObj)
-  } else
   if (fs.existsSync(getFilePath('css.generator.config.js'))) {
     configObj = require(getFilePath('css.generator.config.js'))
     run(configObj)

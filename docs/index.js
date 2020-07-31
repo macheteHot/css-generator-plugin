@@ -1,4 +1,5 @@
-function showCss (str) {
+function showCss () {
+  let str = window.getCssStr()
   str = str.replace(/^(\/\*[\s\S]+?\*\/)/gm, '<span style="color:#009926;font-size:14px;">$1</span></br>')
   str = str.replace(/\.([a-z0-9-:\s]+)/gm, '<span style="color:#990073">.$1</span>')
   str = str.replace(/\{/g, '&nbsp;{</br>')
@@ -29,7 +30,7 @@ const handlerProxy = {
       node.className = value
     })
     watchInputObj[key].forEach(node => { node.value = value })
-    showCss(window.getCssStr())
+    setTimeout(showCss, 500)
   },
   get (target, key) {
     return Reflect.get(target, key)
@@ -46,11 +47,7 @@ inputNodeList.forEach(node => {
   } else {
     watchInputObj[name] = [node]
   }
-  node.addEventListener('keyup', ({
-    target
-  }) => {
-    state[name] = target.value
-  })
+  node.addEventListener('keyup', ({ target }) => { state[name] = target.value })
 })
 
 const wathNodeList = document.querySelectorAll('[data-showClass]')
@@ -76,6 +73,21 @@ setState({
 })
 
 window.onload = () => {
-  const gc = new window.Gcss()
+  const gc = new window.Gcss({
+    modifyRules: {
+      zIndex: ({ getUnit }) => {
+        return {
+          regExp: /^zindex-(?<isMinus>m-)?(?<num>0|[1-9]\d*)$/,
+          render ({ groups }) {
+            let { isMinus, num } = groups
+            if (isMinus) {
+              num = 0 - num
+            }
+            return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}${getUnit('')}`] }
+          }
+        }
+      }
+    }
+  })
   gc.start()
 }

@@ -7,7 +7,7 @@ export const IMPORTANT = 'important' // 选填 单位
 // 以下是项目配置 不从配置文件读
 export const EXT_NAME = 'extNames'
 export const GLOB_REG = 'globReg'
-
+export const MODIFY_RULES = 'modifyRules'
 // 以下是枚举
 
 export const JUSTIFY_CONTENT_ENMU = ['center', 'start', 'end', 'flex-start', 'flex-end', 'left', 'right', 'space-between', 'between', 'space-around', 'around', 'space-evenly', 'evenly', 'stretch', 'inherit', 'initial', 'unset', 'normal']
