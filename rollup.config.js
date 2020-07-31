@@ -5,13 +5,6 @@ const configList = [
   {
     input: 'src/scriptUse.js',
     output: {
-      file: 'docs/gcss.js',
-      format: 'iife'
-    }
-  },
-  {
-    input: 'src/scriptUse.js',
-    output: {
       file: 'dist/gcss.js',
       format: 'iife'
     }
