@@ -36,7 +36,8 @@ const configList = [
     },
     plugins: [
       json(),
-      terser()
+      terser(),
+      shebang()
     ]
   }
 ]
