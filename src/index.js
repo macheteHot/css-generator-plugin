@@ -74,7 +74,8 @@ export function hotReloadwatcher (compiler) {
   hotReload = true
   const regStr = getConfig(EXT_NAME).join('|')
   const watcher = chokidar.watch(path.resolve(getConfig(DIR_PATH)), {
-    ignored: new RegExp(`^.*\\.(?:(?!(${regStr})).)+$`),
+    // ignored: new RegExp(`^.*\\.(?:(?!(${regStr})).)+$`),
+    ignored: new RegExp(`^\\/([^/]+\\/)*[^/]*\\.((?!${regStr}).)+$`),
     persistent: true
   })
   watcher.on('change', (path) => {
