@@ -1,5 +1,5 @@
 # css-generator-plugin 自动生成css文件，高效开发页面
-![avatar](https://cdn.jsdelivr.net/gh/macheteHot/css-generator-plugin/img/demo.gif)
+
 ### 如何使用
 
 + 安装依赖
@@ -23,7 +23,6 @@
   // 与下面配置相同
   new Gcss({
     colors: {
-      // 自定义颜色
       info: '#ff0'
     },
     unit: 'px',
@@ -41,11 +40,11 @@ const CssGeneratorPlugin = require('css-generator-plugin')
   plugins: [
     new CssGeneratorPlugin({
       colors: {
-        // red: '#f00',
-        // white: '#fff',
-        // black: '#000',
-        // blue: '#00f',
-        // transparent: 'transparent',
+        red: '#f00',
+        white: '#fff',
+        black: '#000',
+        blue: '#00f',
+        transparent: 'transparent',
       }, // 可选项。颜色配置，内置包含以上默认值
       dirPath: 'src', // 必填项。源码根目录(必须存在此目录)
       generate: 'src/style/auto.css', // 必填项。生成文件位置(不存在会自动创建目录)
