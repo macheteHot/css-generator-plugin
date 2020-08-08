@@ -24,7 +24,7 @@ const configList = [
     },
     plugins: [
       json(),
-      // terser(),
+      terser(),
       shebang()
     ]
   },
@@ -36,15 +36,15 @@ const configList = [
     },
     plugins: [
       json(),
-      // terser(),
+      terser(),
       shebang()
     ]
   }
 ]
 const defaultConfig = {
   plugins: [
-    json()
-    // terser()
+    json(),
+    terser()
   ]
 }
 

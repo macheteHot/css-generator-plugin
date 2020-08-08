@@ -23,8 +23,8 @@ function radix16 (value) {
 }
 
 export function textToRgbText (str, opacity = 1) {
-  const hex = /^([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str) // is hex text or word
-    ? str
+  const hex = /^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str) // is hex text or word
+    ? str.replace(/^#/, '')
     : colorStore()[str].replace(/^#/, '')
   if (hex === 'transparent') {
     return 'transparent'
