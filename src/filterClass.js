@@ -1,11 +1,10 @@
 
 // 用来去重
 import * as rules from './rules/index'
-import { pushPreObj } from './preRender'
-import { GLOB_REG, MODIFY_RULES } from './constant'
+import { pushPreObj, pushQuery } from './preRender'
+import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERYS, PSEUDO_STR } from './constant'
 import { getConfig, getUnit } from './config'
 import { isFunction } from './utils/index'
-
 const cssSet = new Set()
 
 export function filterClassNames (sourceStr) {
@@ -15,7 +14,7 @@ export function filterClassNames (sourceStr) {
   if (classNameList) {
     classNameList.forEach(hasClassNameStr => {
       // 替换我们规则中不会出现的字符 替换成空格 注意前后必须有空格 可能导致拼接合法 会多生成几条 无所谓
-      const className = hasClassNameStr.replace(/[^a-zA-Z0-9-]/g, ' ')
+      const className = hasClassNameStr.replace(/[^a-zA-Z0-9-@:]/g, ' ')
       className.split(' ').forEach(filterClass)
     })
   }
@@ -25,13 +24,30 @@ export function filterClass (classStr) {
   if (cssSet.has(classStr)) {
     return null
   }
+  const queryNames = [...BASE_MEDIA_QUERY_KEY, ...Object.keys(getConfig(MEDIA_QUERYS))]
+  const queryAndPesudoRegex = new RegExp(`^(?:(?<query>${queryNames.join('|')})@)?(?:(?<pseudo>${PSEUDO_STR}):)?(?<source>[^:@]+)$`)
+  const res = classStr.match(queryAndPesudoRegex)
+  if (!res) {
+    return null
+  }
+  const { groups = null } = res
+  if (!groups) {
+    return null
+  }
+  const { query, pseudo, source } = groups
+
   cssSet.add(classStr)
   Object.values({ ...rules, ...getConfig(MODIFY_RULES) }).forEach((rule) => {
     rule = isFunction(rule) ? rule({ getUnit }) : rule
     const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
-    const res = classStr.match(reg)
+    const res = source.match(reg)
     if (res !== null) {
-      pushPreObj({ classStr, ...rule.render(res) })
+      const params = { classStr, ...rule.render(res), pseudo }
+      if (query) {
+        pushQuery(query, params)
+      } else {
+        pushPreObj(params)
+      }
     }
   })
 }
