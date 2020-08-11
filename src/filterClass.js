@@ -5,6 +5,7 @@ import { pushPreObj } from './preRender'
 import { GLOB_REG, MODIFY_RULES } from './constant'
 import { getConfig, getUnit } from './config'
 import { isFunction } from './utils/index'
+import { textToRgbText, getColorsKey, getColors } from './colorUtils'
 
 const cssSet = new Set()
 
@@ -27,7 +28,7 @@ export function filterClass (classStr) {
   }
   cssSet.add(classStr)
   Object.values({ ...rules, ...getConfig(MODIFY_RULES) }).forEach((rule) => {
-    rule = isFunction(rule) ? rule({ getUnit }) : rule
+    rule = isFunction(rule) ? rule({ getUnit, textToRgbText, getColorsKey, getColors }) : rule
     const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
     const res = classStr.match(reg)
     if (res !== null) {

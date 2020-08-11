@@ -3,6 +3,7 @@
  */
 import { UNIT_ENMU_STR, DIRECTION_MAP } from '../constant'
 import { getUnit } from '../config'
+import { textToRgbText } from '../colorUtils'
 
 function getOrder (direction) {
   let order = 460
@@ -32,9 +33,19 @@ function getCss (direction, num, unit) {
     .get(direction)
     .reduce((t, c) => {
       if (c) {
-        return [...t, `border-${c}-width: ${num}${unit}`, `border-${c}-style: solid`, `border-${c}-style: solid`]
+        return [
+          ...t,
+          `border-${c}-width: ${num}${unit}`,
+          `border-${c}-style: solid`,
+          `border-${c}-color: ${textToRgbText('000')}`
+        ]
       } else {
-        return [...t, `border-width: ${num}${unit}`, 'border-style: solid', 'border-style: solid']
+        return [
+          ...t,
+          `border-width: ${num}${unit}`,
+          'border-style: solid',
+          `border-color: ${textToRgbText('000')}`
+        ]
       }
     }, [])
 }

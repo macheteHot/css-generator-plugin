@@ -538,6 +538,9 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
          * 此处值 为 object 或者 函数 函数必须返回相同格式的对象
          * 函数可接受 自带工具 工具有
          * getUnit 将单位根据默认值进行转换
+         * textToRgbText 将16进制颜色 或定义的颜色转为rgba语法
+         * getColorsKey 获取所有定义的颜色的key数组
+         * getColors 获取所有定义的颜色的对象
          */
        zIndex: ({ getUnit }) => { 
          return {
