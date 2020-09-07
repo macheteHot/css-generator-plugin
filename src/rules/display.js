@@ -8,7 +8,7 @@ export default {
     const { value } = groups
     return {
       name: 'display',
-      order: 280,
+      order: Infinity,
       css: [`display: ${value}`]
     }
   }

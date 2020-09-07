@@ -6,7 +6,7 @@ export default {
   regExp: /^(text-)?ellipsis(-(?<num>[1-9]\d*))?$/,
   render ({ groups }) {
     let { num } = groups
-    const base = { name: '', order: 450 }
+    const base = { name: 'ellipsis', order: 450 }
     if (parseInt(num) === 1) {
       num = undefined // 和没写是一样的
     }
