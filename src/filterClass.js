@@ -24,20 +24,25 @@ export function filterClass (classStr) {
   if (cssSet.has(classStr)) {
     return null
   }
+  let query; let pseudo; let source = classStr
   const queryNames = [...BASE_MEDIA_QUERY_KEY, ...Object.keys(getConfig(MEDIA_QUERYS))]
-  const queryAndPesudoRegex = new RegExp(`^(?:(?<query>${queryNames.join('|')})@)?(?:(?<pseudo>${PSEUDO_STR}):)?(?<source>[^:@]+)$`)
-  const res = classStr.match(queryAndPesudoRegex)
-  if (!res) {
-    return null
+  if (/[@:]/.test(classStr)) {
+    const queryAndPesudoRegex = new RegExp(`^(?:(?<query>${queryNames.join('|')})@)?(?:(?<pseudo>${PSEUDO_STR}):)?(?<source>[^:@]+)$`)
+    const res = classStr.match(queryAndPesudoRegex)
+    if (!res) {
+      return null
+    }
+    const { groups = null } = res
+    if (!groups) {
+      return null
+    }
+    ({ query, pseudo, source } = groups)
   }
-  const { groups = null } = res
-  if (!groups) {
-    return null
-  }
-  const { query, pseudo, source } = groups
 
   cssSet.add(classStr)
-  Object.values({ ...rules, ...getConfig(MODIFY_RULES) }).forEach((rule) => {
+  const ruelList = Object.values({ ...rules, ...getConfig(MODIFY_RULES) })
+  for (let i = 0; i < ruelList.length; i++) {
+    let rule = ruelList[i]
     rule = isFunction(rule) ? rule({ getUnit }) : rule
     const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
     const res = source.match(reg)
@@ -48,6 +53,7 @@ export function filterClass (classStr) {
       } else {
         pushPreObj(params)
       }
+      break
     }
-  })
+  }
 }

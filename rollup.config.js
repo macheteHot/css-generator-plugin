@@ -17,6 +17,18 @@ const configList = [
     }
   },
   {
+    input: 'src/benuse.js',
+    output: {
+      file: 'dist/benuse-return.cli',
+      format: 'cjs'
+    },
+    plugins: [
+      json(),
+      terser(),
+      shebang()
+    ]
+  },
+  {
     input: 'src/cliUse.js',
     output: {
       file: 'dist/css-generator',

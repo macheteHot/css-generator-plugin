@@ -29,6 +29,7 @@ const handlerProxy = {
     watchObj[key].forEach(node => {
       node.className = value
     })
+    // 改变元素的值
     watchInputObj[key].forEach(node => { node.value = value })
     setTimeout(showCss, 500)
   },
@@ -38,7 +39,6 @@ const handlerProxy = {
 }
 
 const state = new Proxy(obj, handlerProxy)
-
 const inputNodeList = document.querySelectorAll('[data-value]')
 inputNodeList.forEach(node => {
   const name = node.getAttribute('data-value')
@@ -47,6 +47,7 @@ inputNodeList.forEach(node => {
   } else {
     watchInputObj[name] = [node]
   }
+  // 改变对象的值
   node.addEventListener('keyup', ({ target }) => { state[name] = target.value })
 })
 

@@ -46,7 +46,7 @@ export const BASE_MEDIA_QUERY = {
 }
 
 export const BASE_MEDIA_QUERY_KEY = Object.keys(BASE_MEDIA_QUERY)
-
+export const NONNEGATIVE_NUMBER_REGEX_STR = '(0|0\\.\\d*[1-9]|[1-9]\\d*(\\.\\d*[1-9])?)'
 export const DIRECTION_MAP = new Map()
 DIRECTION_MAP.set(undefined, ['']) // 全部
 DIRECTION_MAP.set('x', ['left', 'right'])
