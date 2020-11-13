@@ -1,8 +1,7 @@
-const {
-  JUSTIFY_CONTENT_ENMU,
-  ALIGN_ITEMS_ENMU,
-  CURSOR_ENMU
-} = require('../src/constant')
+const JUSTIFY_CONTENT_ENMU = ['center', 'start', 'end', 'flex-start', 'flex-end', 'left', 'right', 'space-between', 'between', 'space-around', 'around', 'space-evenly', 'evenly', 'stretch', 'inherit', 'initial', 'unset', 'normal']
+const ALIGN_ITEMS_ENMU = ['baseline', 'center', 'end', 'flex-end', 'flex-start', 'inherit', 'initial', 'normal', 'self-end', 'self-start', 'start', 'stretch', 'unset']
+const CURSOR_ENMU = ['auto', 'default', 'none', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'e-resize', 'n-resize', 'ne-resize', 'nw-resize', 's-resize', 'se-resize', 'sw-resize', 'w-resize', 'ew-resize', 'ns-resize', 'nesw-resize', 'nwse-resize', 'col-resize', 'row-resize', 'all-scroll', 'zoom-in', 'zoom-out', 'grab', 'grabbing']
+const VERTICAL_ALIGN_ENMU = ['baseline', 'sub', 'super', 'text-top', 'text-bottom', 'middle', 'top', 'bottom', 'inherit', 'initial', 'unset']
 const fs = require('fs')
 const path = require('path')
 const NUM_ENMU = [1, 2]
@@ -382,6 +381,18 @@ function getRegList () {
     }
   },
   {
+    className: 'vertical-align',
+    render () {
+      let str = '';
+      ['vertical-align'].forEach(br => {
+        [...NUM_WIDTH_UNIT, ...VERTICAL_ALIGN_ENMU].forEach(v => {
+          str += `.${br}-${v}{}`
+        })
+      })
+      return str
+    }
+  },
+  {
     className: 'border-style',
     // regExp: /^border-style-(none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit)$/,
     render () {
@@ -393,8 +404,8 @@ function getRegList () {
     }
   },
   {
-    className: 'text-align-last',
-    regExp: /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
+    className : 'text-align-last',
+    regExp    : /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
     render () {
       let str = '';
       ['text-align-last', 'text-last'].forEach(tl => {
@@ -406,8 +417,8 @@ function getRegList () {
     }
   },
   {
-    className: 'text-decoration',
-    regExp: /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
+    className : 'text-decoration',
+    regExp    : /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
     render () {
       let str = '';
       ['text-decoration', 'text'].forEach(text => {
@@ -419,8 +430,8 @@ function getRegList () {
     }
   },
   {
-    className: 'user-select',
-    regExp: /^user-select-(none|auto|text|all|contain|element)$/,
+    className : 'user-select',
+    regExp    : /^user-select-(none|auto|text|all|contain|element)$/,
     render () {
       let str = '';
       ['user-select', 'select'].forEach(s => {

@@ -7,9 +7,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'display',
-      order: Infinity,
-      css: [`display: ${value}`]
+      name  : 'display',
+      order : Infinity,
+      css   : [`display: ${value}`]
     }
   }
 }

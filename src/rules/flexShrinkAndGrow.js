@@ -6,9 +6,9 @@ export default {
   render ({ groups }) {
     const { type, value } = groups
     return {
-      name: type === 'shrink' ? 'flexShrink' : 'flexGrow',
-      order: type === 'shrink' ? 260 : 270,
-      css: [`flex-${type}: ${value}`]
+      name  : type === 'shrink' ? 'flexShrink' : 'flexGrow',
+      order : type === 'shrink' ? 260 : 270,
+      css   : [`flex-${type}: ${value}`]
     }
   }
 }

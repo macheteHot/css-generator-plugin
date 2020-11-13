@@ -7,9 +7,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'textAlignLast',
-      order: 440,
-      css: [`text-align-last: ${value}`]
+      name  : 'textAlignLast',
+      order : 440,
+      css   : [`text-align-last: ${value}`]
     }
   }
 }

@@ -60,10 +60,10 @@ export default {
       unit = getUnit(unit)
     }
     return {
-      name: 'border',
-      order: getOrder(direction),
+      name  : 'border',
+      order : getOrder(direction),
       num,
-      css: getCss(direction, num, unit)
+      css   : getCss(direction, num, unit)
     }
   }
 }

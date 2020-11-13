@@ -13,9 +13,9 @@ export default {
       value = `${num}${unit}`
     }
     return {
-      name: 'flexBasis',
-      order: 280,
-      css: [`flex-basis: ${value}`]
+      name  : 'flexBasis',
+      order : 280,
+      css   : [`flex-basis: ${value}`]
     }
   }
 }

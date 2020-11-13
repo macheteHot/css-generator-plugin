@@ -14,9 +14,9 @@ function showCss () {
 }
 
 const obj = {
-  fclassName: '',
-  cOneclassName: '',
-  cTwolassName: ''
+  fclassName    : '',
+  cOneclassName : '',
+  cTwolassName  : ''
 }
 
 const watchInputObj = {}
@@ -67,9 +67,9 @@ function setState (obj) {
 }
 
 setState({
-  fclassName: 'w-100p h-218 flex-around-center border-1 br-4 border-c-active-transparent select-none',
-  cOneclassName: 'w-200 bg-red-55 flex-center-center h-64 br-8 bg-hover-009926 c-hover-fff cursor-pointer',
-  cTwolassName: 'w-200 bg-red flex-center-center h-64 br-8 bg-hover-f2f3f7 cursor-pointer'
+  fclassName    : 'w-100p h-218 flex-around-center border-1 br-4 border-c-active-transparent select-none',
+  cOneclassName : 'w-200 bg-red-55 flex-center-center h-64 br-8 bg-hover-009926 c-hover-fff cursor-pointer',
+  cTwolassName  : 'w-200 bg-red flex-center-center h-64 br-8 bg-hover-f2f3f7 cursor-pointer'
 })
 
 window.onload = () => {

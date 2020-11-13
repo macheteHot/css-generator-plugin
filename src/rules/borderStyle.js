@@ -7,9 +7,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'borderStyle',
-      order: 550,
-      css: [`border-style: ${value}`]
+      name  : 'borderStyle',
+      order : 550,
+      css   : [`border-style: ${value}`]
     }
   }
 }

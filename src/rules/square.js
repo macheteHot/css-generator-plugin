@@ -4,8 +4,8 @@
 import { UNIT_ENMU_STR } from '../constant'
 import { getUnit } from '../config'
 export default {
-  className: 'square',
-  regExp: new RegExp(`^square-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+  className : 'square',
+  regExp    : new RegExp(`^square-(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
     let { num, unit } = groups
     unit = getUnit(unit)

@@ -10,10 +10,10 @@ export default {
     let { num, unit } = groups
     unit = getUnit(unit)
     return {
-      name: 'borderRadius',
-      order: 530,
+      name  : 'borderRadius',
+      order : 530,
       num,
-      css: parseInt(num) === 0 ? ['border-radius: 0'] : [`border-radius: ${num}${unit}`]
+      css   : parseInt(num) === 0 ? ['border-radius: 0'] : [`border-radius: ${num}${unit}`]
     }
   }
 }

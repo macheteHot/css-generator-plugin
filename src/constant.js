@@ -16,10 +16,14 @@ export const ALIGN_ITEMS_ENMU = ['baseline', 'center', 'end', 'flex-end', 'flex-
 export const CURSOR_ENMU = ['auto', 'default', 'none', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'e-resize', 'n-resize', 'ne-resize', 'nw-resize', 's-resize', 'se-resize', 'sw-resize', 'w-resize', 'ew-resize', 'ns-resize', 'nesw-resize', 'nwse-resize', 'col-resize', 'row-resize', 'all-scroll', 'zoom-in', 'zoom-out', 'grab', 'grabbing']
 
 const UNIT_ENMU = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 'vw', 'vh', 'vmin', 'vmax', 'p']
+
+const VERTICAL_ALIGN_ENMU = ['baseline', 'sub', 'super', 'text-top', 'text-bottom', 'middle', 'top', 'bottom', 'inherit', 'initial', 'unset']
+
 export const JUSTIFY_CONTENT_ENMU_STR = JUSTIFY_CONTENT_ENMU.join('|')
 export const ALIGN_ITEMS_ENMU_STR = ALIGN_ITEMS_ENMU.join('|')
 export const CURSOR_ENMU_STR = CURSOR_ENMU.join('|')
 export const UNIT_ENMU_STR = UNIT_ENMU.join('|')
+export const VERTICAL_ALIGN_STR = VERTICAL_ALIGN_ENMU.join('|')
 // 文件开头
 export let CSS_ANNOTATION = ''
 CSS_ANNOTATION += '@charset "UTF-8";\n'

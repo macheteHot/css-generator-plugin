@@ -7,9 +7,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'boxSizing',
-      order: 560,
-      css: [`box-sizing: ${value}`]
+      name  : 'boxSizing',
+      order : 560,
+      css   : [`box-sizing: ${value}`]
     }
   }
 }

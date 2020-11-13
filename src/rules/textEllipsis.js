@@ -13,8 +13,8 @@ export default {
     if (num === undefined) {
       return {
         ...base,
-        num: 0,
-        css: [
+        num : 0,
+        css : [
           'display: inline-block',
           'overflow: hidden',
           'text-overflow: ellipsis',
