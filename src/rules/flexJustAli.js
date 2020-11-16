@@ -16,9 +16,9 @@ export default {
       justify = 'space-evenly'
     }
     return {
-      name: 'flexJustAli',
-      order: 200,
-      css: ['display: flex', `justify-content: ${justify}`, `align-items: ${align}`]
+      name  : 'flexJustAli',
+      order : 200,
+      css   : ['display: flex', `justify-content: ${justify}`, `align-items: ${align}`]
     }
   }
 }

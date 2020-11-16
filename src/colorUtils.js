@@ -2,11 +2,11 @@ import { getConfig } from './config'
 import { COLORS } from './constant'
 
 const colorStore = () => ({
-  red: '#f00',
-  white: '#fff',
-  black: '#000',
-  blue: '#00f',
-  transparent: 'transparent',
+  red         : '#f00',
+  white       : '#fff',
+  black       : '#000',
+  blue        : '#00f',
+  transparent : 'transparent',
   ...getConfig(COLORS)
 })
 

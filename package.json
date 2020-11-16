@@ -52,9 +52,7 @@
     "shelljs": "^0.8.4"
   },
   "scripts": {
-    "genTest": "node genCssTest/index.js",
     "GenSnippets": "node genSnippets/run.js",
-    "buildRuler": "rollup -c build/buildRulers.rollup.config.js",
     "build": "rollup -c"
   }
 }

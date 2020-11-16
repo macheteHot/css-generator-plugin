@@ -7,9 +7,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'userSelect',
-      order: 430,
-      css: [`user-select: ${value}`]
+      name  : 'userSelect',
+      order : 430,
+      css   : [`user-select: ${value}`]
     }
   }
 }

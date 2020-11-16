@@ -506,8 +506,8 @@ function getRegList () {
     }
   },
   {
-    className: 'text-align-last',
-    regExp: /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
+    className : 'text-align-last',
+    regExp    : /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
     render () {
       let str = ''
       MEIDA_QUERYS.forEach(md => {
@@ -523,8 +523,8 @@ function getRegList () {
     }
   },
   {
-    className: 'text-decoration',
-    regExp: /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
+    className : 'text-decoration',
+    regExp    : /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
     render () {
       let str = ''
       MEIDA_QUERYS.forEach(md => {
@@ -540,8 +540,8 @@ function getRegList () {
     }
   },
   {
-    className: 'user-select',
-    regExp: /^user-select-(none|auto|text|all|contain|element)$/,
+    className : 'user-select',
+    regExp    : /^user-select-(none|auto|text|all|contain|element)$/,
     render () {
       let str = ''
       MEIDA_QUERYS.forEach(md => {

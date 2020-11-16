@@ -7,9 +7,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'position',
-      order: 300,
-      css: [`position: ${value}`]
+      name  : 'position',
+      order : 300,
+      css   : [`position: ${value}`]
     }
   }
 }

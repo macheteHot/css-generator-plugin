@@ -1,11 +1,11 @@
 /**
  * order 310
  */
-import { UNIT_ENMU_STR } from '../constant'
+import { UNIT_ENMU_STR, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
 import { getUnit } from '../config'
 
 export default {
-  regExp: new RegExp(`^(?<direction>[trbl]|top|right|bottom|left)-(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+  regExp: new RegExp(`^(?<direction>[trbl]|top|right|bottom|left)-(?<isMinus>m-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
     let { direction, isMinus, num, unit } = groups
     if (isMinus) {
