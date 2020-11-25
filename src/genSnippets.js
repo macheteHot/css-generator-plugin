@@ -272,6 +272,19 @@ function getRegList () {
     }
   },
   {
+    className: 'opacity', 
+    render () {
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          [20,80,100].forEach(n=>{
+            str += `${md}${pseudo}.opacity-${n}{}`
+          })
+        })
+      })
+    }
+  },
+  {
     // 绝对定位 方向 t-20vh top:20vh -m负数
     className: 'orientation',
     // regExp: new RegExp(`^([trbl]|top|right|bottom|left)-(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
