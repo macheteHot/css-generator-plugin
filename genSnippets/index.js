@@ -209,6 +209,17 @@ function getRegList () {
       return str
     }
   },
+  { 
+    // 透明度
+    className: 'opacity',
+    render(){
+      let str = ''
+      [20,80,100].forEach(n=>{
+        str += `.opacity-${n}{}`
+      })
+      return str
+    }
+  },
   {
     // 绝对定位 方向 t-20vh top:20vh -m负数
     className: 'orientation',

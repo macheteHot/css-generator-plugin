@@ -363,6 +363,11 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
         .border-c-black-35{border-color:rgba(0,0,0,0.35)}
         .border-color-active-43ad7f-35:active{border-color:rgba(67,173,127,0.35)}
         ```
+      + 透明度
+       ###  /^opacity-(0-100)$/
+      ```css
+        opacity-20{ opacity: 0.2 }
+      ```
   * 字间距
     #### letter-spacing-(数值)(单位)?
     ```css
@@ -518,6 +523,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
   + maxWidth
   + minHeight
   + minWidth
+  + opacity
   + orientation
   + overflow
   + position
