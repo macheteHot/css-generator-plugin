@@ -30,7 +30,7 @@ function getCssSingle ({ classStr, css, pseudo }) {
   if (pseudo) {
     classStr = classStr + `:${pseudo}`
   }
-  return css.reduce((t, c, i) => t + (isImportant ? `${c} !important; ` : `${c}; `), `.${classStr}{ `) + '}'
+  return css.reduce((t, c, i) => t + (isImportant() ? `${c} !important; ` : `${c}; `), `.${classStr}{ `) + '}'
 }
 
 function sortCss (a, b) {
