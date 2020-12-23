@@ -8,9 +8,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'cursor',
-      order: 340,
-      css: [`cursor: ${value}`]
+      name  : 'cursor',
+      order : 340,
+      css   : [`cursor: ${value}`]
     }
   }
 }

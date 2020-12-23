@@ -7,9 +7,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'wordBreak',
-      order: 350,
-      css: [`word-break: ${value}`]
+      name  : 'wordBreak',
+      order : 350,
+      css   : [`word-break: ${value}`]
     }
   }
 }

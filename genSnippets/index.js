@@ -1,8 +1,4 @@
-const {
-  JUSTIFY_CONTENT_ENMU,
-  ALIGN_ITEMS_ENMU,
-  CURSOR_ENMU
-} = require('../src/constant')
+const { JUSTIFY_CONTENT_ENMU, ALIGN_ITEMS_ENMU, CURSOR_ENMU } = require('../src/constant')
 const fs = require('fs')
 const path = require('path')
 const NUM_ENMU = [1, 2]
@@ -393,8 +389,8 @@ function getRegList () {
     }
   },
   {
-    className: 'text-align-last',
-    regExp: /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
+    className : 'text-align-last',
+    regExp    : /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
     render () {
       let str = '';
       ['text-align-last', 'text-last'].forEach(tl => {
@@ -406,8 +402,8 @@ function getRegList () {
     }
   },
   {
-    className: 'text-decoration',
-    regExp: /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
+    className : 'text-decoration',
+    regExp    : /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
     render () {
       let str = '';
       ['text-decoration', 'text'].forEach(text => {
@@ -419,8 +415,8 @@ function getRegList () {
     }
   },
   {
-    className: 'user-select',
-    regExp: /^user-select-(none|auto|text|all|contain|element)$/,
+    className : 'user-select',
+    regExp    : /^user-select-(none|auto|text|all|contain|element)$/,
     render () {
       let str = '';
       ['user-select', 'select'].forEach(s => {

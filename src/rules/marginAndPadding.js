@@ -1,7 +1,7 @@
 /**
  * 50 - 180 order
  */
-import { UNIT_ENMU_STR, DIRECTION_MAP } from '../constant'
+import { UNIT_ENMU_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
 import { getUnit } from '../config'
 
 function getConfig (type, direction) {
@@ -41,13 +41,13 @@ function getConfig (type, direction) {
 }
 
 export default {
-  regExp: new RegExp(`^(?<type>m|margin|p|padding)-((?<direction>[trblxy])-)?((?<auto>auto)|(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?)$`),
+  regExp: new RegExp(`^(?<type>m|margin|p|padding)-((?<direction>[trblxy])-)?((?<auto>auto)|(?<isMinus>m-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENMU_STR})?)$`),
   render ({ groups }) {
     let { type, direction, isMinus, num, unit, auto } = groups
     if (auto) {
       unit = ''
       num = 'auto'
-    } else if (parseInt(num) === 0) {
+    } else if (Number(num) === 0) {
       unit = ''
     } else {
       unit = getUnit(unit)

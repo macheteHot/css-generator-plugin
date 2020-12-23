@@ -272,6 +272,19 @@ function getRegList () {
     }
   },
   {
+    className: 'opacity', 
+    render () {
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          [20,80,100].forEach(n=>{
+            str += `${md}${pseudo}.opacity-${n}{}`
+          })
+        })
+      })
+    }
+  },
+  {
     // 绝对定位 方向 t-20vh top:20vh -m负数
     className: 'orientation',
     // regExp: new RegExp(`^([trbl]|top|right|bottom|left)-(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
@@ -506,8 +519,8 @@ function getRegList () {
     }
   },
   {
-    className: 'text-align-last',
-    regExp: /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
+    className : 'text-align-last',
+    regExp    : /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
     render () {
       let str = ''
       MEIDA_QUERYS.forEach(md => {
@@ -523,8 +536,8 @@ function getRegList () {
     }
   },
   {
-    className: 'text-decoration',
-    regExp: /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
+    className : 'text-decoration',
+    regExp    : /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
     render () {
       let str = ''
       MEIDA_QUERYS.forEach(md => {
@@ -540,8 +553,8 @@ function getRegList () {
     }
   },
   {
-    className: 'user-select',
-    regExp: /^user-select-(none|auto|text|all|contain|element)$/,
+    className : 'user-select',
+    regExp    : /^user-select-(none|auto|text|all|contain|element)$/,
     render () {
       let str = ''
       MEIDA_QUERYS.forEach(md => {

@@ -1,7 +1,20 @@
 {
-  "extends": "standard",
-  "env": {
-    "node": true,
-    "jest": true
+  "extends": [
+    "standard"
+  ],
+  "rules": {
+    "no-var": "error",
+    "eqeqeq": "error",
+    "key-spacing": ["error", {
+      "multiLine": {
+        "beforeColon": false,
+        "afterColon": true
+      },
+      "align": {
+        "beforeColon": true,
+        "afterColon": true,
+        "on": "colon"
+      }
+    }]
   }
 }

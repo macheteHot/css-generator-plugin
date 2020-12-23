@@ -7,9 +7,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'textDecoration',
-      order: 420,
-      css: [`text-decoration: ${value}`]
+      name  : 'textDecoration',
+      order : 420,
+      css   : [`text-decoration: ${value}`]
     }
   }
 }

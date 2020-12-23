@@ -24,18 +24,18 @@ export function pushQuery (key, obj) {
   }
 }
 
-const isImportant = () => { getConfig(IMPORTANT) }
+const isImportant = () => getConfig(IMPORTANT) 
 function getCssSingle ({ classStr, css, pseudo }) {
-  classStr = classStr.replace(/(@|:|#)/g, '\\$1')
+  classStr = classStr.replace(/(@|:|#|\.)/g, '\\$1')
   if (pseudo) {
     classStr = classStr + `:${pseudo}`
   }
-  return css.reduce((t, c, i) => t + (isImportant ? `${c} !important; ` : `${c}; `), `.${classStr}{ `) + '}'
+  return css.reduce((t, c, i) => t + (isImportant() ? `${c} !important; ` : `${c}; `), `.${classStr}{ `) + '}'
 }
 
 function sortCss (a, b) {
   if (a !== undefined && b !== undefined) {
-    return parseInt(a.num) - parseInt(b.num)
+    return Number(a.num) - Number(b.num)
   } else {
     return 0
   }

@@ -6,9 +6,9 @@ export default {
   render ({ groups }) {
     const { value } = groups
     return {
-      name: 'fontWeight',
-      order: 360,
-      css: [`font-weight: ${value}`]
+      name  : 'fontWeight',
+      order : 360,
+      css   : [`font-weight: ${value}`]
     }
   }
 }
