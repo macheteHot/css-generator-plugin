@@ -43,8 +43,8 @@ const configList = [
 ]
 const defaultConfig = {
   plugins: [
-    json()
-    // terser()
+    json(),
+    terser()
   ]
 }
 

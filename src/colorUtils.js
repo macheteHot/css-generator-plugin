@@ -48,7 +48,7 @@ export function textToRgbText (str, opacity = 1) {
   if (hex.length === 8) {
     const reg = /[a-fA-F0-9]{2}/g
     let [r, g, b, a] = hex.match(reg)
-    a = Math.round(Number(parseInt(a, 16)) * 100 / 255)
+    a = Number(Number(Math.round(parseInt(a, 16)) / 255).toFixed(2))
     return 'rgba(' + [r, g, b]
       .map(radix16)
       .join(',') +
