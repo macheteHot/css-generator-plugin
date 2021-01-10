@@ -3,11 +3,7 @@
  */
 import { UNIT_ENUM_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
 import { getUnit } from '../config'
-<<<<<<< HEAD
-import { textToRgbText } from '../colorUtils'
-=======
 import { getDirectionOrder } from '../utils/index'
->>>>>>> v2.0
 
 const getOrder = direction => getDirectionOrder(460, direction)
 
@@ -16,19 +12,9 @@ function getCss (direction, num, unit) {
     .get(direction)
     .reduce((t, c) => {
       if (c) {
-        return [
-          ...t,
-          `border-${c}-width: ${num}${unit}`,
-          `border-${c}-style: solid`,
-          `border-${c}-color: ${textToRgbText('000')}`
-        ]
+        return [...t, `border-${c}-width: ${num}${unit}`, `border-${c}-style: solid`, `border-${c}-style: solid`]
       } else {
-        return [
-          ...t,
-          `border-width: ${num}${unit}`,
-          'border-style: solid',
-          `border-color: ${textToRgbText('000')}`
-        ]
+        return [...t, `border-width: ${num}${unit}`, 'border-style: solid', 'border-style: solid']
       }
     }, [])
 }
