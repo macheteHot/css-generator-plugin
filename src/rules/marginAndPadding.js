@@ -1,38 +1,21 @@
 /**
  * 50 - 180 order
  */
-import { UNIT_ENMU_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
+import { UNIT_ENUM_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
 import { getUnit } from '../config'
+import { getDirectionOrder } from '../utils/index'
 
 function getConfig (type, direction) {
   let order
   let name = ''
   if (type === 'm' || type === 'margin') {
-    order = 50
+    order = getDirectionOrder(50, direction)
     name += 'margin'
   }
   // 单项加 60 order m-l-10 最大为50 + 60 padding 从 120 起
   if (type === 'p' || type === 'padding') {
-    order = 110
+    order = getDirectionOrder(110, direction)
     name += 'padding'
-  }
-  if (direction === 'x') {
-    order += 10
-  }
-  if (direction === 'y') {
-    order += 20
-  }
-  if (direction === 't') {
-    order += 30
-  }
-  if (direction === 'b') {
-    order += 40
-  }
-  if (direction === 'r') {
-    order += 50
-  }
-  if (direction === 'l') {
-    order += 60
   }
   if (direction) {
     name += `-${direction}`
@@ -41,16 +24,14 @@ function getConfig (type, direction) {
 }
 
 export default {
-  regExp: new RegExp(`^(?<type>m|margin|p|padding)-((?<direction>[trblxy])-)?((?<auto>auto)|(?<isMinus>m-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENMU_STR})?)$`),
+  regExp: new RegExp(`^(?<type>m|margin|p|padding)-((?<direction>[trblxy])-)?((?<auto>auto)|(?<isMinus>m-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENUM_STR})?)$`),
   render ({ groups }) {
     let { type, direction, isMinus, num, unit, auto } = groups
     if (auto) {
       unit = ''
       num = 'auto'
-    } else if (Number(num) === 0) {
-      unit = ''
     } else {
-      unit = getUnit(unit)
+      unit = getUnit(num, unit)
     }
     // if has auto never has isMinus
     if (isMinus) {

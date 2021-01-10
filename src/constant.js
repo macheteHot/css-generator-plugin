@@ -9,24 +9,24 @@ export const GLOB_REG = 'globReg'
 // 以下是项目配置 不从配置文件读
 export const EXT_NAME = 'extNames'
 export const MODIFY_RULES = 'modifyRules'
-export const MEDIA_QUERYS = 'meidaQuerys'
+export const MEDIA_QUERIES = 'mediaQueries'
 // 以下是枚举
 
-export const JUSTIFY_CONTENT_ENMU = ['center', 'start', 'end', 'flex-start', 'flex-end', 'left', 'right', 'space-between', 'between', 'space-around', 'around', 'space-evenly', 'evenly', 'stretch', 'inherit', 'initial', 'unset', 'normal']
-export const ALIGN_ITEMS_ENMU = ['baseline', 'center', 'end', 'flex-end', 'flex-start', 'inherit', 'initial', 'normal', 'self-end', 'self-start', 'start', 'stretch', 'unset']
+export const JUSTIFY_CONTENT_ENUM = ['center', 'start', 'end', 'flex-start', 'flex-end', 'left', 'right', 'space-between', 'between', 'space-around', 'around', 'space-evenly', 'evenly', 'stretch', 'inherit', 'initial', 'unset', 'normal']
+export const ALIGN_ITEMS_ENUM = ['baseline', 'center', 'end', 'flex-end', 'flex-start', 'inherit', 'initial', 'normal', 'self-end', 'self-start', 'start', 'stretch', 'unset']
 
-export const CURSOR_ENMU = ['auto', 'default', 'none', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'e-resize', 'n-resize', 'ne-resize', 'nw-resize', 's-resize', 'se-resize', 'sw-resize', 'w-resize', 'ew-resize', 'ns-resize', 'nesw-resize', 'nwse-resize', 'col-resize', 'row-resize', 'all-scroll', 'zoom-in', 'zoom-out', 'grab', 'grabbing']
+export const CURSOR_ENUM = ['auto', 'default', 'none', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'e-resize', 'n-resize', 'ne-resize', 'nw-resize', 's-resize', 'se-resize', 'sw-resize', 'w-resize', 'ew-resize', 'ns-resize', 'nesw-resize', 'nwse-resize', 'col-resize', 'row-resize', 'all-scroll', 'zoom-in', 'zoom-out', 'grab', 'grabbing']
 
-const UNIT_ENMU = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 'vw', 'vh', 'vmin', 'vmax', 'p']
+const UNIT_ENUM = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 'vw', 'vh', 'vmin', 'vmax', 'p']
 
 const PSEUDO_LIST = ['active', 'any-link', 'blank', 'checked', 'current', 'default', 'defined', 'disabled', 'drop', 'empty', 'enabled', 'first', 'first-child', 'first-of-type', 'fullscreen', 'future', 'focus', 'focus-visible', 'focus-within', 'host', 'hover', 'indeterminate', 'in-range', 'invalid', 'last-child', 'last-of-type', 'left', 'link', 'local-link', 'only-child', 'only-of-type', 'optional', 'out-of-range', 'past', 'placeholder-shown', 'read-only', 'read-write', 'required', 'right', 'root', 'scope', 'target', 'target-within', 'user-invalid', 'valid', 'visited']
-const VERTICAL_ALIGN_ENMU = ['baseline', 'sub', 'super', 'text-top', 'text-bottom', 'middle', 'top', 'bottom', 'inherit', 'initial', 'unset']
+const VERTICAL_ALIGN_ENUM = ['baseline', 'sub', 'super', 'text-top', 'text-bottom', 'middle', 'top', 'bottom', 'inherit', 'initial', 'unset']
 export const PSEUDO_STR = toRegexStr(PSEUDO_LIST)
-export const JUSTIFY_CONTENT_ENMU_STR = toRegexStr(JUSTIFY_CONTENT_ENMU)
-export const ALIGN_ITEMS_ENMU_STR = toRegexStr(ALIGN_ITEMS_ENMU)
-export const CURSOR_ENMU_STR = toRegexStr(CURSOR_ENMU)
-export const UNIT_ENMU_STR = toRegexStr(UNIT_ENMU)
-export const VERTICAL_ALIGN_STR = toRegexStr(VERTICAL_ALIGN_ENMU)
+export const JUSTIFY_CONTENT_ENUM_STR = toRegexStr(JUSTIFY_CONTENT_ENUM)
+export const ALIGN_ITEMS_ENUM_STR = toRegexStr(ALIGN_ITEMS_ENUM)
+export const CURSOR_ENUM_STR = toRegexStr(CURSOR_ENUM)
+export const UNIT_ENUM_STR = toRegexStr(UNIT_ENUM)
+export const VERTICAL_ALIGN_STR = toRegexStr(VERTICAL_ALIGN_ENUM)
 
 // 文件开头
 export let CSS_ANNOTATION = ''

@@ -1,18 +1,18 @@
-import { IMPORTANT, MEDIA_QUERYS, BASE_MEDIA_QUERY } from './constant'
+import { IMPORTANT, MEDIA_QUERIES, BASE_MEDIA_QUERY } from './constant'
 import { groupBy } from './utils/index'
 import { getConfig } from './config'
-let preArry = []
+let preArray = []
 const queryObj = { }
 export function pushPreObj (obj) {
-  return preArry.push(obj)
+  return preArray.push(obj)
 }
 
 export function getPreArray () {
-  return preArry
+  return preArray
 }
 
 export function clearPreArray () {
-  preArry = []
+  preArray = []
 }
 
 export function pushQuery (key, obj) {
@@ -24,13 +24,13 @@ export function pushQuery (key, obj) {
   }
 }
 
-const isImportant = () => getConfig(IMPORTANT) 
+const isImportant = () => getConfig(IMPORTANT)
 function getCssSingle ({ classStr, css, pseudo }) {
-  classStr = classStr.replace(/(@|:|#|\.)/g, '\\$1')
+  classStr = classStr.replace(/[@:#.]/g, '\\$1')
   if (pseudo) {
     classStr = classStr + `:${pseudo}`
   }
-  return css.reduce((t, c, i) => t + (isImportant() ? `${c} !important; ` : `${c}; `), `.${classStr}{ `) + '}'
+  return css.reduce((t, c) => t + (isImportant() ? `${c} !important; ` : `${c}; `), `.${classStr}{ `) + '}'
 }
 
 function sortCss (a, b) {
@@ -59,8 +59,8 @@ function renderArray (array) {
 
 export function renderCss () {
   let cssStr = ''
-  cssStr += renderArray(preArry)
-  const queryConfigObj = { ...BASE_MEDIA_QUERY, ...getConfig(MEDIA_QUERYS) }
+  cssStr += renderArray(preArray)
+  const queryConfigObj = { ...BASE_MEDIA_QUERY, ...getConfig(MEDIA_QUERIES) }
   for (const key in queryObj) {
     if (Object.prototype.hasOwnProperty.call(queryObj, key)) {
       cssStr += `@media ${queryConfigObj[key]}{\n`

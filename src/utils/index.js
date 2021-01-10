@@ -13,3 +13,20 @@ export function groupBy (array, name) {
     return groups[group]
   })
 }
+
+export function getDirectionOrder (order, direction) {
+  switch (direction) {
+    case 'x':
+      return order + 10
+    case 'y':
+      return order + 20
+    case 't':
+      return order + 30
+    case 'b':
+      return order + 40
+    case 'r':
+      return order + 50
+    case 'l':
+      return order + 60
+  }
+}

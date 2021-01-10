@@ -2,7 +2,7 @@
 // 用来去重
 import * as rules from './rules/index'
 import { pushPreObj, pushQuery } from './preRender'
-import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERYS, PSEUDO_STR } from './constant'
+import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERIES, PSEUDO_STR } from './constant'
 import { getConfig, getUnit } from './config'
 import { isFunction } from './utils/index'
 const cssSet = new Set()
@@ -25,7 +25,7 @@ export function filterClass (classStr) {
     return null
   }
   let query; let pseudo; let source = classStr
-  const queryNames = [...BASE_MEDIA_QUERY_KEY, ...Object.keys(getConfig(MEDIA_QUERYS))]
+  const queryNames = [...BASE_MEDIA_QUERY_KEY, ...Object.keys(getConfig(MEDIA_QUERIES))]
   if (/[@:]/.test(classStr)) {
     const queryAndPesudoRegex = new RegExp(`^(?:(?<query>${queryNames.join('|')})@)?(?:(?<pseudo>${PSEUDO_STR}):)?(?<source>[^:@]+)$`)
     const res = classStr.match(queryAndPesudoRegex)
@@ -40,9 +40,9 @@ export function filterClass (classStr) {
   }
 
   cssSet.add(classStr)
-  const ruelList = Object.values({ ...rules, ...getConfig(MODIFY_RULES) })
-  for (let i = 0; i < ruelList.length; i++) {
-    let rule = ruelList[i]
+  const ruleList = Object.values({ ...rules, ...getConfig(MODIFY_RULES) })
+  for (let i = 0; i < ruleList.length; i++) {
+    let rule = ruleList[i]
     rule = isFunction(rule) ? rule({ getUnit }) : rule
     const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
     const res = source.match(reg)
