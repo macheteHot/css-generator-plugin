@@ -7,7 +7,7 @@ export default {
   render ({ groups }) {
     let { num } = groups
     const base = { name: 'ellipsis', order: 450 }
-    if (parseInt(num) === 1) {
+    if (Number(num) === 1) {
       num = undefined // 和没写是一样的
     }
     if (num === undefined) {

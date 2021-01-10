@@ -23,11 +23,20 @@ function radix16 (value) {
 }
 
 export function textToRgbText (str, opacity = 1) {
-  const hex = /^([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str) // is hex text or word
-    ? str
+  const hex = /^#?([a-fA-F0-9]{8}|[a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(str) // is hex text or word
+    ? str.replace(/^#/, '')
     : colorStore()[str].replace(/^#/, '')
   if (hex === 'transparent') {
     return 'transparent'
+  }
+  // more use
+  if (hex.length === 6) {
+    const reg = /[a-fA-F0-9]{2}/g
+    return 'rgba(' + hex
+      .match(reg)
+      .map(radix16)
+      .join(',') +
+      `,${opacity})`
   }
   if (hex.length === 3) {
     return 'rgba(' + hex
@@ -36,13 +45,14 @@ export function textToRgbText (str, opacity = 1) {
       .join(',') +
       `,${opacity})`
   }
-  if (hex.length === 6) {
+  if (hex.length === 8) {
     const reg = /[a-fA-F0-9]{2}/g
-    return 'rgba(' + hex
-      .match(reg)
+    let [r, g, b, a] = hex.match(reg)
+    a = Number(Number(Math.round(parseInt(a, 16)) / 255).toFixed(2))
+    return 'rgba(' + [r, g, b]
       .map(radix16)
       .join(',') +
-      `,${opacity})`
+      `,${a})`
   }
   return ''
 }

@@ -1,7 +1,7 @@
 /**
  * order 520 460 + 60
  */
-import { UNIT_ENMU_STR, DIRECTION_MAP } from '../constant'
+import { UNIT_ENMU_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
 import { getUnit } from '../config'
 import { textToRgbText } from '../colorUtils'
 
@@ -51,10 +51,10 @@ function getCss (direction, num, unit) {
 }
 
 export default {
-  regExp: new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+  regExp: new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
     let { direction, num, unit } = groups
-    if (parseInt(num) === 0) {
+    if (Number(num) === 0) {
       unit = ''
     } else {
       unit = getUnit(unit)

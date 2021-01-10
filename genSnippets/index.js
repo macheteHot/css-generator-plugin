@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 const JUSTIFY_CONTENT_ENMU = ['center', 'start', 'end', 'flex-start', 'flex-end', 'left', 'right', 'space-between', 'between', 'space-around', 'around', 'space-evenly', 'evenly', 'stretch', 'inherit', 'initial', 'unset', 'normal']
 const ALIGN_ITEMS_ENMU = ['baseline', 'center', 'end', 'flex-end', 'flex-start', 'inherit', 'initial', 'normal', 'self-end', 'self-start', 'start', 'stretch', 'unset']
 const CURSOR_ENMU = ['auto', 'default', 'none', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'e-resize', 'n-resize', 'ne-resize', 'nw-resize', 's-resize', 'se-resize', 'sw-resize', 'w-resize', 'ew-resize', 'ns-resize', 'nesw-resize', 'nwse-resize', 'col-resize', 'row-resize', 'all-scroll', 'zoom-in', 'zoom-out', 'grab', 'grabbing']
 const VERTICAL_ALIGN_ENMU = ['baseline', 'sub', 'super', 'text-top', 'text-bottom', 'middle', 'top', 'bottom', 'inherit', 'initial', 'unset']
+=======
+const { JUSTIFY_CONTENT_ENMU, ALIGN_ITEMS_ENMU, CURSOR_ENMU } = require('../src/constant')
+>>>>>>> v2.0
 const fs = require('fs')
 const path = require('path')
 const NUM_ENMU = [1, 2]

@@ -1,10 +1,10 @@
 /**
  * order 410
  */
-import { UNIT_ENMU_STR } from '../constant'
+import { UNIT_ENMU_STR, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
 import { getUnit } from '../config'
 export default {
-  regExp: new RegExp(`^letter-spacing-(?<isMinus>m-)?(?<num>0|[1-9]\\d*)(?<unit>${UNIT_ENMU_STR})?$`),
+  regExp: new RegExp(`^letter-spacing-(?<isMinus>m-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENMU_STR})?$`),
   render ({ groups }) {
     let { isMinus, num, unit } = groups
     if (isMinus) {
@@ -14,7 +14,7 @@ export default {
     const base = { name: 'letterSpacing', order: 410, num }
     return {
       ...base,
-      css: parseInt(num) !== 0
+      css: Number(num) !== 0
         ? [`letter-spacing: ${num}${unit}`]
         : ['letter-spacing: 0']
     }

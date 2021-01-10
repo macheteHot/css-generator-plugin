@@ -4,17 +4,23 @@ const path = require('path')
 const NUM_ENMU = [1, 2]
 const UNIT_ENMU = ['', 'p', 'rem', 'vh']
 const NUM_WIDTH_UNIT = [1, 2, '1p', '1rem', '1vh']
+const PSEUDO_LIST = ['', 'hover\\:', 'active\\:']
+const MEIDA_QUERYS = ['', 'xl\\@', 'lg\\@', 'md\\@', 'sm\\@']
 
 function getRegList () {
   return [{
     className: 'widthOrHeight',
     // regExp: new RegExp(`^[wh]-(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
-      let widthOrHeight = '';
-      ['w', 'h'].forEach(d => {
-        NUM_ENMU.forEach(n => {
-          UNIT_ENMU.forEach(u => {
-            widthOrHeight += `.${d}-${n}${u}{}`
+      let widthOrHeight = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['w', 'h'].forEach(d => {
+            NUM_ENMU.forEach(n => {
+              UNIT_ENMU.forEach(u => {
+                widthOrHeight += `.${md}${pseudo}${d}-${n}${u}{}`
+              })
+            })
           })
         })
       })
@@ -26,9 +32,13 @@ function getRegList () {
     // regExp: new RegExp(`^square-(0|1|1(${UNIT_ENMU_STR})?)$`)
     render () {
       let square = ''
-      NUM_ENMU.forEach(n => {
-        UNIT_ENMU.forEach(u => {
-          square += `.square-${n}${u}{}`
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          NUM_ENMU.forEach(n => {
+            UNIT_ENMU.forEach(u => {
+              square += `.${md}${pseudo}square-${n}${u}{}`
+            })
+          })
         })
       })
       return square
@@ -38,12 +48,16 @@ function getRegList () {
     className: 'minMaxWidthOrHeight',
     // regExp: new RegExp(`^(min|max)-[wh]-(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
-      let minMaxWidthOrHeight = '';
-      ['min', 'max'].forEach(mm => {
-        ['w', 'h'].forEach(wh => {
-          NUM_ENMU.forEach(n => {
-            UNIT_ENMU.forEach(u => {
-              minMaxWidthOrHeight += `.${mm}-${wh}-${n}${u}{}`
+      let minMaxWidthOrHeight = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['min', 'max'].forEach(mm => {
+            ['w', 'h'].forEach(wh => {
+              NUM_ENMU.forEach(n => {
+                UNIT_ENMU.forEach(u => {
+                  minMaxWidthOrHeight += `.${md}${pseudo}${mm}-${wh}-${n}${u}{}`
+                })
+              })
             })
           })
         })
@@ -55,13 +69,17 @@ function getRegList () {
     className: 'marginOrPadding',
     // regExp: new RegExp(`^[mp]-(([trblxy])-)?(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
-      let marginOrPadding = '';
-      ['m', 'p'].forEach(mp => {
-        ['t-', 'r-', 'b-', 'l-', 'x-', 'y-', ''].forEach(trblxy => {
-          ['m-', ''].forEach(m => {
-            NUM_ENMU.forEach(n => {
-              UNIT_ENMU.forEach(u => {
-                marginOrPadding += `.${mp}-${trblxy}${m}${n}${u}{}`
+      let marginOrPadding = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['m', 'p'].forEach(mp => {
+            ['t-', 'r-', 'b-', 'l-', 'x-', 'y-', ''].forEach(trblxy => {
+              ['m-', ''].forEach(m => {
+                NUM_ENMU.forEach(n => {
+                  UNIT_ENMU.forEach(u => {
+                    marginOrPadding += `.${md}${pseudo}${mp}-${trblxy}${m}${n}${u}{}`
+                  })
+                })
               })
             })
           })
@@ -73,10 +91,14 @@ function getRegList () {
   {
     className: 'marginOrPaddingUseAuto',
     render () {
-      let marginOrPadding = '';
-      ['m', 'p'].forEach(mp => {
-        ['t-', 'r-', 'b-', 'l-', 'x-', 'y-', ''].forEach(trblxy => {
-          marginOrPadding += `.${mp}-${trblxy}auto{}`
+      let marginOrPadding = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['m', 'p'].forEach(mp => {
+            ['t-', 'r-', 'b-', 'l-', 'x-', 'y-', ''].forEach(trblxy => {
+              marginOrPadding += `.${md}${pseudo}${mp}-${trblxy}auto{}`
+            })
+          })
         })
       })
       return marginOrPadding
@@ -86,10 +108,14 @@ function getRegList () {
     className: 'zIndex',
     // regExp: /^z-index-(m-)?(0|1)$/,
     render () {
-      let zIndex = '';
-      ['m-', ''].forEach(m => {
-        NUM_ENMU.forEach(n => {
-          zIndex += `.z-index-${m}${n}{}`
+      let zIndex = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['m-', ''].forEach(m => {
+            NUM_ENMU.forEach(n => {
+              zIndex += `.${md}${pseudo}z-index-${m}${n}{}`
+            })
+          })
         })
       })
       return zIndex
@@ -101,9 +127,13 @@ function getRegList () {
     className: 'flexNum',
     // regExp: /^flex-(null|auto|(0|1))$/,
     render () {
-      let flexNum = '';
-      ['null', 'auto', '0', '1'].forEach(x => {
-        flexNum += `.flex-${x}{}`
+      let flexNum = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['null', 'auto', '0', '1'].forEach(x => {
+            flexNum += `.${md}${pseudo}flex-${x}{}`
+          })
+        })
       })
       return flexNum
     }
@@ -112,12 +142,17 @@ function getRegList () {
     className: 'text-align',
     // regExp: /^(text-align|text)-(start|end|left|right|center|justify|match-parent)$/,
     render () {
-      let textAlign = '';
-      ['text-align', 'text'].forEach(t => {
-        ['start', 'end', 'left', 'right', 'center', 'justify', 'match-parent'].forEach(v => {
-          textAlign += `.${t}-${v}{}`
+      let textAlign = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['text-align', 'text'].forEach(t => {
+            ['start', 'end', 'left', 'right', 'center', 'justify', 'match-parent'].forEach(v => {
+              textAlign += `.${md}${pseudo}${t}-${v}{}`
+            })
+          })
         })
       })
+
       return textAlign
     }
   },
@@ -125,12 +160,17 @@ function getRegList () {
     className: 'line-height',
     // regExp: new RegExp(`^(lh|line-height)-(((0|1|1(${UNIT_ENMU_STR})?))|normal|unset|inherit|initial)$`)
     render () {
-      let str = '';
-      ['lh', 'line-height'].forEach(lh => {
-        [...NUM_WIDTH_UNIT, 'normal', 'unset', 'inherit', 'initial'].forEach(v => {
-          str += `.${lh}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['lh', 'line-height'].forEach(lh => {
+            [...NUM_WIDTH_UNIT, 'normal', 'unset', 'inherit', 'initial'].forEach(v => {
+              str += `.${md}${pseudo}${lh}-${v}{}`
+            })
+          })
         })
       })
+
       return str
     }
   },
@@ -140,11 +180,16 @@ function getRegList () {
     // regExp: new RegExp(`^flex-(${JUSTIFY_CONTENT_ENMU_STR})-(${ALIGN_ITEMS_ENMU_STR})$`),
     render () {
       let str = ''
-      JUSTIFY_CONTENT_ENMU.forEach(jc => {
-        ALIGN_ITEMS_ENMU.forEach(ai => {
-          str += `.flex-${jc}-${ai}{}`
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          JUSTIFY_CONTENT_ENMU.forEach(jc => {
+            ALIGN_ITEMS_ENMU.forEach(ai => {
+              str += `${md}${pseudo}.flex-${jc}-${ai}{}`
+            })
+          })
         })
       })
+
       return str
     }
 
@@ -154,8 +199,12 @@ function getRegList () {
     // regExp: new RegExp(`^justify-content-(${JUSTIFY_CONTENT_ENMU_STR})$`),
     render () {
       let str = ''
-      JUSTIFY_CONTENT_ENMU.forEach(jc => {
-        str += `.justify-content-${jc}{}`
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          JUSTIFY_CONTENT_ENMU.forEach(jc => {
+            str += `${md}${pseudo}.justify-content-${jc}{}`
+          })
+        })
       })
       return str
     }
@@ -165,8 +214,12 @@ function getRegList () {
     // regExp: new RegExp(`^align-items-(${ALIGN_ITEMS_ENMU_STR})$`),
     render () {
       let str = ''
-      ALIGN_ITEMS_ENMU.forEach(ai => {
-        str += `.justify-content-${ai}{}`
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ALIGN_ITEMS_ENMU.forEach(ai => {
+            str += `${md}${pseudo}.justify-content-${ai}{}`
+          })
+        })
       })
       return str
     }
@@ -175,10 +228,14 @@ function getRegList () {
     className: 'flex-direction',
     // regExp: /^(flex-direction|flex)-(row|row-reverse|column|column-reverse)$/,
     render () {
-      let str = '';
-      ['flex-direction', 'flex'].forEach(t => {
-        ['row', 'row-reverse', 'column', 'column-reverse'].forEach(v => {
-          str += `.${t}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['flex-direction', 'flex'].forEach(t => {
+            ['row', 'row-reverse', 'column', 'column-reverse'].forEach(v => {
+              str += `${md}${pseudo}.${t}-${v}{}`
+            })
+          })
         })
       })
       return str
@@ -187,9 +244,13 @@ function getRegList () {
   {
     className: 'flex-wrap-value',
     render () {
-      let str = '';
-      ['inherit', 'initial', 'nowrap', 'wrap', 'wrap-reverse'].forEach(v => {
-        str += `.flex-wrap-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['inherit', 'initial', 'nowrap', 'wrap', 'wrap-reverse'].forEach(v => {
+            str += `${md}${pseudo}.flex-wrap-${v}{}`
+          })
+        })
       })
       return str
     }
@@ -199,9 +260,13 @@ function getRegList () {
     className: 'position',
     // regExp: /^position-(static|relative|sticky|unset|absolute|fixed|inherit|initial)$/,
     render () {
-      let str = '';
-      ['static', 'relative', 'sticky', 'unset', 'absolute', 'fixed', 'inherit', 'initial'].forEach(v => {
-        str += `.position-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['static', 'relative', 'sticky', 'unset', 'absolute', 'fixed', 'inherit', 'initial'].forEach(v => {
+            str += `${md}${pseudo}.position-${v}{}`
+          })
+        })
       })
       return str
     }
@@ -218,15 +283,32 @@ function getRegList () {
     }
   },
   {
+    className: 'opacity', 
+    render () {
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          [20,80,100].forEach(n=>{
+            str += `${md}${pseudo}.opacity-${n}{}`
+          })
+        })
+      })
+    }
+  },
+  {
     // 绝对定位 方向 t-20vh top:20vh -m负数
     className: 'orientation',
     // regExp: new RegExp(`^([trbl]|top|right|bottom|left)-(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
-      let str = '';
-      ['t', 'r', 'b', 'l', 'top', 'right', 'bottom', 'left'].forEach(trbl => {
-        ['m-', ''].forEach(m => {
-          NUM_WIDTH_UNIT.forEach(v => {
-            str += `.${trbl}-${m}${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['t', 'r', 'b', 'l', 'top', 'right', 'bottom', 'left'].forEach(trbl => {
+            ['m-', ''].forEach(m => {
+              NUM_WIDTH_UNIT.forEach(v => {
+                str += `${md}${pseudo}.${trbl}-${m}${v}{}`
+              })
+            })
           })
         })
       })
@@ -239,8 +321,12 @@ function getRegList () {
     // regExp: new RegExp(`^cursor-(${CURSOR_ENMU_STR})$`),
     render () {
       let str = ''
-      CURSOR_ENMU.forEach(v => {
-        str += `.cursor-${v}{}`
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          CURSOR_ENMU.forEach(v => {
+            str += `${md}${pseudo}.cursor-${v}{}`
+          })
+        })
       })
       return str
     }
@@ -250,9 +336,13 @@ function getRegList () {
     className: 'word-break',
     // regExp: /^word-break-(normal|break-all|keep-all|break-word|inherit|initial|unset)$/,
     render () {
-      let str = '';
-      ['normal', 'break-all', 'keep-all', 'break-word', 'inherit', 'initial', 'unset'].forEach(v => {
-        str += `.word-break-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['normal', 'break-all', 'keep-all', 'break-word', 'inherit', 'initial', 'unset'].forEach(v => {
+            str += `${md}${pseudo}.word-break-${v}{}`
+          })
+        })
       })
       return str
     }
@@ -262,10 +352,14 @@ function getRegList () {
     className: 'font-weight',
     // regExp: /^(font-weight|fw)-([1-9]00|normal|bold|bolder|inherit|initial|lighter|normal|unset)$/,
     render () {
-      let str = '';
-      ['font-weight', 'fw'].forEach(fw => {
-        [100, 200, 300, 400, 500, 600, 700, 800, 900, 'normal', 'bold', 'bolder', 'inherit', 'initial', 'lighter', 'normal', 'unset'].forEach(v => {
-          str += `.${fw}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['font-weight', 'fw'].forEach(fw => {
+            [100, 200, 300, 400, 500, 600, 700, 800, 900, 'normal', 'bold', 'bolder', 'inherit', 'initial', 'lighter', 'normal', 'unset'].forEach(v => {
+              str += `${md}${pseudo}.${fw}-${v}{}`
+            })
+          })
         })
       })
       return str
@@ -276,11 +370,15 @@ function getRegList () {
     className: 'font-size',
     // regExp: new RegExp(`^(font-size|fs)-(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
-      let str = '';
-      ['font-size', 'fs'].forEach(fs => {
-        NUM_ENMU.forEach(n => {
-          UNIT_ENMU.forEach(u => {
-            str += `.${fs}-${n}${u}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['font-size', 'fs'].forEach(fs => {
+            NUM_ENMU.forEach(n => {
+              UNIT_ENMU.forEach(u => {
+                str += `${md}${pseudo}.${fs}-${n}${u}{}`
+              })
+            })
           })
         })
       })
@@ -292,10 +390,14 @@ function getRegList () {
     className: 'display',
     // regExp: /^(display|d)-(none|inline|block|inline-block|flex)$/,
     render () {
-      let str = '';
-      ['display', 'd'].forEach(d => {
-        ['none', 'inline', 'block', 'inline-block', 'flex'].forEach(v => {
-          str += `.${d}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['display', 'd'].forEach(d => {
+            ['none', 'inline', 'block', 'inline-block', 'flex'].forEach(v => {
+              str += `${md}${pseudo}.${d}-${v}{}`
+            })
+          })
         })
       })
       return str
@@ -306,10 +408,14 @@ function getRegList () {
     className: 'overflow',
     // regExp: /^overflow(-[xy])?-(hidden|auto|visible|scroll|inherit)$/,
     render () {
-      let str = '';
-      ['x-', 'y-', ''].forEach(xy => {
-        ['hidden', 'auto', 'visible', 'scroll', 'inherit'].forEach(v => {
-          str += `.overflow-${xy}${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['x-', 'y-', ''].forEach(xy => {
+            ['hidden', 'auto', 'visible', 'scroll', 'inherit'].forEach(v => {
+              str += `${md}${pseudo}.overflow-${xy}${v}{}`
+            })
+          })
         })
       })
       return str
@@ -319,10 +425,14 @@ function getRegList () {
     className: 'letter-spacing',
     // regExp: new RegExp(`^letter-spacing-(m-)?(0|1|1(${UNIT_ENMU_STR})?)$`)
     render () {
-      let str = '';
-      ['m-', ''].forEach(m => {
-        NUM_WIDTH_UNIT.forEach(v => {
-          str += `.letter-spacing-${m}${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['m-', ''].forEach(m => {
+            NUM_WIDTH_UNIT.forEach(v => {
+              str += `${md}${pseudo}.letter-spacing-${m}${v}{}`
+            })
+          })
         })
       })
       return str
@@ -339,10 +449,14 @@ function getRegList () {
     className: 'flexShrinkAndGrow',
     // regExp: /^flex-(shrink|grow)-((0|1)|initial|inherit)$/
     render () {
-      let str = '';
-      ['shrink', 'grow'].forEach(sg => {
-        [...NUM_ENMU, 'initial', 'inherit'].forEach(v => {
-          str += `.flex-${sg}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['shrink', 'grow'].forEach(sg => {
+            [...NUM_ENMU, 'initial', 'inherit'].forEach(v => {
+              str += `${md}${pseudo}.flex-${sg}-${v}{}`
+            })
+          })
         })
       })
       return str
@@ -352,9 +466,13 @@ function getRegList () {
     className: 'flex-basis',
     // regExp: new RegExp(`^flex-basis-((0|1|1(${UNIT_ENMU_STR})?)|initial|inherit|auto)$`),
     render () {
-      let str = '';
-      [...NUM_WIDTH_UNIT, 'initial', 'inherit', 'auto'].forEach(v => {
-        str += `.flex-basis-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          [...NUM_WIDTH_UNIT, 'initial', 'inherit', 'auto'].forEach(v => {
+            str += `${md}${pseudo}.flex-basis-${v}{}`
+          })
+        })
       })
       return str
     }
@@ -364,11 +482,15 @@ function getRegList () {
     // 这个宽度没有百分比
     // regExp: new RegExp(`^(border|border-width|border-w)-([trblxy]-)?(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
-      let str = '';
-      ['border', 'border-width', 'border-w'].forEach(bw => {
-        ['t-', 'r-', 'b-', 'l-', 'x-', 'y-', ''].forEach(trblxy => {
-          NUM_WIDTH_UNIT.forEach(v => {
-            str += `.${bw}-${trblxy}${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['border', 'border-width', 'border-w'].forEach(bw => {
+            ['t-', 'r-', 'b-', 'l-', 'x-', 'y-', ''].forEach(trblxy => {
+              NUM_WIDTH_UNIT.forEach(v => {
+                str += `${md}${pseudo}.${bw}-${trblxy}${v}{}`
+              })
+            })
           })
         })
       })
@@ -379,10 +501,14 @@ function getRegList () {
     className: 'border-radius',
     // regExp: new RegExp(`^(border-radius|br)-(0|1|1(${UNIT_ENMU_STR})?)$`),
     render () {
-      let str = '';
-      ['border-radius', 'br'].forEach(br => {
-        NUM_WIDTH_UNIT.forEach(v => {
-          str += `.${br}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['border-radius', 'br'].forEach(br => {
+            NUM_WIDTH_UNIT.forEach(v => {
+              str += `${md}${pseudo}.${br}-${v}{}`
+            })
+          })
         })
       })
       return str
@@ -392,9 +518,13 @@ function getRegList () {
     className: 'border-style',
     // regExp: /^border-style-(none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit)$/,
     render () {
-      let str = '';
-      ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'inherit'].forEach(v => {
-        str += `.border-style-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'inherit'].forEach(v => {
+            str += `${md}${pseudo}.border-style-${v}{}`
+          })
+        })
       })
       return str
     }
@@ -403,10 +533,14 @@ function getRegList () {
     className : 'text-align-last',
     regExp    : /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
     render () {
-      let str = '';
-      ['text-align-last', 'text-last'].forEach(tl => {
-        ['auto', 'left', 'right', 'center', 'justify', 'start', 'end', 'initial', 'inherit'].forEach(v => {
-          str += `.${tl}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['text-align-last', 'text-last'].forEach(tl => {
+            ['auto', 'left', 'right', 'center', 'justify', 'start', 'end', 'initial', 'inherit'].forEach(v => {
+              str += `${md}${pseudo}.${tl}-${v}{}`
+            })
+          })
         })
       })
       return str
@@ -416,10 +550,14 @@ function getRegList () {
     className : 'text-decoration',
     regExp    : /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
     render () {
-      let str = '';
-      ['text-decoration', 'text'].forEach(text => {
-        ['none', 'underline', 'overline', 'line-through', 'blink', 'inherit'].forEach(v => {
-          str += `.${text}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['text-decoration', 'text'].forEach(text => {
+            ['none', 'underline', 'overline', 'line-through', 'blink', 'inherit'].forEach(v => {
+              str += `${md}${pseudo}.${text}-${v}{}`
+            })
+          })
         })
       })
       return str
@@ -429,10 +567,14 @@ function getRegList () {
     className : 'user-select',
     regExp    : /^user-select-(none|auto|text|all|contain|element)$/,
     render () {
-      let str = '';
-      ['user-select', 'select'].forEach(s => {
-        ['none', 'auto', 'text', 'all', 'contain', 'element'].forEach(v => {
-          str += `.${s}-${v}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['user-select', 'select'].forEach(s => {
+            ['none', 'auto', 'text', 'all', 'contain', 'element'].forEach(v => {
+              str += `${md}${pseudo}.${s}-${v}{}`
+            })
+          })
         })
       })
       return str
@@ -442,10 +584,14 @@ function getRegList () {
     className: 'text-ellipsis-num',
     // regExp: /^(text-)?ellipsis(-(0|1))?$/,
     render () {
-      let str = '';
-      ['ellipsis', 'text', 'text-ellipsis'].forEach(t => {
-        ['', ...NUM_ENMU].forEach(n => {
-          str += `.${t}-${n}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['ellipsis', 'text', 'text-ellipsis'].forEach(t => {
+            ['', ...NUM_ENMU].forEach(n => {
+              str += `${md}${pseudo}.${t}-${n}{}`
+            })
+          })
         })
       })
       return str
@@ -458,12 +604,14 @@ function getRegList () {
     //     `^(color|c|text|bg|background|border-color|border-c)-((hover|link|visited|active|focus|focus-within)-)?(fafafa|${getColorsKey().join('|')})(-(25|100))?$`
     // ),
     render () {
-      let str = '';
-      ['color', 'c', 'text', 'bg', 'background', 'border-color', 'border-c'].forEach(t => {
-        ['', 'hover-', 'link-', 'visited-', 'active-', 'focus-', 'focus-within-'].forEach(hover => {
-          ['ff0', 'fafafa', 'red', 'transparent'].forEach(c => {
-            ['', '-65', '-85'].forEach(o => {
-              str += `.${t}-${hover}${c}${o}{}`
+      let str = ''
+      MEIDA_QUERYS.forEach(md => {
+        PSEUDO_LIST.forEach(pseudo => {
+          ['color', 'c', 'text', 'bg', 'background', 'border-color', 'border-c'].forEach(t => {
+            ['ff0', 'fafafa', 'red', 'transparent'].forEach(c => {
+              ['', '-65', '-85'].forEach(o => {
+                str += `${md}${pseudo}.${t}-${c}${o}{}`
+              })
             })
           })
         })

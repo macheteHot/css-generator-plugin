@@ -1,4 +1,4 @@
-import { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT, MODIFY_RULES } from './constant'
+import { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT, MODIFY_RULES, MEDIA_QUERYS } from './constant'
 
 let programConfig = {
   [MODIFY_RULES]: {}
@@ -36,6 +36,8 @@ export function getConfig (str) {
       return programConfig[COLORS] || {}
     case UNIT: // 默认px
       return programConfig[UNIT] || 'px'
+    case MEDIA_QUERYS: // 默认px
+      return programConfig[MEDIA_QUERYS] || {}
     case IMPORTANT: // 默认添加！important 设置默认值
       return programConfig[IMPORTANT] === undefined ? true : programConfig[IMPORTANT]
     default: // dirPath generate  等项目配置

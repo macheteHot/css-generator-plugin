@@ -13,4 +13,5 @@
   },
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "git.ignoreLimitWarning": true,
+  "liveServer.settings.port": 5501,
 }
