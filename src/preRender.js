@@ -26,7 +26,7 @@ export function pushQuery (key, obj) {
 
 const isImportant = () => getConfig(IMPORTANT)
 function getCssSingle ({ classStr, css, pseudo }) {
-  classStr = classStr.replace(/[@:#.]/g, '\\$1')
+  classStr = classStr.replace(/([@:#.])/g, '\\$1')
   if (pseudo) {
     classStr = classStr + `:${pseudo}`
   }
