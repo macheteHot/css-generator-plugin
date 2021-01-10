@@ -12,9 +12,9 @@ function getCss (direction, num, unit) {
     .get(direction)
     .reduce((t, c) => {
       if (c) {
-        return [...t, `border-${c}-width: ${num}${unit}`, `border-${c}-style: solid`, `border-${c}-style: solid`]
+        return [...t, `border-${c}-width: ${num}${unit}`, `border-${c}-style: solid`, `border-${c}-color: rgba(0,0,0,1)`]
       } else {
-        return [...t, `border-width: ${num}${unit}`, 'border-style: solid', 'border-style: solid']
+        return [...t, `border-width: ${num}${unit}`, 'border-style: solid', 'border-color: rgba(0,0,0,1)']
       }
     }, [])
 }
