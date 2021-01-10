@@ -1,32 +1,15 @@
 /**
  * order 520 460 + 60
  */
-import { UNIT_ENMU_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
+import { UNIT_ENUM_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
 import { getUnit } from '../config'
+<<<<<<< HEAD
 import { textToRgbText } from '../colorUtils'
+=======
+import { getDirectionOrder } from '../utils/index'
+>>>>>>> v2.0
 
-function getOrder (direction) {
-  let order = 460
-  if (direction === 'x') {
-    order += 10
-  }
-  if (direction === 'y') {
-    order += 20
-  }
-  if (direction === 't') {
-    order += 30
-  }
-  if (direction === 'b') {
-    order += 40
-  }
-  if (direction === 'r') {
-    order += 50
-  }
-  if (direction === 'l') {
-    order += 60
-  }
-  return order
-}
+const getOrder = direction => getDirectionOrder(460, direction)
 
 function getCss (direction, num, unit) {
   return DIRECTION_MAP
@@ -51,14 +34,10 @@ function getCss (direction, num, unit) {
 }
 
 export default {
-  regExp: new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENMU_STR})?$`),
+  regExp: new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENUM_STR})?$`),
   render ({ groups }) {
     let { direction, num, unit } = groups
-    if (Number(num) === 0) {
-      unit = ''
-    } else {
-      unit = getUnit(unit)
-    }
+    unit = getUnit(num, unit)
     return {
       name  : 'border',
       order : getOrder(direction),

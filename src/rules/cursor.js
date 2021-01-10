@@ -1,10 +1,10 @@
 /**
  * order 340
  */
-import { CURSOR_ENMU_STR } from '../constant'
+import { CURSOR_ENUM_STR } from '../constant'
 
 export default {
-  regExp: new RegExp(`^cursor-(?<value>${CURSOR_ENMU_STR})$`),
+  regExp: new RegExp(`^cursor-(?<value>${CURSOR_ENUM_STR})$`),
   render ({ groups }) {
     const { value } = groups
     return {

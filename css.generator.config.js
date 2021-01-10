@@ -8,7 +8,7 @@ module.exports = {
   modifyRules : { // 可覆写规则 或自定义规则 详见进阶使用
 
   },
-  meidaQuerys: { // 自定义媒体查询
+  mediaQueries: { // 自定义媒体查询
     // sm : '(min-width: 640px)',
     // md : '(min-width: 768px)',
     // lg : '(min-width: 1024px)',

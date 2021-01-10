@@ -18,7 +18,7 @@
 
   [在线尝试](https://machetehot.github.io/css-generator-plugin/)
 ```html
-<script src="https://cdn.jsdelivr.net/npm/css-generator-plugin@0.17.0/dist/gcss.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/css-generator-plugin/dist/gcss.js"></script>
 <script>
   // 与下面配置相同
   new Gcss({
@@ -104,8 +104,8 @@ import '@/style/auto.css'
 
 ### 伪类约定 
 ```text
-+ 属性名后跟-(hover|link|visited|active|focus|focus-within)伪类，自动生成伪类选择器
-+ 目前仅颜色类支持
++ 伪类后跟任意属性
+hover|link|visited|active|focus|focus-within 等伪类 后接属性 如 hover:c-red active:w-233
 ```
 
 ### 数值约定  
@@ -120,8 +120,8 @@ import '@/style/auto.css'
 + p为百分比%的缩写。默认不传为px
 ```
 ```javascript
-const UNIT_ENMU = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 'vw', 'vh', 'vmin', 'vmax', 'p']
-const UNIT_ENMU_STR = UNIT_ENMU.join('|')
+const UNIT_ENUM = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 'vw', 'vh', 'vmin', 'vmax', 'p']
+const UNIT_ENUM_STR = UNIT_ENUM.join('|')
 ```
 ### 属性约定  
 ```text
@@ -138,7 +138,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .w-375{width:375px}
     ```
     ```javascript
-    new RegExp(`^[wh]-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^[wh]-(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 最大(小)宽(高)
     #### (min|max)-(h|w)-(数值)(单位)?
@@ -148,7 +148,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .max-h-100vh {max-height:100vh}
     ```
     ```javascript
-    new RegExp(`^(min|max)-[wh]-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^(min|max)-[wh]-(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 正方形简写
     #### square-(数值)(单位)?
@@ -158,7 +158,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .square-80{width:80px;height:80px}
     ```
     ```javascript
-    new RegExp(`^square-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^square-(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 内外间距
     #### (m|p)-(方向-)?(m-)?(数值)(单位)?
@@ -169,7 +169,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .p-x-24{padding-left:24px;padding-right:24px}
     ```
     ```javascript
-    new RegExp(`^[mp]-(([trblxy])-)?(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^[mp]-(([trblxy])-)?(m-)?(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 图层高度
     #### z-index-(m-)?(数值)
@@ -205,7 +205,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     }
     ```
     ```javascript
-    new RegExp(`^flex-(${JUSTIFY_CONTENT_ENMU_STR})-(${ALIGN_ITEMS_ENMU_STR})$`)
+    new RegExp(`^flex-(${JUSTIFY_CONTENT_ENUM_STR})-(${ALIGN_ITEMS_ENUM_STR})$`)
     ```
   * flex 换行
     #### flex-wrap-(参数)
@@ -229,7 +229,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .justify-content-space-between {justify-content:space-between;}
     ```
     ```javascript
-    new RegExp(`^justify-content-(${JUSTIFY_CONTENT_ENMU_STR})$`)
+    new RegExp(`^justify-content-(${JUSTIFY_CONTENT_ENUM_STR})$`)
     ```
   * flex交叉轴
     #### align-items-(交叉轴参数)
@@ -237,7 +237,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .align-items-center {align-items:center}
     ```
     ```javascript
-     new RegExp(`^align-items-(${ALIGN_ITEMS_ENMU_STR})$`)
+     new RegExp(`^align-items-(${ALIGN_ITEMS_ENUM_STR})$`)
     ```
   * flex轴方向
     #### (flex-direction|flex)-(轴方向参数)
@@ -265,7 +265,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .line-height-14rem{line-height:14rem;}
     ```
     ```javascript
-    new RegExp(`^(lh|line-height)-(((0|[1-9]\\d*)(${UNIT_ENMU_STR})?)|normal|unset|inherit|initial)$`)
+    new RegExp(`^(lh|line-height)-(((0|[1-9]\\d*)(${UNIT_ENUM_STR})?)|normal|unset|inherit|initial)$`)
     ```
   * 定位
     #### position-(定位参数)
@@ -283,7 +283,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .right-m-672{right:-672px;}
     ```
     ```javascript
-    new RegExp(`^[trbl]-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^[trbl]-(m-)?(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 字体大小
     #### (font-size|fs)-(数值)(单位)?
@@ -292,7 +292,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .font-size-22rem{font-size:22rem}
     ```
     ```javascript
-    new RegExp(`^(font-size|fs)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^(font-size|fs)-(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 字体粗细
     #### (font-weight|fw)-(参数)
@@ -302,15 +302,15 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .fw-900{font-weight:900}
     ```
     ```javascript
-    new RegExp(`^(font-size|fs)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^(font-size|fs)-(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 鼠标样式
     #### cursor-(参数)
     ```css
-    .cursor-point{cursor:point;}
+    .cursor-point{cursor:pointer;}
     ```
     ```javascript
-    new RegExp(`^cursor-(${CURSOR_ENMU_STR})$`)
+    new RegExp(`^cursor-(${CURSOR_ENUM_STR})$`)
     ```
   * 文字折叠
     #### word-break-(参数)
@@ -342,14 +342,13 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     #### 自带 white transparent blue black 可进行配置
     ```javascript
     new RegExp(
-      `^(color|c|text|bg|background|border-color|border-c)-((hover|link|visited|active|focus|focus-within)-)?([a-fA-F0-9]{6}|[a-fA-F0-9]{3}|${getColorsKey().join('|')})(-([1-9]\\d|100))?$`
+    `^(?<type>color|c|text|bg|background|border-color|border-c)-(?<color>(#?([a-fA-F0-9]{8}$|[a-fA-F0-9]{6}|[a-fA-F0-9]{3}))|${getColorsKey().join('|')})(-(?<opacity>1|([1-9]\\d?)))?$`)
     ```
       * 字体颜色 
-        ##### (color|c|text)-(伪类-)?(16进制色[6位或3位]|自定义颜色)(-透明度)?
+        ##### (color|c|text)-?(16进制色[8位,6位,3位]|自定义颜色)(-透明度 8位没有透明度)?
         ```css
         .c-red{color:rgba(255,0,0,1)}
         .color-43ad7f-25{color:rgba(67,173,127,0.25)}
-        .text-hover-f243fa-1:hover{color:rgba(242, 67, 250,0.1)}
         ```
       * 背景色 
         ##### (bg|background)-(伪类-)?(16进制色[6位或3位]|自定义颜色)(-透明度)?
@@ -375,7 +374,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .letter-spacing-4rem{letter-spacing:4rem}
     ```
     ```javascript
-    new RegExp(`^letter-spacing-(m-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^letter-spacing-(m-)?(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 组合属性 circle
     #### circle  只有一个
@@ -403,7 +402,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .flex-basis-auto{flex-basis:auto;}
     ```
     ```javascript
-    new RegExp(`^flex-basis-((0|[1-9]\\d*)(${UNIT_ENMU_STR})?|initial|inherit|auto)$`)
+    new RegExp(`^flex-basis-((0|[1-9]\\d*)(${UNIT_ENUM_STR})?|initial|inherit|auto)$`)
     ```
   * 边框宽度 自带实线 黑色
     #### (border|border-width|border-w)-(方向-)?(数值)(单位)?
@@ -420,7 +419,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     }
     ```
     ```javascript
-    new new RegExp(`^(border|border-width|border-w)-([trblxy]-)?(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new new RegExp(`^(border|border-width|border-w)-([trblxy]-)?(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 边框圆角
     #### (border-radius|br)-(数值)(单位)?
@@ -429,7 +428,7 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
     .br-20p{border-radius:20%}
     ```
     ```javascript
-    new RegExp(`^(border-radius|br)-(0|[1-9]\\d*)(${UNIT_ENMU_STR})?$`)
+    new RegExp(`^(border-radius|br)-(0|[1-9]\\d*)(${UNIT_ENUM_STR})?$`)
     ```
   * 边框类型
     #### border-style-(参数)
@@ -564,10 +563,10 @@ const UNIT_ENMU_STR = UNIT_ENMU.join('|')
              if (isMinus) {
                num = 0 - num
              }
-             return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}${getUnit('')}`] }
+             return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}${getUnit(num,'')}`] }
            }
          }
-       },
+       }
 
     }
   ```

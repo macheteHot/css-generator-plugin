@@ -84,7 +84,7 @@ window.onload = () => {
       //       if (isMinus) {
       //         num = 0 - num
       //       }
-      //       return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}${getUnit('')}`] }
+      //       return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}${getUnit(num,'')}`] }
       //     }
       //   }
       // }

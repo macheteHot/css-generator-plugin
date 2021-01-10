@@ -31,10 +31,10 @@ window.Gcss = class {
     // eslint-disable-next-line no-undef
     const observer = new MutationObserver(genCss)
     observer.observe(document.body, {
-      attributes      : true,
-      attributeFilter : ['class'],
-      childList       : true,
-      subtree         : true
+      attributes: true,
+      attributeFilter: ['class'],
+      childList: true,
+      subtree: true
     })
   }
 }
