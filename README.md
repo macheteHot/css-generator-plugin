@@ -69,6 +69,9 @@ module.exports = {
   modifyRules:{ // 可覆写规则 或自定义规则 详见进阶使用
 
   },
+  mediaQueries:{ // 自定义媒体查询
+
+  },
   important: true // 可选项。默认为true。css是否添加！important
 }
 ```
@@ -106,6 +109,17 @@ import '@/style/auto.css'
 ```text
 + 伪类后跟任意属性
 hover|link|visited|active|focus|focus-within 等伪类 后接属性 如 hover:c-red active:w-233
+```
+
+### 媒体查询约定
+```text
+内置三种媒体查询 如果需要覆盖或自定义添加 请看进阶使用
+  sm : '(min-width: 640px)',
+  md : '(min-width: 768px)',
+  lg : '(min-width: 1024px)',
+  xl : '(min-width: 1280px)'
+  如 sm@bg-fff lg@w-2333 xl@m-t-10
+  即可在不同屏幕大小中正确使用媒体查询支持全部属性 如需要与伪类配合使用 语法如下 <媒体查询>@<伪类>:<属性>
 ```
 
 ### 数值约定  
@@ -307,7 +321,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
   * 鼠标样式
     #### cursor-(参数)
     ```css
-    .cursor-point{cursor:pointer;}
+    .cursor-pointer{cursor:pointer;}
     ```
     ```javascript
     new RegExp(`^cursor-(${CURSOR_ENUM_STR})$`)
@@ -568,5 +582,14 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
          }
        }
 
+    },
+    mediaQueries: {
+      // 前面为前缀 后面为媒体属性 
+      // 属性相同则覆盖自带属性
+      sm: '(min-width: 640px)',
+      md: '(min-width: 768px)',
+      lg: '(min-width: 1024px)',
+      xl: '(min-width: 1280px)'
     }
+
   ```

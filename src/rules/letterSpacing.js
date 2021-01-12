@@ -11,12 +11,6 @@ export default {
       num = 0 - num
     }
     unit = getUnit(num, unit)
-    const base = { name: 'letterSpacing', order: 410, num }
-    return {
-      ...base,
-      css: Number(num) !== 0
-        ? [`letter-spacing: ${num}${unit}`]
-        : ['letter-spacing: 0']
-    }
+    return { name: 'letterSpacing', order: 410, num, css: [`letter-spacing: ${num}${unit}`] }
   }
 }

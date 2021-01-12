@@ -8,9 +8,6 @@ export default {
   render ({ groups }) {
     let { num, unit } = groups
     unit = getUnit(num, unit)
-    const base = { name: 'max-height', order: 31, num }
-    return Number(num === 0)
-      ? { ...base, css: ['max-height: 0'] }
-      : { ...base, css: [`max-height: ${num}${unit}`] }
+    return  { name: 'max-height', order: 31, num, css: [`max-height: ${num}${unit}`]  }
   }
 }
