@@ -90,7 +90,22 @@ import '@/style/auto.css'
 
 # 规则约定
 
-### 伪类约定
+### 简写约定 
+```text
++ m is margin
++ p is padding
++ h is height
++ w is width
+```
+
+### 方向约定 trblxy
+```text
++ y代表上下tb x代表左右lr组合方向
++ tblr代表上下左右单方向
++ 权重优先级 tblr单项 > xy双向组合 > 四项组合
+```
+
+### 伪类约定 
 ```text
 + 伪类后跟任意属性
 hover|link|visited|active|focus|focus-within 等伪类 后接属性 如 hover:c-red active:w-233
@@ -105,21 +120,6 @@ hover|link|visited|active|focus|focus-within 等伪类 后接属性 如 hover:c-
   xl : '(min-width: 1280px)'
   如 sm@bg-fff lg@w-2333 xl@m-t-10
   即可在不同屏幕大小中正确使用媒体查询支持全部属性 如需要与伪类配合使用 语法如下 <媒体查询>@<伪类>:<属性>
-```
-
-### 简写约定 
-```text
-+ m is margin
-+ p is padding
-+ h is height
-+ w is width
-```
-
-### 方向约定 trblxy
-```text
-+ y代表上下tb x代表左右lr组合方向
-+ tblr代表上下左右单方向
-+ 权重优先级 tblr单项 > xy双向组合 > 四项组合
 ```
 
 ### 数值约定  
@@ -458,7 +458,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
   .object-fit-fill{object-fit:fill}
   ```
   ```javascript
-  /^object-fit-(fill|contain|cover|none|scale-down)$/
+  /^object-fit-(fill|contain|cover|none|scale-down|inherit|initial|revert|unset)$/
   ```
   * text-align-last
     #### text-align-(参数)
@@ -560,9 +560,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
   + zIndex
   ### 说明如下
   ```javascript
-    module.exports = {
-      //...
-      modifyRules: {
+  modifyRules: {
         /**
          * 如需覆盖自带属性 则属性名 相同
          * 此处值 为 object 或者 函数 函数必须返回相同格式的对象
@@ -592,19 +590,15 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
            }
          }
        }
+
+    },
+    mediaQueries: {
+      // 前面为前缀 后面为媒体属性 
+      // 属性相同则覆盖自带属性
+      sm: '(min-width: 640px)',
+      md: '(min-width: 768px)',
+      lg: '(min-width: 1024px)',
+      xl: '(min-width: 1280px)'
     }
-    }
+
   ```
-
-
-+ 关于媒体查询的使用
-    ```javascript
-    module.exports = {
-      //...
-      mediaQueries: {
-        sm: '(min-width: 640px)', md: '(min-width: 768px)',
-        lg: '(min-width: 1024px)',
-        xl: '(min-width: 1280px)'
-      }
-    }
-    ```
