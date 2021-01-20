@@ -3,7 +3,7 @@
  */
 
 export default {
-  regExp: /^(display|d)-(?<value>none|inline|block|inline-block|flex)$/,
+  regExp: /^(display|d)-(?<value>none|inline|block|inline-block|flex|contents)$/,
   render ({ groups }) {
     const { value } = groups
     return {

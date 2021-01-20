@@ -341,7 +341,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
     .d-flex{display:flex}
     ```
     ```javascript
-    /^(display|d)-(none|inline|block|inline-block|flex)$/
+    /^(display|d)-(none|inline|block|inline-block|flex|contents)$/
     ```
   * overflow
     #### overflow-(xy)?-(参数)
@@ -452,6 +452,14 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
     ```javascript
     /^border-style-(none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit)$/
     ```
+  * 图片填充
+  #### object-fit-(参数)
+  ```css
+  .object-fit-fill{object-fit:fill}
+  ```
+  ```javascript
+  /^object-fit-(fill|contain|cover|none|scale-down)$/
+  ```
   * text-align-last
     #### text-align-(参数)
     ```css
@@ -536,6 +544,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
   + maxWidth
   + minHeight
   + minWidth
+  + objectFit
   + opacity
   + orientation
   + overflow
