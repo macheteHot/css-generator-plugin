@@ -54,6 +54,16 @@ function getRegList () {
       }
     },
     {
+      className: 'objectFit',
+      render () {
+        let objectFit = '';
+        ['fill', 'contain', 'cover', 'none', 'scale-down', 'inherit', 'initial', 'revert', 'unset'].forEach(val => {
+          objectFit += `.object-fit-${val}{}`
+        })
+        return objectFit
+      }
+    },
+    {
       className: 'marginOrPadding',
       render () {
         let marginOrPadding = '';
@@ -289,7 +299,7 @@ function getRegList () {
       render () {
         let str = '';
         ['display', 'd'].forEach(d => {
-          ['none', 'inline', 'block', 'inline-block', 'flex'].forEach(v => {
+          ['none', 'inline', 'block', 'inline-block', 'flex', 'inherit', 'initial', 'none', 'revert', 'unset'].forEach(v => {
             str += `.${d}-${v}{}`
           })
         })
