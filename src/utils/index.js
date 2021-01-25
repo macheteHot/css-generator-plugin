@@ -15,6 +15,7 @@ export function groupBy (array, name) {
 }
 
 export function getDirectionOrder (order, direction) {
+  if (!direction) { return order }
   switch (direction) {
     case 'x':
       return order + 10
