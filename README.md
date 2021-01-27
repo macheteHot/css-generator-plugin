@@ -14,7 +14,7 @@
   npx gen-snippets
   yarn gen-snippets
 ```
-+ 试用 (请勿用于生产环境 不支持低版本浏览器)
++ 试用 可在线尝试
 
   [在线尝试](https://machetehot.github.io/css-generator-plugin/)
 ```html
@@ -126,7 +126,7 @@ hover|link|visited|active|focus|focus-within 等伪类 后接属性 如 hover:c-
 ```text
 + m-16  16代表正数
 + m-m-16 -m-16代表负数(部分属性支持)
-+ 数值全部不支持小数
++ 数值全部支持小数 如 m-t-0.222vh w-33.333333p
 ```
 
 ### 单位约定  
@@ -602,3 +602,6 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
     }
 
   ```
+### 联系我 
+  可通过微信联系我
+ 
