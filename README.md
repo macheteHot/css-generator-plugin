@@ -48,7 +48,7 @@ const CssGeneratorPlugin = require('css-generator-plugin')
       }, // 可选项。颜色配置，内置包含以上默认值
       dirPath: 'src', // 必填项。源码根目录(必须存在此目录)
       generate: 'src/style/auto.css', // 必填项。生成文件位置(不存在会自动创建目录)
-      type: 'vue', // 必填项。项目类型 vue|d-mini-program
+      type: 'vue', // 必填项。项目类型  vue react d-mini-program(钉钉小程序) wx-mini-program(微信小程序) html(纯html 会扫描 .html 后缀名文件)
       unit: 'px', // 可选项。默认单位
       important: true // 可选项。默认为true。css是否添加！important
     })
@@ -64,7 +64,7 @@ module.exports = {
   colors: {}, // 可选项。颜色配置，内置包含以上默认值
   dirPath: 'src', // 必填项。源码根目录(必须存在此目录)
   generate: 'src/style/auto.css', // 必填项。生成文件位置(不存在会自动创建目录)
-  type: 'vue', // 必填项。项目类型 vue|d-mini-program
+  type: 'vue', // 必填项。项目类型 同上
   unit: 'px', // 可选项。默认单位
   modifyRules:{ // 可覆写规则 或自定义规则 详见进阶使用
 
