@@ -603,5 +603,5 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
 
   ```
 ### 联系我 
-  可通过微信联系我
- 
+  可通过微信联系我  
+  ![wechat:Jhun_Git](https://cdn.jsdelivr.net/gh/macheteHot/css-generator-plugin/assets/image/wechat.jpg)
