@@ -15,7 +15,6 @@ export default {
         ...base,
         num : 0,
         css : [
-          'display: inline-block',
           'overflow: hidden',
           'text-overflow: ellipsis',
           'white-space: nowrap'

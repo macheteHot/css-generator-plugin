@@ -1,5 +1,10 @@
 # css-generator-plugin 自动生成css文件，高效开发页面
 
+
+### 更新记录
+  2.1.5  
+  + bugFix: ellipsis 属性移除了 display: inline-block 生成
+    
 ### 如何使用
 
 + 安装依赖
