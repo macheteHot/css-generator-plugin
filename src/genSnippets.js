@@ -1,7 +1,8 @@
 import {
   JUSTIFY_CONTENT_ENUM,
   ALIGN_ITEMS_ENUM,
-  CURSOR_ENUM
+  CURSOR_ENUM,
+  VERTICAL_ALIGN_ENUM
 } from './constant'
 const fs = require('fs')
 const path = require('path')
@@ -398,8 +399,7 @@ function getRegList () {
       }
     },
     {
-      className : 'text-align-last',
-      regExp    : /^(text-align-last|text-last)-(auto|left|right|center|justify|start|end|initial|inherit)$/,
+      className: 'text-align-last',
       render () {
         let str = '';
         ['text-align-last', 'text-last'].forEach(tl => {
@@ -411,8 +411,7 @@ function getRegList () {
       }
     },
     {
-      className : 'text-decoration',
-      regExp    : /^(text-decoration|text)-(none|underline|overline|line-through|blink|inherit)$/,
+      className: 'text-decoration',
       render () {
         let str = '';
         ['text-decoration', 'text'].forEach(text => {
@@ -424,14 +423,23 @@ function getRegList () {
       }
     },
     {
-      className : 'user-select',
-      regExp    : /^user-select-(none|auto|text|all|contain|element)$/,
+      className: 'user-select',
       render () {
         let str = '';
         ['user-select', 'select'].forEach(s => {
           ['none', 'auto', 'text', 'all', 'contain', 'element'].forEach(v => {
             str += `.${s}-${v}{}`
           })
+        })
+        return str
+      }
+    },
+    {
+      className: 'vertical-align',
+      render () {
+        let str = '';
+        [...VERTICAL_ALIGN_ENUM, ...NUM_WIDTH_UNIT].forEach(s => {
+          str += `.vertical-align-${s}{}`
         })
         return str
       }
