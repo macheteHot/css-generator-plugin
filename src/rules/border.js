@@ -25,7 +25,7 @@ export default {
     let { direction, num, unit } = groups
     unit = getUnit(num, unit)
     return {
-      name  : 'border',
+      name  : direction ? `border-${direction}` : 'border',
       order : getOrder(direction),
       num,
       css   : getCss(direction, num, unit)
