@@ -1,20 +1,12 @@
 
 // 用来去重
 import * as rules from './rules/index'
-import { pushPreObj, pushQuery, pxtorem } from './preRender'
+import { pushPreObj, pushQuery } from './preRender'
 import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERIES, PSEUDO_STR, PX_TO_REM } from './constant'
 import { getConfig, getUnit } from './config'
-import { isFunction } from './utils/index'
+import { isFunction, pxtorem } from './utils/index'
 const cssSet = new Set()
 const handleCssPipe = new Set()
-
-export function initHandleCssPipe () {
-  const pxtoremConfig = getConfig(PX_TO_REM)
-
-  if (pxtoremConfig && typeof pxtoremConfig === 'object') {
-    handleCssPipe.add(pxtorem)
-  }
-}
 
 export function filterClassNames (sourceStr) {
   // cssSet.clear() // 清空set
@@ -36,6 +28,9 @@ export function filterClass (classStr) {
   }
   let query; let pseudo; let source = classStr
   const queryNames = [...BASE_MEDIA_QUERY_KEY, ...Object.keys(getConfig(MEDIA_QUERIES))]
+  const pxtoremConfig = getConfig(PX_TO_REM)
+  const isPxtorem = typeof pxtoremConfig === 'object'
+
   if (/[@:]/.test(classStr)) {
     const queryAndPesudoRegex = new RegExp(`^(?:(?<query>${queryNames.join('|')})@)?(?:(?<pseudo>${PSEUDO_STR}):)?(?<source>[^:@]+)$`)
     const res = classStr.match(queryAndPesudoRegex)
@@ -57,6 +52,20 @@ export function filterClass (classStr) {
     const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
     const res = source.match(reg)
     if (res !== null) {
+      const { unit, num } = res.groups || {}
+      const unit1 = getUnit(num, unit)
+
+      if (isPxtorem && unit1 === 'px' && num) {
+        Object.assign(res.groups, {
+          num  : pxtorem(num),
+          unit : 'rem'
+        })
+      } else {
+        Object.assign(res.groups, {
+          unit: unit1
+        })
+      }
+
       let renderResult = rule.render(res)
 
       handleCssPipe.forEach(handle => {

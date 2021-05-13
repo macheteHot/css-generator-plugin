@@ -14,4 +14,9 @@ module.exports = {
     // lg : '(min-width: 1024px)',
     // xl : '(min-width: 1280px)'
   }
+  // pxtorem: {
+  //   rootValue     : 16, // 表示根元素字体大小或基于输入参数返回根元素字体大小 1px -> 1/16rem
+  //   unitPrecision : 5, // 允许REM小数单位精度
+  //   minPixelValue : 1 // 不会被转换的最小像素值
+  // }
 }

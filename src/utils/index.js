@@ -1,3 +1,6 @@
+import { PX_TO_REM } from '../constant'
+import { getConfig } from '../config'
+
 export function isFunction (payload) {
   return typeof payload === 'function'
 }
@@ -30,4 +33,16 @@ export function getDirectionOrder (order, direction) {
     case 'l':
       return order + 60
   }
+}
+
+export function pxtorem (number) {
+  const { rootValue = 16, unitPrecision = 5, minPixelValue = 1 } = getConfig(PX_TO_REM)
+
+  const pixels = parseFloat(number)
+  if (pixels < minPixelValue) return number
+
+  const unitPrecisionTimes = Math.pow(10, unitPrecision)
+  const v = Math.floor(pixels / rootValue * unitPrecisionTimes) / unitPrecisionTimes
+
+  return v
 }

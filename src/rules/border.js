@@ -2,7 +2,6 @@
  * order 520 460 + 60
  */
 import { UNIT_ENUM_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
-import { getUnit } from '../config'
 import { getDirectionOrder } from '../utils/index'
 
 const getOrder = direction => getDirectionOrder(460, direction)
@@ -22,8 +21,7 @@ function getCss (direction, num, unit) {
 export default {
   regExp: new RegExp(`^(border|border-width|border-w)-((?<direction>[trblxy])-)?(?<num>${NONNEGATIVE_NUMBER_REGEX_STR})(?<unit>${UNIT_ENUM_STR})?$`),
   render ({ groups }) {
-    let { direction, num, unit } = groups
-    unit = getUnit(num, unit)
+    const { direction, num, unit } = groups
     return {
       name  : direction ? `border-${direction}` : 'border',
       order : getOrder(direction),

@@ -2,7 +2,7 @@
  * 50 - 180 order
  */
 import { UNIT_ENUM_STR, DIRECTION_MAP, NONNEGATIVE_NUMBER_REGEX_STR } from '../constant'
-import { getUnit } from '../config'
+
 import { getDirectionOrder } from '../utils/index'
 
 function getConfig (type, direction) {
@@ -30,8 +30,6 @@ export default {
     if (auto) {
       unit = ''
       num = 'auto'
-    } else {
-      unit = getUnit(num, unit)
     }
     // if has auto never has isMinus
     if (isMinus) {

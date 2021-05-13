@@ -1,4 +1,4 @@
-import { initHandleCssPipe, filterClassNames } from './filterClass'
+import { filterClassNames } from './filterClass'
 import { renderCss } from './preRender'
 import { getConfig } from './config'
 import { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION } from './constant'
@@ -50,7 +50,6 @@ function logUseTime () {
 
 export function init (compiler) {
   setTimeStart()
-  initHandleCssPipe()
   filterClassNames(getAllFileClassStr())
   wirteToFile()
   setTimeEnd()
