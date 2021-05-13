@@ -6,6 +6,7 @@ export const GENERATE = 'generate' // 必填 生成地址
 export const UNIT = 'unit' // 选填 单位
 export const IMPORTANT = 'important' // 选填 单位
 export const GLOB_REG = 'globReg'
+export const PX_TO_REM = 'pxtorem' // px转rem配置
 // 以下是项目配置 不从配置文件读
 export const EXT_NAME = 'extNames'
 export const MODIFY_RULES = 'modifyRules'

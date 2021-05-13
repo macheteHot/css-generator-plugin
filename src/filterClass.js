@@ -1,11 +1,20 @@
 
 // 用来去重
 import * as rules from './rules/index'
-import { pushPreObj, pushQuery } from './preRender'
-import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERIES, PSEUDO_STR } from './constant'
+import { pushPreObj, pushQuery, pxtorem } from './preRender'
+import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERIES, PSEUDO_STR, PX_TO_REM } from './constant'
 import { getConfig, getUnit } from './config'
 import { isFunction } from './utils/index'
 const cssSet = new Set()
+const handleCssPipe = new Set()
+
+export function initHandleCssPipe () {
+  const pxtoremConfig = getConfig(PX_TO_REM)
+
+  if (pxtoremConfig && typeof pxtoremConfig === 'object') {
+    handleCssPipe.add(pxtorem)
+  }
+}
 
 export function filterClassNames (sourceStr) {
   // cssSet.clear() // 清空set
@@ -20,6 +29,7 @@ export function filterClassNames (sourceStr) {
   }
   return ''
 }
+
 export function filterClass (classStr) {
   if (cssSet.has(classStr)) {
     return null
@@ -47,7 +57,18 @@ export function filterClass (classStr) {
     const reg = isFunction(rule.regExp) ? rule.regExp() : rule.regExp
     const res = source.match(reg)
     if (res !== null) {
-      const params = { classStr, ...rule.render(res), pseudo }
+      let renderResult = rule.render(res)
+
+      handleCssPipe.forEach(handle => {
+        renderResult = handle(renderResult)
+      })
+
+      const params = {
+        classStr,
+        ...renderResult,
+        pseudo
+      }
+
       if (query) {
         pushQuery(query, params)
       } else {
