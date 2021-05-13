@@ -62,7 +62,7 @@ const CssGeneratorPlugin = require('css-generator-plugin')
       type: 'vue', // 必填项。项目类型  vue react d-mini-program(钉钉小程序) wx-mini-program(微信小程序) html(纯html 会扫描 .html 后缀名文件)
       unit: 'px', // 可选项。默认单位
       important: true, // 可选项。默认为true。css是否添加！important
-      pxtorem: {
+      pxtorem: { // 如果不写就不会转换
         rootValue: 16, // 表示根元素字体大小或基于输入参数返回根元素字体大小 1px -> 1/16rem
         unitPrecision: 5, // 允许REM小数单位精度
         minPixelValue: 1 // 不会被转换的最小像素值
