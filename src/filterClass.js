@@ -4,8 +4,7 @@ import * as rules from './rules/index'
 import { pushPreObj, pushQuery } from './preRender'
 import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERIES, PSEUDO_STR, PX_TO_REM } from './constant'
 import { getConfig, getUnit } from './config'
-import { pxtorem } from './utils/index'
-import { isFunction, isObject } from 'lodash'
+import { pxtorem, isFunction, isObject } from './utils/index'
 const cssSet = new Set()
 const handleCssPipe = new Set()
 
@@ -56,14 +55,15 @@ export function filterClass (classStr) {
       const { unit, num } = res.groups || {}
       const unit1 = getUnit(num, unit)
 
-      if (isPxtorem && unit1 === 'px' && num) {
-        Object.assign(res.groups, {
-          num  : pxtorem(num),
-          unit : 'rem'
-        })
-      }
       if (isObject(res.groups)) {
-        Object.assign(res.groups, { unit: unit1 })
+        if (isPxtorem && unit1 === 'px' && num) {
+          Object.assign(res.groups, {
+            num  : pxtorem(num),
+            unit : 'rem'
+          })
+        } else {
+          Object.assign(res.groups, { unit: unit1 })
+        }
       }
 
       let renderResult = rule.render(res)

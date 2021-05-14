@@ -1,6 +1,6 @@
 import { IMPORTANT, MEDIA_QUERIES, BASE_MEDIA_QUERY } from './constant'
 import { getConfig } from './config'
-import { groupBy } from 'lodash'
+import { groupBy } from './utils'
 
 let preArray = []
 const queryObj = { }

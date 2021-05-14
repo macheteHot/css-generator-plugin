@@ -2,11 +2,14 @@
 
 
 ### 更新记录
+  2.2.0
+  + bugFix: 修复了`pxToRem`失效问题
+
   2.1.9
   + bugFix: 修复了2.1.8的打包bug
 
   2.1.8
-  + feat: 增加了`pxtorem`的能力
+  + feat: 增加了`pxTorem`的能力
 
   2.1.7
   + bugFix: border 属性修复了方向顺序的错误 现在单独方向会覆盖多方向属性

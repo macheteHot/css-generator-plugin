@@ -1,6 +1,7 @@
 import json from '@rollup/plugin-json'
 import { terser } from 'rollup-plugin-terser'
 import shebang from '@robmarr/rollup-plugin-shebang'
+import rollupResolve from '@rollup/plugin-node-resolve'
 const configList = [
   {
     input  : 'src/scriptUse.js',
@@ -25,7 +26,9 @@ const configList = [
     plugins: [
       json(),
       terser(),
-      shebang()
+      shebang(),
+      rollupResolve()
+
     ]
   },
   {
@@ -37,14 +40,16 @@ const configList = [
     plugins: [
       json(),
       terser(),
-      shebang()
+      shebang(),
+      rollupResolve()
     ]
   }
 ]
 const defaultConfig = {
   plugins: [
     json(),
-    terser()
+    terser(),
+    rollupResolve()
   ]
 }
 
