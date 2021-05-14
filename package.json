@@ -1,7 +1,7 @@
 {
   "name": "css-generator-plugin",
   "description": "css file generator only write class name",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "license": "MIT",
   "bin": {
     "css-generator": "./dist/css-generator",
@@ -48,6 +48,7 @@
     "chokidar": "^3.4.0",
     "commander": "^5.1.0",
     "glob": "^7.1.6",
+    "lodash": "^4.17.21",
     "require-all": "^3.0.0",
     "shelljs": "^0.8.4"
   },

@@ -4,7 +4,8 @@ import * as rules from './rules/index'
 import { pushPreObj, pushQuery } from './preRender'
 import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERIES, PSEUDO_STR, PX_TO_REM } from './constant'
 import { getConfig, getUnit } from './config'
-import { isFunction, pxtorem } from './utils/index'
+import { pxtorem } from './utils/index'
+import { isFunction, isObject } from 'lodash'
 const cssSet = new Set()
 const handleCssPipe = new Set()
 
@@ -29,7 +30,7 @@ export function filterClass (classStr) {
   let query; let pseudo; let source = classStr
   const queryNames = [...BASE_MEDIA_QUERY_KEY, ...Object.keys(getConfig(MEDIA_QUERIES))]
   const pxtoremConfig = getConfig(PX_TO_REM)
-  const isPxtorem = typeof pxtoremConfig === 'object'
+  const isPxtorem = isObject(pxtoremConfig)
 
   if (/[@:]/.test(classStr)) {
     const queryAndPesudoRegex = new RegExp(`^(?:(?<query>${queryNames.join('|')})@)?(?:(?<pseudo>${PSEUDO_STR}):)?(?<source>[^:@]+)$`)
@@ -60,10 +61,9 @@ export function filterClass (classStr) {
           num  : pxtorem(num),
           unit : 'rem'
         })
-      } else {
-        Object.assign(res.groups, {
-          unit: unit1
-        })
+      }
+      if (isObject(res.groups)) {
+        Object.assign(res.groups, { unit: unit1 })
       }
 
       let renderResult = rule.render(res)
