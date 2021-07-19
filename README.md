@@ -1,22 +1,7 @@
 # css-generator-plugin 自动生成css文件，高效开发页面
 
 
-### 更新记录
-  2.2.0
-  + bugFix: 修复了`pxToRem`失效问题
-
-  2.1.9
-  + bugFix: 修复了2.1.8的打包bug
-
-  2.1.8
-  + feat: 增加了`pxTorem`的能力
-
-  2.1.7
-  + bugFix: border 属性修复了方向顺序的错误 现在单独方向会覆盖多方向属性
-
-  2.1.5  
-  + bugFix: ellipsis 属性移除了 display: inline-block 生成
-    
+ # [更新记录](./CHANGE.md)
 ### 如何使用
 
 + 安装依赖
@@ -68,10 +53,11 @@ const CssGeneratorPlugin = require('css-generator-plugin')
       type: 'vue', // 必填项。项目类型  vue react d-mini-program(钉钉小程序) wx-mini-program(微信小程序) html(纯html 会扫描 .html 后缀名文件)
       unit: 'px', // 可选项。默认单位
       important: true, // 可选项。默认为true。css是否添加！important
-      pxtorem: { // 如果不写就不会转换
+      vToAny: { // 如果不写就不会转换
+        unit:'rem', // 默认转换后的单位
         rootValue: 16, // 表示根元素字体大小或基于输入参数返回根元素字体大小 1px -> 1/16rem
-        unitPrecision: 5, // 允许REM小数单位精度
-        minPixelValue: 1 // 不会被转换的最小像素值
+        unitPrecision: 5, // 允许小数单位精度
+        minPixelValue: 1 // 不会被转换的最小值
       }
     })
   ]
@@ -95,11 +81,12 @@ module.exports = {
 
   },
   important: true, // 可选项。默认为true。css是否添加！important
-  pxtorem: {
-    rootValue: 16, // 表示根元素字体大小或基于输入参数返回根元素字体大小 1px -> 1/16rem
-    unitPrecision: 5, // 允许REM小数单位精度
-    minPixelValue: 1 // 不会被转换的最小像素值
-  }
+  vToAny: { // 如果不写就不会转换
+        unit:'rem', // 默认转换后的单位
+        rootValue: 16, // 表示根元素字体大小或基于输入参数返回根元素字体大小 1px -> 1/16rem
+        unitPrecision: 5, // 允许小数单位精度
+        minPixelValue: 1 // 不会被转换的最小值
+      }
 }
 ```
 + 运行指令(建议配置到package.json的scripts)

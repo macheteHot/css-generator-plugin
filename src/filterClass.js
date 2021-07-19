@@ -2,9 +2,9 @@
 // 用来去重
 import * as rules from './rules/index'
 import { pushPreObj, pushQuery } from './preRender'
-import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERIES, PSEUDO_STR, PX_TO_REM } from './constant'
+import { GLOB_REG, MODIFY_RULES, BASE_MEDIA_QUERY_KEY, MEDIA_QUERIES, PSEUDO_STR, V_TO_ANY } from './constant'
 import { getConfig, getUnit } from './config'
-import { pxtorem, isFunction, isObject } from './utils/index'
+import { v2any, isFunction, isObject } from './utils/index'
 const cssSet = new Set()
 const handleCssPipe = new Set()
 
@@ -28,8 +28,8 @@ export function filterClass (classStr) {
   }
   let query; let pseudo; let source = classStr
   const queryNames = [...BASE_MEDIA_QUERY_KEY, ...Object.keys(getConfig(MEDIA_QUERIES))]
-  const pxtoremConfig = getConfig(PX_TO_REM)
-  const isPxtorem = isObject(pxtoremConfig)
+  const v2anyConfig = getConfig(V_TO_ANY)
+  const isV2any = isObject(v2anyConfig)
 
   if (/[@:]/.test(classStr)) {
     const queryAndPesudoRegex = new RegExp(`^(?:(?<query>${queryNames.join('|')})@)?(?:(?<pseudo>${PSEUDO_STR}):)?(?<source>[^:@]+)$`)
@@ -56,10 +56,10 @@ export function filterClass (classStr) {
       const unit1 = getUnit(num, unit)
 
       if (isObject(res.groups)) {
-        if (isPxtorem && unit1 === 'px' && num) {
+        if (isV2any && unit1 === 'v' && num) {
           Object.assign(res.groups, {
-            num  : pxtorem(num),
-            unit : 'rem'
+            num  : v2any(num),
+            unit : v2anyConfig.unit
           })
         } else {
           Object.assign(res.groups, { unit: unit1 })

@@ -78,6 +78,12 @@ window.onload = () => {
     // pxtorem: {
     //   rootValue: 100
     // },
+    // vToAny: { // 如果不写就不会转换
+    //   unit          : 'rem', // 默认转换后的单位
+    //   rootValue     : 16, // 表示根元素字体大小或基于输入参数返回根元素字体大小 1px -> 1/16rem
+    //   unitPrecision : 5, // 允许小数单位精度
+    //   minPixelValue : 1 // 不会被转换的最小值
+    // },
     modifyRules: {
       // zIndex: ({ getUnit }) => {
       //   return {

@@ -1,4 +1,4 @@
-import { PX_TO_REM } from '../constant'
+import { V_TO_ANY } from '../constant'
 import { getConfig } from '../config'
 
 export function isFunction (payload) {
@@ -39,8 +39,8 @@ export function getDirectionOrder (order, direction) {
   }
 }
 
-export function pxtorem (number) {
-  const { rootValue = 16, unitPrecision = 5, minPixelValue = 1 } = getConfig(PX_TO_REM)
+export function v2any (number) {
+  const { rootValue = 16, unitPrecision = 5, minPixelValue = 1 } = getConfig(V_TO_ANY)
 
   const pixels = parseFloat(number)
   if (pixels < minPixelValue) return number
