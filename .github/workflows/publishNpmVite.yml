@@ -1,0 +1,25 @@
+name: publish vite-plugin to npm
+
+on:
+  push:
+    tags:
+      - v*.*.*
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: vite
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 15
+          registry-url: https://registry.npmjs.org/
+      - run: |
+        yarn
+        yarn build
+        npm publish
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
