@@ -475,12 +475,11 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
          * 如需覆盖自带属性 则属性名 相同
          * 此处值 为 object 或者 函数 函数必须返回相同格式的对象
          * 函数可接受 自带工具 工具有
-         * getUnit 将单位根据默认值进行转换
          * textToRgbText 将16进制颜色 或定义的颜色转为rgba语法
          * getColorsKey 获取所有定义的颜色的key数组
          * getColors 获取所有定义的颜色的对象
          */
-       zIndex: ({ getUnit }) => { 
+       zIndex: ({ textToRgbText,getColorsKey,getColors }) => { 
          return {
            /**
             * 此处必须存在 regExp 为正则表达式 或 函数 函数必须返回正则表达式
