@@ -9,6 +9,6 @@ export default {
   render ({ groups }) {
     let { num = Infinity, unit, value } = groups
     if (!value) { value = num + unit }
-    return { name: 'gap', order: 581, num, css: [`row-gap: ${value}`] }
+    return { name: 'row-gap', order: 581, num, css: [`row-gap: ${value}`] }
   }
 }

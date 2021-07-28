@@ -2,7 +2,8 @@ import {
   JUSTIFY_CONTENT_ENUM,
   ALIGN_ITEMS_ENUM,
   CURSOR_ENUM,
-  VERTICAL_ALIGN_ENUM
+  VERTICAL_ALIGN_ENUM,
+  GAP_ENUM
 } from './constant'
 const fs = require('fs')
 const path = require('path')
@@ -470,7 +471,30 @@ function getRegList () {
         })
         return str
       }
+    },
+    {
+      className: 'gap',
+      render () {
+        let str = '';
+        [...GAP_ENUM, ...NUM_WIDTH_UNIT].forEach(s => {
+          str += `.gap-${s}{}`
+        })
+        return str
+      }
+    },
+    {
+      className: 'column-gap',
+      render () {
+        let str = '';
+        ['c', 'column', 'r', 'row'].forEach(t => {
+          [...GAP_ENUM, ...NUM_WIDTH_UNIT].forEach(s => {
+            str += `.${t}-gap-${s}{}`
+          })
+        })
+        return str
+      }
     }
+
   ]
 }
 

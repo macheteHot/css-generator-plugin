@@ -22,7 +22,7 @@ const UNIT_ENUM = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 
 
 const PSEUDO_ENUM = ['active', 'any-link', 'blank', 'checked', 'current', 'default', 'defined', 'disabled', 'drop', 'empty', 'enabled', 'first', 'first-child', 'first-of-type', 'fullscreen', 'future', 'focus', 'focus-visible', 'focus-within', 'host', 'hover', 'indeterminate', 'in-range', 'invalid', 'last-child', 'last-of-type', 'left', 'link', 'local-link', 'only-child', 'only-of-type', 'optional', 'out-of-range', 'past', 'placeholder-shown', 'read-only', 'read-write', 'required', 'right', 'root', 'scope', 'target', 'target-within', 'user-invalid', 'valid', 'visited']
 
-const GAP_ENUM = ['unset', 'initial', 'inherit']
+export const GAP_ENUM = ['unset', 'initial', 'inherit', 'normal']
 
 export const VERTICAL_ALIGN_ENUM = ['baseline', 'sub', 'super', 'text-top', 'text-bottom', 'middle', 'top', 'bottom', 'inherit', 'initial', 'unset']
 export const PSEUDO_STR = toRegexStr(PSEUDO_ENUM)
