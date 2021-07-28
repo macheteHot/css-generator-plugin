@@ -20,15 +20,18 @@ export const CURSOR_ENUM = ['auto', 'default', 'none', 'context-menu', 'help', '
 
 const UNIT_ENUM = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 'vw', 'vh', 'vmin', 'vmax', 'p', 'v']
 
-const PSEUDO_LIST = ['active', 'any-link', 'blank', 'checked', 'current', 'default', 'defined', 'disabled', 'drop', 'empty', 'enabled', 'first', 'first-child', 'first-of-type', 'fullscreen', 'future', 'focus', 'focus-visible', 'focus-within', 'host', 'hover', 'indeterminate', 'in-range', 'invalid', 'last-child', 'last-of-type', 'left', 'link', 'local-link', 'only-child', 'only-of-type', 'optional', 'out-of-range', 'past', 'placeholder-shown', 'read-only', 'read-write', 'required', 'right', 'root', 'scope', 'target', 'target-within', 'user-invalid', 'valid', 'visited']
+const PSEUDO_ENUM = ['active', 'any-link', 'blank', 'checked', 'current', 'default', 'defined', 'disabled', 'drop', 'empty', 'enabled', 'first', 'first-child', 'first-of-type', 'fullscreen', 'future', 'focus', 'focus-visible', 'focus-within', 'host', 'hover', 'indeterminate', 'in-range', 'invalid', 'last-child', 'last-of-type', 'left', 'link', 'local-link', 'only-child', 'only-of-type', 'optional', 'out-of-range', 'past', 'placeholder-shown', 'read-only', 'read-write', 'required', 'right', 'root', 'scope', 'target', 'target-within', 'user-invalid', 'valid', 'visited']
+
+const GAP_ENUM = ['unset', 'initial', 'inherit']
+
 export const VERTICAL_ALIGN_ENUM = ['baseline', 'sub', 'super', 'text-top', 'text-bottom', 'middle', 'top', 'bottom', 'inherit', 'initial', 'unset']
-export const PSEUDO_STR = toRegexStr(PSEUDO_LIST)
+export const PSEUDO_STR = toRegexStr(PSEUDO_ENUM)
 export const JUSTIFY_CONTENT_ENUM_STR = toRegexStr(JUSTIFY_CONTENT_ENUM)
 export const ALIGN_ITEMS_ENUM_STR = toRegexStr(ALIGN_ITEMS_ENUM)
 export const CURSOR_ENUM_STR = toRegexStr(CURSOR_ENUM)
 export const UNIT_ENUM_STR = toRegexStr(UNIT_ENUM)
 export const VERTICAL_ALIGN_STR = toRegexStr(VERTICAL_ALIGN_ENUM)
-
+export const GAP_ENUM_STR = toRegexStr(GAP_ENUM)
 // 文件开头
 export let CSS_ANNOTATION = ''
 CSS_ANNOTATION += '@charset "UTF-8";\n'
