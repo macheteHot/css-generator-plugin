@@ -1,3 +1,6 @@
+  2.3.4
+  + 版本号同步
+
   2.3.3
   + feat ✨ : 新增 gap column-gap row-gap
 
