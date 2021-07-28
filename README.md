@@ -84,16 +84,6 @@ const CssGeneratorPlugin = require('css-generator-plugin')
   ]
 };
 ```
-### vite 启动
-```js
-export default defineConfig({
-  plugins: [
-    vue(),
-    CssGenerator()
-  ]
-})
-```
-
 ### 命令行启动(如小程序类和老项目，无webpack)
 
 

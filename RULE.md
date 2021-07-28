@@ -42,6 +42,7 @@ hover|link|visited|active|focus|focus-within 等伪类 后接属性 如 hover:c-
 ### 单位约定  
 ```text
 + p为百分比%的缩写。默认不传为px
++ v为可变单位 例如 w-10 => 10 / 16 =>  width: 0.625rem (在配置文件中编写 <big>vToAny</big> 生效)
 ```
 ```javascript
 const UNIT_ENUM = ['cm', 'mm', 'in', 'px', 'pt', 'pc', 'em', 'ex', 'ch', 'rem', 'vw', 'vh', 'vmin', 'vmax', 'p']
@@ -424,8 +425,60 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
     ```javascript
     regExp: /^(text-)?ellipsis-[1-9]\d*$/
     ```
+  * 间距
 
+    #### gap-((数值(单位)?)|其他参数)
+    ```css
+    .gap-20 {
+      column-gap:20px;
+      row-gap:20px;
+    }
+    .gap-20p {
+      column-gap:20%;
+      row-gap:20%;
+    }
+    .gap-unset {
+      column-gap:unset;
+      row-gap:unset;
+    }
+    ```
+    ```javascript
+    regExp: /^gap-((<数字><单位>?)|inherit|initial|unset)*$/
+    ```
+  * 列间距
 
+    #### column-gap-((数值(单位)?)|其他参数)
+    ```css
+    .column-gap-20 {
+      column-gap:20px;
+    }
+    .column-gap-20p {
+      column-gap:20%;
+    }
+    .column-gap-unset {
+      column-gap:unset;
+    }
+    ```
+    ```javascript
+    regExp: /^column-gap-((<数字><单位>?)|inherit|initial|unset)*$/
+    ```
+  * 行间距
+
+    #### row-gap-((数值(单位)?)|其他参数)
+    ```css
+    .row-gap-20 {
+      row-gap:20px;
+    }
+    .row-gap-20p {
+      row-gap:20%;
+    }
+    .row-gap-unset {
+      row-gap:unset;
+    }
+    ```
+    ```javascript
+    regExp: /^row-gap-((<数字><单位>?)|inherit|initial|unset)*$/
+    ```
 ### 进阶使用
 + 关于 modifyRules 可覆盖属性如下
   + alignItems
@@ -435,6 +488,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
   + boxSizing
   + circle
   + color
+  + columnGap
   + cursor
   + display
   + flexBasis
@@ -445,7 +499,9 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
   + flexWrap
   + fontSize
   + fontWeight
+  + gap
   + height
+  + index
   + justifyContent
   + letterSpacing
   + lineHeight
@@ -459,15 +515,18 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
   + orientation
   + overflow
   + position
+  + rowGap
   + square
   + textAlign
   + textAlignLast
   + textDecoration
   + textEllipsis
   + userSelect
+  + verticalAlign
   + width
   + wordBreak
   + zIndex
+
   ### 说明如下
   ```javascript
   modifyRules: {

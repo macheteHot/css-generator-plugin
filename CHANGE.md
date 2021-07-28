@@ -1,3 +1,9 @@
+  2.3.3
+  + feat ✨ : 新增 gap column-gap row-gap
+
+  2.3.2
+  + doc  📖 : 文档修改
+
   2.3.1
   + feat ✨ : 新增 vite-plugin
 
