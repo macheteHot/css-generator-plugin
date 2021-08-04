@@ -493,6 +493,16 @@ function getRegList () {
         })
         return str
       }
+    },
+    {
+      className: 'visibility',
+      render () {
+        let str = '';
+        ['visible', 'hidden', 'collapse', 'inherit', 'initial', 'revert', 'unset'].forEach(t => {
+          str += `.visibility-${t}{}`
+        })
+        return str
+      }
     }
 
   ]

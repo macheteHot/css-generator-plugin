@@ -1,4 +1,3 @@
-
 /**
  * order 590
  */
@@ -8,6 +7,6 @@ export default {
   regExp: new RegExp(`^visibility-(?<value>${toRegexStr(list)})$`),
   render ({ groups }) {
     const { value } = groups
-    return { name: 'visibility', order: 590, css: [`visible-${value}: ${value}`] }
+    return { name: 'visibility', order: 590, css: [`visibility-${value}: ${value}`] }
   }
 }

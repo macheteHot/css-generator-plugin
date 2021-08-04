@@ -1,3 +1,7 @@
+  2.3.7
+  + feat ✨ : genSnippets 新增 visibility gap 属性
+  + fix 🐛: 修复了`visibility` 生成的问题
+
   2.3.5
   + feat ✨ : 新增 visibility
   + fix 🐛: 修复了`z-index` 转换单位的问题
