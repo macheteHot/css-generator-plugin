@@ -479,6 +479,15 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
     ```javascript
     regExp: /^row-gap-((<数字><单位>?)|inherit|initial|unset)*$/
     ```
+    #### visibility-(值)
+    ```css
+    .visibility-hidden {
+      visibility: hidden;
+    }
+    .visibility-visible {
+      visibility: visible;
+    }
+    ```
 ### 进阶使用
 + 关于 modifyRules 可覆盖属性如下
   + alignItems
@@ -523,6 +532,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
   + textEllipsis
   + userSelect
   + verticalAlign
+  + visibility
   + width
   + wordBreak
   + zIndex
@@ -537,8 +547,11 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
          * textToRgbText 将16进制颜色 或定义的颜色转为rgba语法
          * getColorsKey 获取所有定义的颜色的key数组
          * getColors 获取所有定义的颜色的对象
+         * UNIT_ENUM_STR 捕获单位的正则字符串
+         * NONNEGATIVE_NUMBER_REGEX_STR 捕获数字的正则字符串
+         * DIRECTION_MAP 方向定义的 map
          */
-       zIndex: ({ textToRgbText,getColorsKey,getColors }) => { 
+       zIndex: ({ textToRgbText, getColorsKey, getColors, UNIT_ENUM_STR, NONNEGATIVE_NUMBER_REGEX_STR, DIRECTION_MAP }) => { 
          return {
            /**
             * 此处必须存在 regExp 为正则表达式 或 函数 函数必须返回正则表达式
@@ -547,6 +560,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
             * render 函数必须返回 name:String order:Number css:Array<String>
             * 将会使用 render 返回的结果 生成css
             * 如果导出 num 则会按照num 组内渲染排序 与其他css 排序无关
+            * 如果捕获组有 unit 会自动处理单位问题
             */
            regExp: /^zindex-(?<isMinus>m-)?(?<num>0|[1-9]\d*)$/,
            render ({ groups }) {
@@ -554,7 +568,7 @@ const UNIT_ENUM_STR = UNIT_ENUM.join('|')
              if (isMinus) {
                num = 0 - num
              }
-             return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}${getUnit(num,'')}`] }
+             return { name: 'zIndex', order: 190, num, css: [`z-index: ${num}] }
            }
          }
        }

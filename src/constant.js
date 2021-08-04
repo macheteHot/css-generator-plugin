@@ -1,5 +1,5 @@
 import { version } from '../package.json'
-const toRegexStr = _ => _.join('|')
+export const toRegexStr = _ => _.join('|')
 export const COLORS = 'colors' // 选填
 export const DIR_PATH = 'dirPath' // 必填
 export const GENERATE = 'generate' // 必填 生成地址
