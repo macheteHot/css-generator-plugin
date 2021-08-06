@@ -1,3 +1,6 @@
+  2.3.8
+  + fix 🐛: 修复了`ellipsis`多行时 vToAny 转换的问题
+
   2.3.7
   + feat ✨ : genSnippets 新增 visibility gap 属性
   + fix 🐛: 修复了`visibility` 生成的问题

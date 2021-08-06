@@ -3,14 +3,14 @@
  */
 
 export default {
-  regExp: /^(text-)?ellipsis(-(?<num>[1-9]\d*))?$/,
+  regExp: /^(text-)?ellipsis(-(?<value>[1-9]\d*))?$/,
   render ({ groups }) {
-    let { num } = groups
+    let { value } = groups
     const base = { name: 'ellipsis', order: 450 }
-    if (Number(num) === 1) {
-      num = undefined // 和没写是一样的
+    if (Number(value) === 1) {
+      value = undefined // 和没写是一样的
     }
-    if (num === undefined) {
+    if (value === undefined) {
       return {
         ...base,
         num : 0,
@@ -23,12 +23,12 @@ export default {
     } else {
       return {
         ...base,
-        num,
-        css: [
+        num : value,
+        css : [
           'overflow: hidden',
           'text-overflow: ellipsis',
           'display: -webkit-box',
-          `-webkit-line-clamp: ${num}`,
+          `-webkit-line-clamp: ${value}`,
           '-webkit-box-orient: vertical'
         ]
       }
