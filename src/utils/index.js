@@ -1,6 +1,6 @@
 import { V_TO_ANY } from '../constant'
 import { getConfig } from '../config'
-
+import BigNumber from 'bignumber.js'
 export function isFunction (payload) {
   return Object.prototype.toString.call(payload) === '[object Function]'
 }
@@ -39,14 +39,10 @@ export function getDirectionOrder (order, direction) {
   }
 }
 
-export function v2any (number) {
+export function v2any (num) {
   const { rootValue = 16, unitPrecision = 5, minPixelValue = 1 } = getConfig(V_TO_ANY)
 
-  const pixels = parseFloat(number)
-  if (pixels < minPixelValue) return number
+  if (Number(num) < minPixelValue) { return num }
 
-  const unitPrecisionTimes = Math.pow(10, unitPrecision)
-  const v = Math.floor(pixels / rootValue * unitPrecisionTimes) / unitPrecisionTimes
-
-  return v
+  return new BigNumber(num).div(rootValue).decimalPlaces(unitPrecision)
 }
