@@ -1,7 +1,7 @@
 {
   "name": "css-generator-plugin",
   "description": "css file generator only write class name",
-  "version": "2.3.9",
+  "version": "2.3.91",
   "license": "MIT",
   "bin": {
     "css-generator": "./dist/css-generator",
@@ -46,6 +46,7 @@
     "rollup-plugin-terser": "^6.1.0"
   },
   "dependencies": {
+    "bignumber.js": "^9.0.1",
     "chokidar": "^3.4.0",
     "commander": "^5.1.0",
     "glob": "^7.1.6",

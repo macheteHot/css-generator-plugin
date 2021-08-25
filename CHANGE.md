@@ -1,8 +1,11 @@
-  2.3.9
+  2.3.91 
   + fix 🐛: 修复了小程序不会捕获单引号内的class 问题
+  
+  2.3.9
+  + fix 🐛: 修复了`vToAny` 转换精度问题
 
   2.3.8
-  + fix 🐛: 修复了`ellipsis`多行时 vToAny 转换的问题
+  + fix 🐛: 修复了`ellipsis` 多行时 vToAny 转换的问题
 
   2.3.7
   + feat ✨ : genSnippets 新增 visibility gap 属性
