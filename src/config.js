@@ -6,23 +6,23 @@ let programConfig = {
 const runType = {
   vue: {
     [EXT_NAME] : ['vue'],
-    reg        : /((?<=class=(["']))[\s\S]*?(?=\2))|((?<=class={)[\s\S]*?(?=}))/gi
+    reg        : /(?:(?<=class=(["']))[\s\S]*?(?=\1))|((?<=class={)[\s\S]*?(?=}))/gi
   },
   react: {
     [EXT_NAME] : ['tsx', 'jsx'],
-    reg        : /((?<=className=(["']))[\s\S]*?(?=\2))|((?<=className={)[\s\S]*?(?=}))/gi
+    reg        : /(?:(?<=className=(["']))[\s\S]*?(?=\1))|((?<=className={)[\s\S]*?(?=}))/gi
   },
   'd-mini-program': { // 钉钉小程序
     [EXT_NAME] : ['axml'],
-    reg        : /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
+    reg        : /(?:(?<=class=(["']))|(?<=classname="))[\s\S]+?(?=\1)/gi
   },
   'wx-mini-program': { // 微信小程序
     [EXT_NAME] : ['wxml'],
-    reg        : /((?<=class=")|(?<=classname="))[\s\S]+?(?=")/gi
+    reg        : /(?:(?<=class=(["']))|(?<=classname="))[\s\S]+?(?=\1)/gi
   },
   html: { // 单纯 html
     [EXT_NAME] : ['html'],
-    reg        : /((?<=class=(["']))[\s\S]*?(?=\2))/gi
+    reg        : /(?:(?<=class=(["']))[\s\S]*?(?=\1))/gi
   }
 }
 export function getConfig (str) {
