@@ -2,7 +2,8 @@ import json from '@rollup/plugin-json'
 import { terser } from 'rollup-plugin-terser'
 import shebang from '@robmarr/rollup-plugin-shebang'
 import rollupResolve from '@rollup/plugin-node-resolve'
-
+import pluginReplace from '@rollup/plugin-replace'
+import { babel } from '@rollup/plugin-babel'
 const configList = [
   {
     input  : 'src/viteUse.js',
@@ -15,13 +16,26 @@ const configList = [
     input  : 'src/scriptUse.js',
     output : [
       {
-        file   : 'dist/webpack/gcss.js',
-        format : 'iife'
+        file    : 'dist/script/gcss.js',
+        exports : 'default',
+        format  : 'iife',
+        name    : 'Gcss'
       },
       {
-        file   : 'dist/vite/gcss.js',
-        format : 'iife'
+        file    : 'dist/script/index.js',
+        exports : 'default',
+        format  : 'esm'
       }
+    ],
+    plugins: [
+      pluginReplace({
+        'process.env.inBrowser' : true,
+        preventAssignment       : true
+      }),
+      babel({
+        babelHelpers       : 'runtime',
+        skipPreflightCheck : true
+      })
     ]
   },
   {

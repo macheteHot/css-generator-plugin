@@ -1,6 +1,24 @@
 import { V_TO_ANY } from '../constant'
 import { getConfig } from '../config'
-import BigNumber from 'bignumber.js'
+
+function accDiv (arg1, arg2) {
+  let t1 = 0
+  let t2 = 0
+  try {
+    t1 = arg1.toString().split('.')[1].length
+  } catch (e) {
+    console.error(e)
+  }
+  try {
+    t2 = arg2.toString().split('.')[1].length
+  } catch (e) {
+    console.error(e)
+  }
+  const r1 = Number(arg1.toString().replace('.', ''))
+  const r2 = Number(arg2.toString().replace('.', ''))
+  return (r1 / r2) * Math.pow(10, t2 - t1)
+}
+
 export function isFunction (payload) {
   return Object.prototype.toString.call(payload) === '[object Function]'
 }
@@ -40,9 +58,8 @@ export function getDirectionOrder (order, direction) {
 }
 
 export function v2any (num) {
+  num = Number(num)
   const { rootValue = 16, unitPrecision = 5, minPixelValue = 1 } = getConfig(V_TO_ANY)
-
-  if (Number(num) < minPixelValue) { return num }
-
-  return new BigNumber(num).div(rootValue).decimalPlaces(unitPrecision)
+  if (num < minPixelValue) { return num }
+  return Number(accDiv(num, rootValue).toFixed(unitPrecision))
 }

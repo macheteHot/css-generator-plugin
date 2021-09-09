@@ -21,9 +21,25 @@ const cssSet = new Set()
 const handleCssPipe = new Set()
 
 export function filterClassNames (sourceStr) {
-  // cssSet.clear() // 清空set
-  // clearPreArray() // 清空预编译
   const classNameList = sourceStr.match(getConfig(GLOB_REG))
+  if (classNameList) {
+    classNameList.forEach(hasClassNameStr => {
+      // 替换我们规则中不会出现的字符 替换成空格 注意前后必须有空格 可能导致拼接合法 会多生成几条 无所谓
+      const className = hasClassNameStr.replace(/[^a-zA-Z0-9-@:#.]/g, ' ')
+      className.split(' ').forEach(filterClass)
+    })
+  }
+  return ''
+}
+
+export function filterClassNamesByScriptUse (sourceStr) {
+  const classNameList = []
+  const regex = /(?:(?:class=(["']))([\s\S]*?)(?:\1))/gi
+  let current = regex.exec(sourceStr)
+  while (current) {
+    classNameList.push(current[2])
+    current = regex.exec(sourceStr)
+  }
   if (classNameList) {
     classNameList.forEach(hasClassNameStr => {
       // 替换我们规则中不会出现的字符 替换成空格 注意前后必须有空格 可能导致拼接合法 会多生成几条 无所谓

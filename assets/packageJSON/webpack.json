@@ -17,7 +17,7 @@
     "vue",
     "react",
     "weixin",
-    "dingding",
+    "mini-program",
     "webpack-plugin"
   ],
   "dependencies": "$VAR$"

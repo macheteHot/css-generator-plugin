@@ -13,6 +13,7 @@ jobs:
     env:
       vitePath: ./dist/vite
       pluginPath: ./dist/webpack
+      scriptPath: ./dist/script
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -31,3 +32,8 @@ jobs:
         working-directory: ${{env.pluginPath}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: publish webpack plugin
+        run : npm publish
+        working-directory: ${{env.scriptPath}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}   

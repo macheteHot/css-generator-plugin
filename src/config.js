@@ -3,33 +3,35 @@ import { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT, MODIFY_RULES, MEDIA_QUERIE
 let programConfig = {
   [MODIFY_RULES]: {}
 }
-const runType = {
-  vue: {
-    [EXT_NAME] : ['vue'],
-    reg        : /(?:(?<=class=(["']))[\s\S]*?(?=\1))|((?<=class={)[\s\S]*?(?=}))/gi
-  },
-  react: {
-    [EXT_NAME] : ['tsx', 'jsx'],
-    reg        : /(?:(?<=className=(["']))[\s\S]*?(?=\1))|((?<=className={)[\s\S]*?(?=}))/gi
-  },
-  'd-mini-program': { // 钉钉小程序
-    [EXT_NAME] : ['axml'],
-    reg        : /(?:(?<=class=(["']))|(?<=classname="))[\s\S]+?(?=\1)/gi
-  },
-  'wx-mini-program': { // 微信小程序
-    [EXT_NAME] : ['wxml'],
-    reg        : /(?:(?<=class=(["']))|(?<=classname="))[\s\S]+?(?=\1)/gi
-  },
-  html: { // 单纯 html
-    [EXT_NAME] : ['html'],
-    reg        : /(?:(?<=class=(["']))[\s\S]*?(?=\1))/gi
+const runType = process.env.inBrowser === true
+  ? { }
+  : {
+    vue: {
+      [EXT_NAME] : ['vue'],
+      reg        : /(?:(?<=class=(["']))[\s\S]*?(?=\1))|((?<=class={)[\s\S]*?(?=}))/gi
+    },
+    react: {
+      [EXT_NAME] : ['tsx', 'jsx'],
+      reg        : /(?:(?<=className=(["']))[\s\S]*?(?=\1))|((?<=className={)[\s\S]*?(?=}))/gi
+    },
+    'ali-mini-program': { // ali小程序
+      [EXT_NAME] : ['axml'],
+      reg        : /(?:(?<=class=(["']))|(?<=classname="))[\s\S]+?(?=\1)/gi
+    },
+    'wx-mini-program': { // 微信小程序
+      [EXT_NAME] : ['wxml'],
+      reg        : /(?:(?<=class=(["']))|(?<=classname="))[\s\S]+?(?=\1)/gi
+    },
+    html: { // 单纯 html
+      [EXT_NAME] : ['html'],
+      reg        : /(?:(?<=class=(["']))[\s\S]*?(?=\1))/gi
+    }
   }
-}
 export function getConfig (str) {
   switch (str) {
     // 此处配置默认值
     case EXT_NAME:
-      return runType[programConfig.type][EXT_NAME]
+      return programConfig[EXT_NAME] || runType[programConfig.type][EXT_NAME]
     case GLOB_REG:
       return runType[programConfig.type].reg
     case COLORS: // 默认空对象

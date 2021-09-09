@@ -42,7 +42,8 @@ module.exports = {
   colors: {},
   dirPath: 'src', // 必填项。源码根目录(必须存在此目录)
   generate: 'src/style/auto.css', // 必填项。生成文件位置(不存在会自动创建目录)
-  type: 'vue', // 必填项。项目类型 vue | react | d-mini-program (钉钉小程序) | wx-mini-program(微信小程序) | html 
+  // extNames: ['js','jsx','vue'] // 可选项。可以手动制定检测文件 如无特殊需求 只需指定type 即可
+  type: 'vue', // 必填项。项目类型 vue | react | ali-mini-program (阿里系小程序) | wx-mini-program(微信小程序) | html 
   unit: 'px', // 可选项。默认单位px 如写 v 则必须配合 vToAny 使用
   /**
    * 可覆写规则 或自定义规则 详见进阶使用 详情请看README

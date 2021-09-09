@@ -1,34 +1,33 @@
-import { filterClassNames } from './filterClass'
+import { filterClassNamesByScriptUse } from './filterClass'
 import { renderCss } from './preRender'
 
 import { setConfig } from './config'
 
 const NODE_ID = 'autocss'
 
+const styleElement = document.createElement('style')
+
 function genCss () {
   const sourceStr = document.body.innerHTML
-  filterClassNames(sourceStr)
+  filterClassNamesByScriptUse(sourceStr)
   const oldStyleNode = document.getElementById(NODE_ID)
   if (oldStyleNode) {
     oldStyleNode.remove()
   }
-  const style = document.createElement('style')
-  style.type = 'text/css'
-  style.rel = 'stylesheet'
-  style.setAttribute('id', NODE_ID)
-  style.appendChild(document.createTextNode(renderCss()))
-  document.getElementsByTagName('head')[0].appendChild(style)
+  styleElement.rel = 'stylesheet'
+  styleElement.setAttribute('data-inline-style', NODE_ID)
+  styleElement.appendChild(document.createTextNode(renderCss()))
+  const head = document.head || document.getElementsByTagName('head')[0]
+  head.appendChild(styleElement)
 }
-
-window.Gcss = class {
+export default class Gcss {
   constructor (cfg = {}) {
-    setConfig({ ...cfg, type: 'html' })
+    setConfig({ ...cfg })
     this.str = ''
   }
 
   start () {
     genCss()
-    // eslint-disable-next-line no-undef
     const observer = new MutationObserver(genCss)
     observer.observe(document.body, {
       attributes      : true,
@@ -38,5 +37,3 @@ window.Gcss = class {
     })
   }
 }
-
-window.getCssStr = renderCss

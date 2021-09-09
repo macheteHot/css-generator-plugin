@@ -21,19 +21,14 @@
     "url": "https://github.com/macheteHot/css-generator-plugin/issues"
   },
   "homepage": "https://github.com/macheteHot/css-generator-plugin#readme",
-  "keywords": [
-    "css",
-    "vue",
-    "react",
-    "weixin",
-    "dingding",
-    "webpack-plugin"
-  ],
   "devDependencies": {
+    "@babel/plugin-transform-named-capturing-groups-regex": "^7.14.9",
     "@robmarr/rollup-plugin-shebang": "^1.0.1",
+    "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-multi-entry": "^3.0.1",
     "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-replace": "^3.0.0",
     "eslint": "^7.1.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
@@ -46,7 +41,6 @@
     "rollup-plugin-terser": "^6.1.0"
   },
   "dependencies": {
-    "bignumber.js": "^9.0.1",
     "chokidar": "^3.4.0",
     "commander": "^5.1.0",
     "glob": "^7.1.6",
