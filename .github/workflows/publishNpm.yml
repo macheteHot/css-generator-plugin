@@ -10,8 +10,10 @@ on:
         - v*.*.*
 
 jobs:
-  build:
+  publish-npm:
     runs-on: ubuntu-latest
+    env:
+      vitePath: ./dist/vite
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -20,11 +22,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn
       - run: yarn build
+      - run: pwd
+      - name: publish vite plugin
+        run : pwd
+        workflow_dispatch: ${{vitePath}}
+      work
+      # - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-  publishVite:
-    env:
-      work-directory: ./dist
-      steps:
-        -run: pwd
-        -run: ls -R
