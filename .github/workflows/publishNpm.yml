@@ -5,12 +5,12 @@ name: publish to npm
 
 on:
   workflow_dispatch:
-  # push:
-  #     tags:
-  #       - v*.*.*
+  push:
+      tags:
+        - v*.*.*
 
 jobs:
-  publish-npm:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,6 +20,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn
       - run: yarn build
-      # - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+  publishVite:
+    env:
+      work-directory: ./dist
+      steps:
+        -run: pwd
+        -run: ls -R
