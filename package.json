@@ -53,7 +53,7 @@
     "shelljs": "^0.8.4"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && node build/index.js",
     "dev": "rollup -c -w"
   }
 }

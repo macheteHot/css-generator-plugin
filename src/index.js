@@ -87,3 +87,12 @@ export function hotReloadwatcher (compiler) {
     if (!compiler) { logUseTime() }
   })
 }
+
+export function hotReloadFn (txt) {
+  hotReload = true
+  setTimeStart()
+  filterClassNames(txt)
+  wirteToFile()
+  setTimeEnd()
+  logUseTime()
+}

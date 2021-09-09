@@ -1,0 +1,24 @@
+{
+  "name": "css-generator-plugin",
+  "description": "css file generator only write class name",
+  "version": "$VAR$",
+  "license":"$VAR$",
+  "bin": {
+    "css-generator": "./css-generator",
+    "gen-snippets": "./genSnippets"
+  },
+  "main": "./webpackUse.js",
+  "repository": "$VAR$",
+  "author": "$VAR$",
+  "bugs": "$VAR$",
+  "homepage": "$VAR$",
+  "keywords": [
+    "css",
+    "vue",
+    "react",
+    "weixin",
+    "dingding",
+    "webpack-plugin"
+  ],
+  "dependencies": "$VAR$"
+}
