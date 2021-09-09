@@ -24,9 +24,10 @@ jobs:
       - run: yarn build
       - run: pwd
       - name: publish vite plugin
-        run : pwd
-        workflow_dispatch: ${{vitePath}}
-      work
+        run : |
+          pwd
+          ls
+        working-directory: ${{env.vitePath}}
       # - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
