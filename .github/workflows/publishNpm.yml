@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       vitePath: ./dist/vite
+      pluginPath: ./dist/webpack
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -24,10 +25,12 @@ jobs:
       - run: yarn build
       - run: pwd
       - name: publish vite plugin
-        run : |
-          pwd
-          ls
+        run : npm publish
         working-directory: ${{env.vitePath}}
-      # - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: publish webpack plugin
+        run : npm publish
+        working-directory: ${{env.pluginPath}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
