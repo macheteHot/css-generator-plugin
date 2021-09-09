@@ -21,7 +21,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn
       - run: yarn build
-      - run: pwd
       - name: publish vite plugin
         run : npm publish
         working-directory: ${{env.vitePath}}
