@@ -1,3 +1,7 @@
+  2.5.1
+  + fix 🐛: 修复了cdn 引入会重复生成css的问题
+  + feat ✨ : 增加了cdn版本号的显示
+
   2.5.0
   + feat ✨ : 可直接引入cdn 适用 适配了 ios macos chrome>= 44 不支持ie
 

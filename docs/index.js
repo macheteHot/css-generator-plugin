@@ -1,5 +1,5 @@
 function showCss () {
-  let str = window.getCssStr()
+  let str = window.Gcss.getCssStr()
   str = str.replace(/^(\/\*[\s\S]+?\*\/)/gm, '<span style="color:#009926;font-size:14px;">$1</span></br>')
   str = str.replace(/\.([a-z0-9-:\s]+)/gm, '<span style="color:#990073">.$1</span>')
   str = str.replace(/\{/g, '&nbsp;{</br>')

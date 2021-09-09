@@ -32,7 +32,7 @@ jobs:
         working-directory: ${{env.pluginPath}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      - name: publish webpack plugin
+      - name: publish script plugin
         run : npm publish
         working-directory: ${{env.scriptPath}}
         env:

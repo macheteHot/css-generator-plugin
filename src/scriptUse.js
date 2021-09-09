@@ -1,11 +1,16 @@
 import { filterClassNamesByScriptUse } from './filterClass'
 import { renderCss } from './preRender'
+import { CSS_ANNOTATION } from './constant'
 
 import { setConfig } from './config'
 
 const NODE_ID = 'autocss'
 
 const styleElement = document.createElement('style')
+styleElement.rel = 'stylesheet'
+styleElement.setAttribute('data-inline-style', NODE_ID)
+const head = document.head || document.getElementsByTagName('head')[0]
+head.appendChild(styleElement)
 
 function genCss () {
   const sourceStr = document.body.innerHTML
@@ -14,11 +19,7 @@ function genCss () {
   if (oldStyleNode) {
     oldStyleNode.remove()
   }
-  styleElement.rel = 'stylesheet'
-  styleElement.setAttribute('data-inline-style', NODE_ID)
-  styleElement.appendChild(document.createTextNode(renderCss()))
-  const head = document.head || document.getElementsByTagName('head')[0]
-  head.appendChild(styleElement)
+  styleElement.innerHTML = CSS_ANNOTATION + renderCss()
 }
 export default class Gcss {
   constructor (cfg = {}) {
@@ -35,5 +36,9 @@ export default class Gcss {
       childList       : true,
       subtree         : true
     })
+  }
+
+  static getCssStr () {
+    return renderCss()
   }
 }
