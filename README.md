@@ -95,6 +95,30 @@ npx css-generator
 yarn css-generator
 ```
 
+### CDN 引入
+
+```html
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/css-generator-script/gcss.js"></script>
+</head>
+<body>
+</body>
+<script>
+  // {} is config
+  new window.Gcss({}).start()
+</script>
+</html>
+```
+
+### 本地直接使用
++ 项目入口中引用
+```js
+import Gcss from 'css-generator-script'
+new Gcss({}).start()
+```
+
+
 ### **入口文件(main.js)手动引入动态生成的css**
 ```javascript
 import '@/style/auto.css'

@@ -1,3 +1,6 @@
+  2.5.0
+  + feat ✨ : 可直接引入cdn 适用 适配了 ios macos chrome>= 44 不支持ie
+
   2.3.91 
   + fix 🐛: 修复了小程序不会捕获单引号内的class 问题
   
