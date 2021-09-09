@@ -26,7 +26,7 @@
 
 ### 配置项
 
-在项目根目录创建 **css.generator.config.js** 文件或下载本项目同名文件
+在项目根目录创建 **css.generator.config.js** 文件
 写入如下配置
 ```javascript
 module.exports = {
