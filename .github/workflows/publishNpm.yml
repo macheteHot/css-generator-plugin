@@ -4,10 +4,10 @@ name: publish to npm
 
 
 on:
-  - workflow_dispatch:
-  - push:
-      tags:
-        - v*.*.*
+  workflow_dispatch:
+  # push:
+  #     tags:
+  #       - v*.*.*
 
 jobs:
   publish-npm:
