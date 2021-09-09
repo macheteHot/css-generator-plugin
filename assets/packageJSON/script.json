@@ -3,6 +3,9 @@
   "description": "css generator by class",
   "version": "$VAR$",
   "license": "$VAR$",
+  "bin": {
+    "gen-snippets": "./genSnippets"
+  },
   "main": "./index.js",
   "repository": "$VAR$",
   "author": "$VAR$",

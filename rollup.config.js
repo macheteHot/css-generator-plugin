@@ -65,6 +65,10 @@ const configList = [
       {
         file   : 'dist/vite/genSnippets',
         format : 'cjs'
+      },
+      {
+        file   : 'dist/script/genSnippets',
+        format : 'cjs'
       }
     ],
     plugins: [
