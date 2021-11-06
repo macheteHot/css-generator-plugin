@@ -86,7 +86,7 @@
   ```
 
 ### 配置项
-webpack 或 vite 用户请 下载本项目中 **[配置文件](./.css.generator.js)**  到项目根目录
+webpack 或 vite 用户请 下载本项目中配置文件 **[.css.generator.js](./.css.generator.js)** 到项目根目录
 
 cdn 或生成器用户 请在 函数中传入配置
 
