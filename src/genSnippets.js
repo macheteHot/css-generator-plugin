@@ -3,7 +3,8 @@ import {
   ALIGN_ITEMS_ENUM,
   CURSOR_ENUM,
   VERTICAL_ALIGN_ENUM,
-  GAP_ENUM
+  GAP_ENUM,
+  DISPLAY_ENUM
 } from './constant'
 const fs = require('fs')
 const path = require('path')
@@ -301,7 +302,7 @@ function getRegList () {
       render () {
         let str = '';
         ['display', 'd'].forEach(d => {
-          ['none', 'inline', 'block', 'inline-block', 'flex', 'inherit', 'initial', 'none', 'revert', 'unset'].forEach(v => {
+          DISPLAY_ENUM.forEach(v => {
             str += `.${d}-${v}{}`
           })
         })

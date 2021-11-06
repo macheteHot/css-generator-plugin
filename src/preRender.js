@@ -53,7 +53,7 @@ function renderArray (array) {
         .sort(sortCss)
         .map(getCssSingle)
         .join('\n')
-      cssStr += '\n\n'
+      cssStr += '\n'
     }
   }
   return cssStr

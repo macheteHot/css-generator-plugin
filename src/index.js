@@ -1,7 +1,7 @@
 import { filterClassNames } from './filterClass'
 import { renderCss } from './preRender'
 import { getConfig } from './config'
-import { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION } from './constant'
+import { EXT_NAME, GENERATE, DIR_PATH, CSS_ANNOTATION, BEFORE_STR, AFTER_STR } from './constant'
 const { performance } = require('perf_hooks')
 const fs = require('fs')
 const path = require('path')
@@ -37,7 +37,8 @@ function wirteToFile () {
   if (!fs.existsSync(cssDirPath)) {
     shelljs.mkdir('-p', cssDirPath)
   }
-  fs.writeFileSync(cssFilePath, `${CSS_ANNOTATION}${renderCss()}\n`)
+  const cssStr = `${getConfig(BEFORE_STR) || ''}\n${CSS_ANNOTATION}${renderCss()}${getConfig(AFTER_STR) || ''}`
+  fs.writeFileSync(cssFilePath, cssStr)
 }
 
 function getFilePath (str) {
@@ -62,8 +63,8 @@ export function init (compiler) {
 
 export function readConfigFile () {
   let options = null
-  if (fs.existsSync(getFilePath('css.generator.config.js'))) {
-    options = require(getFilePath('css.generator.config.js'))
+  if (fs.existsSync(getFilePath('.css.generator.js'))) {
+    options = require(getFilePath('.css.generator.js'))
   } else {
     throw new Error('you dont have any config!!! see https://github.com/macheteHot/css-generator-plugin/blob/master/README.md')
   }

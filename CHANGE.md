@@ -1,3 +1,7 @@
+  2.5.3
+  + feat ✨ : display 属性 新增 flow-root table-row list-item 等值
+  + feat ✨ : 新增了 beforeStr afterStr 配置 支持自定义生成文件头尾部分 其中 beforeStr 默认值为 /* stylelint-disable */ 
+  + fix  🐛 : 配置文件的名称从 css.generator.config.js 改为 .css.generator.js
   2.5.2
   + feat ✨ : script genSnippets 命令 生成提示文件
 

@@ -1,4 +1,4 @@
-import { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT, MODIFY_RULES, MEDIA_QUERIES } from './constant'
+import { EXT_NAME, GLOB_REG, COLORS, UNIT, IMPORTANT, MODIFY_RULES, MEDIA_QUERIES, BEFORE_STR } from './constant'
 
 let programConfig = {
   [MODIFY_RULES]: {}
@@ -42,6 +42,8 @@ export function getConfig (str) {
       return programConfig[MEDIA_QUERIES] || {}
     case IMPORTANT: // 默认添加！important 设置默认值
       return programConfig[IMPORTANT] === undefined ? true : programConfig[IMPORTANT]
+    case BEFORE_STR:
+      return programConfig[BEFORE_STR] || '/* stylelint-disable */'
     default: // dirPath generate  等项目配置
       return programConfig[str]
   }

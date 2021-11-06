@@ -7,11 +7,15 @@ export const UNIT = 'unit' // 选填 单位
 export const IMPORTANT = 'important' // 选填 单位
 export const GLOB_REG = 'globReg'
 export const V_TO_ANY = 'vToAny' // px转rem配置
+export const BEFORE_STR = 'beforeStr' // 文件前缀头 默认 /* stylelint-disable */
+export const AFTER_STR = 'afterStr' // 文件后添加字符串
 // 以下是项目配置 不从配置文件读
 export const EXT_NAME = 'extNames'
 export const MODIFY_RULES = 'modifyRules'
 export const MEDIA_QUERIES = 'mediaQueries'
 // 以下是枚举
+
+export const DISPLAY_ENUM = ['unset', 'revert', 'initial', 'inherit', 'list-item', 'table-row', 'table', 'contents', 'none', 'flow-root', 'inline-grid', 'grid', 'inline-flex', 'flex', 'inline-block', 'inline', 'block']
 
 export const JUSTIFY_CONTENT_ENUM = ['center', 'start', 'end', 'flex-start', 'flex-end', 'left', 'right', 'space-between', 'between', 'space-around', 'around', 'space-evenly', 'evenly', 'stretch', 'inherit', 'initial', 'unset', 'normal']
 export const ALIGN_ITEMS_ENUM = ['baseline', 'center', 'end', 'flex-end', 'flex-start', 'inherit', 'initial', 'normal', 'self-end', 'self-start', 'start', 'stretch', 'unset']
@@ -25,6 +29,7 @@ const PSEUDO_ENUM = ['active', 'any-link', 'blank', 'checked', 'current', 'defau
 export const GAP_ENUM = ['unset', 'initial', 'inherit', 'normal']
 
 export const VERTICAL_ALIGN_ENUM = ['baseline', 'sub', 'super', 'text-top', 'text-bottom', 'middle', 'top', 'bottom', 'inherit', 'initial', 'unset']
+export const DISPLAY_STR = toRegexStr(DISPLAY_ENUM)
 export const PSEUDO_STR = toRegexStr(PSEUDO_ENUM)
 export const JUSTIFY_CONTENT_ENUM_STR = toRegexStr(JUSTIFY_CONTENT_ENUM)
 export const ALIGN_ITEMS_ENUM_STR = toRegexStr(ALIGN_ITEMS_ENUM)

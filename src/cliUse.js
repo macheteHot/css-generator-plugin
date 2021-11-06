@@ -11,9 +11,7 @@ function run (options) {
 const program = require('commander')
 const { version } = require('../package.json')
 
-const description =
-  `An application to generate Style Sheets file
-the default config file is css.generator.config.js`
+const description = 'An application to generate Style Sheets file the default config file is .css.generator.js'
 program
   .version(version, '-v, --version')
   .description(description)

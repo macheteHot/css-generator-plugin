@@ -1,8 +1,7 @@
 import { filterClassNamesByScriptUse } from './filterClass'
 import { renderCss } from './preRender'
-import { CSS_ANNOTATION } from './constant'
-
-import { setConfig } from './config'
+import { CSS_ANNOTATION, BEFORE_STR, AFTER_STR } from './constant'
+import { setConfig, getConfig } from './config'
 
 const NODE_ID = 'autocss'
 
@@ -19,7 +18,7 @@ function genCss () {
   if (oldStyleNode) {
     oldStyleNode.remove()
   }
-  styleElement.innerHTML = CSS_ANNOTATION + renderCss()
+  styleElement.innerHTML = `${getConfig(BEFORE_STR) || ''}\n${CSS_ANNOTATION}${renderCss()}${getConfig(AFTER_STR) || ''}`
 }
 export default class Gcss {
   constructor (cfg = {}) {

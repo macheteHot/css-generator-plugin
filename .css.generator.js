@@ -1,4 +1,6 @@
 module.exports = {
+  beforeStr    : '', // css 文本嵌入的文字
+  afterStr     : '', // css结束嵌入的文字
   /**
    * 颜色配置 默认包含如下值
    * red         : '#f00'
