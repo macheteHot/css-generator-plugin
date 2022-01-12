@@ -22,7 +22,11 @@ const setTimeEnd = () => {
 const getUseTime = () => (endTime - startTime).toFixed(2)
 
 function readFile (path) {
-  return fs.readFileSync(path, 'utf8')
+  const state = fs.statSync(path)
+  if (state.isFile()) {
+    return fs.readFileSync(path, 'utf8')
+  }
+  return ''
 }
 
 function getAllFileClassStr () {
