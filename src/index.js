@@ -22,13 +22,16 @@ const setTimeEnd = () => {
 const getUseTime = () => (endTime - startTime).toFixed(2)
 
 function readFile (path) {
-  return fs.readFileSync(path, 'utf8')
+  if (fs.existsSync(path) && fs.statSync(path).isFile()) {
+    return fs.readFileSync(path, 'utf8')
+  }
+  return ''
 }
 
 function getAllFileClassStr () {
   const globSyncStr = getConfig(EXT_NAME).join('|')
   const files = glob.sync(path.join(process.cwd(), `./${getConfig(DIR_PATH)}/**/*.@(${globSyncStr})`))
-  return files.reduce((t, c) => t + fs.readFileSync(path.resolve(c), 'utf8'), '')
+  return files.reduce((t, c) => t + readFile(path.resolve(c)), '')
 }
 
 function wirteToFile () {
