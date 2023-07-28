@@ -44,6 +44,7 @@
   "dependencies": {
     "chokidar": "^3.4.0",
     "commander": "^5.1.0",
+    "decimal.js": "^10.4.3",
     "glob": "^7.1.6",
     "shelljs": "^0.8.4"
   },
